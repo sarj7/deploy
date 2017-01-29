@@ -1,0 +1,146 @@
+form {
+    background: white;
+    width: 25%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    font-family: lato;
+    position: absolute;
+    color: #333;
+    border-radius: 7px;
+}
+
+#heading {
+    background: white;
+    padding: 30px 20px;
+    font-weight: 600;
+    border-radius: 7px 7px 0 0;
+    margin-top: 0px;
+    font-size: 1.6em;
+    font-family: roboto;
+    color: black;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+#name {
+	display: block;
+    width: 78%;
+    margin-left: 2px;
+    padding: 5px 20px;
+    padding-left: initial;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: 0px solid #ccc;
+}
+
+section.container form.form p.name {
+	display: block;
+    width: 65%;
+    margin-left: 48px;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid #ccc;
+}
+section.container form.form p.email {
+	display: block;
+    width: 65%;
+    margin-left: 48px;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid #ccc;
+}
+
+#email {
+	display: block;
+    width: 80%;
+    margin-left: 2px;
+    padding: 5px 20px;
+    padding-left: initial;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: 0px solid #ccc;
+}
+
+#phone_number {
+	display: block;
+    width: 80%;
+    margin-left: 2px;
+    padding: 5px 20px;
+    padding-left: initial;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: 0px solid #ccc;
+}
+
+
+section.container form.form p.phone {
+	display: block;
+    width: 65%;
+    margin-left: 48px;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid #ccc;
+}
+
+#special-submit {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: inherit;
+    color: black;
+    background: white;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1.3em;
+    font-weight: 400;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    border: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#textbox {
+	display: block;
+    width: 65%;
+    margin-left: 48px;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid #ccc;
+    padding-bottom: 29px;
+}
+
+#special-text {
+	display: block;
+    width: 100%;
+    margin-left: 2px;
+    padding: 5px 20px;
+    padding-left: initial;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: 0px solid #ccc;
+    font-family: sans-serif;
+    max-width: 100%;
+    max-height: 90px;
+}
+
+.container {
+	padding-left: 1120px;
+    padding-top: 250px;
+}

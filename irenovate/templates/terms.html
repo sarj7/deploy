@@ -1,0 +1,128 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<head>
+	<title>T&C</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta charset="utf-8"/>
+  <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
+
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+     @viewport {
+      zoom:1.0;
+      width: extend-to-zoom;
+    }
+
+    @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
+
+    #h2{
+        font-size: 40px;
+        padding-top: 20 px;
+        padding-bottom: 13px;
+
+        /*font-family: 'Open Sans Condensed', sans-serif;*/
+    }
+
+    .container {
+      text-align: justify;
+      /*font-family: 'Open Sans Condensed', sans-serif;*/
+    }
+
+    #pgraph {
+      line-height: 1.6;
+        font-size: 17px;
+    }
+
+    .col-sm-12 {
+      padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    #pgraphone {
+      padding-top: 10px;
+        line-height: 1.6;
+        font-size: 17px;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    #pgraphtwo {
+      padding-left: 55px;
+        line-height: 2.5rem;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+    
+	</style>
+    
+</head>
+
+{% include 'navbar.html' %}
+
+<body>
+  <div class="container">
+    <div class="col-sm-12">
+      <h2 id="h2">
+        TERMS & CONDITIONS
+      </h2>
+      <p id="pgraph">
+        Welcome to our website. If you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Company Name relationship with you in relation to this website.The term ‘David Ferrari Constructions’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is Company Add. The term ‘you’ refers to the user or viewer of our website
+      </p>
+      <p id="pgraphone">
+        The use of this website is subject to the following terms of use:
+      </p>
+        <ul id="pgraphtwo">
+          <li class="lst">
+            The content of the pages of this website is for your general information and use only. It is subject to change without notice.
+          </li>
+          <li class="lst">
+            Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law
+          </li>
+          <li class="lst">
+            Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.
+          </li>
+          <li class="lst">
+            This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions
+          </li>
+          <li class="lst">
+            All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.
+          </li>
+          <li class="lst">
+            Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.
+          </li>
+          <li class="lst">
+            From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).
+          </li>
+          <li class="li">
+            You may not create a link to this website from another website or document without Company Name prior documented consent.
+          </li>
+          <li class="li">
+            Your use of this website and any dispute arising out of such use of the website is subject to the laws of india.
+          </li>
+        </ul>
+    </div>
+  </div>
+
+  {% include 'copyright.html' %}
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>

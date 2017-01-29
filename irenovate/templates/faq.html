@@ -1,0 +1,179 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<DOCTYPE! html>
+<html>
+<head>
+  <title>FAQ's</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style type="text/css">
+    @viewport {
+      zoom:1.0;
+      width: extend-to-zoom;
+    }
+
+    @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
+    
+    /*------page styling starts here-------*/
+    .question {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 20px;
+      padding-left:35px;
+      border: 1px solid #b3b3ff;
+      border-radius: 10px;
+      height: 45px;
+      padding-top: 7px;
+      font-weight: 900;
+      }
+    
+    .answer{
+      padding-left: 65px;
+      padding-top: 4px;
+      text-align: justify;
+      padding-bottom: 16px;
+      color: #330000;
+      padding-right: 60px;
+    }
+
+    #para1{
+      font-size:45px;
+      padding-bottom: 25px; 
+      padding-top: 45px; 
+      padding-left: 115px;
+      font-family: 'Open Sans Condensed', sans-serif; 
+      line-height: 2.0rem; 
+      font-weight: 900;" 
+    }
+
+    #para2{
+      font-size:15px;
+      padding-left:115px; 
+      padding-bottom: 35px; 
+      padding-top:20px; 
+      font-weight: 600;
+      padding-right: 100px;x
+    }
+
+    ul{
+      list-style:none;
+    }
+
+    .title {
+    font-size: 1.9rem;
+      padding-top: 40px;
+      margin-bottom: 0px;
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #68ACF5;
+
+  }
+
+    #copyright {
+      font-size: 1.75rem;
+      padding-top: 40px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #68ACF5;
+    }
+
+    .description {
+      font-size: 1.3rem;
+      text-align: center;
+      padding-top: 0px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #68ACF5;
+    }
+
+    .social-icons {
+      padding-top: 45px;
+    }
+
+    .col-sm-12 {
+      padding-right: 100px;
+      padding-left: 75px;
+    }
+
+  </style>
+
+</head>
+
+{% include "navbar.html" %}
+
+<body>
+  <div class="container">
+    <p id="para1">
+      FAQ's
+    </p>
+    <p id="para2">
+      Here are a few frequently asked questions and answers that clients often ask us. If there is something else you’d like to ask us, or want to talk about your renovation, please contact us.
+    </p>
+    <div class="col-sm-12">
+      <ul>
+        <li style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          Q. Is iRenovate right for me?
+        </li>
+        <li class="answer">
+          If you are looking for a hassle free renovation for your home of office space, then iRenovate is perfect for you! We have a qualified team of designers and builders who work only on alterations, additions, extensions and renovations. From minor repairs to changing the architectural structure, we do all kinds of renovations! No matter how big or small your renovation, we’ll deliver on time and within your budget.
+        </li>
+        <li  style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          Q. How can iRenovate help me with my Renovation project?
+        </li>
+        <li class="answer" >
+          We are renovation experts. All we do is, we renovate. Since we specialize in renovation, we have developed different processes that are best for renovations. We have partnership with suppliers in building industry who give us best range of products and prices. We are cost-effective, reliable and will provide best outcomes.
+        </li>
+        <li style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          Q. will iRenovate cost me more?
+        </li>
+        <li class="answer">
+          No, We are very cost-effective. We have partnership with suppliers in building industry who give us best range of products and prices. We have contacts in the field which enables us to get skilled workmanship for less price than any home owner would get for a single project. So, we have the best material and labor rates and also best management, which will minimize the cost of renovation at every step.
+        </li>
+        <li style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          Q. Is project management going to cost me more?
+        </li>
+        <li class="answer">
+          By managing the entire project we avoid unnecessary expenditures. Well-managed projects make work easy and finish on time and also minimizes the cost of the renovation.
+        </li>
+        <li class="question" style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          Q. How long will my project take to complete?
+        </li>
+        <li class="answer">
+          Renovations can feel like a never ending project if not done right. A poor management can cause extra expense and also push back the completion dates. Our team constructs a perfectly well structured plan, which is designed to complete your renovation project on time and within your budget. We do not waste time, as soon the contract is signed we begin our work.
+        </li>
+        <li class="question" style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          How can iRenovate help me with my design?
+        </li>
+        <li class="answer">
+          Yes, we have in-house designers who will help you design your dream home or office. We provide concept drawings and 3D digital designs for you to comprehend better. Our 3D drawings will help you finalize the end look of the renovation.
+        </li>
+        <li style = "font-family: 'Open Sans Condensed', sans-serif;font-size: 20px;padding-left:35px;border: 1px solid #b3b3ff;border-radius: 10px; height: 45px;padding-top: 7px;font-weight: 900;">
+          Q What is your warranty/after work policy?
+        </li>
+        <li class="answer" style = "padding-bottom: 75px;">
+          We render a free maintenance contract for 6 months after the renovation.
+        </li>
+      </ul>
+    </div>
+  </div>   
+
+  {% include 'copyright.html' %}
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>

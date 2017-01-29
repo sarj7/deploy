@@ -1,0 +1,186 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<head>
+  <title>Renovation Consultation</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta charset="utf-8"/>
+  <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
+  
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <style type="text/css">
+    @viewport {
+      zoom:1.0;
+      width: extend-to-zoom;
+    }
+
+    @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
+
+    .para {
+      text-align: justify;
+      font-style: italic;
+      color: black;
+      width: 100%;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .head {
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: ultra-condensed;
+      padding-bottom:20px;
+    }
+
+    .col-sm-1 {
+      padding-top:22px;
+    }
+
+    #heading {
+      padding-bottom: 20px;
+      padding-top:20px;
+      font-family: serif;
+    }
+
+    .row.wtf {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  
+  </style>
+
+</head>
+
+{% include "navbar.html" %}
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row wtf">
+        <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;">
+          <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: red"> iRenovate?</span></font></p>
+          <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
+          <p style="text-align:justify"><font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</font></p>
+        </div>
+        <!-- <div class="col-sm-6">
+          <iframe style="height: 350px;" class=" col-sm-6 col-xs-12 col-lg-6 embed-responsive-item" src="src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0"></iframe>
+        </div> -->
+        <!-- <div style="padding-left: 0px;" class="col-sm-6 col-md-6 col-xs-4"> -->
+          <iframe class="col-sm-6 col-xs-12" width="460" height="400" src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
+        <!-- </div> -->
+        <!-- <div class='col-sm-6 col-xs-6 col-md-6 embed-responsive embed-responsive-16by9' >
+          <iframe src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container-fluid" style="background-image: url({% static 'img/USP.jpg' %})"> -->
+  <div class = "container">
+    <h2 id = "heading" style="text-align:center;">Six Reasons To Choose iRenovate </h2>
+    <div class ="row wtf">
+      
+      <div class = "col-sm-1">
+        <img src="{% static 'img/USP/single.png' %}">
+      </div>
+    
+      <div class = "col-sm-3">
+        <h3 class = "head">
+          SINGLE PERSON CONTACT
+        </h3>
+        <p class = "para">
+        Renovating your home is a challenging job. With iRenovate, you leave all the hard-work and management to us. From scratch to end, we handle all the major and minor work that comes along with the renovation process. We assure you best quality renovation completed on time and within your budget.
+        </p>
+      </div>
+    
+      <div class = "col-sm-1 icon">
+        <img src="{% static 'img/USP/price.png' %}">
+      </div>
+    
+      <div class = "col-sm-3">
+        <h3 class = "head">
+          BEST PRICE
+        </h3>
+        <p class = "para">
+        We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.
+        </p>
+      </div>
+
+      <div class = "col-sm-1 icon">
+        <img src="{% static 'img/USP/model.png' %}">
+      </div>
+    
+      <div class = "col-sm-3">
+        <h3 class = "head">
+          3D VISUALIZATION
+        </h3>
+        <p class = "para">
+          We provide concept drawings and 3D digital designs for you to comprehend better.  We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.
+        </p>
+      </div>
+    </div>
+  
+    <div class ="row wtf" style="padding-bottom:35px;">
+      
+      <div class = "col-sm-1 icon">
+        <img src="{% static 'img/USP/delivery.png' %}">
+      </div>
+      
+      <div class = "col-sm-3">
+        <h3 class = "head">
+          ON TIME DELIVERY
+        </h3>
+        <p class = "para">
+          Poor management can make you feel renovation as a never ending project. At iRenovate, we design a perfectly well structured plan to complete your renovation project on time and within your budget.
+        </p>
+      </div>
+      
+      <div class = "col-sm-1 icon">
+        <img src="{% static 'img/USP/swag.png' %}">
+      </div>
+      
+      <div class = "col-sm-3">
+        <h3 class = "head">
+          UBER COOL DESIGN
+        </h3>
+        <p class = "para">
+          We at iRenovate help you deliver you the X-factor you need for your dream home. Our in-house team of designers is committed to provide you with the exact design you need. No Outsourcing, No Hassle.
+        </p> 
+      </div>
+      
+      <div class = "col-sm-1 icon">
+        <img src="{% static 'img/USP/assured.png' %}">
+      </div>
+      
+      <div class = "col-sm-3">
+        <h3 class = "head">
+          MAINTAINANCE CONTRACT
+        </h3>
+        <p class = "para">
+          iRenovate team is dedicated to provide excellence in maintenance with a 6 months’ F.O.C after service contract. Should you experience a problem or need assistance our team is ready to assist, no matter how small the issue is!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% include 'copyright.html' %}  
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,165 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<head>
+  <title>Mr. David's</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta charset="utf-8"/>
+  <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
+  
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <style type="text/css">
+    @viewport {
+      zoom:1.0;
+      width: extend-to-zoom;
+    }
+
+    @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
+
+    .row {
+      margin-right: 0px !important;
+    }
+
+    .image {
+      width: 350px;
+      height: 400px;
+      margin: 45px;
+      border-style: solid;
+      margin-left: 75px;
+      margin-right: 30%;
+      border-style: solid;
+      border-radius: 9px;
+      margin-right: 5px;
+      margin-left: 30px;
+    }
+
+    #head-goes {
+      font-family: 'Lora', serif;
+      padding-bottom:5px;
+      text-align: center;
+    }
+
+    #desc-goes {
+      font-family: 'Lora', serif;
+      padding-left: 15px;
+      padding-top:0px;
+      line-height: 1.5em;
+    }
+
+    .container {
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+
+    #offtwo {
+      margin-bottom: 0px;
+    }
+
+    #offone {
+      margin-bottom: 0px;
+    }
+
+  </style>
+
+</head>
+  
+{% include "navbar.html" %}
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h2 id="head-goes">
+        DAVIDS HOUSE
+      </h2>
+      <h4 id = "desc-goes">
+        Project Type: Residence 
+        </br>
+        Year: 2016 
+        </br>
+        Description: Spectacular house done for Mr. David in Sushant Lok. His fine taste with iRenovates precision helped make the project a real beauty.
+      </h4>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david1.jpeg' %}">
+        </figure>
+      </div>
+
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class = "image" src="{% static 'img/our_work/David/david2.jpeg' %}">
+        </figure>
+      </div>
+
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david4.jpeg' %}">
+        </figure>
+      </div>
+    </div>
+
+    <div class="row">
+   
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david3.jpeg' %}">
+        </figure>
+      </div>
+  
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david5.jpeg' %}">
+        </figure>
+      </div>
+
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david6.jpeg' %}">
+        </figure> 
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david7.jpeg' %}">
+        </figure>
+      </div>
+
+      <div class="col-sm-4">
+        <figure class="fig">
+          <img class="image" src="{% static 'img/our_work/David/david8.jpeg' %}">
+        </figure>
+      </div>
+
+    </div>
+  </div>
+
+  {% include 'copyright.html' %}  
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+</body>

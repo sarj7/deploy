@@ -1,0 +1,106 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<head>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+  <meta charset="utf-8"/>
+  <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
+  
+  <link rel="shortcut icon" type="image/png" href="{%  static 'img/favicon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  
+  <script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+  </script>
+
+  <style type="text/css">
+    @viewport {
+      zoom:1.0;
+      width: extend-to-zoom;
+    }
+
+    @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
+    
+    .navbar-static-top {
+      margin-bottom: 19px;
+    }
+    
+    .navbar-brand {
+      padding-left: 0px;
+      padding-bottom: 0px;
+      padding-top: 5px;
+      margin-left: -79px;
+      padding-right: 45PX;
+      margin-top: -10px;
+    }
+
+  </style>
+
+</head>
+
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="col-sm-4 col-xs-4" href="{% url 'home'%}"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active" id = "design-consultation"><a href="{% url 'design' %}">Renovation Consultation</a></li>
+        <li id = "gallery"><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li id = ""><a href="#">Wardrobe</a></li>
+        <li id = ""><a href="#">Looks</a></li>
+        
+        <!-- dropdown -->
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Furniture<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">By Type</a></li>
+            <li><a href="#">By Studio</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">By Studio</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+        
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fabrics<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Upholstry</a></li> -->
+            <!-- <li><a href="#">By Studio</a></li>
+            <li><a href="#">Something else here</a></li> -->
+            <!-- <li role="separator" class="divider"></li> -->
+            <!-- <li class="dropdown-header">Nav header</li> -->
+            <!-- <li><a href="#">Curtains</a></li> -->
+            <!-- <li><a href="#">One more separated link</a></li> -->
+          <!-- </ul>
+        </li> -->
+      </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        {% if not request.user.is_authenticated %}
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <!-- <li class=""><a href="#">Static top <span class="sr-only">(current)</span></a></li> -->
+        <li><a href="{% url 'register' %}">Register</a></li>
+        {% else %}
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
