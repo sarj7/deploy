@@ -25,7 +25,7 @@ SECRET_KEY = '^4z+c_2^di81mt7sj@e8c&_b%n@zgww%vs%y!e01_yc&l6wqj*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -96,7 +96,7 @@ DATABASES = {
         'NAME': 'irenovate',
         'USER': 'shivang',
         'PASSWORD': 'shivang',
-        'HOST': 'localhost',
+        'HOST': '139.59.45.246',
         'PORT': '',
     }
 }
