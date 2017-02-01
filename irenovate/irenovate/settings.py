@@ -153,3 +153,5 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_in_env", "media_roo
 
 # django crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+

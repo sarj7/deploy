@@ -55,12 +55,12 @@
       </button>
       <a class="col-sm-4 col-xs-4" href="{% url 'home'%}"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
+    <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="{% url 'design' %}">Renovation Consultation</a></li>
-        <li id = "gallery"><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'gallery' %}">Gallery</a></li>
         
-        <li id = ""><a href="#">Looks</a></li>
+        <li><a href="#">Le Thèmes</a></li>
         
         <!-- dropdown -->
         <!-- <li class="dropdown">
@@ -100,6 +100,8 @@
         {% else %}
         <li><a href="{% url 'logout' %}">Logout</a></li>
         {% endif %}
+
+        <li><a href="blog.irenovate.in">Blog</a></li>
       </ul>
     </div>
   </div>
