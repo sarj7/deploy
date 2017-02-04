@@ -4,8 +4,6 @@
 <!DOCTYPE html>
 <html>
 
-{% include "navbar.html" %}
-
 <head>
 	<title>acknowledgement</title>
 	<style type="text/css">
@@ -30,6 +28,8 @@
 	</style>
 </head>
 
+{% include "navbar.html" %}
+
 <body>
 	<div class="abc">
 		<p class="def">
@@ -38,9 +38,12 @@
 		</p>
 	</div>
 
-	 	{% include 'copyright.html' %}
-  		{% include 'javascript.html' %}
+	{% include 'copyright.html' %}
+	{% include 'javascript.html' %}
 
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
 </body>
 
 </html>
