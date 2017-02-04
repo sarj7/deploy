@@ -69,7 +69,7 @@ def contact(request):
 		instance = form.save(commit=False)
 		instance.save()
 
-		return redirect("/")
+		return redirect("/acknowledge")
 	return render(request, "contact-us.html", context)
 
 def privacy(request):
