@@ -1,7 +1,10 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Join us.</title>
+	<title>Join us</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
@@ -14,20 +17,19 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<style type="text/css">
 		.imge {
-		    width: 200px;
+
+		    width: 50%;
 		    border-radius: 100%;
-		    height: 200px;
-		    margin-left: 70px;
-		    margin-bottom: 30px;
+		    margin-left: 23%;
+		    margin-bottom: 8%;
 		}
 
 		.im {
 
-			width: 300px;
-		    height: 290px;
+			width: 55%;
 		    border-radius: 100%;
-		    margin-bottom: 50px;
-		    margin-left: 100px;
+		    margin-bottom: 8%;
+		    margin-left: 20%;
 		}
 
 		.hd {
@@ -35,7 +37,6 @@
 			font-size: 5rem;
 			padding-bottom: 25px;
 			font-family: 'Oswald', sans-serif;
-			padding-top: 80px;
 		}
 
 		.dcn {
@@ -58,13 +59,28 @@
 			font-family: 'Oswald', sans-serif;
 		}
 
-		.name{
+		.none {
 			text-align: center;
+			font-size: 2rem;
 		}
+
+		.butn {
+			font-size:2.3rem;
+			margin-left: 40%;
+		    margin-top: 2%;
+		    width: 20%;
+		    height: 10%;
+		    border-radius: 10px;
+		    margin-bottom: 3%;
+		}
+
+
 	</style>
 
-
 </head>
+
+{% include 'navbar.html' %}
+
 <body>
 <div class="container">
 	<h3 style="text-align: center; font-size: 6rem; padding-bottom: 30px;font-family: 'Oswald', sans-serif;"> Our Story </h3>
@@ -86,27 +102,27 @@
 	<div class="row">
 		<div class="col-sm-6 col-xs-12 col-md-6">
 			<div class="row">
-				<img class="im" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="im" src="{% static 'img/career/shivang.PNG' %}">
 			</div>
 			<div class="row dcn">
-				<p class="name">
-					My name
+				<p class="none">
+					Shivang Kapoor
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Troublemaker: The energy powerhouse in organization. He is the driving force behind all the projects. Knows all the tits and bits of management and handles the human resouces to perfection. He prefixes the fun before work in working environment. Besides creating funny troubles, he loves to travel the world over. 
 				</p>
 			</div>
 		</div>
 		<div class="col-sm-6 col-xs-12 col-md-6">
 			<div class="row">
-				<img class="im" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="im"  src="{% static 'img/career/survir.PNG' %}">
 			</div>
 			<div class="row dcn">
-				<p class="name">
-					My name
+				<p class="none">
+					Survir Yadav
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Mozart: He is a civil genius and beholds passion for making new buildings and esteemed architectures. A visionary who understands ongoing needs of his clients and is always up for the challenge to create the extraordinary. When not working, he can also be found taking care of his family and kids.
 				</p>
 			</div>
 		</div>
@@ -117,126 +133,139 @@
 	<div class="row">
 		<div class="col-sm-4 col-xs-12 ">
 			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="imge" src="{% static 'img/career/pragati.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
+				<p class="none">
+					Pragati Gupta
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Practitioner: She is the inhouse Architect and designs new frameworks for houses. She has a good aura for becoming a master in her field. Besides disigning houses, she could be found socializing with new people, partying late night and travelling all over India.
 				</p>
 			</div>
 		</div>
+		
 		<div class="col-sm-4 col-xs-12 ">
 			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="imge" src="{% static 'img/career/kaushika.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
+				<p class="none">
+					Kaushika Sharma
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Lady Picasso: She is the interior design expert and helps clients build their beautiful home. She is progressive and dynamic in her work. When she is not making amazing designs she can be found reading fiction novels and exploring new designs.
 				</p>
 			</div>
 		</div>
+		
 		<div class="col-sm-4 col-xs-12 ">
 			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="imge" src="{% static 'img/career/nidhi.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
+				<p class="none">
+					Nidhi Malhotra
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					 a.k.a The Ambassador of Buzz: She is  a customer acquisition consultant. Often referred as the bubly lady in the firm. She is professional and a good team worker. Apart from work she can be found spending money in one of the shopping outlets as well as cooking some succulent food. 
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-xs-12 ">
+			<div class="row">
+				<img class="imge" src="{% static 'img/career/ruby.PNG' %}">
+			</div>
+			<div class="row descn">
+				<p class="none">
+					Ruby Verma
+				</p>
+				<p>
+					a.k.a The Leading Buzz: She is also a customer acquisition consultant referred as miss perfectionist and socially active. She cordinates the whole team and hunts down new leads for the company. An avid music lover,loves to dance, she enjoys hanging with her friends. 
 				</p>
 			</div>
 		</div>
 	</div>
 	<div class="row">
+	</div>
+
+	<h2 class="hd" >
+		Interns
+	</h2>
+	<div class="row">
 		<div class="col-sm-4 col-xs-12 ">
 			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="imge" src="{% static 'img/career/rohit.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
+				<p class="none">
+					Rohit Kumar Yadav
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a Crusher: He manages the backend of our website. He is responsible for managing the interchange of data between the server and the users. He is talented and beholds the ability to work as a leader. Outside of work, he is a self-proclaimed CS 1.6 and NFS most wanted player.
 				</p>
 			</div>
 		</div>
+		
 		<div class="col-sm-4 col-xs-12 ">
 			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="imge" src="{% static 'img/career/saroj.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
-				</p>
+				<p class="none">
+					Saroj Kumar
+				</p> 
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Pointless Drifter: The prime hand behind the looks and feel of the website.
+					He is the stubborn mind behind peculiarity of the website design and loves to argue.
+					He flourishes while on work in non-work related topics. He like playing games and he loves to daydream. 
 				</p>
 			</div>
 		</div>
+		
 		<div class="col-sm-4 col-xs-12 ">
-			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+			<div class="row" >
+				<img class="imge" src="{% static 'img/career/shimona.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
+				<p class="none">
+					Shimona Sharma
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Cosmos: She is responsible for all the textual entries on and off this website. As the name implies, her imagination is bounded by periphery of the universe. In her free time she loves to explore the neighbourhood and get inspirations from arbitrary elements.
+				</p>
+				<p>
+					
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="row">
+
+	<div class="row">		
 		<div class="col-sm-4 col-xs-12 ">
 			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
+				<img class="imge" src="{% static 'img/career/somesh.PNG' %}">
 			</div>
 			<div class="row descn">
-				<p class="name">
-					My name
+				<p class="none">
+					Somesh Chaudhary
 				</p>
 				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
-				</p>
-			</div>
-		</div>
-		<div class="col-sm-4 col-xs-12 ">
-			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
-			</div>
-			<div class="row descn">
-				<p class="name">
-					My name
-				</p>
-				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
-				</p>
-			</div>
-		</div>
-		<div class="col-sm-4 col-xs-12 ">
-			<div class="row">
-				<img class="imge" src="http://img.cinemablend.com/cb/1/d/e/f/a/4/1defa40e761cf450df3c8c814bd62fdbeb20df8bea858eab63e12b1b6b4f1fdb.jpg">
-			</div>
-			<div class="row descn">
-				<p class="name">
-					My name
-				</p>
-				<p>
-					I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...I will provide an excel sheet with 3 columns. Column A: product number; Column B: URL; Column C: blank, to be populated by you. The URL will look like this: [url removed, login to vie...
+					a.k.a The Descriptionist: He loves to describe every experience of his life in form of text and photos. In charge of blogging and performing quality checks on different aspects of all the product and services. Besides working, he can be located in his basement playing games like FIFA, GTA V, The Witch 3, Resident Evil 7.
 				</p>
 			</div>
 		</div>
 	</div>
 </div>
+<button class="btn btn-primary butn btn-group-lg">Join Us</button>
+  {% include 'copyright.html' %}
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>

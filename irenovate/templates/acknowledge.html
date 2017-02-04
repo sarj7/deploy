@@ -1,0 +1,46 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+{% include "navbar.html" %}
+
+<head>
+	<title>acknowledgement</title>
+	<style type="text/css">
+		.def {
+			padding-top: 20%;
+		    font-size: 3.2rem;
+		    text-align: center;
+		    color: red;
+		    font-style: italic;
+		    margin-top: -15px;
+		}
+
+		.abc {
+			background-image: url("{% static 'img/ack.JPG' %}");
+			height: 100%;
+		}
+
+		.footer {
+			margin-top: -1%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="abc">
+		<p class="def">
+			Thank you for contacting us! </br>
+			Our team of specialist would get in touch with you shortly.
+		</p>
+	</div>
+
+	 	{% include 'copyright.html' %}
+  		{% include 'javascript.html' %}
+
+</body>
+
+</html>

@@ -36,6 +36,7 @@ from website.views import (
         faq,
         career,
         disclaimer,
+        acknowledge,
     )
 
 urlpatterns = [
@@ -60,6 +61,7 @@ urlpatterns = [
     url(r'^faq$', faq, name='faq'),
     url(r'^career$', career, name='career'),
     url(r'^disclaimer$', disclaimer, name='disclaimer'),
+    url(r'^acknowledge$', acknowledge, name='acknowledge'),
 
     url(r'^admin/', admin.site.urls),
     

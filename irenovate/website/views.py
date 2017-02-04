@@ -34,7 +34,7 @@ def home(request):
 	# 	context = {
 	# 		"queryset": queryset
 	# 	}
-		return redirect("/")
+		return redirect("/acknowledge")
 	return render(request, "home.html", context)
 
 def design(request):
@@ -66,32 +66,10 @@ def contact(request):
 	}
 
 	if form.is_valid():
-	# 	form.save()
-	# 	print request.POST['email'] #not recommended
-	 	instance = form.save(commit=False)
+		instance = form.save(commit=False)
+		instance.save()
 
-	# 	full_name = form.cleaned_data.get("full_name")
-	#	if not full_name:
-	# 		full_name = "New full name"
-	# 	instance.full_name = full_name
-	# 	if not instance.full_name:
-	# 	 	instance.full_name = "Justin"
-	 	instance.save()
-	 	
-	# if request.user.is_authenticated() and request.user.is_staff:
-	# 	print(SignUp.objects.all())
-	# 	i = 1
-	# 	for instance in SignUp.objects.all():
-	# 	 	print(i)
-	# 	 	print(instance.full_name)
-	# 	 	i += 1
-
-	# 	queryset = SignUp.objects.all().order_by('-timestamp') #.filter(full_name__iexact="Justin")
-	# 	print(SignUp.objects.all().order_by('-timestamp').filter(full_name__iexact="Justin").count())
-	# 	context = {
-	# 		"queryset": queryset
-	# 	}
-
+		return redirect("/")
 	return render(request, "contact-us.html", context)
 
 def privacy(request):
@@ -108,3 +86,6 @@ def career(request):
 
 def disclaimer(request):
 	return render (request, "disclaimer.html", {})
+
+def acknowledge(request):
+	return render (request, "acknowledge.html", {})
