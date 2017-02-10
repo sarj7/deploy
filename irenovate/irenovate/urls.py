@@ -43,12 +43,12 @@ urlpatterns = [
 	url(r'^$', home, name='home'),
     url(r'^renovation-consultation$', design, name='design'),
     
-    url(r'^gallery$', gallery, name='gallery'),
-    url(r'^gallery/david$', david, name='david'),
-    url(r'^gallery/malibu$', malibu, name='malibu'),
-    url(r'^gallery/suris$', suris, name='suris'),
-    url(r'^gallery/yadav$', yadav, name='yadav'),
-    url(r'^gallery/retail$', retail, name='retail'),
+    url(r'^our_work$', gallery, name='gallery'),
+    url(r'^our_work/david$', david, name='david'),
+    url(r'^our_work/malibu$', malibu, name='malibu'),
+    url(r'^our_work/suris$', suris, name='suris'),
+    url(r'^our_work/yadav$', yadav, name='yadav'),
+    url(r'^our_work/retail$', retail, name='retail'),
     
     url(r'^contact$', contact, name='contact'),
 
