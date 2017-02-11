@@ -29,7 +29,8 @@ from website.views import (
         malibu,
         suris,
         yadav,
-        retail, 
+        retail,
+        supaflex, 
         contact,
         privacy,
         terms,
@@ -49,6 +50,7 @@ urlpatterns = [
     url(r'^our_work/suris$', suris, name='suris'),
     url(r'^our_work/yadav$', yadav, name='yadav'),
     url(r'^our_work/retail$', retail, name='retail'),
+    url(r'^our_work/supaflex$', supaflex, name='supaflex'),
     
     url(r'^contact$', contact, name='contact'),
 

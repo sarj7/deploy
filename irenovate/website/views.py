@@ -58,6 +58,9 @@ def yadav(request):
 def retail(request):
 	return render(request, "retail.html", {})
 
+def supaflex(request):
+	return render(request, "supaflex.html", {})
+
 
 def contact(request):
 	form = ContactForm(request.POST or None)
