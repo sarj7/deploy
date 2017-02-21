@@ -44,6 +44,7 @@
       font-weight: bold;
       font-stretch: ultra-condensed;
       padding-bottom:20px;
+      text-align: center;
     }
 
     .col-sm-1 {
@@ -51,14 +52,20 @@
     }
 
     #heading {
-      padding-bottom: 20px;
-      padding-top:20px;
+      padding-top: 5%;
       font-family: serif;
+      margin-bottom: 0px;
     }
 
     .row.wtf {
-      padding-top: 40px;
       padding-bottom: 20px;
+      padding-top: 2%;
+    }
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
   
   </style>
@@ -68,10 +75,9 @@
 {% include "navbar.html" %}
 
 <body>
-  <div class="jumbotron">
     <div class="container">
       <div class="row wtf">
-        <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;">
+        <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;padding-bottom: 4.5%;">
           <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: red"> iRenovate?</span></font></p>
           <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
           <p style="text-align:justify"><font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</font></p>
@@ -87,14 +93,13 @@
         </div> -->
       </div>
     </div>
-  </div>
 
   <!-- <div class="container-fluid" style="background-image: url({% static 'img/USP.jpg' %})"> -->
   <div class = "container">
     <h2 id = "heading" style="text-align:center;">Six Reasons To Choose iRenovate </h2>
     <div class ="row wtf">
       
-      <div class = "col-sm-1">
+      <div class = "col-sm-1 icon">
         <img src="{% static 'img/USP/single.png' %}">
       </div>
     
