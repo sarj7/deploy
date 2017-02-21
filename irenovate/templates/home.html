@@ -37,7 +37,7 @@
     }
 
     #topimg {
-      background-image: url("{%static 'img/home-bg.jpg'%}");
+      background-image: url("{%static 'img/bgedit.jpg'%}");
       height: 610px;
     }
 
@@ -57,23 +57,27 @@
       padding-top:45px;
     }
 
+    .para {
+      text-align: center;
+      color: #c2c2a3;
+      font-size: 15px;
+      font-family: 'Lobster', cursive;
+    }
+
   </style>
 </head>
 
 {% include "navbar.html" %}
 
 <body>
-  <div class = "row" style="max-width: 101%;">
-    <div class="jumbotron" id="topimg">
-      <div class="container">
-        <div style="background-color: floralwhite;" class="col-sm-3 col-sm-offset-9 col-xs-7 col-xs-offset-5  col-md-3 col-md-offset-9 " id="contactusnow">
-          <p class='lead text-align-center'>Connect With Us!</p>
-          <form method='POST' action=''>{% csrf_token %}
-            {{ form|crispy }}
-            <input class='btn btn-block btn-danger' type='submit' value='Submit' />
-          </form>
-        </div>
-      </div>
+   <div class = "row" style="max-width: 101%;max-height: 140%;">
+      <div class="container" id="topimg">
+      <a target="_blank" href="https://youtu.be/Cvr_qPqx_tg" style="text-decoration: none;">
+        <i class="fa fa-play-circle fa-5x" aria-hidden="true" style="color:#c2c2a3;display: flex; justify-content: center;margin-top: 41%;"></i>
+        <p class="para">
+          click to know more!          
+        </p>
+      </a>
     </div>
   </div>
 
