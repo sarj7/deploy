@@ -1,0 +1,135 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+	  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	  
+	  <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  <style type="text/css">
+	  	.name{
+	  		text-align: center;
+	  		font-family: 'Sansita', sans-serif;
+	  	}
+
+	  	.pag {
+	  		text-align: center;
+	  		padding-left: 5%;
+		    padding-right: 5%;
+		    font-size: 1.14em;
+		    line-height: 1.6em;
+		    padding-top: 15%;
+		    padding-bottom: 8%;
+		    font-family: 'Sansita', sans-serif;
+	  	}
+
+	  	.nad {
+	  		text-align: center;
+	  		font-family: 'Sansita', sans-serif;
+	  		padding-bottom: 5%;
+	  	}
+
+	  	/*sell out: to be sold completely. the last concert of coldplay was a complete sell out.*/
+
+	  	.col-lg-4 {
+	  		
+	  		/*dog tired : very tired, exhausted; i came back home dog tired so i collapsed into the bed upon gauging one;*/
+	  		-webkit-box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
+			-moz-box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
+			box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
+			border-radius: 12px;
+			border: 1px solid #edeaea;
+		    width: 30% !important;
+		    margin-right: 2%;
+		}
+
+	  	.im1 {
+	  		width: 80%;
+		    padding-left: 25%;
+		    padding-top: 9%;
+		    border-radius: 100%;
+	  	}
+
+	  	.unn5 {
+	  		margin-top: 1%;
+	  		margin-bottom: 5%;
+	  	}
+
+	  	.unn {
+	  		margin-left: 2%;
+	  	}
+
+	  	.unn1 {
+	  		padding-left: 3%;
+	  	}
+
+	  	.unn2 {
+	  		text-align: center;
+	  		font-size: 3.0em;
+	  		font-family: 'Sansita', sans-serif;
+	  		padding-bottom: 1%;	  		
+	  	}
+	  </style>
+</head>
+<body>
+	<div class="container unn5">
+		<p class="unn2">
+			PEOPLE LOVE RENOVATING WITH US
+		</p>
+		<div class="row unn1">
+			<div class="col-sm-4 col-xs-12 col-md-6 col-lg-4 unn">
+				<img class="im1" src="{% static 'img/testimonial/client1.jpg' %}">
+				<p class="pag">
+					A massive thank you to iRenovate for a stress free renovation. I didn't think such a thing existed!! They were quick, had a good eye for detail and immediately had a feel for what we were looking for.
+				</p>
+				<p class="name">
+					Captain Suri
+				</p>
+				<p class="nad">
+					Indian Army
+				</p>
+			</div>
+			<div class="col-sm-4 col-xs-12 col-md-6 col-lg-4">
+				<img class="im1" src="{% static 'img/testimonial/client2.jpg' %}">
+				<p class="pag">
+					I was thrilled to find iRenovate, posted my project, and selected a contractor from a list of really excellent matches.
+					This was definetely a dream on a budget-our iRenovate expert really made that happen!
+				</p>
+				<p class="name">
+					Rajesh Soni
+				</p>
+				<p class="nad">
+					*******
+				</p>
+			</div>
+			<div class="col-sm-4 col-xs-12 col-md-6 col-lg-4">
+				<img class="im1" src="{% static 'img/testimonial/client3.jpg' %}">
+				<p class="pag">
+					A massive thank you to iRenovate for a stress free renovation. I didn't think such a thing existed!! They were quick, had a good eye for detail and immediately had a feel for what we were looking for.
+				</p>
+				<p class="name">
+					Mr. Sindhu
+				</p>
+				<p class="nad">
+					Government Employee
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="container">
+    	<hr style="color: black;width: 102%;border: .3px solid #eaecef;">
+  	</div> -->
+
+</body>
+</html>

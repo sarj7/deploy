@@ -1,0 +1,103 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<style type="text/css">
+    .navbar {
+  min-height: 95px;
+}
+.navbar-nav > li > a {
+  line-height: 65px;
+}
+.navbar-toggle {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+}
+.main {
+  margin: 0 auto -60px;
+}
+.main .img-responsive {
+  margin-bottom: 0px;
+}
+footer, .footer-push {
+  height: 65px;
+  background-color: #f5f5f5;
+}
+.social-icons {
+  margin-right: 15px;
+  font-size: 40px;
+  line-height: 75px;
+}
+.grid-custom .col-sm-6,
+.grid-custom .col-xs-6,
+.grid-custom .col-xs-12,
+.grid-custom .col-sm-3 {
+    padding:5px;
+      }
+.img-responsive¨
+  }
+.first-block{
+  border-bottom: 5px #000 solid;
+}
+
+#pgra {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Sansita', sans-serif;
+  padding-top:1%;
+}
+#pgra1 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Sansita', sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+<!-- content -->
+<div class="container" style="margin-bottom: 30px;">
+  <p id="pgra">
+    Le Thèmes
+  </p>
+  <p id="pgra1">
+    EXQUISITE PRE-DESIGNED THEMES
+  </p>
+  <section class="main">
+    <div class="container grid-custom" style="margin-bottom: 30px;">
+      <div class="row">
+        <div class="col-sm-3 col-xs-6 first-block"><img src="{% static 'img/homethemes/C12.jpg' %}" alt="" class="img-responsive"></div>
+        <div class="col-sm-3 col-xs-6 first-block"><img src="{% static 'img/homethemes/C1 option1.jpg' %}" alt="" class="img-responsive"></div>
+          <div class="col-sm-3 col-xs-6"><img src="{% static 'img/homethemes/A33.jpg' %}" alt="" class="img-responsive"></div>
+          <div class="col-sm-3 col-xs-6"><img src="{% static 'img/homethemes/A11.jpg' %}" alt="" class="img-responsive"></div>
+          <div class="col-sm-6 col-xs-12"><img src="{% static 'img/homethemes/B12.jpg' %}" alt="" class="img-responsive"></div>
+        </div>
+      </div>
+  </section>
+  </div>
+  <div class="container">
+  <section class="main">
+    <div class="container grid-custom" style="margin-bottom: 70px;">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12"><img src="{% static 'img/homethemes/B2.jpg' %}" alt="" class="img-responsive"></div>
+        <div class="col-sm-3 col-xs-6 first-block"><img src="{% static 'img/homethemes/C1 option4.jpg' %}" alt="" class="img-responsive"></div>
+          <div class="col-sm-3 col-xs-6"><img src="{% static 'img/homethemes/D1.jpg' %}" alt="" class="img-responsive"></div>
+          <div class="col-sm-3 col-xs-6"><img src="{% static 'img/homethemes/E.jpg' %}" alt="" class="img-responsive"></div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
