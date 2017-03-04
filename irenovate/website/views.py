@@ -5,6 +5,9 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm   
 
 def home(request):
+	return render(request, "home.html", {})
+
+def renovation_consultation(request):
 	form = ContactForm(request.POST or None)
 	context = {
 		"form": form,
@@ -13,32 +16,10 @@ def home(request):
 	if form.is_valid():
 		instance = form.save(commit=False)
 
-	# 	full_name = form.cleaned_data.get("full_name")
-	#	if not full_name:
-	# 		full_name = "New full name"
-	# 	instance.full_name = full_name
-	# 	if not instance.full_name:
-	# 	 	instance.full_name = "Justin"
 		instance.save()
 	 	
-	# if request.user.is_authenticated() and request.user.is_staff:
-	# 	print(SignUp.objects.all())
-	# 	i = 1
-	# 	for instance in SignUp.objects.all():
-	# 	 	print(i)
-	# 	 	print(instance.full_name)
-	# 	 	i += 1
-
-	# 	queryset = SignUp.objects.all().order_by('-timestamp') #.filter(full_name__iexact="Justin")
-	# 	print(SignUp.objects.all().order_by('-timestamp').filter(full_name__iexact="Justin").count())
-	# 	context = {
-	# 		"queryset": queryset
-	# 	}
 		return redirect("/acknowledge")
-	return render(request, "home.html", context)
-
-def design(request):
-	return render (request, "renovation-consultation.html", {})
+	return render (request, "renovation-consultation.html", context)
 
 def gallery(request):
 	return render(request, "gallery.html", {})
@@ -61,6 +42,8 @@ def retail(request):
 def supaflex(request):
 	return render(request, "supaflex.html", {})
 
+def themes(request):
+	return render(request, "themes.html", {})
 
 def contact(request):
 	form = ContactForm(request.POST or None)
@@ -69,10 +52,12 @@ def contact(request):
 	}
 
 	if form.is_valid():
-		instance = form.save(commit=False)
-		instance.save()
+	 	instance = form.save(commit=False)
 
-		return redirect("/acknowledge")
+	 	instance.save()
+
+	 	return redirect("/acknowledge")
+
 	return render(request, "contact-us.html", context)
 
 def privacy(request):
@@ -91,4 +76,4 @@ def disclaimer(request):
 	return render (request, "disclaimer.html", {})
 
 def acknowledge(request):
-	return render (request, "acknowledge.html", {})
+	return render(request, "acknowledge.html", {})
