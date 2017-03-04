@@ -7,9 +7,9 @@ class ContactForm(forms.ModelForm):
 	class Meta:
 		model = Contact
 		widgets = {
-          'details': forms.Textarea(attrs={'rows':2})
+          'Your_Renovation_Plan': forms.Textarea(attrs={'rows':2})
         }
-		fields = ['full_name', 'email', 'phone_no', 'details']
+		fields = ['Full_Name', 'email', 'Phone_No', 'City', 'Your_Renovation_Plan']
 
 	def clean_email(self):
 		email = self.cleaned_data.get('email')
@@ -21,20 +21,20 @@ class ContactForm(forms.ModelForm):
 		# 	raise forms.ValidationError("Please add @ in your email")
 		return email
 
-	def clean_full_name(self):
-		full_name = self.cleaned_data.get('full_name')
-		return full_name
+	def clean_Full_Name(self):
+		Full_Name = self.cleaned_data.get('Full_Name')
+		return Full_Name
 
-	def clean_phone_no(self):
-		phone_no = self.cleaned_data.get('phone_no') 
+	def clean_Phone_No(self):
+		Phone_No = self.cleaned_data.get('Phone_No') 
 		
-		if (len(phone_no) < 10 and not phone_no.isdigit()):
+		if (len(Phone_No) < 10 and not Phone_No.isdigit()):
 			raise forms.ValidationError("Please enter a valid phone number")
 		
-		if (len(phone_no) < 10):
+		if (len(Phone_No) < 10):
 			raise forms.ValidationError("Please enter a 10 digits number")	  
 		
-		if not phone_no.isdigit(): 
+		if not Phone_No.isdigit(): 
 			raise forms.ValidationError("Please enter a valid phone number")
 		
-		return phone_no
+		return Phone_No
