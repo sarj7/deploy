@@ -24,14 +24,15 @@ from accounts.views import (login_view, register_view, logout_view)
 from website.views import (
         home, 
         renovation_consultation, 
-        gallery,
+        ourwork,
         david,
         malibu,
         suris,
         yadav,
         retail,
         supaflex,
-        themes, 
+        themes,
+        wardrobe, 
         contact,
         privacy,
         terms,
@@ -42,9 +43,10 @@ from website.views import (
     )
 
 urlpatterns = [
-	url(r'^$', home, name='home'),
+    url(r'^$', home, name='home'),
     url(r'^renovation-consultation$', renovation_consultation, name='renovation_consultation'),
-    url(r'^our_work$', gallery, name='gallery'),
+    
+    url(r'^our_work$', ourwork, name='ourwork'),
     url(r'^our_work/david$', david, name='david'),
     url(r'^our_work/malibu$', malibu, name='malibu'),
     url(r'^our_work/suris$', suris, name='suris'),
@@ -53,6 +55,8 @@ urlpatterns = [
     url(r'^our_work/supaflex$', supaflex, name='supaflex'),
 
     url(r'^themes$', themes, name='themes'),
+
+    url(r'^wardrobe$', wardrobe, name='wardrobe'),
     
     url(r'^contact$', contact, name='contact'),
 
@@ -66,6 +70,7 @@ urlpatterns = [
     url(r'^career$', career, name='career'),
     url(r'^disclaimer$', disclaimer, name='disclaimer'),
     url(r'^acknowledge$', acknowledge, name='acknowledge'),
+
 
     url(r'^admin/', admin.site.urls),
     

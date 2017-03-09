@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm   
 
 def home(request):
-	return render(request, "home.html", {})
+	return render(request, "Home/home.html", {})
 
 def renovation_consultation(request):
 	form = ContactForm(request.POST or None)
@@ -21,29 +21,32 @@ def renovation_consultation(request):
 		return redirect("/acknowledge")
 	return render (request, "renovation-consultation.html", context)
 
-def gallery(request):
-	return render(request, "gallery.html", {})
+def ourwork(request):
+	return render(request, "OurWork/ourwork.html", {})
 
 def david(request):
-	return render(request, "david.html", {})
+	return render(request, "OurWork/david.html", {})
 
 def malibu(request):
-	return render(request, "malibu.html", {})
+	return render(request, "OurWork/malibu.html", {})
 
 def suris(request):
-	return render(request, "suris.html", {})
+	return render(request, "OurWork/suris.html", {})
 
 def yadav(request):
-	return render(request, "yadav.html", {})
+	return render(request, "OurWork/yadav.html", {})
 
 def retail(request):
-	return render(request, "retail.html", {})
+	return render(request, "OurWork/retail.html", {})
 
 def supaflex(request):
-	return render(request, "supaflex.html", {})
+	return render(request, "OurWork/supaflex.html", {})
 
 def themes(request):
-	return render(request, "themes.html", {})
+	return render(request, "Themes/themes.html", {})
+
+def wardrobe(request):
+	return render(request, "Themes/Wardrobe.html", {})
 
 def contact(request):
 	form = ContactForm(request.POST or None)
@@ -58,22 +61,22 @@ def contact(request):
 
 	 	return redirect("/acknowledge")
 
-	return render(request, "contact-us.html", context)
+	return render(request, "Contact/contact-us.html", context)
 
 def privacy(request):
-	return render (request, "privacy.html", {})
+	return render (request, "Footer/privacy.html", {})
 
 def terms(request):
-	return render (request, "terms.html", {})
+	return render (request, "Footer/terms.html", {})
 
 def faq(request):
-	return render (request, "faq.html", {})
+	return render (request, "Footer/faq.html", {})
 
 def career(request):
-	return render (request, "career.html", {})
+	return render (request, "Footer/career.html", {})
 
 def disclaimer(request):
-	return render (request, "disclaimer.html", {})
+	return render (request, "Footer/disclaimer.html", {})
 
 def acknowledge(request):
 	return render(request, "acknowledge.html", {})

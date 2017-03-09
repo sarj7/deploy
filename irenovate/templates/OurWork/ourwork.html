@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 <head>
-  <title>Our Work</title>
+  <title>Gallery</title>
   <meta charset="utf-8"/>
   <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
   
@@ -50,25 +50,24 @@
 
     #sectionbanner {
       background-image: url("{% static 'img/gallerybanner.png' %}");
-      /*background-size: cover;
-      padding-top: 50%;
-      padding-bottom: 20%;*/
+      background-size: 100% 100%;
       min-height: 220px;
     }
 
     #banner{
-      margin-left: 370px;
-      margin-top: 115;
-      padding-left: 65;
-      padding-right: 65px;
-      padding-top: 11;
-      padding-bottom: 11;
-      border-radius: 9px; 
+
+      margin-left: 34%;
+      margin-top: 10%;
+      padding-left: 7%;
+      padding-right: 7.5%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      border-radius: 9px;
       font-family: georgia;
       font-style: italic;
-      line-height: 20px;
-      height: 45px;
-      font-size: 2.1em;
+      line-height: 60%;
+      height: 7%;
+      font-size: 2.0em;
     }   
 
     
@@ -100,12 +99,12 @@
     
       <figure class="col-sm-6" style="padding-left:65px;">
         <h3 class="h-3">DAVID'S HOUSE</h3>
-          <a href="{% url 'david' %}"><img class="imge" src="{% static 'img/our_work/David/david5.jpeg' %}" width="550" height="350" alt="polaroid"/></a>
+          <a href="{% url 'david' %}"><img alt="david5" class="imge" src="{% static 'img/our_work/David/david5.jpeg' %}" width="550" height="350" alt="polaroid"/></a>
       </figure>
   
       <figure class="col-sm-6" style="padding-left:65px;">
         <h3 class="h-3">MALIBU TOWN PROJECT</h3>
-        <a href="{% url 'malibu' %}"><img class="imge" src="{% static 'img/our_work/Malibu/malibu1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
+        <a href="{% url 'malibu' %}"><img alt="malibu1" class="imge" src="{% static 'img/our_work/Malibu/malibu1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
       </figure>
   
     </div>    
@@ -115,12 +114,12 @@
     
       <figure class="col-sm-6" style="padding-left:65px;">
         <h3 class="h-3">MR. YADAV’S DRAWING ROOM</h3>
-        <a href="{% url 'yadav' %}"><img class="imge" src="{% static 'img/our_work/Yadav/yadav1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
+        <a href="{% url 'yadav' %}"><img alt="yadav1" class="imge" src="{% static 'img/our_work/Yadav/yadav1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
       </figure>
 
       <figure class="col-sm-6" style="padding-left:65px;">
         <h3 class="h-3">THE SURIS</h3>
-        <a href="{% url 'suris' %}"><img class="imge" src="{% static 'img/our_work/Suris/suris7.jpeg' %}" width="  550" height="350" alt="polaroid"/></a>
+        <a href="{% url 'suris' %}"><img alt="suris7" class="imge" src="{% static 'img/our_work/Suris/suris7.jpeg' %}" width="  550" height="350" alt="polaroid"/></a>
       </figure>
   
     </div>
@@ -130,19 +129,20 @@
 
       <figure class="col-sm-6" style="padding-left:65px;">
         <h3 class="h-3">LEADING ECOMMERCE RETAIL COMPANY</h3>
-        <a href="{% url 'retail' %}"><img class="imge" src="{% static 'img/our_work/snapdeal/snapdeal1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
+        <a href="{% url 'retail' %}"><img alt="snapdeal1" class="imge" src="{% static 'img/our_work/snapdeal/snapdeal1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
       </figure>
 
       <figure class="col-sm-6" style="padding-left:65px;">
         <h3 class="h-3">SUPA FLEX PVT. LTD.</h3>
-        <a href="{% url 'supaflex' %}"><img class="imge" src="{% static 'img/our_work/SupaFlex/supa4.jpg' %}" width="  550" height="350" alt="polaroid"/></a>
+        <a href="{% url 'supaflex' %}"><img alt="supa4" class="imge" src="{% static 'img/our_work/SupaFlex/supa4.jpg' %}" width="  550" height="350" alt="polaroid"/></a>
       </figure>
+  
 
     </div>
 
   </section>
   
-  {% include 'copyright.html' %}
+  {% include 'Footer/copyright.html' %}
   
   {% include 'javascript.html' %}
 
