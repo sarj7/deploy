@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 <head>
-	<title>Register</title>
+  <title>Register</title>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <meta charset="utf-8"/>
   <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
@@ -32,32 +32,32 @@
     }
     
     #amazing{
-			margin-top: 0px;
-		}
+      margin-top: 0px;
+    }
 
-		#button-register {
-			margin-left: 20px;
-			width: 100px;
-			height: 35;
-			border-radius: 7px;
-			margin-top: 20px;
-		}
+    #button-register {
+      margin-left: 20px;
+      width: 100px;
+      height: 35;
+      border-radius: 7px;
+      margin-top: 20px;
+    }
 
-		#not-a-member {
-			padding-left: 40px;
-		}
+    #not-a-member {
+      padding-left: 40px;
+    }
 
-		#one {
-			text-align:center;
-			margin-top: 50px;
-		}
+    #one {
+      text-align:center;
+      margin-top: 50px;
+    }
 
-		#two {
-			align:center;
-			margin-top:30px;
-		}
-	
-	</style>
+    #two {
+      align:center;
+      margin-top:30px;
+    }
+  
+  </style>
     
 </head>
 
@@ -65,23 +65,23 @@
 
 <body>
   <div class="container">
-  	<div id="amazing" class='col-sm-4 col-sm-offset-4'>
-  		<h1 id="one" >{{ title }}</h1>
-  		<hr/>
+    <div id="amazing" class='col-sm-4 col-sm-offset-4'>
+      <h1 id="one" >{{ title }}</h1>
+      <hr/>
 
-  		<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
-    			{{ form|crispy }}
-    			<input id="two" type='submit' class='btn btn-default' value='{{ title }}' />
-  		</form>
-  		<hr>
-  		
-  		<h5 id="not-a-member">  
+      <form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+          {{ form|crispy }}
+          <input id="two" type='submit' class='btn btn-default' value='{{ title }}' />
+      </form>
+      <hr>
+      
+      <h5 id="not-a-member">  
         Already a Member! 
         <a href="{% url 'login' %}"><button id="button-register" type="button">
           LOGIN
         </button></a>
       </h5>
-  	</div>
+    </div>
   </div>
 
   {% include 'Footer/copyright.html' %}  

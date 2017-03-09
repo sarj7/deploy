@@ -5,8 +5,8 @@
   <title>LogIn</title>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <meta charset="utf-8"/>
-	<meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
-	
+  <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
+  
   <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -31,33 +31,33 @@
       zoom: 1.0;
     }
 
-		#amazing{
-			margin-top: 30px;
-		}
+    #amazing{
+      margin-top: 30px;
+    }
 
-		#button-register {
-			margin-left: 30px;
-			width: 100px;
-			height: 35;
-			border-radius: 7px;
-			margin-top: 20px;
-		}
+    #button-register {
+      margin-left: 30px;
+      width: 100px;
+      height: 35;
+      border-radius: 7px;
+      margin-top: 20px;
+    }
 
-		#not-a-member {
-			padding-left: 70px;
-		}
+    #not-a-member {
+      padding-left: 70px;
+    }
 
-		#one {
-			text-align:center;
-			margin-top: 70px;
-		}
+    #one {
+      text-align:center;
+      margin-top: 70px;
+    }
 
-		#two {
-			align:center;
-			margin-top:30px;
-		}
-	
-	</style>
+    #two {
+      align:center;
+      margin-top:30px;
+    }
+  
+  </style>
     
 </head>
 
@@ -65,22 +65,22 @@
 
 <body>
   <div class="container">
-		<div id="amazing" class='col-sm-4 col-sm-offset-4'>
-  		<h1 id="one" >{{ title }}</h1>
-  		<hr/>
+    <div id="amazing" class='col-sm-4 col-sm-offset-4'>
+      <h1 id="one" >{{ title }}</h1>
+      <hr/>
 
-  		<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
-    			{{ form|crispy }}
-    			<input id="two" type='submit' class='btn btn-default' value='{{ title }}' />
-  		</form>
-  		<hr>
-  		
-  		<h5 id="not-a-member">  
-    			Not a Member! 
-    			<a href="{% url 'register' %}"><button id="button-register" type="button">
-      		REGISTER</button></a>
-  		</h5>
-		</div>
+      <form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+          {{ form|crispy }}
+          <input id="two" type='submit' class='btn btn-default' value='{{ title }}' />
+      </form>
+      <hr>
+      
+      <h5 id="not-a-member">  
+          Not a Member! 
+          <a href="{% url 'register' %}"><button id="button-register" type="button">
+          REGISTER</button></a>
+      </h5>
+    </div>
   </div>
 
   {% include 'Footer/copyright.html' %}
