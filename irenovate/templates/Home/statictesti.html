@@ -1,9 +1,12 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -26,76 +29,100 @@
 
 	<style type="text/css">
 		@viewport {
-      		zoom:1.0;
-      		width: extend-to-zoom;
-    	}
+      zoom:1.0;
+      width: extend-to-zoom;
+    }
 
-    	@-ms-viewport {
-      		width: extend-to-zoom;
-      		zoom: 1.0;
-    	}
+    @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
 	  	
-	  	.name{
-	  		text-align: center;
-	  		font-family: 'Sansita', sans-serif;
-	  	}
+	  .name{
+	  	text-align: center;
+	  	font-family: 'Open Sans', sans-serif;
+	  }
 
-	  	.pag {
-	  		text-align: justify;
-	  		padding-left: 5%;
-		    padding-right: 5%;
-		    font-size: 1.14em;
-		    line-height: 1.6em;
-		    padding-top: 15%;
-		    padding-bottom: 8%;
-		    font-family: 'Sansita', sans-serif;
-	  	}
+	  .pag {
+			text-align: justify;
+			padding-left: 5%;
+			padding-right: 5%;
+			font-size: 1.14em;
+			line-height: 1.6em;
+			padding-top: 15%;
+			padding-bottom: 8%;
+			font-family: 'Open Sans', sans-serif;
+			color: black;
+	  }
 
-	  	.nad {
-	  		text-align: center;
-	  		font-family: 'Sansita', sans-serif;
-	  		padding-bottom: 5%;
-	  	}
+	  .nad {
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+			padding-bottom: 5%;
+	  }
 
-	  	/*sell out: to be sold completely. the last concert of coldplay was a complete sell out.*/
-
-	  	.col-lg-4 {
-	  		
-	  		/*border: 1px solid #dee2e8;*/
-			-webkit-box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
-			-moz-box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
-			box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
-			border-radius: 12px;
+	  /*sell out: to be sold completely. the last concert of coldplay was a complete sell out.*/
+		.col-lg-4 {
 			float: none;
 			text-align: center;
+			border: 1px beige solid;
+			border-radius: 7px;
 		}
 
-	  	.im1 {
-	  		width: 80%;
-		    padding-left: 25%;
-		    padding-top: 9%;
-		    border-radius: 100%;
-		    margin-left: -25%;
-	  	}
+		.col-lg-4:hover {
+			-moz-box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
+			box-shadow: 9px 15px 41px -15px rgba(0,0,0,0.76);
+			-webkit-transition: all 0.2s linear;
+		}
 
-	  	.unn5 {
-	  		margin-top: 1%;
-	  		margin-bottom: 5%;
-	  	}
+	  .im1 {
+	  	padding-top: 20px;
+	  }
+		
+		/*.im1 {
+  		width: 80%;
+	    padding-left: 25%;
+	    padding-top: 9%;
+	    border-radius: 100%;
+	    margin-left: -25%;
+  	}*/
 
-	  	.unn1 {
-	  		padding-left: 3%;
-	  	}
+  	.unn5 {
+  		margin-top: 1%;
+  		margin-bottom: 5%;
+  	}
 
-	  	.unn2 {
-	  		text-align: center;
-	  		font-size: 3.0em;
-	  		font-family: 'Sansita', sans-serif;
-	  		padding-bottom: 1%;	  		
-	  	}
+  	.unn1 {
+  		padding-left: 3%;
+  		text-decoration: none;
+  		color:black;
+  	}
+
+  	.unn2 {
+  		text-align: center;
+  		font-size: 2.2em;
+  		font-family: 'Open Sans', sans-serif;
+  		padding-bottom: 1%;
+  		margin-top: -1%;	  		
+  	}
+
+  	.unn3 .tnn {
+  		display: flex;
+  		justify-content: center;
+  		font-size: 1.2em;
+  		font-family: 'Open Sans', sans-serif;
+  		padding-bottom: 1%;	  
+  		margin-top: -1%;
+  		color:black;
+  		text-decoration: none;	
+  		margin-top: -0.5%;
+  	}
+
+  	.tnn:hover {
+  		color: rgb(247,72,97);
+  	}
 	
 	</style>
-
 </head>
 
 <body>
@@ -103,12 +130,19 @@
 		<p class="unn2">
 			People Love Renovating With Us
 		</p>
+		
+		<p class="unn3">
+			<a href="{% url 'ourwork' %}" class="tnn">CLICK TO SEE OUR WORK
+			<span class="glyphicon glyphicon-chevron-right"></span></a>
+		</p>
+
 		<div class="row unn1">
 			<div class="col-sm-4 col-xs-12 col-md-6 col-lg-4 unn">
-				<img class="im1" alt="client1" src="{% static 'img/testimonial/client1.jpg' %}">
-				<p class="pag">
+			<a href="{% url 'suris' %}" style="text-decoration: none;color:black;">
+				<img class="im1" alt="client1" src="{% static 'img/testimonial/suri.jpg' %}">
+				<p class="pag" >
 					I was thrilled to find iRenovate, posted my project, and selected a contractor from a list of really excellent matches.
-					This was definetely a dream on a budget-our iRenovate expert really made that happen!
+					This was definetely a dream on a budget-our iRenovate expert made that happen!
 				</p>
 				<p class="name">
 					Captain Suri
@@ -116,9 +150,12 @@
 				<p class="nad">
 					Emirates Airlines
 				</p>
+			</a>
 			</div>
+			
 			<div class="col-sm-4 col-xs-12 col-md-6 col-lg-4">
-				<img class="im1" alt="client2" src="{% static 'img/testimonial/client2.jpg' %}">
+			<a href="{% url 'supaflex' %}" style="text-decoration: none;color:black;">
+				<img class="im1" alt="client2" src="{% static 'img/testimonial/supaflex.jpg' %}">
 				<p class="pag">
 					A massive thank you to iRenovate for a stress free renovation. I didn't think such a thing existed!! They were quick, had a good eye for detail and immediately had a feel for what we were looking for.
 				</p>
@@ -128,9 +165,12 @@
 				<p class="nad">
 					SupaFlex
 				</p>
+			</a>
 			</div>
+
 			<div class="col-sm-4 col-xs-12 col-md-6 col-lg-4">
-				<img class="im1" class="client3" src="{% static 'img/testimonial/client3.jpg' %}">
+			<a href="{% url 'yadav' %}" style="text-decoration: none;color:black;">
+				<img class="im1" class="client3" src="{% static 'img/testimonial/sindhu.jpg' %}">
 				<p class="pag">
 					iRenovate provided me with a team of professionals who understood modern designs and helped conceptualise my ideas into my dream home. I was really happy with the overall experience.
 				</p>
@@ -140,6 +180,7 @@
 				<p class="nad">
 					Businessman
 				</p>
+			</a>
 			</div>
 		</div>
 	</div>

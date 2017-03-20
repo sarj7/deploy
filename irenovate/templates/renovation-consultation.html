@@ -5,7 +5,7 @@
   <title>Renovation Consultation</title>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <meta charset="utf-8"/>
-  <meta name="description" content=" iRenovate is a free, easy way to find the best general contractor for your renovation. Tell us about your project, and we'll help you every step of the way."/>
+  <meta name="description" content=" iRenovate is a free, easy way to find the best team for your renovation. Tell us about your project, and we'll help you every step of the way."/>
   
   <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
@@ -36,7 +36,7 @@
       font-style: italic;
       color: black;
       width: 100%;
-      font-family: 'Roboto Condensed', sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .head {
@@ -53,8 +53,11 @@
 
     #heading {
       padding-top: 5%;
-      font-family: serif;
+      font-family: 'Open Sans', sans-serif;
       margin-bottom: 0px;
+      font-size: 2.2em;
+      margin-top: 1%;
+      margin-bottom: 2.5%;
     }
 
     .row.wtf {
@@ -86,6 +89,23 @@
     @media only screen and (max-width: 500px) {
       
     }
+
+    .hassle {
+      margin-top: -2%;
+      text-align: center;
+      font-size: 2.2em;
+      font-family: 'Open Sans', sans-serif;
+      padding-bottom: 1%;       
+    }
+
+    .hassle1 {
+      margin-top: -1%;
+      margin-bottom: 0%;
+      text-align: center;
+      font-size: 1.5em;
+      font-family: 'Open Sans', sans-serif;
+      padding-bottom: 1%;       
+    }
   
   </style>
 
@@ -94,92 +114,111 @@
 {% include "navbar.html" %}
 
 <body>
+  <div class="container frm">
+    <div style="background-color: floralwhite;" class="col-sm-3 col-sm-offset-8 col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
+      <p class='lead text-align-center'>Talk to our expert!</p>
+      <form method='POST' action="">{% csrf_token %}
+        {{ form|crispy }}
+        <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+      </form>
+    </div>
+  </div>
 
-      <div class="container frm">
-        <div style="background-color: floralwhite;" class="col-sm-3 col-sm-offset-8 col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
-              <p class='lead text-align-center'>Talk to our expert!</p>
-              <form method='POST' action="">{% csrf_token %}
-                {{ form|crispy }}
-                <input class='btn btn-block btn-danger' type='submit' value='Submit' />
-              </form>
-        </div>
+  <div class="container">
+    <hr style="color: black;width: 102%;border: .3px solid #eaecef; margin-bottom: 3%; margin-top: -8%">
+  </div>
+
+  <div class="container">
+    <div class="row wtf" style="margin-top: -3%;">
+      <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;padding-bottom: 4.5%;">
+        <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: red"> iRenovate?</span></font></p>
+        <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
+        <p style="text-align:justify"><font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</font></p>
       </div>
-
-
-    <div class="container">
-      <div class="row wtf">
-        <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;padding-bottom: 4.5%;">
-          <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: red"> iRenovate?</span></font></p>
-          <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
-          <p style="text-align:justify"><font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</font></p>
-        </div>
-        <!-- <div class="col-sm-6">
-          <iframe style="height: 350px;" class=" col-sm-6 col-xs-12 col-lg-6 embed-responsive-item" src="src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0"></iframe>
-        </div> -->
-        <!-- <div style="padding-left: 0px;" class="col-sm-6 col-md-6 col-xs-4"> -->
-          <iframe class="col-sm-6 col-xs-12" width="460" height="400" src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
+      
+      <!-- <div class="col-sm-6">
+        <iframe style="height: 350px;" class=" col-sm-6 col-xs-12 col-lg-6 embed-responsive-item" src="src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0"></iframe>
+      </div> -->
+      <!-- <div style="padding-left: 0px;" class="col-sm-6 col-md-6 col-xs-4"> -->
+        <iframe class="col-sm-6 col-xs-12" width="460" height="400" src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
         <!-- </div> -->
         <!-- <div class='col-sm-6 col-xs-6 col-md-6 embed-responsive embed-responsive-16by9' >
           <iframe src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
         </div> -->
-      </div>
     </div>
+  </div>
 
   <!-- <div class="container-fluid" style="background-image: url({% static 'img/USP.jpg' %})"> -->
-<div class="container">
-  <section>
-    <img style="width: 99%;" src="{% static 'img/hassle.jpg' %}">
-  </section>
-</div>
+
+  <div class="container">
+    <hr style="color: black;width: 102%;border: .3px solid #eaecef; margin-bottom: 5%">
+  </div>
+
+  <p class="hassle">
+      Need to get your home fixed?
+  </p>
+  <p class="hassle1">
+      Let iRenovate make it hassle free!
+  </p>
+
+  <div class="container">
+    <section>
+      <img style="width: 99%;" src="{% static 'img/hasslefree.png' %}">
+    </section>
+  </div>
+
+  <div class="container">
+    <hr style="color: black;width: 102%;border: .3px solid #eaecef; margin-bottom: -5%">
+  </div>
 
   <div class = "container">
     <h2 id = "heading" style="text-align:center;">Six Reasons To Choose iRenovate </h2>
-    <div class ="row wtf">
+      <div class ="row wtf">
       
-      <div class = "col-sm-1 icon">
-        <img src="{% static 'img/USP/single.png' %}">
-      </div>
+        <div class = "col-sm-1 icon">
+          <img alt="single" src="{% static 'img/USP/single.png' %}">
+        </div>
     
-      <div class = "col-sm-3">
-        <h3 class = "head">
-          SINGLE PERSON CONTACT
-        </h3>
-        <p class = "para">
-        Renovating your home is a challenging job. With iRenovate, you leave all the hard-work and management to us. From scratch to end, we handle all the major and minor work that comes along with the renovation process. We assure you best quality renovation completed on time and within your budget.
-        </p>
-      </div>
+        <div class = "col-sm-3">
+          <h3 class = "head">
+            SINGLE PERSON CONTACT
+          </h3>
+          <p class = "para">
+            Renovating your home is a challenging job. With iRenovate, you leave all the hard-work and management to us. From scratch to end, we handle all the major and minor work that comes along with the renovation process. We assure you best quality renovation completed on time and within your budget.
+          </p>
+        </div>
     
-      <div class = "col-sm-1 icon">
-        <img src="{% static 'img/USP/price.png' %}">
-      </div>
+        <div class = "col-sm-1 icon">
+          <img alt="price" src="{% static 'img/USP/price.png' %}">
+        </div>
     
-      <div class = "col-sm-3">
-        <h3 class = "head">
-          BEST PRICE
-        </h3>
-        <p class = "para">
-        We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.
-        </p>
-      </div>
+        <div class = "col-sm-3">
+          <h3 class = "head">
+            TRANSPARENT PRICE
+          </h3>
+          <p class = "para">
+            We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.
+          </p>
+        </div>
 
-      <div class = "col-sm-1 icon">
-        <img src="{% static 'img/USP/model.png' %}">
-      </div>
+        <div class = "col-sm-1 icon">
+          <img alt="model" src="{% static 'img/USP/model.png' %}">
+        </div>
     
-      <div class = "col-sm-3">
-        <h3 class = "head">
-          3D VISUALIZATION
-        </h3>
-        <p class = "para">
-          We provide concept drawings and 3D digital designs for you to comprehend better.  We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.
-        </p>
+        <div class = "col-sm-3">
+          <h3 class = "head">
+            3D VISUALIZATION
+          </h3>
+          <p class = "para">
+            We provide concept drawings and 3D digital designs for you to comprehend better.  We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.
+          </p>
+        </div>
       </div>
-    </div>
   
-    <div class ="row wtf" style="padding-bottom:35px;">
+      <div class ="row wtf" style="padding-bottom:35px;">
       
       <div class = "col-sm-1 icon">
-        <img src="{% static 'img/USP/delivery.png' %}">
+        <img alt="delivery" src="{% static 'img/USP/delivery.png' %}">
       </div>
       
       <div class = "col-sm-3">
@@ -192,7 +231,7 @@
       </div>
       
       <div class = "col-sm-1 icon">
-        <img src="{% static 'img/USP/swag.png' %}">
+        <img alt="swag" src="{% static 'img/USP/swag.png' %}">
       </div>
       
       <div class = "col-sm-3">
@@ -205,7 +244,7 @@
       </div>
       
       <div class = "col-sm-1 icon">
-        <img src="{% static 'img/USP/assured.png' %}">
+        <img alt="assured" src="{% static 'img/USP/assured.png' %}">
       </div>
       
       <div class = "col-sm-3">
@@ -224,5 +263,4 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
