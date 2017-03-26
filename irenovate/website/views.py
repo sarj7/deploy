@@ -18,7 +18,7 @@ def renovation_consultation(request):
 
 		instance.save()
 	 	
-		return redirect("/acknowledge")
+		return redirect("/acknowledgement")
 	return render (request, "renovation-consultation.html", context)
 
 def ourwork(request):
@@ -59,7 +59,7 @@ def contact(request):
 
 	 	instance.save()
 
-	 	return redirect("/acknowledge")
+	 	return redirect("/acknowledgement")
 
 	return render(request, "Contact/contact-us.html", context)
 
