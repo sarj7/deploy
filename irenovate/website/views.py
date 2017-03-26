@@ -75,6 +75,9 @@ def faq(request):
 def career(request):
 	return render (request, "Footer/career.html", {})
 
+def service(request):
+	return render (request, "Footer/our-services.html", {})
+
 def disclaimer(request):
 	return render (request, "Footer/disclaimer.html", {})
 

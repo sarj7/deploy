@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 <head>
-  <title>Renovation Consultation</title>
+  <title>iRenovate | Renovation Consultation</title>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <meta charset="utf-8"/>
   <meta name="description" content="Design your dream home with India's top online renovation destination."/>
@@ -115,7 +115,7 @@
 
 <body>
   <div class="container frm">
-    <div style="background-color: floralwhite;" class="col-sm-3 col-sm-offset-8 col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
+    <div style="background-color: white;" class="col-sm-3 col-sm-offset-8 col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
       <p class='lead text-align-center'>Talk to our expert!</p>
       <form method='POST' action="">{% csrf_token %}
         {{ form|crispy }}

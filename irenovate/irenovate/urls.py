@@ -40,6 +40,7 @@ from website.views import (
         career,
         disclaimer,
         acknowledge,
+        service,
     )
 
 urlpatterns = [
@@ -58,22 +59,21 @@ urlpatterns = [
 
     url(r'^wardrobe$', wardrobe, name='wardrobe'),
     
-    url(r'^contact$', contact, name='contact'),
+    url(r'^contact-us$', contact, name='contact'),
 
     url(r'^register/', register_view, name='register'),
     url(r'^login/', login_view, name='login'),
     url(r'^logout/', logout_view, name='logout'),
 
-    url(r'^privacy$', privacy, name='privacy'),
-    url(r'^terms$', terms, name='terms'),
-    url(r'^faq$', faq, name='faq'),
+    url(r'^privacy-policy$', privacy, name='privacy'),
+    url(r'^terms-and-conditions$', terms, name='terms'),
+    url(r'^faqs$', faq, name='faq'),
     url(r'^career$', career, name='career'),
     url(r'^disclaimer$', disclaimer, name='disclaimer'),
-    url(r'^acknowledge$', acknowledge, name='acknowledge'),
-
+    url(r'^acknowledgement$', acknowledge, name='acknowledge'),
+    url(r'^our-service$', service, name='service'),
 
     url(r'^admin/', admin.site.urls),
-    
 ]
 
 if settings.DEBUG:
