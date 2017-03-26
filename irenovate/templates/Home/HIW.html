@@ -1,0 +1,117 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.singleIcon {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 4%;
+			padding-top: 4%;
+		}
+
+		.plainText {
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.customRow {
+			background-color: ;
+		}
+
+		.heading {
+			text-align: center;
+			font-size: 2.2em;
+		}
+
+		.plainHeading {
+			font-size: 1.3em;
+			text-align: center;
+			padding-top: 10px;
+		}
+		
+		.plainHeading1 {
+			font-size: 1.3em;
+			text-align: center;
+		}
+
+		.bat .cat{
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+      padding-top: 1.7%;
+    }
+
+    .cat:hover {
+      color: rgb(247,72,97);
+    }
+	</style>
+</head>
+<body>
+<div class="container">
+	<h3 class="heading">How it works!</h3>
+	<div class="row customRow">
+		<div class="col-sm-3">
+			<div class="singleIcon">
+				<img class="img-responsive" src="{% static 'img/USP/home/meet.png' %}">
+			</div>
+			<p class="plainHeading1">
+				Schedule Meeting
+			</p>
+			<p class="plainText">
+				Meet your dedicated expert design team.
+			</p>
+		</div>
+		<div class="col-sm-3">
+			<div class="singleIcon">
+				<img class="img-responsive" src="{% static 'img/USP/home/imagineInIndia.png' %}">
+			</div>
+			<p class="plainHeading">
+				Exquisite Designs & Plans
+			</p>
+			<p class="plainText">
+				Get personalized designs options for your Indian homes.
+			</p>
+		</div>
+		<div class="col-sm-3">
+			<div class="singleIcon">
+				<img class="img-responsive" src="{% static 'img/USP/home/3d.png' %}">
+			</div>
+			<p class="plainHeading">
+				3D Review 
+			</p>
+			<p class="plainText">
+				Review in 3D to help visualize and place order.
+			</p>
+		</div>
+		<div class="col-sm-3">
+			<div class="singleIcon">
+				<img class="img-responsive" src="{% static 'img/USP/home/delivery.png' %}">
+			</div>
+			<p class="plainHeading">
+				Your <span style="color:#f74861;">iRenovate</span> Home
+			</p>
+			<p class="plainText">
+				Get your iRenovate home installed by experts.
+			</p>
+		</div>
+	</div>
+	<div class="container bat">
+    <a class="cat" href="{% url 'renovation_consultation' %}"> CLICK TO KNOW MORE &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+  </div>
+</div>
+</body>
+</html>

@@ -57,7 +57,7 @@ urlpatterns = [
 
     url(r'^themes$', themes, name='themes'),
 
-    url(r'^wardrobe$', wardrobe, name='wardrobe'),
+    url(r'^wardrobes$', wardrobe, name='wardrobe'),
     
     url(r'^contact-us$', contact, name='contact'),
 
