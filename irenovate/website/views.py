@@ -2,6 +2,8 @@ from django.conf import settings
 
 from django.shortcuts import render, redirect
 
+from .models import Contact
+
 from .forms import ContactForm   
 
 def home(request):
