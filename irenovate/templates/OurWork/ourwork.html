@@ -1,17 +1,8 @@
-{% load crispy_forms_tags %}
 {% load staticfiles %}
-
+<!DOCTYPE html>
+<html>
 <head>
   <title>iRenovate | Our Work</title>
-  <meta charset="utf-8"/>
-  <meta name="description" content="Design your dream home with India's top online renovation destination."/>
-  
-  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
-  <meta name="viewport" content="width = device-width, initial-scale = 1">
-  
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,133 +11,112 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
   <style type="text/css">
-    @viewport {
-      zoom:1.0;
-      width: extend-to-zoom;
+
+    .ourWorkIndividualImage {
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 1%;
+      border:1px solid beige;
     }
 
-    @-ms-viewport {
-      width: extend-to-zoom;
-      zoom: 1.0;
+    .imageTitle {
+      font-size: 1.5em;
+      padding-top: 10%;
     }
-
-    p{
-      padding-top: 10px;
-    }
-
-    .row{
-      padding-bottom: 35px;
-    }
-
-    .text-center p{
-      padding-top: 10px
-    } 
-
-    .text-center h2{
-      margin-top: -20px
-    } 
-
-    #sectionbanner {
-      background-image: url("{% static 'img/gallerybanner.png' %}");
-      background-size: 100% 100%;
-      min-height: 220px;
-    }
-
-    #banner{
-
-      margin-left: 34%;
-      margin-top: 10%;
-      padding-left: 7%;
-      padding-right: 7.5%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      border-radius: 9px;
-      font-family: georgia;
-      font-style: italic;
-      line-height: 60%;
-      height: 7%;
-      font-size: 2.0em;
-    }   
 
     
-    .imge {
-      max-height: 67%;
-      max-width: 80%;
-      border-radius: 25px;
+
+    .horizontalLine {
+      border:1px solid #ebeef4; 
+      width: 90%; 
+      margin-left: 0px; 
     }
 
-    .h-3 {
-      font-size: 1.5em;
-      padding-bottom: 8px;
+    .get-started {
+      width: 110%;
+      padding-bottom: -48px!important;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .imageTitle {
+          text-align: center;
+      }
+
+      hr {
+        display: none;
+    }
+
     }
 
   </style>
 
 </head>
-
 {% include "navbar.html" %}
-
 <body>
-  <section id="sectionbanner">
-    <div class="container">
-      <a id="banner" class="btn btn-primary btn-danger" href="{% url 'contact'%}" role="button">iRenovate it!</a>
-    </div>
-  </section>
+  <div>
+    <a href="{% url 'renovation_consultation'%}">
+      <img class="img-responsive" src="{% static 'img/gallerybanner.png' %}">
+    </a>
+  </div>
 
-  <section class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="imageTitle">DAVID'S HOUSE</p>
+        <a href="{% url 'david' %}">
+          <img class="ourWorkIndividualImage img-responsive" src="{% static 'img/our_work/david.jpg' %}">
+        </a>
+        <hr class="horizontalLine">
+      </div>
     
-      <figure class="col-sm-6" style="padding-left:65px;">
-        <h3 class="h-3">DAVID'S HOUSE</h3>
-          <a href="{% url 'david' %}"><img alt="david5" class="imge" src="{% static 'img/our_work/David/david5.jpeg' %}" width="550" height="350" alt="polaroid"/></a>
-      </figure>
-  
-      <figure class="col-sm-6" style="padding-left:65px;">
-        <h3 class="h-3">MALIBU TOWN PROJECT</h3>
-        <a href="{% url 'malibu' %}"><img alt="malibu1" class="imge" src="{% static 'img/our_work/Malibu/malibu1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
-      </figure>
-  
-    </div>    
-    </br>
-  
-    <div class="row" style="padding-bottom: 0px;">
-    
-      <figure class="col-sm-6" style="padding-left:65px;">
-        <h3 class="h-3">MR. YADAV’S DRAWING ROOM</h3>
-        <a href="{% url 'yadav' %}"><img alt="yadav1" class="imge" src="{% static 'img/our_work/Yadav/yadav1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
-      </figure>
-
-      <figure class="col-sm-6" style="padding-left:65px;">
-        <h3 class="h-3">THE SURIS</h3>
-        <a href="{% url 'suris' %}"><img alt="suris7" class="imge" src="{% static 'img/our_work/Suris/suris7.jpeg' %}" width="  550" height="350" alt="polaroid"/></a>
-      </figure>
-  
+      <div class="col-sm-6">
+        <p class="imageTitle">MALIBU TOWN PROJECT</p>
+        <a href="{% url 'malibu' %}">
+          <img class="ourWorkIndividualImage img-responsive" src="{% static 'img/our_work/malibu.jpg' %}">
+        </a>
+        <hr class="horizontalLine">
+      </div>
     </div>
-    </br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="imageTitle">MR. YADAV'S DRAWING ROOM</p>
+        <a href="{% url 'yadav' %}">
+          <img class="ourWorkIndividualImage img-responsive" src="{% static 'img/our_work/yadav.jpg' %}">
+        </a>
+        <hr class="horizontalLine">
+      </div>
+      <div class="col-sm-6" >
+        <p class="imageTitle">THE SURIS</p>
+        <a href="{% url 'suris' %}">
+          <img class="ourWorkIndividualImage img-responsive" src="{% static 'img/our_work/suris.jpg' %}">
+        </a>
+        <hr class="horizontalLine">
+      </div>
+    </div>
   
     <div class="row">
-
-      <figure class="col-sm-6" style="padding-left:65px;">
-        <h3 class="h-3">LEADING ECOMMERCE RETAIL COMPANY</h3>
-        <a href="{% url 'retail' %}"><img alt="snapdeal1" class="imge" src="{% static 'img/our_work/snapdeal/snapdeal1.jpg' %}" width="550" height="350" alt="polaroid"/></a>
-      </figure>
-
-      <figure class="col-sm-6" style="padding-left:65px;">
-        <h3 class="h-3">SUPA FLEX PVT. LTD.</h3>
-        <a href="{% url 'supaflex' %}"><img alt="supa4" class="imge" src="{% static 'img/our_work/SupaFlex/supa4.jpg' %}" width="  550" height="350" alt="polaroid"/></a>
-      </figure>
-  
-
+      <div class="col-sm-6">
+        <p class="imageTitle">LEADING ECOMMERCE RETAIL COMPANY</p>
+        <a href="{% url 'retail' %}">
+          <img class="ourWorkIndividualImage img-responsive" src="{% static 'img/our_work/snapdeal.jpg' %}">
+        </a>
+        <hr class="horizontalLine">
+      </div>
+      <div class="col-sm-6" >
+        <p class="imageTitle">SUPA FLEX PVT. LTD.</p>
+        <a href="{% url 'supaflex' %}">
+          <img class="ourWorkIndividualImage img-responsive" src="{% static 'img/our_work/supaflex.jpg' %}">
+        </a>
+        <hr class="horizontalLine">
+      </div>
     </div>
+  </div>
 
-  </section>
-  
   {% include 'Footer/copyright.html' %}
   
   {% include 'javascript.html' %}
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
+</html>

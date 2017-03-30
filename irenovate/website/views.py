@@ -50,18 +50,24 @@ def wardrobe(request):
 
 def contact(request):
 	form = ContactForm(request.POST or None)
+	objects = Contact.objects.all()
+	
 	context = {
 		"form": form,
+		"objects": objects,
 	}
 
 	if form.is_valid():
-	 	instance = form.save(commit=False)
+		instance = form.save(commit=False)
 
-	 	instance.save()
+		instance.save()
 
-	 	return redirect("/acknowledgement")
+		return redirect("/acknowledge")
 
-	return render(request, "Contact/contact-us.html", context)
+	if request.user.is_staff:
+		return render(request, "Contact/admin.html", context)
+	else :		
+		return render(request, "Contact/contact-us.html", context)
 
 def privacy(request):
 	return render (request, "Footer/privacy.html", {})
