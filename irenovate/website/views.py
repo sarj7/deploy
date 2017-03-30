@@ -64,7 +64,7 @@ def contact(request):
 
 		instance.save()
 
-		return redirect("/acknowledge")
+		return redirect("/acknowledgement")
 
 	if request.user.is_staff:
 		return render(request, "Contact/admin.html", context)
