@@ -1,4 +1,3 @@
-{% load crispy_forms_tags %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
@@ -6,7 +5,13 @@
 <head>
   <meta name="viewport" content="width = device-width initial-scale = 1">
   <meta charset="utf-8"/>
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   
+  <!-- Begin MailChimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <!--End mc_embed_signup-->
+
   <style type="text/css">
     /*------------------------footer css----------------------------------------*/
     @viewport {
@@ -19,43 +24,26 @@
       zoom: 1.0;
     }
 
+    /* Begin MailChimp Signup Form */
+    #mc_embed_signup {
+      background:#fff; 
+      clear:left; 
+      font:14px Helvetica,Arial,sans-serif; 
+      width:100%
+    }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    /* End mc_embed_signup */
+
     .container-fluid {
       padding-left: 0;
       padding-right: 0;
-      background-color: #111;
+      background-color: #f74861;
       padding-bottom: 25px;
     }
 
     .a {
       color: yellowgreen;
-    }
-
-    .title {
-      font-size: 1.9rem;
-      padding-top: 40px;
-      margin-bottom: 0px;
-      text-align: center;
-      font-family: 'Open Sans Condensed', sans-serif;
-      color: red;
-    }
-
-    #copyright {
-      font-size: 1.75rem;
-      padding-top: 40px;
-      font-family: 'Open Sans Condensed', sans-serif;
-      color: #68ACF5;
-    }
-
-    .description {
-      font-size: 1.3rem;
-      text-align: center;
-      padding-top: 0px;
-      font-family: 'Open Sans Condensed', sans-serif;
-      color: white;
-    }
-
-    .sicons {
-      padding-top: 45px;
     }
 
     * {
@@ -74,7 +62,43 @@
     }
 
     .fa-2x {
-      color: red;
+      color: white;
+    }
+
+    #subscribe-text{
+      color: white;
+      font-size: 1.3em;
+      line-height: 1.9em;
+      padding-top: 2%;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .office_adress {
+      line-height: 1.2em;
+      color: white;
+      margin-top: -1.3%;
+    }
+
+
+  
+
+    @media only screen and (max-width: 500px) {
+    #mc_embed_signup{
+      margin-top: 13%;
+      background-color:#111;
+    }
+
+    #mc-embedded-subscribe{
+      width: 50% !important;
+      height: 150% !important
+    }
+
+    #mce-EMAIL{
+      width: 75%;
+    }
+
+    #subscribe-newsletter{
+      padding-left: 0px !important;
     }
 
     /*------------------------footer css terminates here --------------------------*/
@@ -84,46 +108,50 @@
 
 <body>
   <div style="padding: 0;" class="footer col-sm-12 col-xs-12">
-    <div style="padding-bottom:0px; margin-top:50px; background-color: #111;" class = "container-fluid">
-      <footer class="no-padding" style="background-color: #111;">
+    <div style="padding-bottom:0px; margin-top:50px; background-color: #f74861;" class = "container-fluid">
+      <footer class="no-padding" style="background-color: #f74861;">
         <div class="col-sm-3 col-xs-12">
           <div class="table">
-            <ul class="col-xs-12" style="list-style:none; display: inline-block;color:#68ACF5;font-family:'Open Sans Condensed', sans-serif; font-size: medium;padding-top:30px; text-align: center;" >
+            <ul class="col-xs-12" style="list-style:none; display: inline-block;color:#68ACF5;font-family:'Open Sans Condensed', sans-serif; font-size: medium;padding-top:40px; text-align: center;" >
               <li style="padding-left: 60px;">
-                <a style="font-weight:700; text-align:left; padding-right:50px; color: red;" href="{% url 'contact' %}">CONTACT US</a> 
+                <a style="font-weight:700; text-align:left; padding-right:50px; color: white;" href="{% url 'faq' %}">FAQ'S</a> 
               </li>
+
               <li style="padding-left: 60px;">
-                <a style="font-weight:700; text-align:left; padding-right:50px; color: red;" href="{% url 'faq' %}">FAQ'S</a> 
+                <a style="font-weight:700; text-align:left; padding-right:50px;color: white;" href="{% url 'career' %}">JOIN US</a> 
               </li>
+              
               <li style="padding-left: 60px;">
-                <a style="font-weight:700; text-align:left; padding-right:50px;color: red;" href="{% url 'career' %}">JOIN US</a> 
+                <a style="font-weight:700; text-align:left; padding-right:50px; color: white;" href="{% url 'contact' %}">CONTACT US</a> 
               </li>
+
               <li style="padding-left: 60px;">
-                <a style="font-weight:700; text-align:left; padding-right:50px;color: red;" href="{% url 'service' %}">Our Services</a> 
+                <a style="font-weight:700; text-align:left; padding-right:50px;color: white;" href="{% url 'service' %}">OUR SERVICES</a> 
               </li>
+
             </ul>
           </div>
         </div>
             
-        <div class="col-sm-3 col-xs-12">
-          <p class = "title" style="padding-top:40px;">
-            GURGAON OFFICE
-          </p>
-          <p class = "description">
-            Third Floor, School Building, Parsvanath, Green Ville, Sohna Road, Gurgaon.
-          </p>
-        </div>
-            
-        <div class="col-sm-3 col-xs-12">
-          <p class = "title">
-            NEW DELHI OFFICE
-          </p>
-          <p class = "description">
-            LG floor, H. no: 243, Janakpuri, New Delhi-110058
-          </p>
+        <div class="col-sm-6 col-xs-12">
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup" style="background-color: #f74861; margin-top: 9%;">
+            <form action="//irenovate.us14.list-manage.com/subscribe/post?u=eb39308897cf990ad5022d727&amp;id=e1fff703b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                
+                <input style="width: 53%;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eb39308897cf990ad5022d727_e1fff703b5" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" style="background-color: #707377;" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+              <label for="mce-EMAIL" id="subscribe-newsletter" style="font-size: .9em;color: white; padding-top: 13px;">Subscribe to our Newsletter </label>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
         </div>
 
-        <div class="col-sm-3 col-xs-12 text-center" style="margin-top: 4%;padding-bottom: 3%;">
+        <div class="col-sm-3 col-xs-12 text-center" style="margin-top: 4.5%; padding-bottom: 3%;">
           <div  class = "icons">
             <a target="_blank" href="https://twitter.com/hashtag/irenovate"><i class="fa fa-twitter fa-2x"></i></a>
 
@@ -137,29 +165,52 @@
 
             <a target="_blank" href="https://www.instagram.com/irenovate01/"><i class="fa fa-instagram fa-2x"></i></a>
           </div>
+          
         </div>
 
-        <div class="row" style = " margin-right: 0px;padding-top:140px;padding-bottom: 0px;" >
-          <div class="container-fluid" id="containerfluid" style="height: 40px;line-height: 2.5;font-size: medium;background-color: #111;color:#68ACF5;font-family: 'Open Sans Condensed', sans-serif;padding-bottom: 55px; ">
+        <div class="row" style = " margin-right: 0px;padding-top:180px;padding-bottom: 30px;background-color:#f74861 " >
+          <div class="container-fluid" id="containerfluid" style="height: 40px;line-height: 2.5;font-size: medium;background-color: #f74861;color:#68ACF5;font-family: 'Open Sans Condensed', sans-serif;padding-bottom: 55px; ">
             <div class="col-sm-3 col-xs-12">
-              <p style="font-weight: 700;  text-align:center;line-height: 1;color: red; ">
+              <p style="font-weight: 700;  text-align:center;line-height: 1;color: white;padding-top: 10px; ">
                 <i class="fa fa-copyright fa-1x" aria-hidden="true"></i>&nbsp;COPYRIGHT | i&nbsp;Renovate LLP 
               </p>
             </div>
-            <div class="col-sm-3 col-xs-12" >
-              <p style="font-weight:700; text-align: center;line-height: 1;">
-                <a style="color: red;" href="{% url 'privacy' %}">PRIVACY POLICY</a>
-              </p>
+
+            <div class="col-sm-3 col-xs-12 office_adress">
+              <center>
+                <p>
+                  GURGAON OFFICE
+                </p>
+                <p>
+                  Third Floor, School Building, Parsvanath, Green Ville, Sohna Road, GURUGRAM.
+                </p>
+              </center>
             </div>
-            <div class="col-sm-3 col-xs-12">
-              <p  style="font-weight:700; text-align:center;line-height: 1;color: red;">
-                <a style="color: red;" href="{% url 'terms' %}">TERMS AND CONDITION</a>
-              </p>
+                
+            <div class="col-sm-3 col-xs-12 office_adress" >
+              <center>
+                <p>
+                  NEW DELHI OFFICE
+                </p>
+                <p>
+                  Lower Ground Floor, House No. 243 <br> Janakpuri, New Delhi-110058
+                </p>
+              </center>
             </div>
-            <div class="col-sm-3 col-xs-12 pull-right" > 
-              <p style="font-weight:700; text-align:center;line-height: 1;color: red;">
-                <a style="color: red;" href="{% url 'disclaimer' %}"> DISCLAIMER </a>
+
+            <div class="col-sm-3 col-xs-12 pull-right" style="margin-top: -1.7%;"> 
+              <p style=" text-align:center;line-height: 1;color: white;">
+                <a style="color: white;" href="{% url 'disclaimer' %}"> DISCLAIMER </a>
               </p>
+              
+              <p style=" text-align:center;line-height: 1;color: white;">
+                <a style="color: white;" href="{% url 'disclaimer' %}"> PRIVACY POLICY </a>
+              </p>
+
+              <p style="text-align:center;line-height: 1;color: white;">
+                <a style="color: white;" href="{% url 'disclaimer' %}"> TERMS AND CONDITIONS</a>
+              </p>
+
             </div>
           </div>
         </div>
