@@ -106,6 +106,10 @@
       font-family: 'Open Sans', sans-serif;
       padding-bottom: 1%;       
     }
+
+    .btn{
+      background-color: #f74861;
+    }
   
   </style>
 
@@ -119,7 +123,7 @@
       <p class='lead text-align-center'>Talk to our expert!</p>
       <form method='POST' action="">{% csrf_token %}
         {{ form|crispy }}
-        <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+        <input class='btn btn-block' type='submit' value='Submit' />
       </form>
     </div>
   </div>
@@ -131,7 +135,7 @@
   <div class="container">
     <div class="row wtf" style="margin-top: -3%;">
       <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;padding-bottom: 4.5%;">
-        <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: red"> iRenovate?</span></font></p>
+        <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: #f74861"> iRenovate?</span></font></p>
         <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
         <p style="text-align:justify"><font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</font></p>
       </div>
@@ -176,7 +180,7 @@
       <div class ="row wtf">
       
         <div class = "col-sm-1 icon">
-          <img alt="single" src="{% static 'img/USP/single.png' %}">
+          <img alt="single" src="{% static 'img/USP/single.jpg' %}">
         </div>
     
         <div class = "col-sm-3">
@@ -189,7 +193,7 @@
         </div>
     
         <div class = "col-sm-1 icon">
-          <img alt="price" src="{% static 'img/USP/price.png' %}">
+          <img alt="price" src="{% static 'img/USP/price.jpg' %}">
         </div>
     
         <div class = "col-sm-3">
@@ -202,7 +206,7 @@
         </div>
 
         <div class = "col-sm-1 icon">
-          <img alt="model" src="{% static 'img/USP/model.png' %}">
+          <img alt="model" src="{% static 'img/USP/model.jpg' %}">
         </div>
     
         <div class = "col-sm-3">
@@ -218,7 +222,7 @@
       <div class ="row wtf" style="padding-bottom:35px;">
       
       <div class = "col-sm-1 icon">
-        <img alt="delivery" src="{% static 'img/USP/delivery.png' %}">
+        <img alt="delivery" src="{% static 'img/USP/delivery.jpg' %}">
       </div>
       
       <div class = "col-sm-3">
@@ -231,7 +235,7 @@
       </div>
       
       <div class = "col-sm-1 icon">
-        <img alt="swag" src="{% static 'img/USP/swag.png' %}">
+        <img alt="swag" src="{% static 'img/USP/swag.jpg' %}">
       </div>
       
       <div class = "col-sm-3">
@@ -244,7 +248,7 @@
       </div>
       
       <div class = "col-sm-1 icon">
-        <img alt="assured" src="{% static 'img/USP/assured.png' %}">
+        <img alt="assured" src="{% static 'img/USP/assured.jpg' %}">
       </div>
       
       <div class = "col-sm-3">

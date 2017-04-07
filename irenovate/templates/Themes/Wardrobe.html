@@ -53,6 +53,10 @@
 			text-align: center;
 			margin-top: 2%;
 		}
+
+		.btn{
+			background-color: #f74861; 
+		}
 	</style>
 </head>
 
@@ -227,7 +231,8 @@
 	</div>
 
 	<div class="contact">
-		<a href="{% url 'renovation_consultation' %}"><button type="button" class="btn btn-danger btn-lg">Contact Our Wardrobe Expert</button></a>
+		<a href="{% url 'renovation_consultation' %}"><buttonx style = "color: #0f0f0f;
+			text-decoration: none !important;" type="button" class="btn btn-lg">Contact Our Wardrobe Expert</button></a>
 	</div>
 
 	{% include 'Footer/copyright.html' %}
