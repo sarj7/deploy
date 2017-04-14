@@ -49,7 +49,7 @@
       padding:5px;
     }
 
-    .img-responsive¨
+    .img-responsive
     }
     .first-block{
       border-bottom: 5px #000 solid;
@@ -71,7 +71,7 @@
       margin-bottom: 2%;
     }
 
-    .bat .cat{
+    .browseAllButton .browseAllButtonInnerDiv{
       display: flex;
       justify-content: center;
       font-size: 1.2em;
@@ -80,7 +80,7 @@
       padding-top: 1.7%;
     }
 
-    .cat:hover {
+    .browseAllButtonInnerDiv:hover {
       color: rgb(247,72,97);
     }
 
@@ -107,7 +107,7 @@
       <div class="container grid-custom" style="margin-bottom: 30px;">
         <div class="row">
           <div class="col-sm-3 col-xs-6 first-block"><img src="{% static 'img/homethemes/A1.jpg' %}" alt="Themes" class="img-responsive"></div>
-          <div class="col-sm-3 col-xs-6 first-block"><img src="{% static 'img/homethemes/A10.jpg' %}" alt="Themes" class="img-responsive"></div>
+          <div class="col-sm-3 col-xs-6 first-block"><img src="{% static 'img/homethemes/A11.jpg' %}" alt="Themes" class="img-responsive"></div>
           <div class="col-sm-3 col-xs-6"><img src="{% static 'img/homethemes/A3.jpg' %}" alt="Themes" class="img-responsive"></div>
           <div class="col-sm-3 col-xs-6"><img src="{% static 'img/homethemes/A4.jpg' %}" alt="Themes" class="img-responsive"></div>
           <div class="col-sm-6 col-xs-12"><img src="{% static 'img/homethemes/A5.jpg' %}" alt="Themes" class="img-responsive"></div>
@@ -129,8 +129,8 @@
     </section>
   </div>
 
-  <div class="container bat">
-    <a class="cat" href="{% url 'themes' %}"> BROWSE ALL THEMES  &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+  <div class="container browseAllButton">
+    <a class="browseAllButtonInnerDiv" href="{% url 'themes' %}"> BROWSE ALL THEMES  &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
   </div>
 
 </body>

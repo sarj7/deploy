@@ -6,6 +6,8 @@
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <meta charset="utf-8"/>
   <meta name="description" content="Design your dream home with India's top online renovation destination."/>
+
+<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
   
   <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
@@ -33,10 +35,8 @@
 
     .para {
       text-align: justify;
-      font-style: italic;
       color: black;
       width: 100%;
-      font-family: 'Open Sans', sans-serif;
     }
 
     .head {
@@ -60,7 +60,7 @@
       margin-bottom: 2.5%;
     }
 
-    .row.wtf {
+    .row.rowAlternate {
       padding-bottom: 20px;
       padding-top: 0px;
     }
@@ -71,34 +71,33 @@
       text-align: center;
     }
 
-    .frm {
-      background-image: url("{% static 'img/renovation_consultation_bg.jpg' %}");
+    .formOuterDiv {
+      background-image: url("{% static 'img/renovation-consultation-bg.jpg' %}");
       background-size: 100% 82%;
       background-repeat: no-repeat;
       height: 110%;
     }
 
     #contactusnow {
-        background-color: lemonchiffon;
-        border: 1px solid skyblue;
-        border-radius: 10px;
-        padding-top: 15px;
-        padding-bottom: 25px;
-        margin-top: 50px;
-    }
-    @media only screen and (max-width: 500px) {
-      
-    }
-
-    .hassle {
-      margin-top: -2%;
-      text-align: center;
-      font-size: 2.2em;
-      font-family: 'Open Sans', sans-serif;
-      padding-bottom: 1%;       
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 4px;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      margin-top: 20px;
+      color: black;
+      opacity: .75 ;
     }
 
-    .hassle1 {
+    .hassleOuterTitle {
+        margin-top: -2%;
+        text-align: center;
+        font-size: 2.2em;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1%;       
+    }
+
+    .hassleInnerDescription {
       margin-top: -1%;
       margin-bottom: 0%;
       text-align: center;
@@ -107,10 +106,12 @@
       padding-bottom: 1%;       
     }
 
-    .btn{
-      background-color: #f74861;
+    @media only screen and (max-width: 400px) {
+      #contactusnow {
+        margin-left: 0%;
+        height: 75%;
+      }
     }
-  
   </style>
 
 </head>
@@ -118,12 +119,12 @@
 {% include "navbar.html" %}
 
 <body>
-  <div class="container frm">
-    <div style="background-color: white;" class="col-sm-3 col-sm-offset-8 col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
-      <p class='lead text-align-center'>Talk to our expert!</p>
+  <div class="container formOuterDiv">
+    <div class="col-sm-4  col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
+      <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
       <form method='POST' action="">{% csrf_token %}
         {{ form|crispy }}
-        <input class='btn btn-block' type='submit' value='Submit' />
+        <input class='btn btn-block btn-danger' type='submit' value='Submit' />
       </form>
     </div>
   </div>
@@ -133,7 +134,7 @@
   </div>
 
   <div class="container">
-    <div class="row wtf" style="margin-top: -3%;">
+    <div class="row rowAlternate" style="margin-top: -3%;">
       <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;padding-bottom: 4.5%;">
         <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: #f74861"> iRenovate?</span></font></p>
         <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
@@ -158,10 +159,10 @@
     <hr style="color: black;width: 102%;border: .3px solid #eaecef; margin-bottom: 5%">
   </div>
 
-  <p class="hassle">
+  <p class="hassleOuterTitle">
       Need to get your home fixed?
   </p>
-  <p class="hassle1">
+  <p class="hassleInnerDescription">
       Let iRenovate make it hassle-free!
   </p>
 
@@ -177,7 +178,7 @@
 
   <div class = "container">
     <h2 id = "heading" style="text-align:center;">Six Reasons To Choose iRenovate </h2>
-      <div class ="row wtf">
+      <div class ="row rowAlternate">
       
         <div class = "col-sm-1 icon">
           <img alt="single" src="{% static 'img/USP/single.jpg' %}">
@@ -219,7 +220,7 @@
         </div>
       </div>
   
-      <div class ="row wtf" style="padding-bottom:35px;">
+      <div class ="row rowAlternate" style="padding-bottom:35px;">
       
       <div class = "col-sm-1 icon">
         <img alt="delivery" src="{% static 'img/USP/delivery.jpg' %}">

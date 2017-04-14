@@ -1,7 +1,6 @@
 {% load crispy_forms_tags %}
 {% load staticfiles %}
 
-
 <head>
   <title>iRenovate | LogIn</title>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
@@ -32,7 +31,7 @@
       zoom: 1.0;
     }
 
-    #amazing{
+    #loginOuterBlock{
       margin-top: 30px;
     }
 
@@ -48,12 +47,12 @@
       padding-left: 70px;
     }
 
-    #one {
+    #title {
       text-align:center;
       margin-top: 70px;
     }
 
-    #two {
+    #loginFormBody {
       align:center;
       margin-top:30px;
     }
@@ -66,13 +65,13 @@
 
 <body>
   <div class="container">
-    <div id="amazing" class='col-sm-4 col-sm-offset-4'>
+    <div id="loginOuterBlock" class='col-sm-4 col-sm-offset-4'>
       <h1 id="one" >{{ title }}</h1>
       <hr/>
 
       <form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
           {{ form|crispy }}
-          <input id="two" type='submit' class='btn btn-default' value='{{ title }}' />
+          <input id="loginFormBody" type='submit' class='btn btn-default' value='{{ title }}' />
       </form>
       <hr>
       

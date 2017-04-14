@@ -36,13 +36,13 @@
       padding-top: 20px;
       }
 
-    .row.wtf {
+    .row.rowAlternateClass {
       padding-bottom: 20px;
       padding-top: 0px;
       font-family: 'Lora', serif;
     }
 
-    .head {
+    .itemHeading {
       font-size: 20px;
       font-weight: bold;
       font-stretch: ultra-condensed;
@@ -55,13 +55,9 @@
       text-align: justify;
       color: black;
       font-family: 'Lora', serif;
-    }
-    
-    .nan{
-      padding-top: 30px;padding-right: 0px;
     } 
 
-    .fat {
+    .individualSector {
       margin-left: -70px;
     }
     
@@ -86,15 +82,15 @@
 
 
 <div class = "container">
-    <h2 id = "heading" style="text-align:center;padding-bottom: 2%;">Your clothes define who you are,<br>So does your <span style="color:#f74861; ">Wardrobe</span>.</h2>
-    <div class ="row wtf">
-      <div class="fat" >
+    <h2 id = "itemHeadinging" style="text-align:center;padding-bottom: 2%;">Your clothes define who you are,<br>So does your <span style="color:#f74861; ">Wardrobe</span>.</h2>
+    <div class ="row rowAlternateClass">
+      <div class="individualSector" >
         <div class = "col-sm-2 icon freeService">
           <img alt="single" src="{% static 'img/USP/wardrobe/freeInstallation.png' %}">
         </div>
       
         <div class = "col-sm-4 freeService">
-          <h3 class = "head">
+          <h3 class = "itemHeading">
             Free services
           </h3>
           <p class = "para">
@@ -108,7 +104,7 @@
       </div>
     
       <div class = "col-sm-4">
-        <h3 class = "head">
+        <h3 class = "itemHeading">
          	Warranty
         </h3>
         <p class = "para">
@@ -116,14 +112,14 @@
         </p>
       </div>
     </div>
-    <div class ="row wtf">
-      <div class="fat">
+    <div class ="row rowAlternateClass">
+      <div class="individualSector">
         <div class = "col-sm-2 icon freeService">
           <img alt="single" src="{% static 'img/USP/wardrobe/imagineInIndia.png' %}">
         </div>
       
         <div class = "col-sm-4 freeService">
-          <h3 class = "head">
+          <h3 class = "itemHeading">
             	Make In India
           </h3>
           <p class = "para">
@@ -137,7 +133,7 @@
       </div>
     
       <div class = "col-sm-4">
-        <h3 class = "head">
+        <h3 class = "itemHeading">
          	6 Week delivery
         </h3>
         <p class = "para">
@@ -150,7 +146,7 @@
       </div>
     
       <div class = "col-sm-8">
-        <h3 class = "head">
+        <h3 class = "itemHeading">
           6 Week delivery
         </h3>
         <p class = "para">

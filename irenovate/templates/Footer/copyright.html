@@ -31,24 +31,6 @@
       font:14px Helvetica,Arial,sans-serif; 
       width:100%
     }
-
-    @media only screen and (max-width: 500px) {
-    #mc_embed_signup{
-      margin-top: 13%;
-      background-color:#111;
-    }
-
-    #mc-embedded-subscribe{
-      width: 50% !important;
-    }
-
-    #mce-EMAIL{
-      width: 75%;
-    }
-
-    #subscribe-newsletter{
-      padding-left: 0px !important;
-    }
     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     /* End mc_embed_signup */
@@ -83,7 +65,7 @@
       color: white;
     }
 
-    #subscribe-text{
+    #subscribe-text {
       color: white;
       font-size: 1.3em;
       line-height: 1.9em;
@@ -92,9 +74,30 @@
     }
 
     .office_adress {
-      line-height: .6em !important;
+      line-height: 1.2em;
       color: white;
       margin-top: -1.3%;
+    }
+
+
+  
+
+    @media only screen and (max-width: 500px) {
+    #mc_embed_signup{
+      margin-top: 13%;
+      background-color:#111;
+    }
+
+    #mc-embedded-subscribe{
+      width: 50% !important;
+    }
+
+    #mce-EMAIL{
+      width: 75%;
+    }
+
+    #subscribe-newsletter{
+      padding-left: 0px !important;
     }
 
     /*------------------------footer css terminates here --------------------------*/
@@ -134,9 +137,7 @@
           <div id="mc_embed_signup" style="background-color: #f74861; margin-top: 9%;">
             <form action="//irenovate.us14.list-manage.com/subscribe/post?u=eb39308897cf990ad5022d727&amp;id=e1fff703b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div id="mc_embed_signup_scroll">
-                
                 <input style="width: 53%;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eb39308897cf990ad5022d727_e1fff703b5" tabindex="-1" value=""></div>
                 <div class="clear"><input type="submit" style="background-color: #707377;" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -149,19 +150,18 @@
 
         <div class="col-sm-3 col-xs-12 text-center" style="margin-top: 4.5%; padding-bottom: 3%;">
           <div  class = "icons">
-            <a target="_blank" href="https://twitter.com/hashtag/irenovate"><i style="color: white;" class="fa fa-twitter fa-2x"></i></a>
+            <a target="_blank" href="https://twitter.com/hashtag/irenovate"><i class="fa fa-twitter fa-2x"></i></a>
 
-            <a target="_blank" href="https://www.youtube.com/channel/UChxT7tZ_F0Z0YaGwjb8UTYQ"><i style="color: white;" class="fa fa-youtube fa-2x"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UChxT7tZ_F0Z0YaGwjb8UTYQ"><i class="fa fa-youtube fa-2x"></i></a>
 
-            <a target="_blank" href="https://br.pinterest.com/kapoorshivang/"><i style="color: white;" class="fa fa-pinterest fa-2x" ></i></a>
+            <a target="_blank" href="https://br.pinterest.com/kapoorshivang/"><i class="fa fa-pinterest fa-2x" ></i></a>
 
-            <a target="_blank" href="https://www.facebook.com/irenovate.in/"><i style="color: white;" class="fa fa-facebook-official fa-2x"></i></a>
+            <a target="_blank" href="https://www.facebook.com/irenovate.in/"><i class="fa fa-facebook-official fa-2x"></i></a>
 
-            <a target="_blank" href="https://www.linkedin.com/company/irenovate-india"><i style="color: white;" class="fa fa-linkedin-square fa-2x"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/irenovate-india"><i class="fa fa-linkedin-square fa-2x"></i></a>
 
-            <a target="_blank" href="https://www.instagram.com/irenovate01/"><i style="color: white;" class="fa fa-instagram fa-2x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/irenovate01/"><i class="fa fa-instagram fa-2x"></i></a>
           </div>
-          
         </div>
 
         <div class="row" style = " margin-right: 0px;padding-top:180px;padding-bottom: 30px;background-color:#f74861 " >
@@ -172,7 +172,7 @@
               </p>
             </div>
 
-            <div class="col-sm-3 col-xs-12 office_adress" style="line-height: 1.6em;color: white;margin-top: -30px;">
+            <div class="col-sm-3 col-xs-12 office_adress">
               <center>
                 <p>
                   GURGAON OFFICE
@@ -183,7 +183,7 @@
               </center>
             </div>
                 
-            <div class="col-sm-3 col-xs-12 office_adress" style="line-height: 1.6em;color: white;margin-top: -30px;" >
+            <div class="col-sm-3 col-xs-12 office_adress" >
               <center>
                 <p>
                   NEW DELHI OFFICE
@@ -200,11 +200,11 @@
               </p>
               
               <p style=" text-align:center;line-height: 1;color: white;">
-                <a style="color: white;" href="{% url 'disclaimer' %}"> PRIVACY POLICY </a>
+                <a style="color: white;" href="{% url 'privacy' %}"> PRIVACY POLICY </a>
               </p>
 
               <p style="text-align:center;line-height: 1;color: white;">
-                <a style="color: white;" href="{% url 'disclaimer' %}"> TERMS AND CONDITIONS</a>
+                <a style="color: white;" href="{% url 'terms' %}"> TERMS AND CONDITIONS</a>
               </p>
 
             </div>
@@ -216,3 +216,5 @@
 
 </body>
 </html>
+
+  

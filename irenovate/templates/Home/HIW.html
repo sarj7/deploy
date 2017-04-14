@@ -33,7 +33,7 @@
 			padding-top: 10px;
 		}
 
-		.bat .cat{
+		.outerContainerForHomeButton .knowMoreHomeButton{
       display: flex;
       justify-content: center;
       font-size: 1.2em;
@@ -42,7 +42,7 @@
       padding-top: 1.7%;
     }
 
-    .cat:hover {
+    .knowMoreHomeButton:hover {
       color: rgb(247,72,97);
     }
 	</style>
@@ -78,7 +78,7 @@
 				<img class="img-responsive" src="{% static 'img/USP/home/3D.jpg' %}">
 			</div>
 			<p class="plainHeading">
-				3D Review 
+				3D Review
 			</p>
 			<p class="plainText">
 				Review in 3D to help visualize and place order.
@@ -96,8 +96,8 @@
 			</p>
 		</div>
 	</div>
-	<div class="container bat">
-    <a class="cat" href="{% url 'renovation_consultation' %}"> CLICK TO KNOW MORE &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+	<div class="container outerContainerForHomeButton">
+    <a class="knowMoreHomeButton" href="{% url 'renovation_consultation' %}"> CLICK TO KNOW MORE &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
   </div>
 </div>
 </body>

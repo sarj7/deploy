@@ -6,7 +6,7 @@
 <head>
 	<title>iRenovate | Acknowledgement</title>
 	<style type="text/css">
-		.def {
+		.innerDiv {
 			padding-top: 20%;
 		    font-size: 3.2rem;
 		    text-align: center;
@@ -15,7 +15,7 @@
 		    margin-top: -15px;
 		}
 
-		.abc {
+		.outerDiv {
 			background-image: url("{% static 'img/ack.JPG' %}");
 			height: 100%;
 		}
@@ -29,8 +29,8 @@
 {% include "navbar.html" %}
 
 <body>
-	<div class="abc">
-		<p class="def">
+	<div class="outerDiv">
+		<p class="innerDiv">
 			Thank you for contacting us! </br>
 			Our team of specialist would get in touch with you shortly.
 		</p>
