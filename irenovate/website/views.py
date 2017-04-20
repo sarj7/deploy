@@ -45,7 +45,7 @@ def supaflex(request):
 	return render(request, "OurWork/supaflex.html", {})
 
 def themes(request):
-	return render(request, "Themes/themes.html", {})
+	return render(request, "Themes/Themes.html", {})
 
 def wardrobe(request):
 	return render(request, "Themes/Wardrobe.html", {})
