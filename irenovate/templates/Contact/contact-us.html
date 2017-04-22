@@ -2,153 +2,129 @@
 {% load staticfiles %}
 
 <head>
-  <title>iRenovate | ContactUs</title>
+	<title>iRenovate | ContactUs</title>
 
-  <meta name="viewport" content="width = device-width, initial-scale = 1">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<meta charset="utf-8"/>
+	<meta name="description" content="Design your dream home with India's top online renovation destination."/>
 
-  <meta charset="utf-8"/>
-  <meta name="description" content="Design your dream home with India's top online renovation destination."/>
+	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
-  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		#horizontal-list {
+			list-style: none;
+			float: none;
+			display: inline-block;
+			margin-top: 7%;
+		}
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		ul#horizontal-list li{
+			display: inline;
+			margin-left: 0px; 
+		}
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
-  <style type="text/css">
-    @viewport {
-      zoom:1.0;
-      width: extend-to-zoom;
-    }
+		ul#horizontal-list {
+			font-family: 'Slabo 27px', serif;
+		}
 
-    @-ms-viewport {
-      width: extend-to-zoom;
-      zoom: 1.0;
-    }
+	.contact-us-top-description{
+		text-align: justify;  
+		margin-right: 3%;
+		margin-top: 7%;
+		font-size: 1.9em;
+		font-family: 'Slabo 27px', serif;
+		line-height: 1.2em;
+	}
 
-    .jumbotron {
-      padding-top: 70px;
-      font-family: 'Arsenal', sans-serif;
-      font-size: 1.9rem;
-    }
+	.heading-contact{
+		margin-top: 5%;
+		font-family: 'Slabo 27px', serif;
+		font-size: 3.2em;
+		margin-bottom: 0px;
+	}
 
-    .col-sm-8 {
-      text-align: justify;
-    }
+	.lead{
+		padding-top:19px; 
+		padding-bottom:13px;
+		font-family: 'Slabo 27px', serif;
+	}
 
-    #content {
-      
-      text-align: justify; 
-      padding-bottom: 15px; 
-      padding-top: 30px;
-      font-size:24px; 
-      line-height: 2.9rem;"
-    }
-
-    .lists {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    #list {
-      list-style: none;
-      padding-left: 55px;
-    }
-
-    #h3 {
-      padding-top: 55px;
-      padding-left: 55px;
-      padding-bottom: 20px;
-    }    
-
-    .navbar-static-top {
-      margin-bottom: 0px !important;
-    }
-  </style>
-
+	.fa {
+		color: #f74861;
+	}    
+	</style>
 </head>
-  
+
 {% include "navbar.html" %}
 
 <body>
-  <div class="jumbotron" style="padding-top: 10px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-      
-          <p id = "content">
-            At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space without difficulties. We are renovation experts and our role is to deliver your dream renovation within your budget.
-          </p>
-      
-          <h1 style="font-size:45px;padding-top:0px;">
-            CONTACT INFO
-          </h1>
-        
-          <ul id = "list" style="font-size:21px; padding-top:15px;">
-            <li class = "lists">
-              <i style="color: red;" class="fa fa-phone" aria-hidden="true"></i>&nbsp; &nbsp; 9871198773, 9910552002
-            </li>
-            <li class = "lists" style="text-transform: lowercase;">
-              <i style="color: red;" class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; &nbsp;<a  href="mailto:info@irenovate.in">info@irenovate.in</a>
-            </li>
-            <li class = "lists">
-              <i style="color: red;" class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp; 243, LG floor, A1 block, Janakpuri, New Delhi - 110068,
-            </li>
-          </ul>
-      
-          <h2 style="font-size:45px;">
-            Follow Us
-          </h2>
+	<div class="container">
+	  <div class="col-sm-6">
+	    <h2 class="contact-us-top-description">
+	      At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space without difficulties. We are renovation experts and our role is to deliver your dream renovation within your budget.
+	    </h2>
+	    
+	    <div>
+				<h1 class="heading-contact">
+					CONTACT INFO
+				</h1>
+				
+				<ul id = "list" style="font-size:21px; padding-top:15px;list-style: none;">
+					<li class = "lists">
+						<i style="color: #f74861;" class="fa fa-phone" aria-hidden="true"></i>&nbsp; &nbsp; 9871198773, 9910552002
+					</li>
+					<li class = "lists" style="text-transform: lowercase;">
+							<i style="color: #f74861;" class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; &nbsp;<a style="text-decoration: none; color: #f74861" href="mailto:info@irenovate.in">info@irenovate.in</a>
+					</li>
+					<li class = "lists">
+						<i style="color: #f74861;" class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp; 243, LG floor, A1 block, Janakpuri, New Delhi - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110068,
+					</li>
+				</ul>
+	    </div>
+	    
+	    <div>
+				<h1 class="heading-contact">
+					Follow Us!
+				</h1>
+			</div>
+				
+			<ul id="horizontal-list">
+	      <li><a href="https://www.facebook.com/irenovate.in/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a></li>
 
-          <!--  <div class="row"> -->
-          <div id="menu-outer" style="height: 84px;background: url(images/bar-bg.jpg) repeat-x;">
-            <div class="table" style="  display: table; margin: 0 auto;"> 
-              <ul id="horizontal-list" style="min-width: 696px;list-style: none;padding-top: 20px; text-align: left;padding-top:25px;">
-              
-                <li style="display: inline; padding-left:20px;padding-right:10px;"><a href="https://www.facebook.com/irenovate.in/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-              
-                <li style="display: inline;padding-right:10px"><a href="https://twitter.com/hashtag/irenovate"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-              
-                <li style="display: inline;padding-right:10px"><a href="https://br.pinterest.com/kapoorshivang/"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a></li>
-              
-                <li style="display: inline;padding-right:10px"><a href="https://www.linkedin.com/company/irenovate-india"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-              
-                <li style="display: inline;padding-right:10px;"><a href="https://www.youtube.com/channel/UChxT7tZ_F0Z0YaGwjb8UTYQ"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
+				<li><a href="https://twitter.com/hashtag/irenovate"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
 
-                <li style="display: inline;padding-right:10px"><a href="https://www.instagram.com/irenovate01/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-          </div>
+				<li><a href="https://br.pinterest.com/kapoorshivang/"><i class="fa fa-pinterest-square fa-3x" aria-hidden="true"></i></a></li>
 
-        </div>
+				<li><a href="https://www.linkedin.com/company/irenovate-india"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
 
-        <div style="margin-top:10px">
-          <div class="col-sm-5 pull-right">
-            <p class='lead text-align-center' style="padding-top:19px; padding-bottom:13px;font-weight: 900;font-size:25px;">Contact Us NOW!</p>
-            <form method='POST' action=''>{% csrf_token %}
-              {{ form|crispy }}
-              <input class='btn btn-danger' type='submit' value='Submit' />
-            </form>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </div>
+				<li><a href="https://www.youtube.com/channel/UChxT7tZ_F0Z0YaGwjb8UTYQ"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a></li>
 
-  {% include 'Footer/copyright.html' %}
-  {% include 'javascript.html' %}
+				<li><a href="https://www.instagram.com/irenovate01/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	  
+		<div class="col-sm-6">
+			<p class='lead text-align-center' style="font-size: 2.8em;margin-bottom: 5%;margin-top: 2%;" >Contact Us NOW!</p>
+			<form method='POST' action=''>{% csrf_token %}
+				{{ form|crispy }}
+				<input class='btn btn-default' style="background-color: #f74861;color: white; " type='submit' value='Submit' />
+			</form>
+		</div>
+	</div>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	{% include 'Footer/copyright.html' %}
+	{% include 'javascript.html' %}
 
 </body>
+
