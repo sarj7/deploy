@@ -1,3 +1,4 @@
+{% load crispy_forms_tags %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
@@ -6,6 +7,7 @@
 	<title>iRenovate | Wardrobes</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -42,9 +44,9 @@
 			font-family: 'Raleway', sans-serif;
 			font-size: 1.2em;
 			text-align: left;
-			padding-top: 2%;
+			padding-top: 5%;
 			padding-left: 1%;
-			margin-bottom: 0px;
+			margin-bottom: 20px;
 			padding-bottom: 0px;
 		}
 
@@ -54,8 +56,9 @@
 			margin-top: 2%;
 		}
 
-		.btn{
-			background-color: #f74861; 
+		.img-responsive:hover {		
+			box-shadow: 0px 0px 10px 10px #ccc;
+			-webkit-transition: all .3s linear;
 		}
 	</style>
 </head>
@@ -70,9 +73,10 @@
 		<p class="paragraph">
 			A Range of Wardrobes For Your Home!
 		</p>
+		
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe1.jpg' %}" class="img-responsive" alt="Brunette Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/brunette-wardrobe.jpg' %}" class="img-responsive" alt="Brunette Wardrobe">
 				<p class="imnm">
 					Brunette Wardrobe
 				</p>
@@ -80,8 +84,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe2.jpg' %}" class="img-responsive" alt="Caucasian Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/caucasian-wardrobe.jpg' %}" class="img-responsive" alt="Caucasian Wardrobe">
 				<p class="imnm">
 					Caucasian Wardrobe
 				</p>
@@ -95,7 +100,7 @@
 	<div class="container ain">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe3.jpg' %}" class="img-responsive" alt="Webster Grey Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/webster-grey-wardrobe.jpg' %}" class="img-responsive" alt="Webster Grey Wardrobe">
 				<p class="imnm">
 					Webster Grey Wardrobe
 				</p>
@@ -103,8 +108,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe4.jpg' %}" class="img-responsive" alt="White Gerbera Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/white-gerbera-wardrobe.jpg' %}" class="img-responsive" alt="White Gerbera Wardrobe">
 				<p class="imnm">
 					White Gerbera Wardrobe
 				</p>
@@ -118,7 +124,7 @@
 	<div class="container ain">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe5.jpg' %}" class="img-responsive" alt="Pansy Black Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/pansy-black-wardrobe.jpg' %}" class="img-responsive" alt="Pansy Black Wardrobe">
 				<p class="imnm">
 					Pansy Black Wardrobe
 				</p>
@@ -126,8 +132,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe6.jpg' %}" class="img-responsive" alt="Wooden Typhoon Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/wooden-typhoon-wardrobe.jpg' %}" class="img-responsive" alt="Wooden Typhoon Wardrobe">
 				<p class="imnm">
 					Wooden Typhoon Wardrobe
 				</p>
@@ -141,7 +148,7 @@
 	<div class="container ain">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe7.jpg' %}" class="img-responsive" alt="Salmon Grey Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/salmon-grey-wardrobe.jpg' %}" class="img-responsive" alt="Salmon Grey Wardrobe">
 				<p class="imnm">
 					Salmon Grey Wardrobe
 				</p>
@@ -149,8 +156,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe8.jpg' %}" class="img-responsive" alt="Roseate Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/roseate-wardrobe.jpg' %}" class="img-responsive" alt="Roseate Wardrobe">
 				<p class="imnm">
 					Roseate Wardrobe
 				</p>
@@ -164,7 +172,7 @@
 	<div class="container ain">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe9.jpg' %}" class="img-responsive" alt="Mirrored Grey">
+				<img src="{% static 'img/Themes/Wardrobe/mirrored-grey.jpg' %}" class="img-responsive" alt="Mirrored Grey">
 				<p class="imnm">
 					Mirrored Grey
 				</p>
@@ -172,8 +180,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe10.jpg' %}" class="img-responsive" alt="Nut-Brown Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/nut-brown-wardrobe.jpg' %}" class="img-responsive" alt="Nut-Brown Wardrobe">
 				<p class="imnm">
 					Nut-Brown Wardrobe
 				</p>
@@ -187,7 +196,7 @@
 	<div class="container ain">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe11.jpg' %}" class="img-responsive" alt="Orchid White">
+				<img src="{% static 'img/Themes/Wardrobe/orchid-white.jpg' %}" class="img-responsive" alt="Orchid White">
 				<p class="imnm">
 					Orchid White
 				</p>
@@ -195,8 +204,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe12.jpg' %}" class="img-responsive" alt="Toulon Wardrobe">
+				<img src="{% static 'img/Themes/Wardrobe/toulon-wardrobe.jpg' %}" class="img-responsive" alt="Toulon Wardrobe">
 				<p class="imnm">
 					Toulon Wardrobe
 				</p>
@@ -210,7 +220,7 @@
 	<div class="container ain">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe13.jpg' %}" class="img-responsive" alt="">
+				<img src="{% static 'img/Themes/Wardrobe/glazed-ebony.jpg' %}" class="img-responsive" alt="">
 				<p class="imnm">
 					Glazed Ebony
 				</p>
@@ -218,8 +228,9 @@
 				    <hr style="width: 99%; border: .3px solid #d1d1d1; margin-bottom: 0px;">
 				</div>
 			</div>
+			
 			<div class="col-sm-6">
-				<img src="{% static 'img/Themes/Wardrobe/Wardrobe14.jpg' %}" class="img-responsive" alt="">
+				<img src="{% static 'img/Themes/Wardrobe/brushed-amber.jpg' %}" class="img-responsive" alt="">
 				<p class="imnm">
 					Brushed Amber
 				</p>
@@ -231,8 +242,7 @@
 	</div>
 
 	<div class="contact">
-		<a href="{% url 'renovation_consultation' %}"><buttonx style = "color: white;
-			text-decoration: none !important;" type="button" class="btn btn-lg">Contact Our Wardrobe Expert</button></a>
+		<a href="{% url 'renovation_consultation' %}"><button class="btn btn-lg" style = "background-color: #f74861;color: white; text-decoration: none !important;" type="button">Contact Our Expert</button></a>
 	</div>
 
 	{% include 'Footer/copyright.html' %}

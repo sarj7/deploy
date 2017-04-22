@@ -20,7 +20,7 @@ def renovation_consultation(request):
 
 		instance.save()
 	 	
-		return redirect("/acknowledgement")
+		return redirect("/typeform-details")
 	return render (request, "renovation-consultation.html", context)
 
 def ourwork(request):
@@ -91,3 +91,7 @@ def disclaimer(request):
 
 def acknowledge(request):
 	return render(request, "acknowledge.html", {})
+
+# Typeform 
+def typeform(request):
+	return render(request, "typeform.html", {})
