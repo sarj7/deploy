@@ -7,18 +7,7 @@ from .models import Contact, Refer
 from .forms import ContactForm, ReferForm  
 
 def home(request):
-	form = ReferForm(request.POST or None)
-	context = {
-		"form": form,
-	}
-	
-	if form.is_valid():
-		instance = form.save(commit=False)
-
-		instance.save()
-	 	
-		return redirect("/")
-	return render(request, "Home/home.html", context)
+	return render(request, "Home/home.html", {})
 
 def renovation_consultation(request):
 	form = ContactForm(request.POST or None)
