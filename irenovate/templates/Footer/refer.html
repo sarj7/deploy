@@ -1,0 +1,81 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>refer</title>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style type="text/css">
+	.formOuterDiv{
+		background-image: url({% static 'img/refer.jpg' %});
+	}
+
+	.referListIndividual{
+		text-align: left;
+		font-size: 1.2em;
+	}
+
+	.referList{
+		padding-left: 10%;
+	}
+
+	.referHeading{
+		padding-bottom: 3%;
+		padding-top: 2%;
+	}
+	
+	.contactusnow{
+		background-color: blue;
+		border: 1px solid skyblue;
+		border-radius: 10;
+		padding-top: 15px;
+		padding-bottom: 25;
+	}	
+</style>
+</head>
+
+{% include "navbar.html" %}
+
+<body>
+	<center>
+		<div class="container formOuterDiv">
+			<div class="col-sm-4">
+				
+			</div>
+		    <div class="col-sm-4  col-xs-12  col-md-3 col-md-offset-5" style="margin-bottom: 10%; margin-top: 3%; background-color: #a3a8af;padding-bottom:2%;border-radius: 4px;" id="contactusnow">
+		      <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Refer a Friend</p>
+		      <form method='POST' action="">{% csrf_token %}
+		        {{ form|crispy }}
+		        <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+		      </form>
+		    </div>
+		</div>
+		<div>
+			<h2 class="referHeading">
+				Terms and Conditions to redeem your money.
+			</h2>
+			<ul class="referList">
+				<li class="referListIndividual">The project should close</li>
+				<li class="referListIndividual">value should be more than  lakhs</li>
+				<li class="referListIndividual">referral will be paid only upon receiving % payment from the client</li>
+				<li class="referListIndividual">u can accept payment via cheque or wired transfer as per your convieevce. NO CASH </li>
+			</ul>
+		</div>
+	</center>
+
+	{% include 'Footer/copyright.html' %}  
+  {% include 'javascript.html' %}
+
+</body>
+</html>

@@ -41,8 +41,7 @@ from website.views import (
         disclaimer,
         acknowledge,
         service,
-        #typeform
-        typeform,
+        refer,
     )
 
 urlpatterns = [
@@ -74,10 +73,10 @@ urlpatterns = [
     url(r'^disclaimer$', disclaimer, name='disclaimer'),
     url(r'^acknowledgement$', acknowledge, name='acknowledge'),
     url(r'^our-service$', service, name='service'),
-
-    url(r'^typeform-details$', typeform, name='typeform'),
+    url(r'^refer-a-friend$', refer, name='refer'),
 
     url(r'^admin/', admin.site.urls),
+
 ]
 
 if settings.DEBUG:

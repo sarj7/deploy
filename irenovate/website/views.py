@@ -2,12 +2,23 @@ from django.conf import settings
 
 from django.shortcuts import render, redirect
 
-from .models import Contact
+from .models import Contact, Refer
 
-from .forms import ContactForm   
+from .forms import ContactForm, ReferForm  
 
 def home(request):
-	return render(request, "Home/home.html", {})
+	form = ReferForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	
+	if form.is_valid():
+		instance = form.save(commit=False)
+
+		instance.save()
+	 	
+		return redirect("/")
+	return render(request, "Home/home.html", context)
 
 def renovation_consultation(request):
 	form = ContactForm(request.POST or None)
@@ -20,7 +31,7 @@ def renovation_consultation(request):
 
 		instance.save()
 	 	
-		return redirect("/typeform-details")
+		return redirect("/acknowledgement")
 	return render (request, "renovation-consultation.html", context)
 
 def ourwork(request):
@@ -83,15 +94,23 @@ def faq(request):
 def career(request):
 	return render (request, "Footer/career.html", {})
 
-def service(request):
-	return render (request, "Footer/our-services.html", {})
-
 def disclaimer(request):
 	return render (request, "Footer/disclaimer.html", {})
 
 def acknowledge(request):
 	return render(request, "acknowledge.html", {})
 
-# Typeform 
-def typeform(request):
-	return render(request, "typeform.html", {})
+def service(request):
+	return render(request, "Footer/our-services.html", {})
+
+def refer(request):
+	form = ReferForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	
+	if form.is_valid():
+		instance = form.save(commit=False)
+		instance.save()
+		return redirect("/acknowledgement")
+	return render(request, "Footer/refer.html", context)

@@ -10,7 +10,7 @@ CITY_CHOICES = (
 )
 
 class Contact(models.Model):
-	email  = models.EmailField(blank=True, null=True) 
+	email = models.EmailField(blank=True, null=True) 
 	Full_Name = models.CharField(max_length=120, blank=False, null=True)
 	Phone_No = models.CharField(max_length=13, blank=False, null=True)
 	City = models.CharField(max_length=200, choices=CITY_CHOICES, blank=False, default='DELHI/ncr')
@@ -21,3 +21,16 @@ class Contact(models.Model):
 
 	def __str__(self):
 		return self.Full_Name
+
+class Refer(models.Model):
+	Full_Name = models.CharField(max_length=120, blank=False)
+	email = models.EmailField(blank=True, null=True) 
+	Friend_Name = models.CharField(max_length=120, blank=False)
+	Friend_Email = models.EmailField(blank=True, null=True)
+	Phone_No = models.CharField(max_length=13, blank=False, null=True)
+	City = models.CharField(max_length=200, choices=CITY_CHOICES, blank=False, default='DELHI/ncr')
+	Renovation_Plan = models.TextField( max_length=300, blank=False, null=True)
+
+	def __str__(self):
+		return self.Full_Name
+	
