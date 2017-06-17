@@ -50,6 +50,20 @@ def themes(request):
 def wardrobe(request):
 	return render(request, "Themes/Wardrobe.html", {})
 
+def modular_kitchen(request):
+	form = ContactForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	
+	if form.is_valid():
+		instance = form.save(commit=False)
+
+		instance.save()
+	 	
+		return redirect("/acknowledgement")
+	return render(request, "Themes/Kitchen.html", context)
+
 def contact(request):
 	form = ContactForm(request.POST or None)
 	objects = Contact.objects.all()

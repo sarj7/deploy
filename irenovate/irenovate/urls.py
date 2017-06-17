@@ -32,7 +32,8 @@ from website.views import (
         retail,
         supaflex,
         themes,
-        wardrobe, 
+        wardrobe,
+        modular_kitchen,
         contact,
         privacy,
         terms,
@@ -59,6 +60,8 @@ urlpatterns = [
     url(r'^themes$', themes, name='themes'),
 
     url(r'^wardrobes$', wardrobe, name='wardrobe'),
+
+    url(r'^modular-kitchen$', modular_kitchen, name='modular_kitchen'),
     
     url(r'^contact-us$', contact, name='contact'),
 

@@ -1,0 +1,231 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modular Kitchen</title>
+  
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+  <meta name="description" content="Design your dream home with India's top online renovation destination."/>
+
+  <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+  </script>
+
+  <style type="text/css">
+    #kitchen-detail-banner {
+      position: relative;
+      width: 100%;
+      background: linear-gradient(
+        rgba(61, 46, 29, 0.8), 
+        rgba(0, 0, 0, 0.6)
+        ), url(https://d305uc8ofhou21.cloudfront.net/images/kitchen.png) no-repeat center center;
+      padding-top: 45px;
+      background-attachment: relative;
+      background-position: center bottom;
+      min-height: 260px;
+      width: 100%;
+      
+      background-size: cover;
+      color: white;
+    }
+
+    .row-multiple {
+    	padding-top: 5%;
+    	padding-bottom: %;
+    }
+
+    .thumbnail-left {
+    	margin-left: 19%;
+    }
+
+    .thumbnail-right {
+    	margin-left: 2%;
+    }
+
+    #innovation{
+    	width: 60%;
+    	margin-top: 3.2%;
+    }
+
+    #bottom-text {
+    	margin-top:6%;
+    }
+
+    .dropdown-top {
+    	margin-left: 10%;
+    }
+
+    .mod_kitchen3{
+      text-align: center;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    .brand-list {
+      list-style: none;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      float: left;
+      width: 100%;
+      margin-left: 3.5%;
+    }
+
+    .list-brand {
+      float: left;
+      width: 14.6%;
+      border: 2px solid #ddd;
+      padding: 6px;
+      background-color: #ddd;
+      margin: 0%;
+      margin-left: 3%;
+    }
+
+    .brand-image{
+      filter: grayscale(0%);
+      max-width: 100%;
+    }
+
+    .brand-tag{
+      padding-top: 2%;
+      font-size: 1.9em;
+    }
+
+    .brand-subtag {
+      padding-bottom: 3%;
+      font-size: 2.4em;
+    }
+    
+    .formOuterDiv{
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    #form_image{
+      margin-top: 25%;
+    }
+
+    @media(max-width:767px){
+      .brand-tag{
+        padding-top: 2%;
+        font-size: 1.3em;
+      }
+
+      .brand-subtag {
+        padding-bottom: 3%;
+        font-size: 1.9em;
+      }
+
+      .list-brand {
+        float: left;
+        width: 33%;
+        border: 2px solid #ddd;
+        padding: 6px;
+        background-color: #ddd;
+        margin: 0%;
+        margin-left: 8%;
+        margin-bottom: 4%;
+      }
+    }
+}
+  </style>
+</head>
+
+{% include "navbar.html" %}
+<body>
+
+  <div id="kitchen-detail-banner" ng-if="roomName == 'Kitchen'" class="ng-scope"></div>
+
+	<!-- <div class="dropdown dropdown-top ng-binding">
+    <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">classic</a></li>
+      <li><a href="#">Modern</a></li>
+      <li><a href="#">Modern classic</a></li>
+    </ul>
+  </div> -->
+  
+  <div class="container"></div><div></div><div>
+    <div class="row row-multiple">
+      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-left img-responsive" src="{% static 'img/kitchen/1.png' %}"/></div>
+      
+      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-right img-responsive" src="{% static 'img/kitchen/2.png' %}"></div>
+  	</div>
+    
+    <div class="row row-multiple">  
+      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-left img-responsive" src="{% static 'img/kitchen/3.png' %}"></div>
+      
+      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-right img-responsive" src="{% static 'img/kitchen/4.png' %}"></div>
+    </div>
+    
+    <div class="row row-multiple">  
+			<div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-left img-responsive" src="{% static 'img/kitchen/5.png' %}"></div>
+      
+      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-right img-responsive" src="{% static 'img/kitchen/6.png' %}"></div>
+    </div>
+  </div>
+
+<!--   <div class="container">
+    <hr style="color: black;width: 102%;border: .3px solid #eaecef; margin-top: -2%;">
+  </div> -->
+
+  <div class="container formOuterDiv">
+    <div class="col-sm-4  col-xs-12  col-md-4 col-md-offset-1" id="contactusnow">
+      <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
+      <form method='POST' action="">{% csrf_token %}
+        {{ form|crispy }}
+        <input class='btn btn-block btn-danger' type='submit' value='Submit'/>
+      </form>
+    </div>
+    <div class="col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-1" >
+      <img id="form_image" class="img-responsive" src="{% static 'img/kitchen/7.jpg' %}">
+    </div>
+  </div>
+<!-- 
+    <hr style="color: black;width: 102%; border: .3px solid #eaecef; margin-top: 150px;"> -->
+
+  <div class="container">
+    <div class="mod_kitchen03">
+      <center>
+        <h3 class="brand-tag">Our Brands</h3>
+        <h2 class="brand-subtag">At iRenovate, quality is our first preference</h2>
+      </center>
+      <div class="kitchen_brand">
+        <ul class="brand-list">
+          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/bosch.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/faber.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/hafele.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/hettich.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/merino.jpg' %}" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {% include 'Footer/copyright.html' %}  
+
+
+
+</body>

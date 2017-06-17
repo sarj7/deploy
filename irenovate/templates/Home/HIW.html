@@ -47,58 +47,59 @@
     }
 	</style>
 </head>
+
 <body>
-<div class="container">
-	<h3 class="heading">How it works!</h3>
-	<div class="row customRow">
-		<div class="col-sm-3">
-			<div class="singleIcon">
-				<img class="img-responsive" src="{% static 'img/USP/home/meeting.jpg' %}">
+	<div class="container">
+		<h3 class="heading">How it works!</h3>
+		<div class="row customRow">
+			<div class="col-sm-3">
+				<div class="singleIcon">
+					<img class="img-responsive" src="{% static 'img/USP/home/schedule_meeting.png' %}" alt="Schedule Meeting">
+				</div>
+				<p class="plainHeading">
+					Schedule Meeting
+				</p>
+				<p class="plainText">
+					Meet your dedicated expert design team.
+				</p>
 			</div>
-			<p class="plainHeading">
-				Schedule Meeting
-			</p>
-			<p class="plainText">
-				Meet your dedicated expert design team.
-			</p>
-		</div>
-		<div class="col-sm-3">
-			<div class="singleIcon">
-				<img class="img-responsive" src="{% static 'img/USP/home/imagined.jpg' %}">
+			<div class="col-sm-3">
+				<div class="singleIcon">
+					<img class="img-responsive" src="{% static 'img/USP/home/imagined_in_india.png' %}" alt="Exquisite Designs & Plans">
+				</div>
+				<p class="plainHeading">
+					Exquisite Designs & Plans
+				</p>
+				<p class="plainText">
+					Get personalized designs options for your Indian homes.
+				</p>
 			</div>
-			<p class="plainHeading">
-				Exquisite Designs & Plans
-			</p>
-			<p class="plainText">
-				Get personalized designs options for your Indian homes.
-			</p>
-		</div>
-		<div class="col-sm-3">
-			<div class="singleIcon">
-				<img class="img-responsive" src="{% static 'img/USP/home/3D.jpg' %}">
+			<div class="col-sm-3">
+				<div class="singleIcon">
+					<img class="img-responsive" src="{% static 'img/USP/home/3d_Review.png' %}" alt="3d Review">
+				</div>
+				<p class="plainHeading">
+					3D Review
+				</p>
+				<p class="plainText">
+					Review in 3D to help visualize and place order.
+				</p>
 			</div>
-			<p class="plainHeading">
-				3D Review
-			</p>
-			<p class="plainText">
-				Review in 3D to help visualize and place order.
-			</p>
-		</div>
-		<div class="col-sm-3">
-			<div class="singleIcon">
-				<img class="img-responsive" src="{% static 'img/USP/home/delivery.jpg' %}">
+			<div class="col-sm-3">
+				<div class="singleIcon">
+					<img class="img-responsive" src="{% static 'img/USP/home/Your_irenovate_home.png' %}"ou alt="Y">
+				</div>
+				<p class="plainHeading">
+					Your <span style="color:#f74861;">iRenovate</span> Home
+				</p>
+				<p class="plainText">
+					Get your iRenovate home installed by experts.
+				</p>
 			</div>
-			<p class="plainHeading">
-				Your <span style="color:#f74861;">iRenovate</span> Home
-			</p>
-			<p class="plainText">
-				Get your iRenovate home installed by experts.
-			</p>
 		</div>
+		<div class="container outerContainerForHomeButton">
+	    <a class="knowMoreHomeButton" href="{% url 'renovation_consultation' %}"> CLICK TO KNOW MORE &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+	  </div>
 	</div>
-	<div class="container outerContainerForHomeButton">
-    <a class="knowMoreHomeButton" href="{% url 'renovation_consultation' %}"> CLICK TO KNOW MORE &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
-  </div>
-</div>
 </body>
 </html>
