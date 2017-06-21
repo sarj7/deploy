@@ -23,7 +23,8 @@ from accounts.views import (login_view, register_view, logout_view)
 
 from website.views import (
         home, 
-        renovation_consultation, 
+        renovation_consultation,
+        seo, 
         ourwork,
         david,
         malibu,
@@ -48,7 +49,8 @@ from website.views import (
 urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^renovation-consultation$', renovation_consultation, name='renovation_consultation'),
-    
+    url(r'^renovation-consultation/interior-designers$', seo, name='seo'),
+
     url(r'^our_work$', ourwork, name='ourwork'),
     url(r'^our_work/david$', david, name='david'),
     url(r'^our_work/malibu$', malibu, name='malibu'),

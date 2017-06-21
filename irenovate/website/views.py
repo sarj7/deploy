@@ -23,6 +23,9 @@ def renovation_consultation(request):
 		return redirect("/acknowledgement")
 	return render (request, "renovation-consultation.html", context)
 
+def seo(request):
+	return render(request, "seo_page.html", {})
+
 def ourwork(request):
 	return render(request, "OurWork/ourwork.html", {})
 
