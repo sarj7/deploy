@@ -2,9 +2,9 @@ from django.conf import settings
 
 from django.shortcuts import render, redirect
 
-from .models import Contact, Refer
+from .models import Contact, Refer, Kitchen
 
-from .forms import ContactForm, ReferForm  
+from .forms import ContactForm, ReferForm, KitchenForm  
 
 def home(request):
 	return render(request, "Home/home.html", {})
@@ -54,14 +54,13 @@ def wardrobe(request):
 	return render(request, "Themes/Wardrobe.html", {})
 
 def modular_kitchen(request):
-	form = ContactForm(request.POST or None)
+	form = KitchenForm(request.POST or None)
 	context = {
 		"form": form,
 	}
 	
 	if form.is_valid():
 		instance = form.save(commit=False)
-
 		instance.save()
 	 	
 		return redirect("/acknowledgement")

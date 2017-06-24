@@ -32,6 +32,44 @@
           crossorigin="anonymous">
   </script>
 
+  <script type="text/javascript">
+    function change(){
+      var image = document.getElementById('img_1');
+      image.src = '{% static "img/kitchen/1b.jpg" %}';
+      var img_underline = document.getElementById('img_alternate21');
+      img_underline.style.border = "1px solid blue";
+    };
+
+    function change1(){
+      var image = document.getElementById('img_1');
+      image.src = '{% static "img/kitchen/1c.jpg" %}';
+      var img_underline = document.getElementById('img_alternate22');
+      img_underline.style.border = "1px solid blue";
+    };
+
+    function change2(){
+      var image = document.getElementById('img_1');
+      image.src = '{% static "img/kitchen/1d.jpg" %}';
+      var img_underline = document.getElementById('img_alternate23');
+      img_underline.style.border = "1px solid blue";
+    };
+
+    function change3(){
+      var image = document.getElementById('img_1');
+      image.src = '{% static "img/kitchen/1e.jpg" %}';
+      var img_underline = document.getElementById('img_alternate24');
+      img_underline.style.border = "1px solid blue";
+    };
+
+    function change4(){
+      var image = document.getElementById('img_1');
+      image.src = '{% static "img/kitchen/1f.jpg" %}';
+      var img_underline = document.getElementById('img_alternate25');
+      img_underline.style.border = "1px solid blue";
+    };
+
+</script>
+
   <style type="text/css">
     #kitchen-detail-banner {
       position: relative;
@@ -51,29 +89,29 @@
     }
 
     .row-multiple {
-    	padding-top: 5%;
-    	padding-bottom: %;
+      padding-top: 5%;
+      padding-bottom: %;
     }
 
     .thumbnail-left {
-    	margin-left: 19%;
+      margin-left: 19%;
     }
 
     .thumbnail-right {
-    	margin-left: 2%;
+      margin-left: 2%;
     }
 
     #innovation{
-    	width: 60%;
-    	margin-top: 3.2%;
+      width: 60%;
+      margin-top: 3.2%;
     }
 
     #bottom-text {
-    	margin-top:6%;
+      margin-top:6%;
     }
 
     .dropdown-top {
-    	margin-left: 10%;
+      margin-left: 10%;
     }
 
     .mod_kitchen3{
@@ -126,6 +164,24 @@
       margin-top: 25%;
     }
 
+    .img_alternate1{
+      margin-left: 3%;
+    }
+
+    .img_alternate{
+      margin-right: 3%;
+    }
+
+    .row_alternate{
+      margin-bottom: 5%;
+      margin-top: 2%;
+    }
+
+    .img_alternate2{
+      bottom: .3rem;
+      position: absolute;
+    }
+
     @media(max-width:767px){
       .brand-tag{
         padding-top: 2%;
@@ -147,8 +203,45 @@
         margin-left: 8%;
         margin-bottom: 4%;
       }
+
+      .img_alternate1{
+        margin-left: 0%;
+        margin-bottom: 3%;
+      }
+
+      .img_alternate{
+        margin-right: 0%;
+      }
+
+      .img_alternate2{
+        bottom: .3rem;
+        position: absolute;
+      }
+
+      .row_alternate1{
+        margin-top: -5%;
+        padding-bottom: 22%;
+      }
+
+      .row_alternate{
+        margin-bottom: 0%;
+        margin-top: 2%;
+      }
     }
-}
+
+    /*Kitchen form end*/
+    .kitchen_plan{
+      margin-left: 150% !important;
+      margin-top: -70% !important;
+      width: 100%
+    }
+
+    .yield{
+      margin-left: 150% !important;
+      margin-top: 7% !important;
+      width: 100%
+    }
+    /*Kitchen form end*/
   </style>
 </head>
 
@@ -157,54 +250,207 @@
 
   <div id="kitchen-detail-banner" ng-if="roomName == 'Kitchen'" class="ng-scope"></div>
 
-	<!-- <div class="dropdown dropdown-top ng-binding">
-    <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">classic</a></li>
-      <li><a href="#">Modern</a></li>
-      <li><a href="#">Modern classic</a></li>
-    </ul>
-  </div> -->
-  
-  <div class="container"></div><div></div><div>
-    <div class="row row-multiple">
-      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-left img-responsive" src="{% static 'img/kitchen/1.png' %}"/></div>
-      
-      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-right img-responsive" src="{% static 'img/kitchen/2.png' %}"></div>
-  	</div>
-    
-    <div class="row row-multiple">  
-      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-left img-responsive" src="{% static 'img/kitchen/3.png' %}"></div>
-      
-      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-right img-responsive" src="{% static 'img/kitchen/4.png' %}"></div>
-    </div>
-    
-    <div class="row row-multiple">  
-			<div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-left img-responsive" src="{% static 'img/kitchen/5.png' %}"></div>
-      
-      <div class="col-lg-6 col-sm-6 col-xs-6"><img class="thumbnail-right img-responsive" src="{% static 'img/kitchen/6.png' %}"></div>
+  <div class="container">
+    <div class="row row_alternate">
+      <div class="container">
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6 ">
+          <img class="img-responsive img_alternate1" id="img_1" src="{% static 'img/kitchen/1a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-2 col-md-2 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <a onclick="change()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate21" src="{% static 'img/kitchen/icons/1.jpg' %}"/></a>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <a onclick="change1()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate22" src="{% static 'img/kitchen/icons/1.jpg' %}"/></a>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <a onclick="change2()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate23" src="{% static 'img/kitchen/icons/1.jpg' %}"/></a>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <a onclick="change3()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate24" src="{% static 'img/kitchen/icons/1.jpg' %}"/></a>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <a onclick="change4()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate25" src="{% static 'img/kitchen/icons/1.jpg' %}"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive pull-right img_alternate" src="{% static 'img/kitchen/2b.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-2 col-md-2 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-<!--   <div class="container">
-    <hr style="color: black;width: 102%;border: .3px solid #eaecef; margin-top: -2%;">
-  </div> -->
+
+  <div class="container">
+    <div class="row row_alternate">
+      <div class="container">
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6 ">
+          <img class="img-responsive img_alternate1" src="{% static 'img/kitchen/3a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-2 col-md-2 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive pull-right img_alternate" src="{% static 'img/kitchen/4a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-2 col-md-2 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row_alternate">
+      <div class="container">
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive img_alternate1" src="{% static 'img/kitchen/5a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-2 col-md-2 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive pull-right img_alternate" src="{% static 'img/kitchen/6a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-2 col-md-2 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+              <div class="col-sm- col-md-2 col-xs-2">
+                <img class="img-responsive img_alternate2 img-circle" src="{% static 'img/kitchen/icons/1.jpg' %}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container formOuterDiv">
     <div class="col-sm-4  col-xs-12  col-md-4 col-md-offset-1" id="contactusnow">
       <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
-      <form method='POST' action="">{% csrf_token %}
+      <!-- <form method='POST' action="">{% csrf_token %}
         {{ form|crispy }}
         <input class='btn btn-block btn-danger' type='submit' value='Submit'/>
+      </form> -->
+
+      <form method='POST' action="">{% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="col-sm-12 col-xs-12">
+          <div class="fieldWrapper ">
+            {{ form.email.errors }}
+            <label for="{{ form.mail.id_for_label }}">Email:</label>
+            {{ form.email }}
+          </div>
+
+          <div class="fieldWrapper">
+            {{ form.Full_Name.errors }}
+            <label for="{{ form.Full_Name.id_for_label }}">Full Name:</label>
+            {{ form.Full_Name }}
+          </div>
+
+          <div class="fieldWrapper">
+            {{ form.Phone_No.errors }}
+            <label for="{{ form.Phone_No.id_for_label }}">Phone No:</label>
+            {{ form.Phone_No }} 
+          </div>
+
+          <div class="fieldWrapper">
+            {{ form.City.errors }}
+            <label for="{{ form.City.id_for_label }}">City:</label>
+            {{ form.City }}
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-xs-12">
+          <div class="kitchen_plan">
+            {{ form.Your_Kitchen_Plan.errors }}
+            <label for="{{ form.Your_Kitchen_Plan.id_for_label }}">Your Kitchen Plan:</label>
+            {{ form.Your_Kitchen_Plan }}
+          </div>
+          <input class='btn btn-block btn-danger yield' type='submit' value='Submit'/>
+        </div>
       </form>
     </div>
-    <div class="col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-1" >
-      <img id="form_image" class="img-responsive" src="{% static 'img/kitchen/7.jpg' %}">
-    </div>
   </div>
-<!-- 
-    <hr style="color: black;width: 102%; border: .3px solid #eaecef; margin-top: 150px;"> -->
 
   <div class="container">
     <div class="mod_kitchen03">
@@ -224,8 +470,5 @@
     </div>
   </div>
 
-  {% include 'Footer/copyright.html' %}  
-
-
-
+  {% include 'Footer/copyright.html' %}
 </body>
