@@ -1,3 +1,6 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +9,9 @@
 	<meta name="description" content="Interior Designing is an art done by professionals, Irenovate is one of the best interior designing firm in India. We have been able to deliver turnkey projects in less time">
 
 	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+
+	<!-- font awesome -->
+	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -27,7 +33,7 @@
 
 	<style type="text/css">
 		.title_bottom{
-			margin-bottom: 2%;
+			margin-bottom: 0%;
 			font-family: 'Lato', sans-serif;
 		}
 
@@ -197,6 +203,61 @@
 			font-size: 1.3em;
 			font-family: 'Lato', sans-serif;
 		}
+
+		.row_alternate1{
+			margin-bottom: 10%;
+		}
+
+		.txt {
+			text-align: justify;
+			padding-top: 10%;
+		}
+
+		.txt1 {
+			text-align: justify;
+			margin-top: -6%;
+		}
+
+		.txt2 {
+			text-align: justify;
+			margin-top: -7%;
+		}
+
+		.imgTop{
+			padding-bottom: 10%;
+			padding-top: 5%; 
+		}
+
+		.rowForm{
+			margin-top: 20%;
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+
+		.blogTitle{
+			padding-bottom: 5%;
+			margin-top:0px;
+		}
+
+		.img-alternate2 {
+			margin-top: 5%;
+		}
+
+		#contactusnow {
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 4px;
+      padding-top: 22px;
+      padding-bottom: 25px;
+      margin-top: 18%;
+      color: black;
+    }
+
+    .bloggerName{
+    	margin-bottom: -0.2%;
+    	padding-top: 1%;
+    }
+
 		@media only screen and (min-device-width: 480px) {
 			.pgrph{
 				text-align: justify;
@@ -204,6 +265,23 @@
 				padding-left: 10%;
 				width: 90%;
 				font-family: 'Lato', sans-serif;
+			}
+
+			.img-alternate2 {
+				display: flex;
+				justify-content: center;
+				margin-top: 5%;
+				margin-bottom: 5%;
+			}
+
+			.txt {
+				padding-left: 3%;
+				padding-right: 3%;
+			}
+
+			.blogTitle{
+				margin-top: 0%;
+				padding-bottom: 3%;
 			}
 		}
 
@@ -214,30 +292,73 @@
 
 <body>
 	<div class="container container_synonym">
-		<center>
-			<h1 class="title_bottom">Interior designing</br> A hot potato these days!</h1>
-		</center>
+		<h1 class="title_bottom">Interior designing A hot potato these days!</h1>
+		<p class="bloggerName">By:- &nbsp; Sanya Kumra </p>
+		<p><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;3oth June 2016</p>
 		<div class="row">
+			<div class="col-sm-8 col-md-8 col-xs-12">
+				<div class="row row_alternate1">
+					<div class="col-sm-12 col-xs-12 col-md-12 ">
+						<img class="img-responsive imgTop" alt="" src="{% static 'img/SEO/seo_780.jpg' %}">
+					</div>
+					<div class="col-sm-6 col-xs-12 col-md-6">
+						<img class="img-responsive" alt="" src="{% static 'img/SEO/seo_1.jpg' %}">
+					</div>
+					<div class="col-sm-6 col-xs-12 col-md-6">
+						<p class="pgrph">
+							Interior designing! An upcoming trend ! Interior designing has become the part and parcel of construction and renovation business ! Almost every person who is planning to renovate /construct his/her house is hiring an interior designer to create a dream house for oneself  with interiors that will make your heads turn!
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 col-md-6">
+						<p class="pgrph">
+							It helps  to create warm, comfortable, and interesting home environments for other people who seek the help of an interior designer. Interior design concerns itself with more than just the visual or ambient enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors , a profession that will help you add a wow factor to your interiors.
+						</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 col-md-6">
+						<img class="img-responsive img-alternate1" alt="" src="{% static 'img/SEO/seo_2.jpg' %}">
+					</div>
+				</div>
+			</div>
+			
 			<div class="col-sm-4 col-xs-12 col-md-4">
-				<img class="img-responsive" alt="" src="http://placehold.it/395x250/e67e22/fff">
-			</div>
-			<div class="col-sm-8 col-xs-12 col-md-8 article_top">
-				<p class="pgrph">
-					Interior designing! An upcoming trend ! Interior designing has become the part and parcel of construction and renovation business ! Almost every person who is planning to renovate /construct his/her house is hiring an interior designer to create a dream house for oneself  with interiors that will make your heads turn!
-				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-8 col-xs-12 col-md-8">
-				<p class="pgrph">
-					Interior designing! An upcoming trend ! Interior designing has become the part and parcel of construction and renovation business ! Almost every person who is planning to renovate /construct his/her house is hiring an interior designer to create a dream house for oneself  with interiors that will make your heads turn!
-				</p>
-			</div>
-			<div class="col-sm-4 col-xs-12 col-md-4">
-				<img class="img-responsive" alt = "" src="http://placehold.it/395x250/e67e22/fff">
-			</div>
-		</div>
-
+				<div class="row">
+					<h3 class="blogTitle">Trending Blogs</h3>
+					<div class="row">  
+						<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
+							<img class="img-responsive" alt="" src="http://placehold.it/100x100/e67e22/fff">
+						</div>
+						<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8">
+							<p class="txt">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors </p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
+							<img class="img-responsive" alt="" src="http://placehold.it/100x100/e67e22/fff">
+						</div>
+						<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8 txt">
+							<p class="txt1">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
+							<img class="img-responsive " alt="" src="http://placehold.it/100x100/e67e22/fff">
+						</div>
+						<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8 txt">
+							<p class="txt2">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors .</p>
+						</div>
+					</div>
+				</div>
+				<div class="row rowForm" id="contactusnow">
+		      <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
+		      <form method='POST' action="">{% csrf_token %}
+		        {{ form|crispy }}
+		        <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+		      </form>
+		    </div>
+	    </div>
+	  </div>
 
 		<div class="container container_synonym4">
 			<h4>Index of content.</h4>
@@ -250,6 +371,7 @@
 				<li><a class="link_content" href="#six">Famous Interior Designers and Architects in Gurgaon</a></br></li>
 				<li><a class="link_content" href="#seven">Famous Interior Designers and Architects in Jaipur</a></br></li>
 				<li><a class="link_content" href="#eight">About iRenovate</a></br></li>
+			</ol>
 		</div>
 
 		<a name="one"></a>
@@ -259,6 +381,7 @@
 				Know more about interior designers!
 			</h2>
 		</center>
+		
 		<div class="row">
 			<p class="container container_synonym1">
 				Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting  the material you should use for the flooring ,an  interior designer  will help you throughout, till you get the desired look for your home.
@@ -266,8 +389,9 @@
 				An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
 			</p>
 		</div>
+		
 		<div class="container">
-			<img class="img-responsive img_1" alt = "" src="http://placehold.it/1110x280/e67e22/fff">
+			<img class="img-responsive img_1" alt = "" src="{% static 'img/SEO/seo_banner.jpg' %}">
 		</div>
 
 		<a name="two"></a>
@@ -277,6 +401,7 @@
 				Interior decoration and Interior designing – know the difference!
 			</h2>
 		</center>
+		
 		<div class="container container_synonym2	">
 			Interior designer or  interior decorator? Sounds similar! Right? Though, "Interior design" and "interior decorating" are interchangeably used by people but there is a thin line of demarcation between the both.
 			Interior designers must have the technical expertise to know the vast array of options that they can apply to any one space.  Interior design is about both art and science and how to use these two disciplines in creating a beautiful outcome. Technical knowledge is required for it to know the ergonomics and dimensions of a space.
@@ -291,256 +416,7 @@
 				Home decoration  ideas
 			</h2>
 		</center>
-		<!-- <div class="container">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">Hang Bang</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Hanging plates look absolutely classy. Attach wire plate hangers and hang plates on picture nails. These wall plates look classy and come in different shapes , sizes, designs.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">RESIST CONGESTION</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Resist overcrowding a room. You don’t need to fill up a space with lots of furniture.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">BE COLOUR WISE</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Choose  colors  that best complements your upholstery, artwork, rug and whatever else. If you have a dim room which doesn't receive much light, then colour the room with saturated colour.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">LIGHT DELIGHT</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Choose your lightings wisely. One must consider the places where more lights are to be added and what kind of lights are to be added in a space.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">UPHOLSTERY IS IN TREND</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_11">
-						You can use upholstery in furniture , as bed heads , as wall panels and what not . There are many options available as far as colours and designs are concerned. This trend of using upholstery is spiralling day by day and adds an imperial look.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">BRING POSITIVITY WITH WIND CHIMES</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_111">
-						Wind chimes are said to add positivity to a home. Apart from bringing in positivity, they also look good.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">FAUX CEILINGS</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						False ceilings, available in different patterns and lighting systems is widely used feature of home interiors. You can choose the pattern according to your wish .
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">VENTILATION IS MUST</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_11">
-						Your house must be properly ventilated.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">NO MORE PAINT SMELL</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_11">
-						Do you just hate the smell of paints ? Well ! There is a solution to it ! Just add few drops of vanilla essence to the gallons of paint , and the smell will vanish .
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">KEEP DISTANCE</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Keep the furniture a little distant from the walls as this makes the room look more spacious .
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">EXPAND THE SPACE</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Use light colours for small room. This makes them look spacious
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">CURTAIN IS CERTAIN</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Curtains can change the whole look of a room . Make sure that you choose curtains according to the interiors of your room.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">GO GREEN</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Plants are not something that have to be used just for the outdoors, but SHOULD be used for indoors too . They add a cool vibe to your space and brings in freshness and positivity.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">WARDROBE MAGIC</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Myriad of varieties are available in wardrobes. Be it with sliding doors or normal doors , with long and short handles, different designs etc. These also have to be coordinated with other interiors.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-				<h3 class="title_8">WALLPAPERS</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Wallpapers are a big hit ! But do not use wallpaper on a wall where there is leakage .Wherever you are not able to decipher the texture of the paint , you make your job simple, just by adding a nice wallpaper .
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">SCENTS FOR A GREAT MOOD</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_11">
-						Candles, room diffusers, room sprays, and linen sprays -- great scents can really help set a mood. It is very important that the environment you live in is not dingy . If your home interiors are good but your house gives out a bad smell , then who would like to stay at your home? So make sure, your home  smells good, apart from the good interiors.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">MIRROR MAZE</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_1">
-						Hang up a large mirror, and watch a small room open up.
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container container_synonym3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-4">
-					<h3 class="title_8">LAMINATES YOUR INTERIOR MATE</h3>
-				</div>
-				<div class="col-sm-9 col-md-9 col-xs-8">
-					<p class="pgrph_11">
-						Laminates can be used for kitchen slab tops , walls , floors etc . You must choose quality laminates. Alot can be thought of when you consider few of our home decorating ideas.
-					</p>
-				</div>
-			</div>
-		</div> -->
+		
 		<div class="container container_synonym5">
 			<ul>
 				<li class="list_11">
@@ -637,7 +513,7 @@
 			</div>
 
 			<div class="col-sm-3 col-xs-12 col-md-3">
-				<img class="img-responsive img_2" alt = "" src="http://placehold.it/395x250/e67e22/fff">
+				<img class="img-responsive img_2" alt = "" src="{% static 'img/SEO/seo_3.jpg' %}">
 			</div>
 		</div>
 
@@ -656,7 +532,7 @@
 			</div>
 
 			<div class="col-sm-3 col-xs-12 col-md-3">
-				<img class="img-responsive img_2" alt = "" src="http://placehold.it/395x250/e67e22/fff">
+				<img class="img-responsive img_2" alt = "" src="{% static 'img/SEO/seo_4.jpg' %}">
 			</div>
 		</div>
 
@@ -773,9 +649,9 @@
 		<a name="eight"></a>
 
 		<center>
-			<h1 class="title_7">
+			<h2 class="title_7">
 				About iRenovate
-			</h1>
+			</h2>
 		</center>	
 		<div class="container">
 			<div class="col-sm-11 col-sm-offset-1 col-md-11 col-sm-offset-1 col-xs-12">
@@ -798,6 +674,11 @@
 			</div>
 		</div>
 	</div>
+	<section>
+		<div class="container">
+			<a href="{% url 'renovation_consultation' %}"><center><img src="{% static 'img/SEO/seo_bottom.jpg' %}"></center></a>
+		</div>
+	</section>
 
 	{% include 'Footer/copyright.html' %}  
   {% include 'javascript.html' %}
