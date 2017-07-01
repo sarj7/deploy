@@ -193,7 +193,10 @@
     }
 	</style>
 </head>
-<bodxy>
+
+{% include "navbar.html" %}
+
+<body>
 	<center>
 		<h1 class="kitchenTitle">
 			Style defines you </br>So does your wardrobe
@@ -556,5 +559,11 @@
 			</div>
 		</div>
 	</div>
+
+	{% include 'Footer/copyright.html' %}  
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
