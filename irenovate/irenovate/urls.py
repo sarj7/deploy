@@ -24,7 +24,9 @@ from accounts.views import (login_view, register_view, logout_view)
 from website.views import (
         home, 
         renovation_consultation,
-        seo, 
+        seo_interior,
+        seo_wardrobe,
+        seo_kitchen, 
         ourwork,
         david,
         malibu,
@@ -62,8 +64,10 @@ urlpatterns = [
     url(r'^themes$', themes, name='themes'),
 
     url(r'^wardrobes$', wardrobe, name='wardrobe'),
+    url(r'^wardrobes/interior-wardrobe$', seo_wardrobe, name='seo_wardrobe'),
 
     url(r'^modular-kitchen$', modular_kitchen, name='modular_kitchen'),
+    url(r'^modular-kitchen/interior-kitchen$', seo_kitchen, name='seo_kitchen'),
     
     url(r'^contact-us$', contact, name='contact'),
 
