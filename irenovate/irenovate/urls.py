@@ -51,7 +51,7 @@ from website.views import (
 urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^renovation-consultation$', renovation_consultation, name='renovation_consultation'),
-    url(r'^renovation-consultation/interior-designers$', seo, name='seo'),
+    url(r'^renovation-consultation/interior-designers$', seo_interior, name='seo_interior'),
 
     url(r'^our_work$', ourwork, name='ourwork'),
     url(r'^our_work/david$', david, name='david'),
