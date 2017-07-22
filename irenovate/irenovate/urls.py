@@ -55,7 +55,7 @@ urlpatterns = [
     url(r'^renovation-consultation$', renovation_consultation, name='renovation_consultation'),
     url(r'^renovation-consultation/interior-designers$', seo_interior, name='seo_interior'),
     url(r'^renovation-consultation/interior-wardrobes$', seo_wardrobe, name='seo_wardrobe'),
-    url(r'^renovation-consultation/renovation_ideas$', renovation_ideas, name='renovation_ideas'),
+    url(r'^renovation-consultation/renovation-ideas$', renovation_ideas, name='renovation_ideas'),
 
     url(r'^our_work$', ourwork, name='ourwork'),
     url(r'^our_work/david$', david, name='david'),
