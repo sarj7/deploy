@@ -53,6 +53,7 @@ urlpatterns = [
     url(r'^renovation-consultation$', renovation_consultation, name='renovation_consultation'),
     url(r'^renovation-consultation/interior-designers$', seo_interior, name='seo_interior'),
     url(r'^renovation-consultation/interior-wardrobes$', seo_wardrobe, name='seo_wardrobe'),
+    url(r'^renovation-consultation/kitchen-ideas$', kitchen_idea, name='kitchen_idea'),
 
     url(r'^our_work$', ourwork, name='ourwork'),
     url(r'^our_work/david$', david, name='david'),
@@ -68,6 +69,7 @@ urlpatterns = [
 
     url(r'^modular-kitchen$', modular_kitchen, name='modular_kitchen'),
     url(r'^modular-kitchen/interior-kitchen$', seo_kitchen, name='seo_kitchen'),
+    url(r'^modular-kitchen/kitchen-accessories$', kitchen_accessories, name='kitchen_accessories'),
     
     url(r'^contact-us$', contact, name='contact'),
 

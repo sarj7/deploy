@@ -32,6 +32,12 @@ def seo_wardrobe(request):
 def seo_kitchen(request):
 	return render(request, "SEO/seo_kitchen.html", {})
 
+def kitchen_idea(request):
+	return render(request, "SEO/kitchen_idea.html", {})
+
+def kitchen_accessories(request):
+	return render(request, "SEO/kitchen_accessories.html", {})
+
 def ourwork(request):
 	return render(request, "OurWork/ourwork.html", {})
 
