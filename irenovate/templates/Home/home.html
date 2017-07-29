@@ -74,21 +74,6 @@
       max-width: 101%;
       max-height: 140%;
     }
-
-    .parallax {
-      /* The image used */
-      background-image: url('{% static 'img/refer_a_friend.jpg' %}');
-
-      /* Full height */
-      height: 25%; 
-      margin-bottom: -3.5%;
-
-      /* Create the parallax scrolling effect */
-      background-attachment:fixed;
-      background-position: 45% 20%;
-      background-repeat: no-repeat;
-      z-index: -10;
-    }
   </style>
 </head>
 
@@ -119,11 +104,14 @@
 
   {% include "Home/staticblog.html" %}
 
-  <!-- For Parallax -->
-  <div class="parallax"></div>
-  <div class="parallax"></div>
-  <!-- End of Parallax -->
-  
+  <div class="container">
+    <hr style="color: black;width: 100%;border: .3px solid #eaecef; margin-top: 2%;">
+  </div>
+
+  <div class="container">
+    <a href="{% url 'refer' %}"><img src="{% static 'img/refer_a_friend.jpg' %}" alt="Refer a Friend" class="img-responsive"></a>
+  </div>
+
   {% include 'Footer/copyright.html' %}
   {% include 'javascript.html' %}
 

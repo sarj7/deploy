@@ -36,10 +36,7 @@ class KitchenForm(forms.ModelForm):
 	class Meta:
 		model = Kitchen
 
-		widgets = {
-			'Your_Kitchen_Plan': forms.Textarea(attrs={'rows':7})
-		}
-		fields = ['Full_Name', 'email', 'Phone_No', 'City', 'Your_Kitchen_Plan']
+		fields = ['Full_Name', 'email', 'Phone_No', 'City']
 
 	def clean_email(self):
 		email = self.cleaned_data.get('email')
