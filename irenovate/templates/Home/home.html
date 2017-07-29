@@ -51,16 +51,6 @@
       zoom: 1.0;
     }
 
-    #frontHomeImage {
-      background-image: url("{% static 'img/home_bg.jpg' %}");
-      height: 550%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin-bottom: 2%;
-      margin-left: auto;
-      padding-top: 30px;
-    }
-
     #contactusnow {
       background-color: lemonchiffon;
       border: 1px solid skyblue;
@@ -105,17 +95,9 @@
 {% include "navbar.html" %}
 
 <body>
-  <div class = "row rowWrapper">
-    <div class="container toim" id="frontHomeImage">
-      <a target="_blank" href="https://youtu.be/Cvr_qPqx_tg" style="text-decoration: none;">
-        <i class="fa fa-play-circle fa-5x" aria-hidden="true" style="color:#c2c2a3;display: flex; justify-content: center;margin-top: 43%;">
-        </i>
-        <p class="para" style="margin-bottom: 3%;">
-          click to know more!          
-        </p>
-      </a>
-    </div>
-  </div>
+  <section>
+    <img src="{% static 'img/homebackground.jpg' %}" class="img-responsive">
+  </section>
   
   {% include "Home/HIW.html" %}
 

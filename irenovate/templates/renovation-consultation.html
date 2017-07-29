@@ -7,20 +7,20 @@
   <meta charset="utf-8"/>
   <meta name="description" content="Design your dream home with India's top online renovation destination."/>
 
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Crisp Chatbot -->
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ac767974-7897-4a8a-b172-e2f883768514";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+  </script>
   
   <style type="text/css">
     @viewport {
@@ -90,11 +90,11 @@
     }
 
     .hassleOuterTitle {
-      margin-top: -2%;
-      text-align: center;
-      font-size: 2.2em;
-      font-family: 'Open Sans', sans-serif;
-      padding-bottom: 1%;       
+        margin-top: -2%;
+        text-align: center;
+        font-size: 2.2em;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1%;       
     }
 
     .hassleInnerDescription {
@@ -116,9 +116,7 @@
     .form-control {
       border-radius: 0px !important;
     }
-
   </style>
-
 </head>
 
 {% include "navbar.html" %}
@@ -137,24 +135,23 @@
   <div class="container">
     <div class="row rowAlternate" style="margin-top: -3%;">
       <div class='col-sm-6 col-md-xs-12' style="padding-right: 30px;padding-bottom: 4.5%;">
-        <p style="padding-bottom:0px;" ><font face="Book Antigua" size="7">WHY<span style="color: #f74861"> iRenovate?</span></font></p>
-        <p style="text-align:justify"><font size="4">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</font></p>
-        <p style="text-align:justify"><font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</font></p>
+        <p style="padding-bottom:0px;" >
+          <font face="Book Antigua" size="7">WHY<span style="color: #f74861"> iRenovate?</span>
+          </font>
+        </p>
+        <p style="text-align:justify">
+          <font size="4">At iRenovate, we offer a wide variety of   professional services to help   you renovate your home or office space. We are renovation     specialists and our role is to deliver your dream renovation, within your budget.
+          </font>
+        </p>
+        <p style="text-align:justify">
+          <font size="4">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.
+          </font>
+        </p>
       </div>
       
-      <!-- <div class="col-sm-6">
-        <iframe style="height: 350px;" class=" col-sm-6 col-xs-12 col-lg-6 embed-responsive-item" src="src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0"></iframe>
-      </div> -->
-      <!-- <div style="padding-left: 0px;" class="col-sm-6 col-md-6 col-xs-4"> -->
-        <iframe class="col-sm-6 col-xs-12" width="460" height="400" src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
-        <!-- </div> -->
-        <!-- <div class='col-sm-6 col-xs-6 col-md-6 embed-responsive embed-responsive-16by9' >
-          <iframe src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
-        </div> -->
+      <iframe class="col-sm-6 col-xs-12" width="460" height="400" src="https://www.youtube.com/embed/Cvr_qPqx_tg" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
-
-  <!-- <div class="container-fluid" style="background-image: url({% static 'img/USP.jpg' %})"> -->
 
   <div class="container">
     <hr style="color: black;width: 100%;border: .3px solid #eaecef; margin-bottom: 5%">
@@ -169,7 +166,7 @@
 
   <div class="container">
     <section>
-      <img style="width: 99%;" src="{% static 'img/hasslefree.png' %}" alt="hassle free diagram">
+      <img class="img-responsive" style="width: 99%;" alt="Hassle Free Diagram" src="{% static 'img/hasslefree.png' %}">
     </section>
   </div>
 
@@ -180,11 +177,9 @@
   <div class = "container">
     <h2 id = "heading" style="text-align:center;">Six Reasons To Choose iRenovate </h2>
       <div class ="row rowAlternate">
-      
         <div class = "col-sm-1 icon">
-          <img alt="single point of contact" src="{% static 'img/USP/6_reasons/single_person_contact.png' %}">
+          <img class="img-responsive" alt="SINGLE PERSON CONTACT" src="{% static 'img/USP/6_reasons/single_person_contact.png' %}">
         </div>
-    
         <div class = "col-sm-3">
           <h3 class = "head">
             SINGLE PERSON CONTACT
@@ -195,9 +190,8 @@
         </div>
     
         <div class = "col-sm-1 icon">
-          <img alt="transparent price" src="{% static 'img/USP/6_reasons/Transparent_price.png' %}">
+          <img class="img-responsive" alt="TRANSPARENT PRICE" src="{% static 'img/USP/6_reasons/Transparent_price.png' %}">
         </div>
-    
         <div class = "col-sm-3">
           <h3 class = "head">
             TRANSPARENT PRICE
@@ -208,9 +202,8 @@
         </div>
 
         <div class = "col-sm-1 icon">
-          <img alt="3d visualization" src="{% static 'img/USP/6_reasons/3D_visualisation.png' %}">
+          <img class="img-responsive" alt="3D VISUALIZATION" src="{% static 'img/USP/6_reasons/3D_visualisation.png' %}">
         </div>
-    
         <div class = "col-sm-3">
           <h3 class = "head">
             3D VISUALIZATION
@@ -224,9 +217,8 @@
       <div class ="row rowAlternate" style="padding-bottom:35px;">
       
       <div class = "col-sm-1 icon">
-        <img alt="on time delivery" src="{% static 'img/USP/6_reasons/on_time_delivery.png' %}">
+        <img class="img-responsive" alt="ON TIME DELIVERY" src="{% static 'img/USP/6_reasons/on_time_delivery.png' %}">
       </div>
-      
       <div class = "col-sm-3">
         <h3 class = "head">
           ON TIME DELIVERY
@@ -237,9 +229,8 @@
       </div>
       
       <div class = "col-sm-1 icon">
-        <img alt="Uber cool design" src="{% static 'img/USP/6_reasons/uber_cool_design.png' %}">
+        <img class="img-responsive" alt="UBER COOL DESIGN" src="{% static 'img/USP/6_reasons/uber_cool_design.png' %}">
       </div>
-      
       <div class = "col-sm-3">
         <h3 class = "head">
           UBER COOL DESIGN
@@ -250,9 +241,8 @@
       </div>
       
       <div class = "col-sm-1 icon">
-        <img alt="maintainance contract " src="{% static 'img/USP/6_reasons/maintainance_contract.png' %}">
+        <img class="img-responsive" alt="MAINTAINANCE CONTRACT" src="{% static 'img/USP/6_reasons/maintainance_contract.png' %}">
       </div>
-      
       <div class = "col-sm-3">
         <h3 class = "head">
           MAINTAINANCE CONTRACT

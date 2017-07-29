@@ -10,8 +10,10 @@
   <meta name="viewport" content="width = device-width, initial-scale = 1"/>
   <meta name="description" content="Design your dream home with India's top online renovation destination."/>
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
-  
+
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -20,22 +22,22 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous">
+  <script 
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
   </script>
 
   <script type="text/javascript">
+    // 1st image
     function change(){
       var image = document.getElementById('img_1');
-      image.src = '{% static "img/kitchen/1b.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/1b.jpg" %}';
       var img_underline = document.getElementById('img_alternate21');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -47,12 +49,14 @@
         img_underline3.style.border = "0px solid blue";
         var img_underline4 = document.getElementById('img_alternate25');
         img_underline4.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate26');
+        img_underline4.style.border = "0px solid blue";
       }
     };
 
     function change1(){
       var image = document.getElementById('img_1');
-      image.src = '{% static "img/kitchen/1c.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/1c.jpg" %}';
       var img_underline = document.getElementById('img_alternate22');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -64,12 +68,14 @@
         img_underline3.style.border = "0px solid blue";
         var img_underline4 = document.getElementById('img_alternate25');
         img_underline4.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate26');
+        img_underline4.style.border = "0px solid blue";
       }
     };
 
     function change2(){
       var image = document.getElementById('img_1');
-      image.src = '{% static "img/kitchen/1d.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/1d.jpg" %}';
       var img_underline = document.getElementById('img_alternate23');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -81,12 +87,14 @@
         img_underline3.style.border = "0px solid blue";
         var img_underline4 = document.getElementById('img_alternate25');
         img_underline4.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate26');
+        img_underline4.style.border = "0px solid blue";
       }
     };
 
     function change3(){
       var image = document.getElementById('img_1');
-      image.src = '{% static "img/kitchen/1e.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/1e.jpg" %}';
       var img_underline = document.getElementById('img_alternate24');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -98,12 +106,14 @@
         img_underline3.style.border = "0px solid blue";
         var img_underline4 = document.getElementById('img_alternate25');
         img_underline4.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate26');
+        img_underline4.style.border = "0px solid blue";
       }
     };
 
     function change4(){
       var image = document.getElementById('img_1');
-      image.src = '{% static "img/kitchen/1a.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/1f.jpg" %}';
       var img_underline = document.getElementById('img_alternate25');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -115,157 +125,130 @@
         img_underline3.style.border = "0px solid blue";
         var img_underline4 = document.getElementById('img_alternate21');
         img_underline4.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate26');
+        img_underline4.style.border = "0px solid blue";
       }
     };
 
+    function change5(){
+      var image = document.getElementById('img_1');
+      image.src = '{% static "img/kitchen/kitchen_images/1a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate26');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate22');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline2 = document.getElementById('img_alternate23');
+        img_underline2.style.border = "0px solid blue";
+        var img_underline3 = document.getElementById('img_alternate24');
+        img_underline3.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate21');
+        img_underline4.style.border = "0px solid blue";
+        var img_underline4 = document.getElementById('img_alternate25');
+        img_underline4.style.border = "0px solid blue";
+      }
+    };
     // 1st image terminates here
 
-    function change5(){
+    // 2nd image
+    function change6(){
       var image = document.getElementById('img_2');
-      image.src = '{% static "img/kitchen/2c.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/2b.jpg" %}';
       var img_underline = document.getElementById('img_alternate31');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
         var img_underline1 = document.getElementById('img_alternate32');
         img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate33');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate34');
-        img_underline3.style.border = "0px solid blue";
-        var img_underline4 = document.getElementById('img_alternate35');
-        img_underline4.style.border = "0px solid blue";
-      }
-    };
-
-    function change6(){
-      var image = document.getElementById('img_2');
-      image.src = '{% static "img/kitchen/2d.jpg" %}';
-      var img_underline = document.getElementById('img_alternate32');
-      img_underline.style.border = "1px solid blue";
-      if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate31');
-        img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate33');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate34');
-        img_underline3.style.border = "0px solid blue";
-        var img_underline4 = document.getElementById('img_alternate35');
-        img_underline4.style.border = "0px solid blue";
       }
     };
 
     function change7(){
       var image = document.getElementById('img_2');
-      image.src = '{% static "img/kitchen/2e.jpg" %}';
-      var img_underline = document.getElementById('img_alternate33');
+      image.src = '{% static "img/kitchen/kitchen_images/2a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate32');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate32');
+        var img_underline1 = document.getElementById('img_alternate31');
         img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate31');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate34');
-        img_underline3.style.border = "0px solid blue";
-        var img_underline4 = document.getElementById('img_alternate35');
-        img_underline4.style.border = "0px solid blue";
       }
     };
+    // 2nd image terminates here
 
+    // 3rd image
     function change8(){
-      var image = document.getElementById('img_2');
-      image.src = '{% static "img/kitchen/2f.jpg" %}';
-      var img_underline = document.getElementById('img_alternate34');
+      var image = document.getElementById('img_3');
+      image.src = '{% static "img/kitchen/kitchen_images/3b.jpg" %}';
+      var img_underline = document.getElementById('img_alternate31');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
         var img_underline1 = document.getElementById('img_alternate32');
         img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate33');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate31');
-        img_underline3.style.border = "0px solid blue";
-        var img_underline4 = document.getElementById('img_alternate35');
-        img_underline4.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate33');
+        img_underline1.style.border = "0px solid blue";
       }
     };
 
     function change9(){
-      var image = document.getElementById('img_2');
-      image.src = '{% static "img/kitchen/2b.jpg" %}';
-      var img_underline = document.getElementById('img_alternate35');
+      var image = document.getElementById('img_3');
+      image.src = '{% static "img/kitchen/kitchen_images/3c.jpg" %}';
+      var img_underline = document.getElementById('img_alternate32');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate32');
+        var img_underline1 = document.getElementById('img_alternate31');
         img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate33');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate34');
-        img_underline3.style.border = "0px solid blue";
-        var img_underline4 = document.getElementById('img_alternate31');
-        img_underline4.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate33');
+        img_underline1.style.border = "0px solid blue";
       }
     };
-
-    // 2nd image terminates here 
 
     function change10(){
       var image = document.getElementById('img_3');
-      image.src = '{% static "img/kitchen/3b.jpg" %}';
-      var img_underline = document.getElementById('img_alternate41');
+      image.src = '{% static "img/kitchen/kitchen_images/3a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate33');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate42');
+        var img_underline1 = document.getElementById('img_alternate31');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate32');
         img_underline1.style.border = "0px solid blue";
       }
     };
+    // 3RD IMAGE TERMINATES HERE
+
+
+
+    //4th image
+
 
     function change11(){
-      var image = document.getElementById('img_3');
-      image.src = '{% static "img/kitchen/3a.jpg" %}';
-      var img_underline = document.getElementById('img_alternate42');
-      img_underline.style.border = "1px solid blue";
-      if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate41');
-        img_underline1.style.border = "0px solid blue";
-      }
-    };
-
-    // 3rd image terminates here 
-
-    function change12(){
       var image = document.getElementById('img_4');
-      image.src = '{% static "img/kitchen/4b.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/4b.jpg" %}';
       var img_underline = document.getElementById('img_alternate41');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
         var img_underline1 = document.getElementById('img_alternate42');
         img_underline1.style.border = "0px solid blue";
         var img_underline2 = document.getElementById('img_alternate43');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+ 
+    function change12(){
+      var image = document.getElementById('img_4');
+      image.src = '{% static "img/kitchen/kitchen_images/4c.jpg" %}';
+      var img_underline = document.getElementById('img_alternate42');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate41');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline2 = document.getElementById('img_alternate43');
         img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate44');
-        img_underline3.style.border = "0px solid blue";
-        var img_underline4 = document.getElementById('img_alternate45');
-        img_underline4.style.border = "0px solid blue";
       }
     };
 
     function change13(){
       var image = document.getElementById('img_4');
-      image.src = '{% static "img/kitchen/4a.jpg" %}';
-      var img_underline = document.getElementById('img_alternate42');
-      img_underline.style.border = "1px solid blue";
-      if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate41');
-        img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate43');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate44');
-        img_underline3.style.border = "0px solid blue";
-      }
-    };
-
-    function change14(){
-      var image = document.getElementById('img_4');
-      image.src = '{% static "img/kitchen/4d.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/4a.jpg" %}';
       var img_underline = document.getElementById('img_alternate43');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -273,66 +256,51 @@
         img_underline1.style.border = "0px solid blue";
         var img_underline2 = document.getElementById('img_alternate42');
         img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate44');
-        img_underline3.style.border = "0px solid blue";
+      }
+    };
+
+    //4th image terminates here
+
+    //5th image
+
+    function change14(){
+      var image = document.getElementById('img_5');
+      image.src = '{% static "img/kitchen/kitchen_images/5b.jpg" %}';
+      var img_underline = document.getElementById('img_alternate51');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate52');
+        img_underline1.style.border = "0px solid blue";
       }
     };
 
     function change15(){
-      var image = document.getElementById('img_4');
-      image.src = '{% static "img/kitchen/4a.jpg" %}';
-      var img_underline = document.getElementById('img_alternate44');
-      img_underline.style.border = "1px solid blue";
-      if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate41');
-        img_underline1.style.border = "0px solid blue";
-        var img_underline2 = document.getElementById('img_alternate42');
-        img_underline2.style.border = "0px solid blue";
-        var img_underline3 = document.getElementById('img_alternate43');
-        img_underline3.style.border = "0px solid blue";
-      }
-    };
-
-    // 4th image terminates here
-
-    function change16(){
       var image = document.getElementById('img_5');
-      image.src = '{% static "img/kitchen/5b.jpg" %}';
-      var img_underline = document.getElementById('img_alternate51');
-      img_underline.style.border = "1px solid blue";
-      if (img_underline.style.border = "1px solid blue") {
-        var img_underline2 = document.getElementById('img_alternate53');
-        img_underline2.style.border = "0px solid blue";
-      }
-    };
-
-    function change18(){
-      var image = document.getElementById('img_5');
-      image.src = '{% static "img/kitchen/5a.jpg" %}';
-      var img_underline = document.getElementById('img_alternate53');
+      image.src = '{% static "img/kitchen/kitchen_images/5a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate52');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
         var img_underline1 = document.getElementById('img_alternate51');
         img_underline1.style.border = "0px solid blue";
       }
     };
-
     // 5th image terminates here
-   
-    function change19(){
+
+    // 6th image
+    function change16(){
       var image = document.getElementById('img_6');
-      image.src = '{% static "img/kitchen/6b.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/6b.jpg" %}';
       var img_underline = document.getElementById('img_alternate61');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
-        var img_underline1 = document.getElementById('img_alternate62');
-        img_underline1.style.border = "0px solid blue";
+        var img_underline2 = document.getElementById('img_alternate62');
+        img_underline2.style.border = "0px solid blue";
       }
     };
 
-    function change20(){
+    function change17(){
       var image = document.getElementById('img_6');
-      image.src = '{% static "img/kitchen/6a.jpg" %}';
+      image.src = '{% static "img/kitchen/kitchen_images/6a.jpg" %}';
       var img_underline = document.getElementById('img_alternate62');
       img_underline.style.border = "1px solid blue";
       if (img_underline.style.border = "1px solid blue") {
@@ -340,23 +308,345 @@
         img_underline1.style.border = "0px solid blue";
       }
     };
+    // 6th image terminates here
 
+    // 7th image
+    function change18(){
+      var image = document.getElementById('img_7');
+      image.src = '{% static "img/kitchen/kitchen_images/7b.jpg" %}';
+      var img_underline = document.getElementById('img_alternate71');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate72');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate73');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate74');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate75');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate76');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate77');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change19(){
+      var image = document.getElementById('img_7');
+      image.src = '{% static "img/kitchen/kitchen_images/7c.jpg" %}';
+      var img_underline = document.getElementById('img_alternate72');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate71');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate73');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate74');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate75');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate76');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate77');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change20(){
+      var image = document.getElementById('img_7');
+      image.src = '{% static "img/kitchen/kitchen_images/7d.jpg" %}';
+      var img_underline = document.getElementById('img_alternate73');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate74');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate75');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate76');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate77');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate71');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate72');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change21(){
+      var image = document.getElementById('img_7');
+      image.src = '{% static "img/kitchen/kitchen_images/7e.jpg" %}';
+      var img_underline = document.getElementById('img_alternate74');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate75');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate76');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate77');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate71');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate72');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate73');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change22(){
+      var image = document.getElementById('img_7');
+      image.src = '{% static "img/kitchen/kitchen_images/7f.jpg" %}';
+      var img_underline = document.getElementById('img_alternate75');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate76');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate77');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate71');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate72');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate73');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate74');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change23(){
+      var image = document.getElementById('img_7');
+      image.src = '{% static "img/kitchen/kitchen_images/7a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate76');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate77');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate71');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate72');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate73');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate74');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate75');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    //7th image terminates here
+
+
+    //8th image 
+
+    function change24(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8b.jpg" %}';
+      var img_underline = document.getElementById('img_alternate81');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate82');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate83');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate84');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate85');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate86');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate87');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change25(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8c.jpg" %}';
+      var img_underline = document.getElementById('img_alternate82');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate81');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate83');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate84');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate85');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate86');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate87');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change26(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8d.jpg" %}';
+      var img_underline = document.getElementById('img_alternate83');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate82');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate81');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate84');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate85');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate86');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate87');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change27(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8e.jpg" %}';
+      var img_underline = document.getElementById('img_alternate84');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate82');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate83');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate81');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate85');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate86');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate87');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change28(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8f.jpg" %}';
+      var img_underline = document.getElementById('img_alternate85');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate82');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate83');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate84');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate81');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate86');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate87');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change29(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8g.jpg" %}';
+      var img_underline = document.getElementById('img_alternate86');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate82');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate83');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate84');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate85');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate81');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate87');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    function change30(){
+      var image = document.getElementById('img_8');
+      image.src = '{% static "img/kitchen/kitchen_images/8a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate87');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline1 = document.getElementById('img_alternate82');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate83');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate84');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate85');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate86');
+        img_underline1.style.border = "0px solid blue";
+        var img_underline1 = document.getElementById('img_alternate81');
+        img_underline1.style.border = "0px solid blue";
+      }
+    };
+
+    // 8th image terminates here
+
+    //9th image 
+
+    function change31(){
+      var image = document.getElementById('img_9');
+      image.src = '{% static "img/kitchen/kitchen_images/9b.jpg" %}';
+      var img_underline = document.getElementById('img_alternate91');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline = document.getElementById('img_alternate92');
+        img_underline.style.border = "0px solid blue";
+      }
+    };
+
+    function change32(){
+      var image = document.getElementById('img_9');
+      image.src = '{% static "img/kitchen/kitchen_images/9a.jpg" %}';
+      var img_underline = document.getElementById('img_alternate92');
+      img_underline.style.border = "1px solid blue";
+      if (img_underline.style.border = "1px solid blue") {
+        var img_underline = document.getElementById('img_alternate91');
+        img_underline.style.border = "0px solid blue";
+      }
+    };
+
+    // function change33(){
+    //   var image = document.getElementById('img_10');
+    //   image.src = '{% static "img/kitchen/kitchen_images/10a.jpg" %}';
+    //   var img_underline = document.getElementById('img_alternate92');
+    //   img_underline.style.border = "1px solid blue";
+    //   if (img_underline.style.border = "1px solid blue") {
+    //   }
+    // };
+
+    // function change34(){
+    //   var image = document.getElementById('img_11');
+    //   image.src = '{% static "img/kitchen/kitchen_images/11a.jpg" %}';
+    //   var img_underline = document.getElementById('img_alternate92');
+    //   img_underline.style.border = "1px solid blue";
+    //   if (img_underline.style.border = "1px solid blue") {
+    //   }
+    // };
   </script>
 
   <style type="text/css">
     #kitchen-detail-banner {
       position: relative;
       width: 100%;
-      background: linear-gradient(
+      background: linear-gradient (
         rgba(61, 46, 29, 0), 
         rgba(0, 0, 0, 0)
-        ), url({% static 'img/kitchen/kitchenBanner.jpg' %}) no-repeat center center;
+      );
       padding-top: 45px;
       background-attachment: relative;
       background-position: center bottom;
       min-height: 260px;
       width: 100%;
-      
       background-size: cover;
       color: white;
     }
@@ -374,7 +664,7 @@
       margin-left: 2%;
     }
 
-    #innovation{
+    #innovation {
       width: 60%;
       margin-top: 3.2%;
     }
@@ -387,7 +677,7 @@
       margin-left: 10%;
     }
 
-    .mod_kitchen3{
+    .mod_kitchen3 {
       text-align: center;
       color: #000;
       text-transform: uppercase;
@@ -413,13 +703,13 @@
       margin-left: 3%;
     }
 
-    .brand-image{
+    .brand-image {
       filter: grayscale(0%);
       max-width: 100%;
     }
 
-    .brand-tag{
-      padding-top: 2%;
+    .brand-tag {
+      margin-top: -3%;
       font-size: 1.9em;
     }
 
@@ -428,39 +718,34 @@
       font-size: 2.4em;
     }
     
-    .formOuterDiv{
-      margin-top: 5%;
-      margin-bottom: 5%;
+    #contactusnow {
+      margin-bottom: 10% !important;
     }
 
-    #form_image{
+    #form_image {
       margin-top: 25%;
     }
 
-    .img_alternate1{
+    .img_alternate1 {
       margin-left: 3%;
     }
 
-    .img_alternate{
+    .img_alternate {
       margin-right: 3%;
     }
 
-    .row_alternate{
+    .row_alternate {
       margin-bottom: 5%;
       margin-top: 2%;
     }
 
-    .img_alternate2{
+    .img_alternate2 {
       bottom: .3rem;
       position: absolute;
     }
 
-    .row_alternate2{
-      
-    }
-
-    @media(max-width:767px){
-      .brand-tag{
+    @media(max-width:767px) {
+      .brand-tag {
         padding-top: 2%;
         font-size: 1.3em;
       }
@@ -481,39 +766,44 @@
         margin-bottom: 4%;
       }
 
-      .img_alternate1{
+      .img_alternate1 {
         margin-left: 0%;
         margin-bottom: 3%;
       }
 
-      .img_alternate{
+      .img_alternate {
         margin-right: 0%;
       }
 
-      .img_alternate2{
+      .img_alternate2 {
         bottom: .3rem;
         position: absolute;
       }
 
-      .row_alternate1{
+      .row_alternate1 {
         margin-top: -5%;
         padding-bottom: 22%;
       }
 
-      .row_alternate{
+      .row_alternate {
         margin-bottom: 0%;
         margin-top: 2%;
       }
     }
 
+    .rotate {
+      -webkit-transform:rotate(60deg); /* Chrome, Safari, Opera */
+      transform:rotate(60deg); /* Standard syntax */
+    }
+
     /*Kitchen form end*/
-    .kitchen_plan{
+    .kitchen_plan {
       margin-left: 150% !important;
       margin-top: -70% !important;
       width: 100%
     }
 
-    .yield{
+    .yield {
       margin-left: 150% !important;
       margin-top: 7% !important;
       width: 100%
@@ -523,56 +813,56 @@
 </head>
 
 {% include "navbar.html" %}
+
 <body>
-
-  <div id="kitchen-detail-banner" ng-if="roomName == 'Kitchen'" class="ng-scope"></div>
-
+  <div id="kitchen-detail-banner" ng-if="roomName == 'Kitchen'" class="ng-scope" style="background-image: url({% static 'img/kitchen/Banner.jpg' %})">    
+  </div>
   <div class="container">
     <div class="row row_alternate">
       <div class="container">
+        
+        <!-- 1ST IMAGE -->
+
         <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6 ">
-          <img class="img-responsive img_alternate1" id="img_1" src="{% static 'img/kitchen/1a.jpg' %}"/>
+          <img class="img-responsive img_alternate1" id="img_1" alt="Rectangular Rard" src="{% static 'img/kitchen/kitchen_images/1a.jpg' %}"/>
           <div class="col-sm-12 col-md-12">
             <div class="row row_alternate1">
               <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
-                <a onclick="change()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate21" src="{% static 'img/kitchen/icons/1b.jpg' %}"/></a>
+                <a onclick="change()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate21" alt="icon" src="{% static 'img/kitchen/color_pallet/1b.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change1()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate22" src="{% static 'img/kitchen/icons/1c.jpg' %}"/></a>
+                <a onclick="change1()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate22" alt="icon" src="{% static 'img/kitchen/color_pallet/1c.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change2()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate23" src="{% static 'img/kitchen/icons/1d.jpg' %}"/></a>
+                <a onclick="change2()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate23" alt="icon" src="{% static 'img/kitchen/color_pallet/1d.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change3()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate24" src="{% static 'img/kitchen/icons/1e.jpg' %}"/></a>
+                <a onclick="change3()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate24" alt="icon" src="{% static 'img/kitchen/color_pallet/1e.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change4()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate25" src="{% static 'img/kitchen/icons/1a.jpg' %}"/></a>
+                <a onclick="change4()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate25" alt="icon" src="{% static 'img/kitchen/color_pallet/1f.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change5()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate26" alt="icon" src="{% static 'img/kitchen/color_pallet/1a.jpg' %}"/></a>
               </div>
             </div>
             <div class="row row_alternate2">
-              <center><h4>Ractangular Rard</h4></center>
+              <center><h4>Rectangular Rard</h4></center>
             </div>
           </div>
         </div>
+        
+        <!-- 2ND IMAGE -->
+
         <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
-          <img class="img-responsive pull-right img_alternate" id="img_2" src="{% static 'img/kitchen/2b.jpg' %}"/>
+          <img class="img-responsive pull-right img_alternate" id="img_2" alt="Dual Tone Drook" src="{% static 'img/kitchen/kitchen_images/2b.jpg' %}"/>
           <div class="col-sm-12 col-md-12">
             <div class="row row_alternate1">
               <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
-                <a onclick="change5()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate31" src="{% static 'img/kitchen/icons/2b.jpg' %}"/></a>
+                <a onclick="change6()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate31" alt="icon" src="{% static 'img/kitchen/color_pallet/2b.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change6()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate32" src="{% static 'img/kitchen/icons/2d.jpg' %}"/></a>
-              </div>
-              <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change7()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate33" src="{% static 'img/kitchen/icons/2e.jpg' %}"/></a>
-              </div>
-              <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change8()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate34" src="{% static 'img/kitchen/icons/2f.jpg' %}"/></a>
-              </div>
-              <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change9()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate35" src="{% static 'img/kitchen/icons/2c.jpg' %}"/></a>
+                <a onclick="change7()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate32" alt="icon" src="{% static 'img/kitchen/color_pallet/2a.jpg' %}"/></a>
               </div>
             </div>
             <div class="row row_alternate2">
@@ -584,18 +874,23 @@
     </div>
   </div>
 
+  <!-- 3RD IMAGE -->
+
   <div class="container">
     <div class="row row_alternate">
       <div class="container">
         <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6 ">
-          <img class="img-responsive img_alternate1" id="img_3" src="{% static 'img/kitchen/3a.jpg' %}"/>
+          <img class="img-responsive img_alternate1" id="img_3" alt="Simple Swarn" src="{% static 'img/kitchen/kitchen_images/3a.jpg' %}"/>
           <div class="col-sm-12 col-md-12">
             <div class="row row_alternate1">
               <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
-                <a onclick="change10()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate41" src="{% static 'img/kitchen/icons/3b.jpg' %}"/></a>
+                <a onclick="change8()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate31" alt="icon" src="{% static 'img/kitchen/color_pallet/3b.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change11()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate42" src="{% static 'img/kitchen/icons/3a.jpg' %}"/></a>
+                <a onclick="change9()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate32" alt="icon" src="{% static 'img/kitchen/color_pallet/3c.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change10()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate33" alt="icon" src="{% static 'img/kitchen/color_pallet/3a.jpg' %}"/></a>
               </div>
             </div>
             <div class="row row_alternate2">
@@ -603,15 +898,21 @@
             </div>
           </div>
         </div>
+        
+        <!-- 4th image -->
+
         <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
-          <img class="img-responsive pull-right img_alternate" id="img_4" src="{% static 'img/kitchen/4a.jpg' %}"/>
+          <img class="img-responsive pull-right img_alternate" id="img_4" alt="Classic coast" src="{% static 'img/kitchen/kitchen_images/4a.jpg' %}"/>
           <div class="col-sm-12 col-md-12">
             <div class="row row_alternate1">
               <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
-                <a onclick="change12()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate41" src="{% static 'img/kitchen/icons/3a.jpg' %}"/></a>
+                <a onclick="change11()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate41" alt="icon" src="{% static 'img/kitchen/color_pallet/4b.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change13()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate42" src="{% static 'img/kitchen/icons/4a.jpg' %}"/></a>
+                <a onclick="change12()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate42" alt="icon" src="{% static 'img/kitchen/color_pallet/4c.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change13()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate43" alt="icon" src="{% static 'img/kitchen/color_pallet/4a.jpg' %}"/></a>
               </div>
             </div>
           </div>
@@ -622,21 +923,22 @@
       </div>
     </div>
   </div>
-
   <!-- 4th image terminates here -->
 
+  <!-- 5TH IMAGE -->
+  
   <div class="container">
     <div class="row row_alternate">
       <div class="container">
         <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
-          <img class="img-responsive img_alternate1" id="img_5" src="{% static 'img/kitchen/5a.jpg' %}"/>
+          <img class="img-responsive img_alternate1" id="img_5" alt="Raditz Ralter" src="{% static 'img/kitchen/kitchen_images/5a.jpg' %}"/>
           <div class="col-sm-12 col-md-12">
             <div class="row row_alternate1">
               <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
-                <a onclick="change16()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate51" src="{% static 'img/kitchen/icons/5b.jpg' %}"/></a>
+                <a onclick="change14()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate51" alt="icon" src="{% static 'img/kitchen/color_pallet/5b.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change18()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate53" src="{% static 'img/kitchen/icons/5a.jpg' %}"/></a>
+                <a onclick="change15()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate52" alt="icon" src="{% static 'img/kitchen/color_pallet/5a.jpg' %}"/></a>
               </div>
             </div>
           </div>
@@ -644,15 +946,16 @@
             <center><h4>Raditz Ralter</h4></center>
           </div>
         </div>
+
         <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
-          <img class="img-responsive pull-right img_alternate" id="img_6" src="{% static 'img/kitchen/6a.jpg' %}"/>
+          <img class="img-responsive pull-right img_alternate" id="img_6" alt="Blue & Blanco" src="{% static 'img/kitchen/kitchen_images/6a.jpg' %}"/>
           <div class="col-sm-12 col-md-12">
             <div class="row row_alternate1">
               <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
-                <a onclick="change19()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate61" src="{% static 'img/kitchen/icons/6b.jpg' %}"/></a>
+                <a onclick="change16()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate61" alt="icon" src="{% static 'img/kitchen/color_pallet/6b.jpg' %}"/></a>
               </div>
               <div class="col-sm-1 col-md-1 col-xs-2">
-                <a onclick="change20()"><img class="img-responsive img_alternate2 img-circle" id="img_alternate62" src="{% static 'img/kitchen/icons/6a.jpg' %}"/></a>
+                <a onclick="change17()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate62" alt="icon" src="{% static 'img/kitchen/color_pallet/6a.jpg' %}"/></a>
               </div>
             </div>
             <div class="row row_alternate2">
@@ -664,52 +967,146 @@
     </div>
   </div>
 
-  <div class="container formOuterDiv">
-    <div class="col-sm-4  col-xs-12  col-md-4 col-md-offset-1" id="contactusnow">
-      <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
-      <!-- <form method='POST' action="">{% csrf_token %}
-        {{ form|crispy }}
-        <input class='btn btn-block btn-danger' type='submit' value='Submit'/>
-      </form> -->
+  <!-- 7TH IMAGE -->
 
-      <form method='POST' action="">{% csrf_token %}
-        {{ form.non_field_errors }}
-        <div class="col-sm-12 col-xs-12">
-          <div class="fieldWrapper ">
-            {{ form.email.errors }}
-            <label for="{{ form.mail.id_for_label }}">Email:</label>
-            {{ form.email }}
+  <div class="container">
+    <div class="row row_alternate">
+      <div class="container">
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive img_alternate1" id="img_7" alt="Raditz Ralter" src="{% static 'img/kitchen/kitchen_images/7a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <a onclick="change18()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate71" alt="icon" src="{% static 'img/kitchen/color_pallet/7b.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change19()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate72" alt="icon" src="{% static 'img/kitchen/color_pallet/7c.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change20()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate73" alt="icon" src="{% static 'img/kitchen/color_pallet/7d.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change21()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate74" alt="icon" src="{% static 'img/kitchen/color_pallet/7e.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change22()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate75" alt="icon" src="{% static 'img/kitchen/color_pallet/7f.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change23()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate76" alt="icon" src="{% static 'img/kitchen/color_pallet/7a.jpg' %}"/></a>
+              </div>
+            </div>
           </div>
-
-          <div class="fieldWrapper">
-            {{ form.Full_Name.errors }}
-            <label for="{{ form.Full_Name.id_for_label }}">Full Name:</label>
-            {{ form.Full_Name }}
-          </div>
-
-          <div class="fieldWrapper">
-            {{ form.Phone_No.errors }}
-            <label for="{{ form.Phone_No.id_for_label }}">Phone No:</label>
-            {{ form.Phone_No }} 
-          </div>
-
-          <div class="fieldWrapper">
-            {{ form.City.errors }}
-            <label for="{{ form.City.id_for_label }}">City:</label>
-            {{ form.City }}
+          <div class="row row_alternate2">
+            <center><h4>Raditz Ralter</h4></center>
           </div>
         </div>
         
-        <div class="col-sm-12 col-xs-12">
-          <div class="kitchen_plan">
-            {{ form.Your_Kitchen_Plan.errors }}
-            <label for="{{ form.Your_Kitchen_Plan.id_for_label }}">Your Kitchen Plan:</label>
-            {{ form.Your_Kitchen_Plan }}
+        <!-- 8TH IMAGE -->
+
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive pull-right img_alternate" id="img_8" alt="Blue & Blanco" src="{% static 'img/kitchen/kitchen_images/8a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <a onclick="change24()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate81" alt="icon" src="{% static 'img/kitchen/color_pallet/8b.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change25()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate82" alt="icon" src="{% static 'img/kitchen/color_pallet/8c.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change26()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate83" alt="icon" src="{% static 'img/kitchen/color_pallet/8d.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change27()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate84" alt="icon" src="{% static 'img/kitchen/color_pallet/8e.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change28()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate85" alt="icon" src="{% static 'img/kitchen/color_pallet/8f.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change29()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate86" alt="icon" src="{% static 'img/kitchen/color_pallet/8g.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change30()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate87" alt="icon" src="{% static 'img/kitchen/color_pallet/8a.jpg' %}"/></a>
+              </div>
+            </div>
+            <div class="row row_alternate2">
+                <center><h4>Blue & Blanco</h4></center>
+            </div>
           </div>
-          <input class='btn btn-block btn-danger yield' type='submit' value='Submit'/>
         </div>
-      </form>
+      </div>
     </div>
+  </div>
+
+  <!-- 9TH IMAGE -->
+
+  <div class="container">
+    <div class="row row_alternate">
+      <div class="container">
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive img_alternate1" id="img_9" alt="Raditz Ralter" src="{% static 'img/kitchen/kitchen_images/9a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <a onclick="change31()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate91" alt="icon" src="{% static 'img/kitchen/color_pallet/9b.jpg' %}"/></a>
+              </div>
+              <div class="col-sm-1 col-md-1 col-xs-2">
+                <a onclick="change32()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate92" alt="icon" src="{% static 'img/kitchen/color_pallet/9a.jpg' %}"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="row row_alternate2">
+            <center><h4>9</h4></center>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive pull-right img_alternate" id="img_6" alt="Blue & Blanco" src="{% static 'img/kitchen/kitchen_images/10a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <a onclick="change33()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate61" alt="icon" src="{% static 'img/kitchen/color_pallet/10a.jpg' %}"/></a>
+              </div>
+            </div>
+            <div class="row row_alternate2">
+                <center><h4>Blue & Blanco</h4></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row_alternate">
+      <div class="container">
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6" id="contactusnow">
+          <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
+          <form method='POST' action="">{% csrf_token %}
+            {{ form|crispy }}
+            <input class='btn btn-block btn-danger' type='submit' value='Submit'/>
+          </form>
+        </div>
+        
+        <div class="col-sm-6 col-xs-12 col-md-12 col-lg-6">
+          <img class="img-responsive pull-right img_alternate" id="img_6" alt="Blue & Blanco" src="{% static 'img/kitchen/kitchen_images/11a.jpg' %}"/>
+          <div class="col-sm-12 col-md-12">
+            <div class="row row_alternate1">
+              <div class="col-sm-1 col-md-1 col-xs-2 col-sm-offset-1 col-md-offset-1">
+                <a onclick="change34()"><img class="img-responsive img_alternate2 img-circle rotate" id="img_alternate61" alt="icon" src="{% static 'img/kitchen/color_pallet/11a.jpg' %}"/></a>
+              </div>
+            </div>
+            <div class="row row_alternate2">
+                <center><h4>Blue & Blanco</h4></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <hr style="color: black; width: 98%; border: .3px solid #eaecef; margin-top: -8%">
   </div>
 
   <div class="container">
@@ -720,15 +1117,19 @@
       </center>
       <div class="kitchen_brand">
         <ul class="brand-list">
-          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/bosch.jpg' %}" /></li>
-          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/faber.jpg' %}" /></li>
-          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/hafele.jpg' %}" /></li>
-          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/hettich.jpg' %}" /></li>
-          <li class="list-brand"><img class="brand-image" alt="" src="{% static 'img/kitchen/our_brands/merino.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="BOSCH" src="{% static 'img/kitchen/our_brands/bosch.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="FABER" src="{% static 'img/kitchen/our_brands/faber.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="HAFELE" src="{% static 'img/kitchen/our_brands/hafele.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="HETTICH" src="{% static 'img/kitchen/our_brands/hettich.jpg' %}" /></li>
+          <li class="list-brand"><img class="brand-image" alt="MERINO" src="{% static 'img/kitchen/our_brands/merino.jpg' %}" /></li>
         </ul>
       </div>
     </div>
   </div>
 
   {% include 'Footer/copyright.html' %}
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
