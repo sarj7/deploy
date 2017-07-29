@@ -1,3 +1,4 @@
+{% load crispy_forms_tags %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
@@ -9,12 +10,17 @@
   <meta name="description" content="Design your dream home with India's top online renovation destination."/>
   <meta name="robots" content="noodp, index, follow">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <style>
   body {
@@ -77,7 +83,7 @@
     }
 
     .title11 {
-      padding-top: 0%;
+      padding-top: 6%;
       font-family: 'Lato', sans-serif;
       margin-top: 0px;
       padding-bottom: 3%;
@@ -227,6 +233,11 @@
       margin-top: 3%;
       background-color: #f9f9f9;
     }
+
+    .modal_button{
+      margin-bottom: 3%;
+      margin-top: 2%
+    }
   @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section4, #section5,#section6  {
         margin-left: 150px;
@@ -243,8 +254,6 @@
     <div class="row">
       <nav class="col-sm-3 navigationLeft" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked navigation_left">
-          
-
           <li><a href="#section2" class="first_nav_menu_item">About Interior designers</a></li>
 
           <li><a href="#section3">Decoration Ideas</a></li>
@@ -262,10 +271,9 @@
           <li><a href="#section10"> About iRenovate</a></li>
         </ul>
       </nav>
+      
       <div class="col-sm-9">
-        
         <!-- invisible index -->
-
         <div class="container indexAlternate">
           <h4 class="indexAlternate">Index of content.</h4>
           <ol class="indexAlternate">
@@ -298,143 +306,163 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-6 col-xs-12 col-md-6 introduction_section">
-            <img class="img-responsive img-alternate1" alt="" src="{% static 'img/SEO/seo_2.jpg' %}">
-            <p class="imgTop11">Vigorous Vogue</p>
-          </div>
-          <div class="col-sm-6 col-xs-12 col-md-6 introduction_section">
-            <p class="pgrph">
-              It helps  to create warm, comfortable, and interesting home environments for other people who seek the help of an interior designer. Interior design concerns itself with more than just the visual or ambient enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors , a profession that will help you add a wow factor to your interiors.
-            </p>
-            <div id="section2"></div>
-          </div>
-        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-        <div> 
-          <center>
-            <h2 class="title11">
-              Know more about interior designers!
-            </h2>
-          </center>
-          
-          <div class="row">
-            <p class="">
-              Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting  the material you should use for the flooring ,an  interior designer  will help you throughout, till you get the desired look for your home.
-              An interior designer's job is  not just about picking out colors and fabrics to make a space more beautiful, it concerns itself with adding life to your humdrum looking home . Interior designers must  make sure all of the work is completed on time. The designer has to coordinate with the painters, wallpaper designers, electricians, furniture manufacturers, fabric wholesalers and work as a team . Stainless steel, kitchenware/appliances, modern furniture, and florescent lighting, they know it all! They make  the dullest spaces more inspiring.
-              An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
-            </p>
-          </div>
-
-          <center>
-            <div id="section3">
-          
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Book a Consultation</h4>
             </div>
-            <img class="img-responsive img_1" alt = "" src="{% static 'img/SEO/seo_Banner.jpg' %}">
-          </center>
-          
-        </div>  
-
-        
-
-        <div>         
-          <center>
-            <h2 class="title_3">
-              Home decoration Ideas
-            </h2>
-          </center>
-          
-          
-          <div class="">
-            <ol>
-              <li class="list_11">
-                <b><span class="list_title">HANG BANG</span>&nbsp;:-&nbsp;&nbsp;</b>Hanging plates look absolutely classy. Attach wire plate hangers and hang plates on picture nails. These wall plates look classy and come in different shapes , sizes, designs.
-              </li>
-
-              <LI class="list_11">
-                <b><span class="list_title">RESIST CONGESTION</span>&nbsp;:-&nbsp;&nbsp;</b>Resist overcrowding a room. You don’t need to fill up a space with lots of furniture.
-              </LI>
-
-              <LI class="list_11">
-                <b><span class="list_title">BE COLOUR WISE</span>&nbsp;:-&nbsp;&nbsp;</b>Choose  colors  that best complements your upholstery, artwork, rug and whatever else. If you have a dim room which doesn't receive much light, then colour the room with saturated colour.
-              </LI>
-
-              <LI class="list_11">
-                <b><span class="list_title">LIGHT DELIGHT</span>&nbsp;:-&nbsp;&nbsp;</b>Choose your lightings wisely. One must consider the places where more lights are to be added and what kind of lights are to be added in a space.
-              </LI>
-
-              <LI class="list_11">
-                <b><span class="list_title">UPHOLSTERY IS IN TREND</span>&nbsp;:-&nbsp;&nbsp;</b>You can use upholstery in furniture , as bed heads , as wall panels and what not . There are many options available as far as colours and designs are concerned. This trend of using upholstery is spiralling day by day and adds an imperial look.
-              </LI>
-
-              <LI class="list_11">
-                <b><span class="list_title">BRING POSITIVITY WITH WIND CHIMES</span>&nbsp;:-&nbsp;&nbsp;</b>You can use upholstery in furniture , as bed heads , as wall panels and what not . There are many options available as far as colours and designs are concerned. This trend of using upholstery is spiralling day by day and adds an imperial look.Wind chimes are said to add positivity to a home. Apart from bringing in positivity, they also look good.
-              </LI>
-
-              <LI class="list_11">
-                <b><span class="list_title">FAUX CEILINGS</span>&nbsp;:-&nbsp;&nbsp;</b>False ceilings, available in different patterns and lighting systems is widely used feature of home interiors. You can choose the pattern according to your wish.
-              </LI>
-
-              <LI class="list_11">
-                <b><span class="list_title">VENTILATION IS MUST</span>&nbsp;:-&nbsp;&nbsp;</b>Your house must be properly ventilated.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">NO MORE PAINT SMELL</span>&nbsp;:-&nbsp;&nbsp;</b>Do you just hate the smell of paints ? Well ! There is a solution to it ! Just add few drops of vanilla essence to the gallons of paint , and the smell will vanish.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">KEEP DISTANCE</span>&nbsp;:-&nbsp;&nbsp;</b>Keep the furniture a little distant from the walls as this makes the room look more spacious .
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">EXPAND THE SPACE</span>&nbsp;:-&nbsp;&nbsp;</b>Use light colours for small room. This makes them look spacious
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">CURTAIN IS CERTAIN</span>&nbsp;:-&nbsp;&nbsp;</b></i>Curtains can change the whole look of a room . Make sure that you choose curtains according to the interiors of your room..
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">GO GREEN</span>&nbsp;:-&nbsp;&nbsp;</b></i>Plants are not something that have to be used just for the outdoors, but SHOULD be used for indoors too . They add a cool vibe to your space and brings in freshness and positivity.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">WARDROBE MAGIC</span>&nbsp;:-&nbsp;&nbsp;</b>Myriad of varieties are available in wardrobes. Be it with sliding doors or normal doors , with long and short handles, different designs etc. These also have to be coordinated with other interiors.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">WALLPAPERS</span>&nbsp;:-&nbsp;&nbsp;</b>Wallpapers are a big hit ! But do not use wallpaper on a wall where there is leakage .Wherever you are not able to decipher the texture of the paint , you make your job simple, just by adding a nice wallpaper .
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">SCENTS FOR A GREAT MOOD</span>&nbsp;:-&nbsp;&nbsp;</b>Candles, room diffusers, room sprays, and linen sprays -- great scents can really help set a mood. It is very important that the environment you live in is not dingy . If your home interiors are good but your house gives out a bad smell , then who would like to stay at your home? So make sure, your home smells good, apart from the good interiors.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">LAMINATES YOUR INTERIOR MATE</span>&nbsp;:-&nbsp;&nbsp;</b>Laminates can be used for kitchen slab tops , walls , floors etc . You must choose quality laminates. Alot can be thought of when you consider few of our home decorating ideas.
-              </LI>
-
-              <div id="section4"></div>
-
-              <LI class="list_11">
-              <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
-              </LI>
-
-              <LI class="list_11">
-              <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
-              </LI>
-            </ol>
+            <div class="modal-body">
+              <form method='POST' action="">{% csrf_token %}
+                {{ form|crispy }}
+                <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+              </form>
+            </div>
           </div>
         </div>
+      </div>
 
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 col-md-6 introduction_section">
+          <img class="img-responsive img-alternate1" alt="" src="{% static 'img/SEO/seo_2.jpg' %}">
+          <p class="imgTop11">Vigorous Vogue</p>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-md-6 introduction_section">
+          <p class="pgrph">
+            It helps  to create warm, comfortable, and interesting home environments for other people who seek the help of an interior designer. Interior design concerns itself with more than just the visual or ambient enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors , a profession that will help you add a wow factor to your interiors.
+          </p>
+          <div id="section2"></div>
+        </div>
+      </div>
+
+      <center>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book a Consultation</button>
+      </center>
+
+      <div> 
+        <center>
+          <h2 class="title11">
+            Know more about interior designers!
+          </h2>
+        </center>
         
+        <div class="row">
+          <p class="">
+            Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting  the material you should use for the flooring ,an  interior designer  will help you throughout, till you get the desired look for your home.
+            An interior designer's job is  not just about picking out colors and fabrics to make a space more beautiful, it concerns itself with adding life to your humdrum looking home . Interior designers must  make sure all of the work is completed on time. The designer has to coordinate with the painters, wallpaper designers, electricians, furniture manufacturers, fabric wholesalers and work as a team . Stainless steel, kitchenware/appliances, modern furniture, and florescent lighting, they know it all! They make  the dullest spaces more inspiring.
+            An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
+          </p>
+        </div>
 
-        <div>
+        <center>
+          <div id="section3">
+        
+          </div>
+          <img class="img-responsive img_1" alt = "" src="{% static 'img/SEO/seo_Banner.jpg' %}">
+        </center>
+      </div>  
+
+      
+
+      <div>         
+        <center>
+          <h2 class="title_3">
+            Home decoration Ideas
+          </h2>
+        </center>
+        
+        
+        <div class="">
+          <ol>
+            <li class="list_11">
+              <b><span class="list_title">HANG BANG</span>&nbsp;:-&nbsp;&nbsp;</b>Hanging plates look absolutely classy. Attach wire plate hangers and hang plates on picture nails. These wall plates look classy and come in different shapes , sizes, designs.
+            </li>
+
+            <LI class="list_11">
+              <b><span class="list_title">RESIST CONGESTION</span>&nbsp;:-&nbsp;&nbsp;</b>Resist overcrowding a room. You don’t need to fill up a space with lots of furniture.
+            </LI>
+
+            <LI class="list_11">
+              <b><span class="list_title">BE COLOUR WISE</span>&nbsp;:-&nbsp;&nbsp;</b>Choose  colors  that best complements your upholstery, artwork, rug and whatever else. If you have a dim room which doesn't receive much light, then colour the room with saturated colour.
+            </LI>
+
+            <LI class="list_11">
+              <b><span class="list_title">LIGHT DELIGHT</span>&nbsp;:-&nbsp;&nbsp;</b>Choose your lightings wisely. One must consider the places where more lights are to be added and what kind of lights are to be added in a space.
+            </LI>
+
+            <LI class="list_11">
+              <b><span class="list_title">UPHOLSTERY IS IN TREND</span>&nbsp;:-&nbsp;&nbsp;</b>You can use upholstery in furniture , as bed heads , as wall panels and what not . There are many options available as far as colours and designs are concerned. This trend of using upholstery is spiralling day by day and adds an imperial look.
+            </LI>
+
+            <LI class="list_11">
+              <b><span class="list_title">BRING POSITIVITY WITH WIND CHIMES</span>&nbsp;:-&nbsp;&nbsp;</b>You can use upholstery in furniture , as bed heads , as wall panels and what not . There are many options available as far as colours and designs are concerned. This trend of using upholstery is spiralling day by day and adds an imperial look.Wind chimes are said to add positivity to a home. Apart from bringing in positivity, they also look good.
+            </LI>
+
+            <LI class="list_11">
+              <b><span class="list_title">FAUX CEILINGS</span>&nbsp;:-&nbsp;&nbsp;</b>False ceilings, available in different patterns and lighting systems is widely used feature of home interiors. You can choose the pattern according to your wish.
+            </LI>
+
+            <LI class="list_11">
+              <b><span class="list_title">VENTILATION IS MUST</span>&nbsp;:-&nbsp;&nbsp;</b>Your house must be properly ventilated.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">NO MORE PAINT SMELL</span>&nbsp;:-&nbsp;&nbsp;</b>Do you just hate the smell of paints ? Well ! There is a solution to it ! Just add few drops of vanilla essence to the gallons of paint , and the smell will vanish.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">KEEP DISTANCE</span>&nbsp;:-&nbsp;&nbsp;</b>Keep the furniture a little distant from the walls as this makes the room look more spacious .
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">EXPAND THE SPACE</span>&nbsp;:-&nbsp;&nbsp;</b>Use light colours for small room. This makes them look spacious
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">CURTAIN IS CERTAIN</span>&nbsp;:-&nbsp;&nbsp;</b></i>Curtains can change the whole look of a room . Make sure that you choose curtains according to the interiors of your room..
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">GO GREEN</span>&nbsp;:-&nbsp;&nbsp;</b></i>Plants are not something that have to be used just for the outdoors, but SHOULD be used for indoors too . They add a cool vibe to your space and brings in freshness and positivity.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">WARDROBE MAGIC</span>&nbsp;:-&nbsp;&nbsp;</b>Myriad of varieties are available in wardrobes. Be it with sliding doors or normal doors , with long and short handles, different designs etc. These also have to be coordinated with other interiors.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">WALLPAPERS</span>&nbsp;:-&nbsp;&nbsp;</b>Wallpapers are a big hit ! But do not use wallpaper on a wall where there is leakage .Wherever you are not able to decipher the texture of the paint , you make your job simple, just by adding a nice wallpaper .
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">SCENTS FOR A GREAT MOOD</span>&nbsp;:-&nbsp;&nbsp;</b>Candles, room diffusers, room sprays, and linen sprays -- great scents can really help set a mood. It is very important that the environment you live in is not dingy . If your home interiors are good but your house gives out a bad smell , then who would like to stay at your home? So make sure, your home smells good, apart from the good interiors.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">LAMINATES YOUR INTERIOR MATE</span>&nbsp;:-&nbsp;&nbsp;</b>Laminates can be used for kitchen slab tops , walls , floors etc . You must choose quality laminates. Alot can be thought of when you consider few of our home decorating ideas.
+            </LI>
+
+            <div id="section4"></div>
+
+            <LI class="list_11">
+            <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
+            </LI>
+
+            <LI class="list_11">
+            <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
+            </LI>
+          </ol>
+        </div>
+      </div>
+
+      <div>
           <center>
             <h2 class="title_4">
               Interior designing – All you need to do to cut the mustard !
@@ -630,4 +658,4 @@
   {% include 'javascript.html' %}
 
 </body>
-</html>--
+</html>

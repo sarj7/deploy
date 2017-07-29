@@ -17,14 +17,21 @@ def renovation_consultation(request):
 	
 	if form.is_valid():
 		instance = form.save(commit=False)
-
 		instance.save()
-	 	
-		return redirect("/acknowledgement")
+	 	return redirect("/acknowledgement")
 	return render (request, "renovation-consultation.html", context)
 
 def seo_interior(request):
-	return render(request, "SEO/seo_interior.html", {})
+	form = ContactForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	
+	if form.is_valid():
+		instance = form.save(commit=False)
+		instance.save()
+	 	return redirect("/acknowledgement")
+	return render(request, "SEO/seo_interior.html", context)
 
 def seo_wardrobe(request):
 	return render(request, "SEO/seo_wardrobe.html", {})
@@ -74,8 +81,7 @@ def modular_kitchen(request):
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
-	 	
-		return redirect("/acknowledgement")
+	 	return redirect("/acknowledgement")
 	return render(request, "Themes/Kitchen.html", context)
 
 def contact(request):
@@ -89,9 +95,7 @@ def contact(request):
 
 	if form.is_valid():
 		instance = form.save(commit=False)
-
 		instance.save()
-
 		return redirect("/acknowledgement")
 
 	if request.user.is_staff:
