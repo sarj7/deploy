@@ -45,6 +45,9 @@ def renovation_ideas(request):
 def kitchen_accessories(request):
 	return render(request, "SEO/kitchen_accessories.html", {})
 
+def suri_home(request):
+	return render(request, "SEO/suri_home.html", {})
+
 def ourwork(request):
 	return render(request, "OurWork/ourwork.html", {})
 

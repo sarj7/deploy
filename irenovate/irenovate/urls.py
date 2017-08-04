@@ -29,6 +29,7 @@ from website.views import (
         seo_kitchen,
         renovation_ideas,
         kitchen_accessories,
+        suri_home,
 		ourwork,
         david,
         malibu,
@@ -64,6 +65,7 @@ urlpatterns = [
     url(r'^our_work/yadav$', yadav, name='yadav'),
     url(r'^our_work/retail$', retail, name='retail'),
     url(r'^our_work/supaflex$', supaflex, name='supaflex'),
+    url(r'^our_work/suri-home$', suri_home, name='suri_home'),
 
     url(r'^themes$', themes, name='themes'),
 

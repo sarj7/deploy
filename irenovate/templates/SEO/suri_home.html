@@ -1,0 +1,391 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suris Home</title>
+	<meta charset="utf-8"/>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta name="description" content="Design your dream home with India's top online renovation destination."/>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <!-- lato font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- seo meta tag -->
+  <meta name="robots" content="noodp, index, follow">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.title_top{
+			padding-top: 3%;
+			padding-bottom: 4%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_description{
+			text-align: justify;
+			padding-bottom: .3%;
+			padding-top: .2%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_description_bottom{
+			text-align: justify;
+			padding-bottom: 2%;
+			padding-top: 1%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_second{
+			text-align: justify;
+			padding-bottom: 1%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_second_description{
+			padding-bottom: .9%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_second_description_paragraph{
+			text-align: justify;
+			padding-bottom: 2%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.row_alternate1{
+			padding-bottom: 4%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.row_alternate11{
+			padding-top: 2%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_third{
+			padding-bottom: 1.5%;
+			padding-top: 1%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_second_description_paragraph_bottom{
+			padding-top: 3%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.title_third_description{
+			padding-bottom: 2%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.row_blog{
+			margin-bottom: 5%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.blog_text{
+			text-align: justify;
+			padding-left: 7%;
+			font-family: 'Lato', sans-serif;
+			padding-top: 7%;
+		}
+
+		.blog_title{
+			margin-top: 12%;
+			margin-bottom: 7%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.button_first{
+			margin-top: 2%;
+			background-color: rgb(247,72,97);
+			color: white;
+		}
+
+		.button_second{
+			margin-bottom: 2%;
+			margin-top: 5%;
+			background-color: rgb(247,72,97);
+			color: white;
+		}
+
+		.bottom_blog{
+			margin-top: 4%;
+		}
+
+		.bottom_blog_title{
+			margin-bottom: 3%;
+			margin-left: 3%;
+		}
+
+		.bottom_blog_parag{
+			text-align: justify;
+			padding-top: 5%;
+			width: 100%;
+			margin-left: 0%;
+			font-size: .8em;
+		}
+
+		.scrollToTop:hover{
+			text-decoration:none;
+		}
+
+		.top_image{
+			margin-bottom: 4%;
+		}
+
+		.top_image_one{
+			margin-left: 3%;
+			margin-bottom: 2%;
+		}
+
+		.top_image_two{
+			margin-left: 5%;
+		}
+
+		.top_image_three{
+			margin-left: 5%;
+		}
+
+		.top_image_four{
+			margin-left: 5%;
+		}
+
+		.top_image_five{
+			margin-left: 5%;
+		}
+
+		.bloggerName{
+      margin-bottom: 2%;
+      margin-left: 2%;
+    }
+	</style>
+</head>
+
+{% include "navbar.html" %}
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-xs-12 col-md-8">
+					<h1 class="title_top">CREATING SOME INDELIBLE MEMORIES WITH iRENOVATE !</h1>
+					<p class="bloggerName">By:- &nbsp; Sanya Kumra &nbsp;-&nbsp;30th June 2016 </p>
+				<center>
+					<img class="top_image" alt="" src="{% static 'img/SEO/Suris_seo/seo4.jpeg' %}">
+				</center>
+
+				<p class="title_description">
+					The Irenovate family is getting bigger with more and more customers connecting with us .Home renovation/construction/interior designing can be a recondite task . Hiring different workmen for different tasks,running from place to place for getting the best material for your home can really get you on your last legs . We offer a complete range of services for the planning, design, and delivery of interior environments. Services include strategy, space planning, and budgets, along with 3D visualization and animation.
+					</br>Experience a seamless renovation with Irenovate, as the Suri’s did !
+				</p>
+				<p>
+					<b>Who lives  here:</b>&nbsp; Mr Pravin Suri , his wife , two sons and a daughter-in-law
+				</p>
+				<p>
+					<b>Location:</b>&nbsp; Narang Colony ,Janakpuri</br><b>Size:</b>&nbsp; 300 sq yd.</br><b>Design team:</b>&nbsp;Pls mention</br><b>iRenovate service:</b>&nbsp; Full home design including flooring, Kitchen, furniture, 3 Beds, Bar  unit, Dining table, Walk-in wardrobes.</br><b>Budget:</b>&nbsp; ₹₹₹₹₹
+				</p>
+				<p class="title_description_bottom">
+					Mr. Pravin Suri , one of our clients got their 300 sqyd plot in Janak Puri renovated and designed by us . And this is what he wants to say –“I always thought this renovation thing was a herculean  task ,but Irenovate changed my perception totally . I was very much in clover , as they are the ones who bear the brunt for you . The lavish bar is the focal point of the house and its exactly how I wanted it to be . Quality is something that matters to me the most . Irenovate totally ensures that high quality material is installed .Hettic  Innotech fittings have been installed  in our modular kitchen .The murals in the dining area and the master bedroom are truly magnetic !  With all the upmarket interior designs , my house looks just flawless ! Thankyou Irenovate ! ”
+				</p>
+			</div>
+			<div class="col-sm-4 col-xs-12 col-md-4">
+				<h2 class="blog_title">
+					Recent Post!
+				</h2>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'kitchen_accessories' %}"><img alt="" src="{% static 'img/SEO/side_blogs/blog1.jpg' %}"> </a><!-- kitchen accesory -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text">
+							Even if you don't have the luxury of remodeling your kitchen...
+						</p>
+					</div>
+				</div>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'renovation_ideas' %}"><img alt="" src="{% static 'img/SEO/side_blogs/blog2.jpg' %}"> </a><!-- renovation ideas -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text">
+							Definitely renovation is important! Home renovation is not just 
+						</p>
+					</div>
+				</div>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'seo_interior' %}"> <img alt="" src="{% static 'img/SEO/side_blogs/blog3.jpg' %}"> </a><!-- seo interior -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text">
+							Interior designing! An upcoming trend ! Interior designing has become 
+						</p>
+					</div>
+				</div>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'seo_wardrobe' %}"><img alt="" src="{% static 'img/SEO/side_blogs/blog4.jpg' %}"> </a><!-- seo wardrobe -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text">
+							Almost every person who is planning to renovate /construct...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- blog section terminates here -->
+	  <div class="row">
+	  	<div class="col-sm-9 col-md-9 col-xs-12">
+	  		<img class="top_image_one" src="{% static 'img/SEO/Suris_seo/seo5.jpeg' %}">
+		  </div>
+	  </div>  
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<h2 class="title_second">
+					Have a look at their sublime and plush interiors 
+				</h2>
+				<h3 class="title_second_description">
+					Enchanting entrance
+				</h3>
+				<p class="title_second_description_paragraph">
+					God resides at the entrance of the home. And hence , the entrance of the home , must be kept very clean and as it is said that “First impression is the last impression”,your entrance has to be eye-grabbing !
+				</p>
+
+				<div class="row row_alternate11">
+					<img class="top_image_two" src="{% static 'img/SEO/Suris_seo/seo2.jpeg' %}">
+				</div>
+				<p class="title_second_description_paragraph_bottom">
+					The Indian touch has been blended so well with the modern interiors! The living room has been so well designed and white has been beautifully used here by adding these showpieces ! The murals in the dining area and the master bedroom are truly magnetic !  TV wall unit has been done very nicely using a catchy wallpaper and providing the  mini wall for it to distinguish it from the others
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<center>
+					<button class="btn btn-lg button_first">
+						Book a Consultation
+					</button>
+				</center>
+			</div>
+		</div>
+
+		<div class="row"> 
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3 class="title_third">
+					Breathtaking bedrooms !
+				</h3>
+				<p class="title_third_description">
+					Simplicity at its best ! And one unique feature is the changing room at the back . Space has been so well utilized by keeping the changing room at the back of the bedhead wall.
+				</p>
+				<div class="row row_alternate11">
+					<div>
+						<img class="top_image_three" alt="" src="{% static 'img/SEO/Suris_seo/seo3.jpeg' %}">				
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3>
+					The family tree !
+				</h3>
+				<p>
+					Now this is something we have all done in our childhood –making a family tree! The way those nostalgic memories have been brought back,by creating this family tree on the wall is absolutely amazing !
+				</p>
+				<div class="row row_alternate11">
+					<div>
+						<img class="top_image_four" alt="" src="{% static 'img/SEO/Suris_seo/seo1.jpeg' %}">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3>
+					The lavish bar and the kitchen !
+				</h3>
+				<p>
+					The lavish bar is the focal point of the house . This is something that the Suri’s specially wanted – A LAVISH BAR ! A space where Mr Suri can sit and relax and have a good conversation over drinks with his two sons in the evening ! The light system that has been incorporated in the bar , makes it even more amazing.</br></br>
+
+					Last but not the least , the kitchen !  A corner with high-quality equipments to make your life easy ! .Hettic  Innotech fittings have been installed  in the modular kitchen .The brand speaks for itself and is long-lasting .
+				</p>
+				<div class="row row_alternate11">
+					<div class="col-sm-6 col-xs-12">
+						<center>
+							<img class="top_image_five" alt="" src="{% static 'img/SEO/Suris_seo/seo6.jpeg' %}">
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row bottom_blog">
+				<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3 class="bottom_blog_title">
+					Also Read
+				</h3>
+				<div class="col-sm-2 col-xs-6 col-md-2 col-sm-offset-1 col-md-offset-1">
+					<div class="row">
+						<center>
+							<a href="https://blog.irenovate.in/different-types-of-bedroom-designs/"><img alt="Types of bedroom designs" src="{% static 'img/SEO/bottom_blog/bed.jpg' %}"></a>
+						</center>
+					</div>
+					<div class="row">
+						<p class="bottom_blog_parag">
+							<a href="https://blog.irenovate.in/different-types-of-bedroom-designs/">Taking up the renovation task is like belling the cat.</a>
+					</div>
+				</div>
+
+				<div class="col-sm-2 col-xs-6 col-md-2 col-sm-offset-1 col-md-offset-1">
+					<div class="row">
+						<center>
+							<a href="https://blog.irenovate.in/tips-choosing-best-kitchen-floor-tiles/"><img alt="choosing best kitchen floor tiles" src="{% static 'img/SEO/bottom_blog/kitchen.jpg' %}"></a>
+						</center>
+					</div>
+					<div class="row">
+						<p class="bottom_blog_parag">
+							<a href="https://blog.irenovate.in/tips-choosing-best-kitchen-floor-tiles/">A kitchen is a place in your house where everything needs to be clean and tidy.</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-sm-2 col-sm-offset-1 col-md-offset-1 col-xs-6 col-md-2">
+					<div class="row">
+						<center>
+							<a href="https://blog.irenovate.in/decorate-book-shelves/"><img alt="decorate book shelves" src="{% static 'img/SEO/bottom_blog/book.jpg' %}"></a>
+						</center>
+					</div>
+					<div class="row">
+						<p class="bottom_blog_parag"> 
+							<a href="https://blog.irenovate.in/decorate-book-shelves/">Well ! Holidays are here ! And now that you have some time for yourself finally,</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% include 'Footer/copyright.html' %}  
+  {% include 'javascript.html' %}
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
