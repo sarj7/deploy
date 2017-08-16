@@ -58,14 +58,14 @@ urlpatterns = [
     url(r'^renovation-consultation/interior-wardrobes$', seo_wardrobe, name='seo_wardrobe'),
     url(r'^renovation-consultation/renovation-ideas$', renovation_ideas, name='renovation_ideas'),
 
-    url(r'^our_work$', ourwork, name='ourwork'),
-    url(r'^our_work/david$', david, name='david'),
-    url(r'^our_work/malibu$', malibu, name='malibu'),
-    url(r'^our_work/suris$', suris, name='suris'),
-    url(r'^our_work/yadav$', yadav, name='yadav'),
-    url(r'^our_work/retail$', retail, name='retail'),
-    url(r'^our_work/supaflex$', supaflex, name='supaflex'),
-    url(r'^our_work/suri-home$', suri_home, name='suri_home'),
+    url(r'^our-work$', ourwork, name='ourwork'),
+    url(r'^our-work/david$', david, name='david'),
+    url(r'^our-work/malibu$', malibu, name='malibu'),
+    url(r'^our-work/suris$', suris, name='suris'),
+    url(r'^our-work/yadav$', yadav, name='yadav'),
+    url(r'^our-work/retail$', retail, name='retail'),
+    url(r'^our-work/supaflex$', supaflex, name='supaflex'),
+    url(r'^our-work/suri-home$', suri_home, name='suri_home'),
 
     url(r'^themes$', themes, name='themes'),
 

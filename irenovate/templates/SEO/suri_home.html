@@ -22,11 +22,18 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 	<style type="text/css">
 		.title_top{
 			padding-top: 3%;
@@ -160,9 +167,30 @@
 			margin-bottom: 4%;
 		}
 
+		.top_image_bottom_text{
+			margin-bottom: 4%;
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+		}
+
+		.top_image_bottom_text_two{
+			margin-left: -5%;
+			margin-bottom: 4%;
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+		}
+
+		.top_image_bottom_text_three {
+			padding-left: 40%;
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+		}
+
 		.top_image_one{
 			margin-left: 3%;
-			margin-bottom: 2%;
 		}
 
 		.top_image_two{
@@ -171,7 +199,6 @@
 
 		.top_image_three{
 			padding-top: 2%;
-			padding-bottom: 2%;
 		}
 
 		.top_image_four{
@@ -194,6 +221,11 @@
 
     .custom{
     	padding-left: 3%;
+    }
+
+    .row_connect{
+    	margin-bottom: 5%;
+    	margin-top: 4%;
     }
 
     @media only screen and (max-width: 500px) {
@@ -229,6 +261,28 @@
 				padding-top: 5%;
 
 			}
+
+			.top_image_bottom_text_two{
+				font-size: 0.8em;
+				font-style: italic;
+				padding-top: .5%;
+			}
+
+			.top_image_bottom_text{
+				font-size: 0.8em;
+				font-style: italic;
+				padding-top: .5%;
+			}
+
+			.top_image_bottom_text_three {
+				font-size: 0.8em;
+				font-style: italic;
+				padding-top: .5%;
+			}
+
+			.items_in_share_list{
+				margin-right: 5%;
+			}
 		}
 	</style>
 </head>
@@ -236,13 +290,51 @@
 {% include "navbar.html" %}
 
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-xs-12 col-md-8">
 					<h1 class="title_top">The 300 sqyd home with plush interiors is truly a delight for the Dehlites!</h1>
-					<p class="bloggerName">By:- &nbsp; <span style="color: red;">Sanya Kumra</span> &nbsp;-&nbsp;30th June 2016</p>
+					<center>
+						<p class="bloggerName">By: <span style="color: red;">Sanya Kumra</span> &nbsp;<span ><b>|</b></span>&nbsp;&nbsp;30th June 2016</p>
+					</center>
+					<center>
+						<p>Share This Article</p>
+						<div class="row row_connect">
+
+							<div style="margin-right: 9%; padding-left: 11%; " class="col-sm-2 col-sm-offset-40 col-md-1 col-md-offset-2 items_in_share_list">
+								<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+							</div>
+
+							<div style="margin-right: 5%;" class="col-sm-1  col-md-1 items_in_share_list">
+								<!-- Place this tag where you want the share button to render. -->
+								<div class="g-plus" data-action="share" data-height="24"></div>
+							</div>
+
+							<div style="margin-right: 4%;" class="col-sm-1  col-md-1 items_in_share_list">
+								<a data-pin-do="buttonPin" data-pin-lang="en" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"></a>
+							</div>
+
+							<div class="col-sm-1 col-md-1 items_in_share_list">
+								<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+								<script type="IN/Share"></script>
+							</div>
+						</div>
+					</center>
 				<center>
-					<img class="top_image img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/seo4.jpeg' %}">
+					<img class="img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/seo4.jpeg' %}">
+					<p class="top_image_bottom_text">
+						description of the image
+					</p>
 				</center>
 
 				<p class="title_description custom">
@@ -305,21 +397,25 @@
 				</div>
 
 				<div class="row">
-				<div class="col-sm-12 col-md-12 col-xs-12">
-					<center>
-						<button class="btn btn-lg button_first">
-							Book a Consultation
-						</button>
-					</center>
+					<div class="col-sm-12 col-md-12 col-xs-12">
+						<center>
+							<button class="btn btn-lg button_first">
+								Book a Consultation
+							</button>
+						</center>
+					</div>
 				</div>
-			</div>
-
 			</div>
 		</div>
 		<!-- blog section terminates here -->
 	  <div class="row">
 	  	<div class="col-sm-9 col-md-9 col-xs-12">
 	  		<img class="top_image_one img-responsive" src="{% static 'img/SEO/Suris_seo/seo5.jpeg' %}">
+	  		<center>
+	  			<p class="top_image_bottom_text_two">
+						description of the image
+					</p>
+	  		</center>
 		  </div>
 	  </div>  
 		<div class="row">
@@ -336,6 +432,11 @@
 
 				<div class="row row_alternate11">
 					<img class="top_image_two img-responsive" src="{% static 'img/SEO/Suris_seo/seo2.jpeg' %}">
+					<center>
+						<p class="top_image_bottom_text_two">
+							description of the image
+						</p>
+					</center>
 				</div>
 				<p class="title_second_description_paragraph_bottom custom">
 					The Indian touch has been blended so well with the modern interiors! The living room has been so well designed and white has been beautifully used here by adding these showpieces ! The murals in the dining area and the master bedroom are truly magnetic !  TV wall unit has been done very nicely using a catchy wallpaper and providing the  mini wall for it to distinguish it from the others
@@ -355,7 +456,10 @@
 				<div class="row row_alternate11">
 					<div>
 						<center>
-							<img class="top_image_three img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/seo3.jpeg' %}">				
+							<img class="top_image_three img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/seo3.jpeg' %}">	
+							<p class="top_image_bottom_text_two">
+								description of the image
+							</p>			
 						</center>
 					</div>
 				</div>
@@ -374,6 +478,9 @@
 					<div>
 						<center>
 							<img class="top_image_four img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/seo1.jpeg' %}">
+							<p class="top_image_bottom_text_two">
+								description of the image
+							</p>
 						</center>
 					</div>
 				</div>
@@ -395,6 +502,9 @@
 				<div class="col-sm-6 col-xs-12">
 					<center>
 						<img class="top_image_five img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/seo6.jpeg' %}">
+						<p class="top_image_bottom_text_three">
+							description of the image
+						</p>
 					</center>
 				</div>
 			</div>
@@ -499,6 +609,8 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 </body>
 </html>
