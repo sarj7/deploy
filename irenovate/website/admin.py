@@ -12,7 +12,7 @@ class ContactAdmin(admin.ModelAdmin):
 	form = ContactForm
 
 class KitchenAdmin(admin.ModelAdmin):
-	list_display = ["__str__", "email"]
+	list_display = ["__str__", "email", "timestamp", "updated"]
 	list_display_links = ["__str__"]
 	search_fields = ["Full_Name"]
 	
