@@ -39,6 +39,9 @@
 			padding-top: 3%;
 			padding-bottom: 4%;
 			font-family: 'Lato', sans-serif;
+			width: 95%;
+			padding-left: 3%;
+			text-align: justify;
 		}
 
 		.title_description{
@@ -133,6 +136,7 @@
 			margin-top: 6%;
 			background-color: rgb(247,72,97);
 			color: white;
+			font-family: 'Lato', sans-serif;
 		}
 
 		.button_second{
@@ -140,10 +144,12 @@
 			margin-top: 5%;
 			background-color: rgb(247,72,97);
 			color: white;
+			font-family: 'Lato', sans-serif;
 		}
 
 		.bottom_blog{
 			margin-top: 4%;
+			font-family: 'Lato', sans-serif;
 		}
 
 		.bottom_blog_title{
@@ -228,6 +234,19 @@
     	margin-top: 4%;
     }
 
+		.blog_social_media_tags{
+			margin-top:7%;
+		}
+
+		.first_element{
+			margin-left: 14%;
+		}
+    
+		.share_paragraph{
+			margin-left: 8%;
+			margin-bottom: 4%;
+			font-size: 1.22em; 
+		}
     @media only screen and (max-width: 500px) {
 	  	.mobile_blog_only {
 	    	display: block;
@@ -282,6 +301,10 @@
 
 			.items_in_share_list{
 				margin-right: 5%;
+			}
+
+			.first_element{
+				margin-left: 14%;
 			}
 		}
 	</style>
@@ -351,9 +374,10 @@
 					Mr. Pravin Suri , one of our clients got their 300 sqyd plot in Janak Puri renovated and designed by us . And this is what he wants to say –“I always thought this renovation thing was a herculean  task ,but Irenovate changed my perception totally . I was very much in clover , as they are the ones who bear the brunt for you . The lavish bar is the focal point of the house and its exactly how I wanted it to be . Quality is something that matters to me the most . Irenovate totally ensures that high quality material is installed .Hettic  Innotech fittings have been installed  in our modular kitchen .The murals in the dining area and the master bedroom are truly magnetic !  With all the upmarket interior designs , my house looks just flawless ! Thankyou Irenovate ! ”
 				</p>
 			</div>
+
 			<div class="col-sm-4 col-xs-12 col-md-4 desktop_view_only ">
 				<h2 class="blog_title custom">
-					Recent Posts
+					Recent Post!
 				</h2>
 				<div class="row row_blog">
 					<div class="col-sm-3 col-xs-3 col-md-3">
@@ -402,6 +426,35 @@
 							<button class="btn btn-lg button_first">
 								Book a Consultation
 							</button>
+						</center>
+					</div>
+				</div>
+
+				<div class="row blog_social_media_tags">
+					<div class="row">
+						<p class="share_paragraph">Share With Your Friends.</p>
+					</div>
+					<div class="col-sm-2 first_element col-xs-3">
+						<center>
+							<a href="https://www.facebook.com/irenovate.in/"><img src="{% static 'img/SEO/icons/1.png' %}"></a>
+						</center>
+					</div>
+
+					<div class="col-sm-2 col-xs-3">
+						<center>
+							<a href="https://br.pinterest.com/kapoorshivang/"><img src="{% static 'img/SEO/icons/3.png' %}"></a>
+						</center>
+					</div>
+
+					<div class="col-sm-2 col-xs-3">
+						<center>
+							<a href="https://www.instagram.com/irenovate01/"><img src="{% static 'img/SEO/icons/4.png' %}"></a>
+						</center>
+					</div>
+
+					<div class="col-sm-2 col-xs-3">
+						<center>
+							<a href="#"><img src="{% static 'img/SEO/icons/5.png' %}"></a>
 						</center>
 					</div>
 				</div>
@@ -512,50 +565,50 @@
 
 
 		<div class="col-sm-4 col-xs-12 col-md-4 mobile_blog_only">
-				<h2 class="blog_title">
-					Related Post
-				</h2>
-				<div class="row row_blog">
-					<div class="col-sm-3 col-xs-3 col-md-3">
-						<a href="{% url 'kitchen_accessories' %}"><img alt="" class="img-responsive" src="{% static 'img/SEO/side_blogs/blog1.jpg' %}"> </a><!-- kitchen accesory -->
-					</div>
-					<div class="col-sm-9 col-xs-9 col-md-9">
-						<p class="blog_text1 custom">
-							Even if you don't have the luxury of...
-						</p>
-					</div>
+			<h2 class="blog_title">
+				Related Posts
+			</h2>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'kitchen_accessories' %}"><img alt="" class="img-responsive" src="{% static 'img/SEO/side_blogs/blog1.jpg' %}"> </a><!-- kitchen accesory -->
 				</div>
-				<div class="row row_blog">
-					<div class="col-sm-3 col-xs-3 col-md-3">
-						<a href="{% url 'renovation_ideas' %}"><img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog2.jpg' %}"> </a><!-- renovation ideas -->
-					</div>
-					<div class="col-sm-9 col-xs-9 col-md-9">
-						<p class="blog_text1 custom">
-							Definitely renovation is important!...
-						</p>
-					</div>
-				</div>
-				<div class="row row_blog">
-					<div class="col-sm-3 col-xs-3 col-md-3">
-						<a href="{% url 'seo_interior' %}"> <img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog3.jpg' %}"> </a><!-- seo interior -->
-					</div>
-					<div class="col-sm-9 col-xs-9 col-md-9">
-						<p class="blog_text1 custom">
-							Interior designing! An upcoming trend ! Interior ... 
-						</p>
-					</div>
-				</div>
-				<div class="row row_blog">
-					<div class="col-sm-3 col-xs-3 col-md-3">
-						<a href="{% url 'seo_wardrobe' %}"><img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog4.jpg' %}"> </a><!-- seo wardrobe -->
-					</div>
-					<div class="col-sm-9 col-xs-9 col-md-9">
-						<p class="blog_text1 custom">
-							Almost every person who is planning to ...
-						</p>
-					</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Even if you don't have the luxury of...
+					</p>
 				</div>
 			</div>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'renovation_ideas' %}"><img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog2.jpg' %}"> </a><!-- renovation ideas -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Definitely renovation is important!...
+					</p>
+				</div>
+			</div>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'seo_interior' %}"> <img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog3.jpg' %}"> </a><!-- seo interior -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Interior designing! An upcoming trend ! Interior ... 
+					</p>
+				</div>
+			</div>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'seo_wardrobe' %}"><img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog4.jpg' %}"> </a><!-- seo wardrobe -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Almost every person who is planning to ...
+					</p>
+				</div>
+			</div>
+		</div>
 
 
 		<div class="row bottom_blog">
