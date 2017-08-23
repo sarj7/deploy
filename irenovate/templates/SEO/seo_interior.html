@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Best Interior Designers in Delhi - Top Professionals at Irenovate</title>
+  <title>Interior designers</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <meta name="description" content=" Interior Designing is an art done by professionals, Irenovate is one of the best interior designing firm in India. We have been able to deliver turnkey projects in less time."/>
+  <meta name="description" content="Design your dream home with India's top online renovation destination."/>
   <meta name="robots" content="noodp, index, follow">
   
   <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
@@ -23,39 +23,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <style>
-  body {
-      position: static;
-  }
-  ul.nav-pills {
-      top: 20px;
-      position: fixed;
-  }
-  div.col-sm-9 div {
-     
-      
-  }
-
-  .indexAlternate{
-    display: none;
-  }
-
-  .navigationLeft{
-    background-color: ;
-  }
-
-  .Body_main{
-    margin-top: 5% !important;
-  }  
-
-  .pgrph{
-    font-family: 'Lato', sans-serif;
-    text-align: justify;
-  }
-
-  .title_bottom {
-      text-align: justify;
-      font-family: 'Lato', sans-serif;
+    body {
+        position: static;
     }
+    
+    ul.nav-pills {
+        top: 20px;
+        position: fixed;
+    }
+    
+    div.col-sm-9 div {
+    }
+
+    .side-items{
+      margin-top: -1% !important;
+    }
+
+    .indexAlternate{
+      display: none;
+    }
+
+    .navigationLeft{
+      background-color: ;
+    }
+
+    .Body_main{
+      margin-top: 5% !important;
+    }  
+
+    .pgrph{
+      font-family: 'Lato', sans-serif;
+      text-align: justify;
+    }
+
+    .title_bottom {
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+      }
 
     .article_top {
       margin-bottom: 3%;
@@ -234,6 +238,10 @@
       background-color: #f9f9f9;
     }
 
+    .modal-content{
+      margin-left: 20%;
+    }
+
     .modal_button{
       margin-bottom: 3%;
       margin-top: 2%
@@ -256,19 +264,21 @@
         <ul class="nav nav-pills nav-stacked navigation_left">
           <li><a href="#section2" class="first_nav_menu_item">About Interior designers</a></li>
 
-          <li><a href="#section3">Decoration Ideas</a></li>
+          <li class="side-items"><a href="#section3">Decoration Ideas</a></li>
 
-          <li><a href="#section4">Breaking Stereotypes</a></li>
+          <li class="side-items"><a href="#section4">Breaking Stereotypes</a></li>
 
-          <li><a href="#section6">Interior Designers in Delhi </a></li>
+          <li class="side-items"><a href="#section6">Interior Designers in Delhi </a></li>
           
-          <li><a href="#section7">Interior Architects in Gurgaon  </a></li>
+          <li class="side-items"><a href="#section7">Interior Architects in Gurgaon  </a></li>
 
-          <li><a href="#section8">Interior Architects in Mumbai  </a></li>
+          <li class="side-items"><a href="#section8">Interior Architects in Mumbai  </a></li>
 
-          <li><a href="#section9">Interior Designers in Jaipur </a></li>
+          <li class="side-items"><a href="#section9">Interior Designers in Jaipur </a></li>
 
-          <li><a href="#section10"> About iRenovate</a></li>
+          <li class="side-items"><a href="#section10"> About iRenovate</a></li>
+
+          <li class="side-items"><a href="{% url 'renovation_consultation' %}">Hire a Designer</a></li>
         </ul>
       </nav>
       
@@ -306,26 +316,7 @@
           </div>
         </div>
 
-        <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Book a Consultation</h4>
-            </div>
-            <div class="modal-body">
-              <form method='POST' action="">{% csrf_token %}
-                {{ form|crispy }}
-                <input class='btn btn-block btn-danger' type='submit' value='Submit' />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
+        <div class="row">
         <div class="col-sm-6 col-xs-12 col-md-6 introduction_section">
           <img class="img-responsive img-alternate1" alt="" src="{% static 'img/SEO/seo_2.jpg' %}">
           <p class="imgTop11">Vigorous Vogue</p>
@@ -341,6 +332,25 @@
       <center>
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book a Consultation</button>
       </center>
+
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content col-sm-8 col-xs-12 col-md-8">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Book a Consultation</h4>
+              </div>
+              <div class="modal-body">
+                <form method='POST' action="">{% csrf_token %}
+                  {{ form|crispy }}
+                  <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
 
       <div> 
         <center>
@@ -447,16 +457,6 @@
 
             <LI class="list_11">
             <b><span class="list_title">LAMINATES YOUR INTERIOR MATE</span>&nbsp;:-&nbsp;&nbsp;</b>Laminates can be used for kitchen slab tops , walls , floors etc . You must choose quality laminates. Alot can be thought of when you consider few of our home decorating ideas.
-            </LI>
-
-            <div id="section4"></div>
-
-            <LI class="list_11">
-            <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
-            </LI>
-
-            <LI class="list_11">
-            <b><span class="list_title">MIRROR MAZE</span>&nbsp;:-&nbsp;&nbsp;</b>Hang up a large mirror, and watch a small room open up.
             </LI>
           </ol>
         </div>
