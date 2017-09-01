@@ -1,202 +1,554 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Renovation Ideas From Experts - Old & Small Homes in Delhi</title>
-	<meta charset="utf-8"/>
+  <title>Interior designers</title>
+  <meta charset="utf-8"/>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <meta name="description" content="Renovation Ideas - A brilliant guide from iRenovate Interior Renovation Experts with details of how to impress everyone with new renovation ideas for your old homes or small homes."/>
-	<meta name="robots" content="noodp, index, follow">
+  <meta name="description" content="Design your dream home with India's top online renovation destination."/>
+  <meta name="robots" content="noodp, index, follow">
+  
+  <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
-	<!-- Google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <style>
+    body {
+        position: static;
+        color: #434547;
+    }
+    
+    ul.nav-pills {
+        top: 20px;
+        position: fixed;
+        color: #434547;
+    }
+    
+    div.col-sm-9 div {
+    }
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    .side-items{
+      margin-top: -1% !important;
+      color: #434547 !important;
+    }
 
-	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+    .indexAlternate{
+      display: none;
+    }
 
-	<style type="text/css">
-			h1 {
-				font-family: 'Lato', sans-serif;
-				padding-top: 2%;
-				padding-bottom: 1%;
-			}
+    .navigationLeft{
+      background-color: ;
+    }
 
-			h2 {
-				font-family: 'Lato', sans-serif;
-				padding-top: 2%;
-				padding-bottom: 1%;
-			}
+    .Body_main{
+      margin-top: 5% !important;
+      color: #434547;
+    }  
 
-			h3 {
-				font-family: 'Lato', sans-serif;
-				padding-top: 2%;
-				padding-bottom: 1%;
-			}
+    .pgrph{
+      font-family: 'Lato', sans-serif;
+      text-align: justify;
+      color: #434547;
+    }
 
-			h4 {
-				font-family: 'Lato', sans-serif;
-			}
+    .title_bottom {
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+        color: #434547;
+      }
 
-			p {
-				font-family: 'Lato', sans-serif;
-				padding-top: .5%;
-				padding-bottom: .5%;
-			}
+    .article_top {
+      margin-bottom: 3%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
 
-			li {
-				font-family: 'Lato', sans-serif;
-			}
+    .pgrph {
+      text-align: justify;
+      padding-top: 10%;
+      padding-left: 5%;
+      width: 95%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
 
-			.heading {
-				padding-bottom: 3%;
-			}
+    .container_synonym1 {
+      text-align: justify;
+      padding-top: 3%;
+      width: 93%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
 
-			.image_beneath_heading {
-				padding-bottom: 3%;
-			}
+    .title {
+      padding-top: 4%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
 
-			#index{
-				display: none;
-			}
-	</style>
+    .title11 {
+      padding-top: 6%;
+      font-family: 'Lato', sans-serif;
+      margin-top: 0px;
+      padding-bottom: 3%;
+      color: #434547;
+    }
 
-	<script type="text/javascript">
-		function hide() {
-			var x = document.getElementById('index');
-			x.style.display="none";
-		};
+    .img_1 {
+      padding-top: 3%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
 
-		function show() {
-			var x = document.getElementById('index');
-			x.style.display="inline";
-		};
-	</script>
+    .title_2 {
+      padding-top: 4%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym2 {
+      padding-top: 3%;
+      text-align:justify;
+      width: 93%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_1 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_11 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_111 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_3 {
+      padding-top: 3%;
+      padding-bottom: 2%;
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym3 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_4 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      padding-top: 3%;
+      padding-bottom: 2%;
+      color: #434547;
+    }
+
+    .pgrph_2 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_5 {
+      padding-top: 3%;
+      padding-bottom: 2%;
+      width: 90%;
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_3 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_6 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      padding-bottom: 2%;
+      padding-top: 3%;
+      color: #434547;
+    }
+
+    .list_11 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_7 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym4 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .link_content {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_8 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .list_11 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym5 {
+      padding-left: 10%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .list_title {
+      font-size: 1.3em;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .first_nav_menu_item {
+      margin-left: -8%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .imgTop1{
+      background-color: #f2f3f4;
+      padding: 1% 0% 1% 3%;
+    }
+
+    .imgTop11{
+      width: 97%;
+      background-color: #f2f3f4;
+      padding: 1% 0% 1% 3%;
+    }
+
+    .bloggerName{
+      margin-bottom: 4%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .introduction_section{
+      margin-bottom: 5%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .navigation_left{
+      margin-top: 3%;
+      background-color: #f9f9f9;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .modal-content{
+      margin-left: 20%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .modal_button{
+      margin-bottom: 3%;
+      margin-top: 2%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .top_image{
+      padding-bottom: 3%;
+      color: #434547;
+    }
+
+    .special_text{
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .special_text1 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .btn_custom{
+      background-color: #f74861;
+      color: white !important;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+      margin-top: 3%;
+    }
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+       color: white !important;
+       background-color: #f74861 !important;
+    }
+
+    .nav-pills>li>a{
+      color: #434547;
+    }
+
+    .image_bottom{
+      margin-top: 3%;
+    }
+
+    .row_bottom{
+      margin-top: 4%;
+    }
+
+    .bottom_blog {
+      font-size: 0.8em;
+      padding-top: .5%;
+      color: #434547;
+      text-align: left;
+      width:95% !important;
+      padding-left: 1%;
+    }
+
+    .related_posts{
+    	margin-left: -15%;
+      font-size: 1.4em;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .ul_late{
+    	text-align: justify;
+    	width: 94%;
+    }
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4, #section5,#section6  {
+        margin-left: 150px;
+    }
+
+    .ul_late{
+    	text-align: justify;
+    	width: 94%;
+    }
+
+    .related_posts{
+      font-size: 1.4em;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+  </style>
 </head>
 
 {% include "navbar.html" %}
 
-<body>
-	<div class="container">
-		<div class="row">
-			<h4>Index of content. &nbsp;&nbsp;<i class="fa fa-minus-square-o" onclick="hide()" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-plus-square-o" onclick="show()" aria-hidden="true"></i></h4>
-			<ol id="index">
-				<li><a class="link_content" href="#one">Why is renovation important ?</a></br></li>
-				<li><a class="link_content" href="#two">Renovation ideas for old homes –Give a new fresh look to your old home !</a></br></li>
-				<li><a class="link_content" href="#three">Renovation ideas for small homes –Make it look more spacious !</a></br></li>
-				<li><a class="link_content" href="#four">Renovation ideas for kitchen. </a></br></li>
-				<li><a class="link_content" href="#five">Interior designers in Delhi</a></br></li>
-				<li><a class="link_content" href="#six">Interior designers in Gurugram</a></br></li>
-				<li><a class="link_content" href="#six">About Irenovate !</a></br></li>
-			</ol>
-		</div>
+<body class="Body_main" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-		<a name="one"></a>
+  <div class="container">
+    
+    <div class="row">
+      <nav class="col-sm-3 navigationLeft" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked navigation_left">
+          <li><a href="#section2" class="first_nav_menu_item">Why is Renovation Important</a></li>
 
-		<center>
-			<h1 class="heading">Why is Renovation Important?</h1>
-		</center>
+          <li class="side-items"><a href="#section3">Renovation ideas for old homes</a></li>
 
-		<center>
-			<img class="image_beneath_heading" alt="" src="http://placehold.it/760x428/e67e22/fff">
-		</center>
+          <li class="side-items"><a href="#section6">Renovation ideas for small homes </a></li>
+          
+          <li class="side-items"><a href="#section7">Renovation ideas for kitchen</a></li>
 
-		<div class="row">
-			<p class="parag">
-				Definitely renovation is important! Home renovation is not just about upgrading your home with new colors or fresh furniture or repairs but it is also about upgrading your lifestyle. Most people want their homes to be beautiful and reflective of who they are, so you can make your home the best place to live in with the help of  interior designs .
-			</p>
+          <li class="side-items"><a href="#section8">Material choices</a></li>
 
-			<p class="parag">
-				Every worldly thing tends to depreciate in value, be it a vehicle, a utility item or home. A home is built to last for a lifetime, provided that it is being properly taken care of and renovated on a timely basis. The wrath of environmental factors, such as rain, snow, storms, earthquakes, floods, etc spares none. If your house has been a victim to any of the natural calamities, it is soon going to fall weak at some point in time. Therefore, renovation is mandatory in that case.
-			</p>
+          <li class="side-items"><a href="#section9">renovation firms in Delhi</a></li>
 
-			<p class="parag">
-				Renovation gives some good appeal to your home . Its literally the best thing to invest in. The idea of renovating your home from time to time is the best thing since sliced bread . They offer a family a new way to experience their home and make changes to it that suit their needs without having to spend the money moving into  building a new home. Home renovation is not only important for the look of your home but it is also important because it keeps the family safe. Any part of your home may get worn out from too much use. This can pose danger especially the electrical aspect of the house because it may cause fire or any unwanted accident.
-			</p>
+          <li class="side-items"><a href="#section10"> About iRenovate</a></li>
 
-			<p>There is a dire need of renovation if</p>
-			<ol>
-				<li>The house has got quite older than normal age. 
-				</li>
-				<li>Leaky roof and rifted walls.
-				</li>
-				<li>
-					No storage space .
-				</li>	
-				<li>
-					The kitchen seems no more attractive. The design has got older and its walls nowadays get moist quite often.
-				</li>
-				<li>
-					You can also consider removing some walls during your renovation to be able to have a much fresher and bigger space inside your house.
-				</li>
-			</ol>
+          <li class="side-items" style="background-color:white;border:3px solid  #f74861;"><a style="color: #f74861; font-size: 1.05em;font-family: 'Lato', sans-serif; text-align: center;" href="{% url 'renovation_consultation' %}"><b>Hire a Designer</b></a></li>
+        </ul>
+      </nav>
+      
+      <div class="col-sm-9">
+        <!-- invisible index -->
+        <div class="container indexAlternate">
+          <h4 class="indexAlternate">Index of content.</h4>
+          <ol class="indexAlternate">
+            <li><a class="link_content" href="#one">Know more about interior designers!</a></br></li>
+            <li><a class="link_content" href="#two">Interior decoration and Interior designing – know the difference!</a></br></li>
+            <li><a class="link_content" href="#three">Home decoration  Ideas</a></br></li>
+            <li><a class="link_content" href="#four">Interior designing – All you need to do</a></br></li>
+            <li><a class="link_content" href="#five">Famous Interior Designers and Architects in Delhi</a></br></li>
+            <li><a class="link_content" href="#six">Famous Interior Designers and Architects in Gurgaon</a></br></li>
+            <li><a class="link_content" href="#seven">Famous Interior Designers and Architects in Jaipur</a></br></li>
+            <li><a class="link_content" href="#eight">About iRenovate</a></br></li>
+          </ol>
+        </div>
 
-			<p>
-				Home renovation is important, not only because it can add to the aesthetic value of your home but it is also a way that can keep your homes in good condition, which in return can benefit you in such a way that it will provide more comfort in your homes.
-			</p>
-		</div>
+        <div id="section2"></div>
 
-		<a name="two"></a>
 
-		<div class="row">
-				<h2>
-					Renovation ideas for old homes – Give a new fresh look to your old home !
-				</h2>
+        <div class="row">
+          <div id="section1">    
+            <div class="row row_alternate">
+              <h1 class="title_bottom">Why is Renovation Important?</h1>
+              <p class="bloggerName">By:- &nbsp; Sanya Kumra &nbsp;-&nbsp;30th June 2016 </p>
+            </div>
+          </div>
+        </div>
 
-			<ul>
-				<li>
-					Renovation is an  exciting opportunity to bring an old house back to life. Not only does special care needs to be taken when dealing with old structures and building materials, but old houses are full of surprises, and costs can add up quickly.
-				</li>
 
-				<li>
-					Keep an eye out—especially around the ceilings, floors, and windows—for signs of water damage. That could be a warning of serious structural issues. Water damage has long-term effects . Also, bugs love wet environments.
-				</li>
+        <div class="row">
+        <img class="img-responsive top_image" src="{% static 'img/SEO/interior_top.jpg' %}">
+        <p class="special_text1">
+          Definitely renovation is important! Home renovation is not just about upgrading your home with new colors or fresh furniture or repairs but it is also about upgrading your lifestyle. Most people want their homes to be beautiful and reflective of who they are, so you can make your home the best place to live in with the help of interior designs .
 
-				<li>
-					Fireplaces and chimneys are a good place to check if mortar needs to be repaired, a process called repointing. 
-				</li>
+					Every worldly thing tends to depreciate in value, be it a vehicle, a utility item or home. A home is built to last for a lifetime, provided that it is being properly taken care of and renovated on a timely basis. The wrath of environmental factors, such as rain, snow, storms, earthquakes, floods, etc spares none. If your house has been a victim to any of the natural calamities, it is soon going to fall weak at some point in time. Therefore, renovation is mandatory in that case.
 
-				<li>
-					Decide an interior theme for your house depending upon your personality and style. You could choose a same interior theme for the entire house or you could choose different themes.
-				</li>
+					Renovation gives some good appeal to your home . Its literally the best thing to invest in. The idea of renovating your home from time to time is the best thing since sliced bread . They offer a family a new way to experience their home and make changes to it that suit their needs without having to spend the money moving into building a new home. Home renovation is not only important for the look of your home but it is also important because it keeps the family safe. Any part of your home may get worn out from too much use. This can pose danger especially the electrical aspect of the house because it may cause fire or any unwanted accident.
+					<br>
+					There is a dire need of renovation if
+        </p>
 
-				<li>
-					Add home enhancing decorations plants that can add to the bounty of your house as they signify life. You can put plants both indoors and outdoors to enhance certain portions of your house.
-				</li>
+        <ol>
+					<li>The house has got quite older than normal age. 
+					</li>
+					<li>Leaky roof and rifted walls.
+					</li>
+					<li>
+						No storage space .
+					</li>	
+					<li>
+						The kitchen seems no more attractive. The design has got older and its walls nowadays get moist quite often.
+					</li>
+					<li>
+						You can also consider removing some walls during your renovation to be able to have a much fresher and bigger space inside your house.
+					</li>
+				</ol>
 
-				<li>
-					Curtains can be used to bare windows to give these areas a certain look. Make a smart choice while choosing for curtains. Go for elegant materials such as natural silk, linen and cotton. 
-				</li>
+				<p>
+					Home renovation is important, not only because it can add to the aesthetic value of your home but it is also a way that can keep your homes in good condition, which in return can benefit you in such a way that it will provide more comfort in your homes.
+				</p>
+      </div>
 
-				<li>
-					Chandeliers could add to the beauty of your drawing room.
-				</li>
+      <center>
+        <button type="button" class="btn btn_custom btn-lg" data-toggle="modal" data-target="#myModal">Book a Consultation</button>
+      </center>
 
-				<li>
-					Accessories at home makes a mediocre house look extravagant. It is one of the simplest and easiest ways of giving an old house a modern look. 
-				</li>
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
 
-				<li>
-					Making moderations in bathrooms- In modern times , the  way people judge a house is based more on the way bathrooms are been built in houses. Make sure your bathroom is not dingy and has good modular fittings
-				</li>
-			</ul>
+            <!-- Modal content-->
+            <div class="modal-content col-sm-8 col-xs-12 col-md-8">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Book a Consultation</h4>
+              </div>
+              <div class="modal-body">
+                <form method='POST' action="">{% csrf_token %}
+                  {{ form|crispy }}
+                  <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
 
-			<a name="three"></a>
+      <div id="section3"></div>
 
-				<h2>
-					Renovation ideas for small homes – Make it look more spacious ! Here are some tips
-				</h2>
+      <div> 
+        <center>
+          <h2 class="title11">
+            Renovation ideas for old homes – Give a new fresh look to your old home !
+          </h2>
+        </center>
+        
+        <div class="row">
+          <ul>
+						<li>
+							Renovation is an  exciting opportunity to bring an old house back to life. Not only does special care needs to be taken when dealing with old structures and building materials, but old houses are full of surprises, and costs can add up quickly.
+						</li>
 
-			<ul>
+						<li>
+							Keep an eye out—especially around the ceilings, floors, and windows—for signs of water damage. That could be a warning of serious structural issues. Water damage has long-term effects . Also, bugs love wet environments.
+						</li>
+
+						<li>
+							Fireplaces and chimneys are a good place to check if mortar needs to be repaired, a process called repointing. 
+						</li>
+
+						<li>
+							Decide an interior theme for your house depending upon your personality and style. You could choose a same interior theme for the entire house or you could choose different themes.
+						</li>
+
+						<li>
+							Add home enhancing decorations plants that can add to the bounty of your house as they signify life. You can put plants both indoors and outdoors to enhance certain portions of your house.
+						</li>
+
+						<li>
+							Curtains can be used to bare windows to give these areas a certain look. Make a smart choice while choosing for curtains. Go for elegant materials such as natural silk, linen and cotton. 
+						</li>
+
+						<li>
+							Chandeliers could add to the beauty of your drawing room.
+						</li>
+
+						<li>
+							Accessories at home makes a mediocre house look extravagant. It is one of the simplest and easiest ways of giving an old house a modern look. 
+						</li>
+
+						<li>
+							Making moderations in bathrooms- In modern times , the  way people judge a house is based more on the way bathrooms are been built in houses. Make sure your bathroom is not dingy and has good modular fittings
+						</li>
+					</ul>
+        </div>
+
+        <center>
+          <div id="section6">
+        
+          </div>
+          <img class="img-responsive img_1" alt = "" src="{% static 'img/SEO/seo_Banner.jpg' %}">
+        </center>
+      </div>  
+
+      
+
+      <div>         
+        <center>
+          <h2 class="title_3">
+            Renovation ideas for small homes – Make it look more spacious ! Here are some tips
+          </h2>
+        </center>
+        
+        
+        <ul>
 				<li>
 					When adding drapes to a room, make sure they’re the same color as your walls. Sticking to the same color will make your space look bigger. 
 				</li>
@@ -241,89 +593,98 @@
 					Here are some before /after pictures of projects done by us – (add pics here )
 				</li>
 			</ul>
+      </div>
 
-			<center>
-				<div class="row">
-					<div class="col-sm-6">
-						<center>
-							<img src="http://placehold.it/460x328/e67e22/fff" alt="">
-						</center>
-					</div>
+      <div id="section7"></div>
 
-					<div class="col-sm-6">
-						<center>
-							<img src="http://placehold.it/460x328/e67e22/fff" alt="">
-						</center>
-					</div>
-				</div>
-			</center>
-		</div>
+      <div>
+        <center>
+          <h2 class="title_4">
+            Renovation ideas for kitchen
+          </h2>
+        </center>
+        <div class="row row_alternate">
+          <div class="col-sm-4 col-xs-12 col-md-4 article_top">
+            <p class="pgrph_2">
+              The kitchen is undeniably the heart and soul of our home. It is where we prepare our favorite meal to energize our day. So, it is understandable why we want to make our kitchen look great.
+            </p>
+          </div>
 
-		<a name="four"></a>
+          <div class="col-sm-8 col-xs-12 col-md-8">
+            <img class="img-responsive img_2" alt = "" src="{% static 'img/SEO/seo_3.jpg' %}">
+            <p class="imgTop1">Dining Table</p>
+          </div>
+        </div>      
 
-		<div class="row">
-			<h2>
-				Renovation ideas for kitchen
-			</h2>
+        <div id="section8">         
+          
+            <h2 class="title_5">
+            	Material choices - House Renovation Ideas Interiors
+            </h2>
+          
+          <div class="row row_alternate">
+            <div class="col-sm-4 col-xs-12 col-md-4 article_top">
+              <p class="pgrph_2">
+                There are many material options for modular kitchens. People make choices depending upon their preferences and budget. Some common materials include natural wood (of various types like teak, deciduous, maple, and pine), ply, laminates, fiber boards (of which medium-density fiberboard or MDF is widely used), stainless steel, and aluminum. Often, a combination of these can also be used depending upon the design preferences
+              </p>
+            </div>
 
-			<p>
-				The kitchen is undeniably the heart and soul of our home. It is where we prepare our favorite meal to energize our day. So, it is understandable why we want to make our kitchen look great.
-			</p>
+            <div class="col-sm-8 col-xs-12 col-md-8">
+              <img class="img-responsive img_2" alt = "" src="{% static 'img/SEO/seo_4.jpg' %}">
+              <div id="section6"></div>
+              <p class="imgTop1">Dining Table</p>
+            </div>
+            <div class="row">
+            	<ul class="ul_late">
+								<li>
+							 		When you prepare your meals , you mainly use 3 things-
+								 	<ul>
+								 		<li>
+								 			USE SINK
+								 		</li>
+								 		<li>
+								 			USECOOKING RANGE 
+								 		</li>
+								 		<li>
+								 			USE FRIDGE 
+								 		</li>
+								 	</ul>
+								 	Hence , every kitchen has 3 main corners and when you use your kitchen , you are moving between these corners .For efficient kitchen , make sure triangle is neither  too big  too small nor too small and there are no obstructing objects in the middle of this triangle .
+								</li>
+								
+								<li>
+									Keep an over-the-sink cutting board handy to temporarily expand your counter space.
+								</li>
 
-			<h2>
-				Material choices - House Renovation Ideas Interiors
-			</h2>
-			<p>
-				There are many material options for modular kitchens. People make choices depending upon their preferences and budget. Some common materials include natural wood (of various types like teak, deciduous, maple, and pine), ply, laminates, fiber boards (of which medium-density fiberboard or MDF is widely used), stainless steel, and aluminum. Often, a combination of these can also be used depending upon the design preferences.
-			</p>
+								<li>
+									Adding some  plants to your kitchen creates the illusion of a luxurious, well-kept space. Try placing a long-leafed houseplant in an open corner. Adding some green, leafy life will perk up your kitchen.
+								</li>
 
-			<ul>
-				<li>
-			 		When you prepare your meals , you mainly use 3 things-
-				 	<ul>
-				 		<li>
-				 			USE SINK
-				 		</li>
-				 		<li>
-				 			USECOOKING RANGE 
-				 		</li>
-				 		<li>
-				 			USE FRIDGE 
-				 		</li>
-				 	</ul>
-				 	Hence , every kitchen has 3 main corners and when you use your kitchen , you are moving between these corners .For efficient kitchen , make sure triangle is neither  too big  too small nor too small and there are no obstructing objects in the middle of this triangle .
-				</li>
-				
-				<li>
-					Keep an over-the-sink cutting board handy to temporarily expand your counter space.
-				</li>
+								<li>
+									Get the right rug for your kitchen decor .
+								</li>
 
-				<li>
-					Adding some  plants to your kitchen creates the illusion of a luxurious, well-kept space. Try placing a long-leafed houseplant in an open corner. Adding some green, leafy life will perk up your kitchen.
-				</li>
+								<li>
+									Paint just one or two of your kitchen walls to create a new focal point, and use a color that complements your cabinetry in this way you will be able to create so called your “dream kitchen” and make your kitchen decor attractive.
+								</li>
 
-				<li>
-					Get the right rug for your kitchen decor .
-				</li>
+								<li>
+									Hanging racks are inexpensive and easy to install and they can be painted to match the rest of your decor if desired. 
+								</li>
+							</ul>
+            </div>
+          </div>
+        </div>
+        <div>         
 
-				<li>
-					Paint just one or two of your kitchen walls to create a new focal point, and use a color that complements your cabinetry in this way you will be able to create so called your “dream kitchen” and make your kitchen decor attractive.
-				</li>
+        	<div id="section9"></div>
 
-				<li>
-					Hanging racks are inexpensive and easy to install and they can be painted to match the rest of your decor if desired. 
-				</li>
-			</ul>
-		</div>
-
-		<a name="five"></a>
-
-		<div class="row">
-			<h2>
-				List of best renovation firms in Delhi
-			</h2>
-
-			<p>
+          <center>
+            <h2 class="title_6">
+              List of best renovation firms in Delhi
+            </h2>
+          </center> 
+          <p>
 				Delhites , who are quite boastful about anything and everything are definitely hiring interior designers at a spiraling rate , so that they get one more reason to show off ! 
 				Here is a list of best interior designers in Delhi !
 			</p>
@@ -354,20 +715,51 @@
 					<b>Deco-Arte</b> Deco-Arte is a multi disciplinary design and Interior architecture studio founded in by Amardeep Gulri purely for his imminence passion for design & interiors. Ever since its inception the company has worked on over a hundred projects in the Residential, Hospitality, Commercial & Retail Space delivering what was promised.
 				</li>
 			</ul>
-		</div>
+        </div>
+        <div>         
 
-		<a name="six"></a>
+        <div id="section10"></div>
 
-		<div class="row">
-			<h2>
-				List of Renovation firms  in Gurgaon
-			</h2>
+          <center>
+            <h2 class="title_6">
+              Famous Interior Designers and Architects in Gurgaon
+            </h2>
+          </center> 
+          <div>
+            <p class="pgrph_3">
+              Gurgaoan, who are quite boastful about anything and everything are definitely hiring interior designers at a spiraling rate , so that they get one more reason to show off ! 
+            </p>
+            <div>
+              <h3>Here is a list of best interior designers in Delhi! </h3>
+              <ol>
+                <li class="list_1"><b><span style="font-size: 1.3em;">iRenovate</span></b>&nbsp: &nbsp;&nbsp;Irenovate also  provides its services in Gurgaon ! Here's the address - Third Floor, School Building, Parsvanath , Green Ville, Sohna Road, GURUGRAM. We are also boutique hotel interior designers in Gurgaon. Just search for iRenovate interior decorators near me & we will be there next moment with you.</li>
 
-			<p>
-				Here is a list of interior designers in Gurgaon
-			</p>
+                <li class="list_1"><b><span style="font-size: 1.3em;">CROOKS DESIGN</span></b>&nbsp: &nbsp;&nbsp;Prabhat, working at Crooks design  is a  prepossessing and plush Interior Designer with all the craze and love for creating trendy stuff. He is a persistent, flexible and independent with a tremendous spirit of adventure.</li>
 
-			<ul>
+                <li class="list_1"><b><span style="font-size: 1.3em;">AB DESIGN STUDIO </span></b>&nbsp: &nbsp;&nbsp;Anubhav working at AB design studio has a  thoughtful and refined approach in expressing clients' points of view with provocative and luxurious results. A Delhi based interior design studio that not just caters aesthetic needs but also takes into account the quality. With a team of highly qualified professionals- namely interior designers, architects and technologists. This studio l is dedicated to provide quality services to its customers.</li>
+
+                <li class="list_1"><b><span style="font-size: 1.3em;">Ascenzo Concept Design</span></b>&nbsp: &nbsp;&nbsp;She is also an architect  and interior designer, specializes in residential interiors & show homes. She tastefully decorates homes that evoke subtle luxury and bring together a magical meld of warmth & style.</li>
+
+                <div id="section8"></div>
+
+                <li class="list_1"><b><span style="font-size: 1.3em;">INTERLOGUE STUDIO</span></b>&nbsp: &nbsp;&nbsp;Karan working at Interlogue Studio , an architect and interior designer ensures quality, ergonomics and design his interior designs ,  wherein all aspects get equal emphasis in the spaces curated by him.</li>
+
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <center>
+            <h2 class="title_6">
+              List of Renovation firms in Gurgaon
+            </h2>
+          </center> 
+          <div>
+     
+            <div>
+              <h3>Here is a list of interior designers in Gurgaon.</h3>
+              <ul>
 				<li>
 					<b>Irenovate</b> -Irenovate also  provides its services in Gurgaon ! Here's the address - Third Floor, School Building, Parsvanath, Green Ville, Sohna Road, Gurgaon.
 				</li>
@@ -391,16 +783,18 @@
 					Karan working at Interlogue Studio , an architect and interior designer ensures quality, ergonomics and design his interior designs ,  wherein all aspects get equal emphasis in the spaces curated by him.
 				</li>
 			</ul>
-		</div>
+            </div>
+          </div>
+        </div> 
 
-		<a name="seven"></a>
-
-		<div class="row">
-			<h2>
-				Home renovation on budget – cost estimates
-			</h2>
-
-			<ul>
+        <div>
+          <center>
+            <h2 class="title_6">
+              Home renovation on budget – cost estimates
+            </h2>
+          </center> 
+          <div>
+            <ul>
 				<li>
 					The currently prevaHome renovation on budget – cost estimatesiling perception is that renovation  is expensive. However, if you consider what you are getting, its cost might just be justified. The renovation costs  will depend upon factors like area, design, and materials used. As there are so many factors that critically affect the renovation costs in India, talking about the final cost won’t be possible until and unless you consult an interior designer and let them know what you want and what you do not want in your house. Here are some cost estimates –
 				</li>
@@ -414,49 +808,71 @@
 					**Approx/starting prices</br>
 				</li>
 			</ul>
-		</div>
+          </div>
+        </div> 
 
-		<a name="eight"></a>
+        <div id="section11"></div>
 
-		<h2>
-			 About iRenovate 
-		</h2>
-		<ul>
-			<li>
-				We put our brain and brawn into your home projects to help you create your own dream house with top sublime interiors .
-			</li>
-			<li>
-				At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.
-			</li>
-			<li>
-				We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.
-			</li>
-			<li>
-				We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.
-			</li>
-			<li>
-				We provide concept drawings and 3D digital designs for you to comprehend better. We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.
-			</li>
-			<li>
-				Poor management can make you feel renovation as a never ending project. At iRenovate, we design a perfectly well structured plan to complete your renovation project on time and within your budget.
-			</li>
-			<li>
-				We at iRenovate help you deliver you the X-factor you need for your dream home. Our in-house team of designers is committed to provide you with the exact design you need.
-			</li>
-			<li>
-				Our new section of the blog - DO IT THE RIGHT WAY series provides some very useful construction and renovation tips .
-			</li>
-			<li>
-				Irenovate team is dedicated to provide excellence in maintenance with a 6 months’ F.O.C after service contract. Should you experience a problem or need assistance our team is ready to assist, no matter how small the issue is!
-				For further queries , you can contact us and visit our website for more info - <a href="https://irenovate.in/renovation-consultation">Click here.</a></li>
-			</li>
-		</ul>
-	</div>
+        <div>
+          <center>
+            <h2 class="title_7">
+              About iRenovate
+            </h2>
+          </center> 
+          <div>
+            <div>
+              <ol>
+                <li class="list_1">We put our brain and brawn into your home projects to help you create your own dream house with top sublime interiors. This is why we have been called as one of the finest turnkey interior designers in Delhi/NCR.</li>
 
-	{% include 'Footer/copyright.html' %}  
+                <li class="list_1">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</li>
+
+                <li class="list_1">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</li>
+
+                <li class="list_1">We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.</li>
+
+                <li class="list_1">We provide concept drawings and 3D digital designs for you to comprehend better. We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.</li>
+                <li class="list_1"> Poor management can make you feel renovation as a never ending project. At iRenovate, we design a perfectly well structured plan to complete your renovation project on time and within your budget.</li>
+                <li class="list_1">We at iRenovate help you deliver you the X-factor you need for your dream home. Our in-house team of designers is committed to provide you with the exact design you need.</li>
+                <li class="list_1">Our new section of the blog - DO IT THE RIGHT WAY series provides some very useful construction and renovation tips.</li>
+                <li class="list_1">iRenovate team is dedicated to provide excellence in maintenance with a 6 months’ F.O.C after service contract. Should you experience a problem or need assistance our team is ready to assist, no matter how small the issue is!</br></br>
+                For further queries , you can contact us and visit our website for more info - <a href="https://irenovate.in/renovation-consultation">Click here.</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <center><a href="#"><img style="padding-left: 1%; margin-top: 1.5%;" class="img-responsive" src="{% static 'img/SEO/Suris_seo/Book_a_consultation.jpg' %}"></a>
+          </center>
+        </div>
+      </div>
+
+      <div class="row row_bottom">
+        <div class="col-sm-3 col-sm-offset-1 ">
+          <div class="row">
+          <p class="related_posts">
+            <u>Related Posts</u>
+          </p>
+          
+          <a href="#"><img class="img-responsive img_bottom" src="{% static 'img/SEO/bottom.jpg' %}"></a>
+          
+          </div>
+          <div class="row">
+            <center>
+              <p style="width: 75%;" class="bottom_blog">
+                This New Delhi 3BHK with a  corner bar is</br> a comfort home for a family of 5 
+              </p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include 'Footer/copyright.html' %}
   {% include 'javascript.html' %}
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
