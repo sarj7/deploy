@@ -1,0 +1,181 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+	<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+	
+	<script type="text/javascript">
+		// Call & init
+		$(document).ready(function(){
+  			$('.ba-slider').each(function(){
+    			var cur = $(this);
+    			// Adjust the slider
+    			var width = cur.width()+'px';
+    			cur.find('.resize img').css('width', width);
+    			// Bind dragging events
+    			drags(cur.find('.handle'), cur.find('.resize'), cur);
+  			});
+		});
+
+		// Update sliders on resize. 
+		// Because we all do this: i.imgur.com/YkbaV.gif
+		$(window).resize(function(){
+  			$('.ba-slider').each(function(){
+    			var cur = $(this);
+    			var width = cur.width()+'px';
+    			cur.find('.resize img').css('width', width);
+  			});
+		});
+
+		function drags(dragElement, resizeElement, container) {
+	
+  		// Initialize the dragging event on mousedown.
+  		dragElement.on('mousedown touchstart', function(e) {
+    
+    		dragElement.addClass('draggable');
+    		resizeElement.addClass('resizable');
+    
+    		// Check if it's a mouse or touch event and pass along the correct value
+    		var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+    
+    		// Get the initial position
+    		var dragWidth = dragElement.outerWidth(),
+        	posX = dragElement.offset().left + dragWidth - startX,
+        	containerOffset = container.offset().left,
+        	containerWidth = container.outerWidth();
+ 
+    		// Set limits
+    		minLeft = containerOffset + 10;
+    		maxLeft = containerOffset + containerWidth - dragWidth - 10;
+    
+    		// Calculate the dragging distance on mousemove.
+    		dragElement.parents().on("mousemove touchmove", function(e) {
+    	
+				// Check if it's a mouse or touch event and pass along the correct value
+				var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+
+				leftValue = moveX + posX - dragWidth;
+
+				// Prevent going off limits
+				if ( leftValue < minLeft) {
+					leftValue = minLeft;
+				} else if (leftValue > maxLeft) {
+					leftValue = maxLeft;
+				}
+      
+      			// Translate the handle's left value to masked divs width.
+      			widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+			
+      			// Set the new values for the slider and the handle. 
+      			// Bind mouseup events to stop dragging.
+      			$('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
+        			$(this).removeClass('draggable');
+        			resizeElement.removeClass('resizable');
+      			});
+      			$('.resizable').css('width', widthValue);
+    		}).on('mouseup touchend touchcancel', function(){
+      			dragElement.removeClass('draggable');
+      			resizeElement.removeClass('resizable');
+    		});
+    		e.preventDefault();
+  			}).on('mouseup touchend touchcancel', function(e){
+    			dragElement.removeClass('draggable');
+    			resizeElement.removeClass('resizable');
+  			});
+		}
+	</script>
+
+	<style type="text/css">
+		.header {
+			text-align: center;
+			font-size: 2.2em;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		@import "lesshat";
+
+		.ba-slider {
+			position: relative;
+			overflow: hidden;
+		}
+ 
+		.ba-slider img {
+			width: 100%;
+			display:block;
+		}
+
+		.resize {
+			position: absolute;
+			top:0;
+			left: 0;
+			height: 100%;
+			width: 50%;
+			overflow: hidden;
+		}
+
+
+		.handle { /* Thin line seperator */
+			position:absolute; 
+			left:50%;
+			top:0;
+			bottom:0;
+			width:4px;
+			margin-left:-2px;
+
+			background: rgba(0,0,0,.5);
+			cursor: ew-resize;
+		}
+
+		.handle:after {  /* Big orange knob  */
+			position: absolute;
+			top: 50%;
+			width: 64px;
+			height: 64px;
+			margin: -32px 0 0 -32px;
+
+			content:'\21d4';
+			color:white;
+			font-weight:bold;
+			font-size:36px;
+			text-align:center;
+			line-height:64px;
+
+			background: #f74861; /* @orange */
+			border:1px solid #f74861; /* darken(@orange, 5%) */
+			border-radius: 50%;
+			transition:all 0.3s ease;
+			box-shadow:
+				0 2px 6px rgba(0,0,0,.3), 
+				inset 0 2px 0 #f74861,
+				inset 0 60px 50px -30px #f74861; /* lighten(@orange, 20%)*/ 
+		}
+
+		.draggable:after {
+			width: 48px;
+			height: 48px;
+			margin: -24px 0 0 -24px;
+			line-height:48px;
+			font-size:30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="ba-slider">
+		<img src="{% static 'img/slider/seo_interior/3.jpg' %}" alt="">       
+		<div class="resize">
+			<img src="{% static 'img/slider/seo_interior/4.jpg' %}" alt="">
+		</div>
+		<span class="handle"></span>
+	</div>
+
+</body>
+</html>
