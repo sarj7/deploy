@@ -1,16 +1,20 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Wardrobe Design Experts - Professional Walkthrough iRenovate</title>
 	<meta charset="utf-8"/>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <meta name="description" content="Best Online Guide on - Wardrobe Designs, iRenovate is specialist interior designers who have great wardrobe designs for bedroom, sliding door wardrobe etc. "/>
+  <meta name="description" content="                      Best Online Guide on - Wardrobe Designs, iRenovate is specialist interior designers who have great wardrobe designs for bedroom, sliding door wardrobe etc."/>
 
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <!-- lato font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   <!-- seo meta tag -->
   <meta name="robots" content="noodp, index, follow">
@@ -18,236 +22,462 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
+
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	<script type="text/javascript">
+		function hide() {
+			var x = document.getElementById('index');
+			x.style.display="none";
+		};
+
+		function show() {
+			var x = document.getElementById('index');
+			x.style.display="inline";
+		};
+	</script>
+
 	<style type="text/css">
-		li{
+		.title_top{
+			padding-top: 0%;
+			padding-bottom: 1%;
 			font-family: 'Lato', sans-serif;
-		}
-
-		.pgraphOne{
+			width: 95%;
+			padding-left: 3%;
 			text-align: justify;
-			font-family: 'Lato', sans-serif;
-			padding-top: 1.7%;
+			line-height: 140%;
+			color: #434547;
 		}
 
-		.rowOne{
-			padding-top: 4%;
+		.title_description{
+			text-align: justify;
+			margin-left: 1%;
+			padding-bottom: .3%;
+			padding-top: .2%;
+			padding-left: 1% !important;
 			font-family: 'Lato', sans-serif;
+			color: #434547;
 		}
 
-		.titleOne{
-			padding-bottom: 4%;
+		.title_description_bottom{
+			text-align: justify;
+			padding-bottom: 2%;
+			padding-top: 1%;
 			font-family: 'Lato', sans-serif;
+			color: #434547;
 		}
 
-		.imgOne{
-			padding-top: 17%;
+		.title_second{
+			text-align: justify;
+			padding-bottom: 1%;
 			font-family: 'Lato', sans-serif;
+			color: #434547;
 		}
 
-		.imgTwo{
-			padding-top: 5%;
-			padding-bottom: 3%;
+		.title_second_description{
+			padding-bottom: .9%;
 			font-family: 'Lato', sans-serif;
+			text-align: justify;
+			color: #434547;
 		}
 
-		.titletwo{
-			padding-top: 3%;
+		.title_second_description_paragraph{
+			text-align: justify;
 			padding-bottom: 2%;
 			font-family: 'Lato', sans-serif;
+			width: 91%;
 		}
-		
-		.pgraphTwo{
+
+		.row_alternate1{
+			padding-bottom: 4%;
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.row_alternate11{
+			padding-top: 2%;
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.title_third{
+			padding-bottom: 1.5%;
+			padding-top: 1%;
+			font-family: 'Lato', sans-serif;
+			padding-left: 1%;
+			color: #434547;
+		}
+
+		.title_second_description_paragraph_bottom{
+			padding-top: 3%;
+			font-family: 'Lato', sans-serif;
+			text-align: justify;
+			width: 90%;
+			padding-left: 1%;
+			color: #434547;
+		}
+
+		.title_third_description{
+			padding-bottom: 2%;
+			font-family: 'Lato', sans-serif;
+			padding-left: 1%;
+			width: 94%;
+			color: #434547;
+		}
+
+		.row_blog{
+			margin-bottom: 5%;
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.blog_text{
+			text-align: justify;
+			padding-left: 7%;
+			font-family: 'Lato', sans-serif;
+			padding-top: 7%;
+			color: #434547;
+		}
+
+		.blog_text1{
+			text-align: justify;
+			padding-left: 7%;
+			font-family: 'Lato', sans-serif;
+			padding-top: 2%;
+			padding-bottom: 5%;
+			color: #434547;
+		}
+
+		.blog_title{
+			margin-top: 12%;
+			margin-bottom: 7%;
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.button_first{
+			margin-top: 6%;
+			background-color: rgb(247,72,97);
+			color: white;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.button_second{
+			margin-bottom: 2%;
+			margin-top: 5%;
+			background-color: rgb(247,72,97);
+			color: white;
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.bottom_blog{
+			margin-top: 4%;
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.bottom_blog_title{
+			margin-bottom: 3%;
+			margin-left: 3%;
+			color: #434547;
+		}
+
+		.bottom_blog_parag{
+			text-align: justify;
+			padding-top: 5%;
+			width: 100%;
+			margin-left: 0%;
+			font-size: .8em;
+			color: #434547;
+		}
+
+		.scrollToTop:hover{
+			text-decoration:none;
+
+		}
+
+		.top_image{
+			margin-bottom: 4%;
+		}
+
+		.top_image_bottom_text{
+			margin-bottom: 4%;
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+			color: #434547;
+		}
+
+		.top_image_bottom_text_two{
+			margin-bottom: 4%;
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+			text-align: center;
+			width: 90%;
+			color: #434547;
+		}
+
+		.top_image_bottom_text_three {
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+			text-align: center;
+			color: #434547;
+		}
+
+		.top_image_one{
+			
+		}
+
+		.top_image_two{
+			padding-left: 2%;
+			color: #434547;
+		}
+
+		.top_image_three{
+			padding-top: 2%;
+			padding-left: 2%;
+			color: #434547;
+		}
+
+		.top_image_four{
+			padding-top: 2%;
+			margin-left: 1%;
+			color: #434547;
+		}
+
+		.top_image_five{
+			padding-top: 5%;
+			margin-left: 1%;
+			color: #434547;
+		}
+
+		.bloggerName{
+      margin-bottom: 2%;
+      margin-left: 2%;
+      color: #434547;
+    }
+
+    .mobile_blog_only {
+    	display: none;
+    }
+
+    .custom{
+    	
+    }
+
+    .row_connect{
+    	margin-bottom: 5%;
+    	margin-top: 1.5%;
+    	color: #434547;
+    }
+
+		.blog_social_media_tags{
+			margin-top:7%;
+			color: #434547;
+		}
+
+		.first_element{
+			margin-left: 14%;
+			color: #434547;
+		}
+    
+		.share_paragraph{
+			margin-left: 28%;
+			margin-bottom: 4%;
+			font-size: 1.22em; 
+			font-family: 'Lato', sans-serif;
+			color: #434547;
+		}
+
+		.img_top{
+			margin-left: 1%;
+			color: #434547;
+		}
+
+		.custom1 {
+			padding-left: 1%;
+			color: #434547;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.custom11{
+			width: 93%;
+			color: #434547;
 			text-align: justify;
 			font-family: 'Lato', sans-serif;
 		}
 
-		.imgThree{
-			margin-top: 5%;
+		.custom12{
+			text-align: justify;
+			color: #434547;
 			font-family: 'Lato', sans-serif;
 		}
 
-		.imgFour{
-			padding-bottom: 4%;
-			padding-top: 2%;
+		.custom13{
+			width: 92%;
+			color: #434547;
+			text-align: justify;
 			font-family: 'Lato', sans-serif;
 		}
 
-		.titletwo{
-			padding-top: 3.8%;
+		.top_image_bottom_text_four{
+			padding-bottom: 3%; 
+			margin-left: -4%;
+			font-size: 0.8em;
+			font-style: italic;
+			padding-top: .5%;
+			text-align: center;
+			color: #434547;
+		}
+
+		.special_para{
+			text-align: justify;
+			width: 89.5%;
+			padding-left: 3%;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.unrelated_list{
+			width: 91.2%;
 			font-family: 'Lato', sans-serif;
 		}
 
 		.paraCommon{
 			text-align: justify;
+			width: 91%
 			font-family: 'Lato', sans-serif;
 		}
 
-		.rowTwo{
-			padding-top: 3%;
-			font-family: 'Lato', sans-serif;
+		#index{
+			display: none;
 		}
+    @media only screen and (max-width: 500px) {
+	  	.special_para{
+				text-align: justify;
+				width: 100%;
+			}
 
-		.title_7{
-			padding-top: 4%;
-			padding-bottom: 3%;
-			font-family: 'Lato', sans-serif;
-		}
+	  	.mobile_blog_only {
+	    	display: block;
+	    }
 
-		.bloggerName{
-			padding-left: 5%;
-			font-family: 'Lato', sans-serif;
-		}
-		.imgFive{
-			padding-bottom: 4%;
-			font-family: 'Lato', sans-serif;
-		}
+	    .desktop_view_only{
+	    	display: none;
+	    }
 
-		.btnCustom{
-			background-color:rgb(247,72,97);
-			color: white;
-			font-family: 'Lato', sans-serif;
-		}
+	    .top_image_five{
+				margin-left: 5%;
+				width: 90%;
+			}
 
-		.row_alternate1{
-			margin-bottom: 10%;
-			font-family: 'Lato', sans-serif;
-		}
+			.top_image_four{
+				padding-top: 2%;
+				width: 93%;
+			}
 
-		.pgrph{
-			text-align: justify;
-			padding-top: 5%;
-			padding-left: 5%;
-			width: 80%;
-			font-family: 'Lato', sans-serif;
-		}
+			.top_image_three{
+				padding-top: 2%;
+			}
 
-		.imgTop{
-			padding-top: 5%;
-			font-family: 'Lato', sans-serif;
-		}
+			.top_image_two{
+				padding-top: 2%;
+			}
 
-		.img-alternate2 {
-			margin-top: 5%;
-			font-family: 'Lato', sans-serif;
-		}
+			.top_image_five{
+				padding-top: 5%;
 
-		.txt {
-			text-align: justify;
-			padding-top: 10%;
-			font-family: 'Lato', sans-serif;
-		}
+			}
 
-		.txt1 {
-			text-align: justify;
-			margin-top: -6%;
-			font-family: 'Lato', sans-serif;
-		}
+			.top_image_bottom_text_two{
+				font-size: 0.8em;
+				font-style: italic;
+				padding-top: .5%;
+				color: #434547;
+			}
 
-		.txt2 {
-			text-align: justify;
-			margin-top: -7%;
-			font-family: 'Lato', sans-serif;
-		}
+			.top_image_bottom_text{
+				font-size: 0.8em;
+				font-style: italic;
+				padding-top: .5%;
+				color: #434547;
+			}
 
-		#contactusnow {
-      background-color: white;
-      border: 2px solid black;
-      border-radius: 4px;
-      padding-top: 22px;
-      padding-bottom: 25px;
-      margin-top: 18%;
-      color: black;
-      font-family: 'Lato', sans-serif;
-    }
+			.top_image_bottom_text_three {
+				font-size: 0.8em;
+				font-style: italic;
+				padding-top: .5%;
+				color: #434547;
+			}
 
-    .btnCounsultation{
-    	margin-top: 90%;
-    	margin-bottom: 10%;
-    	margin-left: 15%;
-    	background-color: #f74861;
-    	color: white;
-    	font-family: 'Lato', sans-serif;
-    }
+			.items_in_share_list{
+				margin-right: 5%;
+				color: #434547;
+			}
 
-    .bloggerName{
-    	padding-left: 8%;
-    	font-family: 'Lato', sans-serif;
-    }
+			.first_element{
+				margin-left: 14%;
+				color: #434547;
+			}
 
-    .kitchenTitle {
-    	font-family: 'Lato', sans-serif;
-    	padding-bottom: 2%;
-    }
+			.connect_button_1{
+				margin-left: -3%;
+				color: #434547;
+			}
 
-    .txtTop {
-			margin-bottom: 10%;
-			padding-top: 10%;
-			padding-top: 1%; 
-			background-color: #f7f8f9;
-			width: 98.7%;
-			padding-left: 3%;
-			padding-bottom: 1%;
-			font-family: 'Lato', sans-serif;
-		}
+			.title_second_description_paragraph{
+				text-align: justify;
+				padding-bottom: 2%;
+				font-family: 'Lato', sans-serif;
+				width: 100%;
+			}
 
-		.txtTop1 {
-			margin-bottom: 10%;
-			padding-top: 10%;
-			padding-top: 1%;
-			background-color: #f7f8f9;
-			width: 100%;
-			padding-left: 3%;
-			padding-bottom: 1%;
-			font-family: 'Lato', sans-serif;
-		}
+			.title_second_description_paragraph_bottom{
+				padding-top: 3%;
+				font-family: 'Lato', sans-serif;
+				text-align: justify;
+				width: 100%;
+				padding-left: 1%;
+				color: #434547;
+			}
 
-		.txtTop2 {
-			margin-bottom: 10%;
-			margin-top: -3%;
-			padding-top: 10%;
-			padding-top: 1%;
-			background-color: #f7f8f9;
-			width: 100%;
-			padding-left: 3%;
-			padding-bottom: 1%;
-			font-family: 'Lato', sans-serif;
-		}
+			.title_third_description{
+				padding-bottom: 2%;
+				font-family: 'Lato', sans-serif;
+				padding-left: 1%;
+				width: 100%;
+				text-align: justify;
+				color: #434547;
+			}
 
-		.txtTop3 {
-			margin-bottom: 10%;
-			margin-top: -4%;
-			padding-top: 10%;
-			padding-top: 1%;
-			background-color: #f7f8f9;
-			width: 100%;
-			padding-left: 3%;
-			padding-bottom: 1%;
-			font-family: 'Lato', sans-serif;
-		}
+			.custom11{
+				width: 100%;
+				color: #434547;
+				text-align: justify;
+			}
 
-    @media only screen and (max-width: 400px) {
-    .btnCounsultation{
-    	margin-top: 10%;
-    	margin-bottom: 10%;
-    	margin-left: 15%;
-    	background-color: #f74861;
-    	color: white;
-    }
+			.custom13{
+				width: 100%;
+				color: #434547;
+				text-align: justify;
+			}
 
-    .txtTop {
-			margin-bottom: 10%;
-			padding-top: 1%; 
-			background-color: #f7f8f9;
-			width: 100%;
-			padding-left: 3%;
-			padding-bottom: 1%;
-			font-family: 'Lato', sans-serif;
+			.top_image_four{
+				padding-top: 2%;
+				margin-left: 3%;
+				color: #434547;
+			}
 		}
 	</style>
 </head>
@@ -255,146 +485,199 @@
 {% include "navbar.html" %}
 
 <body>
-	<center>
-		<h1 class="kitchenTitle">
-			Style defines you </br>So does your wardrobe
-		</h1>
-	</center>
-	<p class="bloggerName">By:- &nbsp; Sanya Kumra &nbsp;-&nbsp;30th June 2016 </p>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="container">
-		<div class="container container_synonym4">
-			
-			<div class="row">
-				<div class="col-sm-8 col-md-8 col-xs-12">
-					<div class="row row_alternate1">
-						<div class="col-sm-12 col-xs-12 col-md-12 ">
-							<img class="img-responsive imgTop" alt="" src="http://placehold.it/740x450/e67e22/fff"">
-							<p class="txtTop">Stunning sofa accompanied by Majestic Table.</p>
-						</div>
-						<div class="col-sm-6 col-xs-12 col-md-6">
-							<img class="img-responsive" alt="" src="http://placehold.it/360x228/e67e22/fff">
-							<p class="txtTop1">Stunning sofa accompanied by Majestic Table.</p>
-						</div>
-						<div class="col-sm-6 col-xs-12 col-md-6">
-							<p class="pgrph">
-								Interior designing! An upcoming trend ! Interior designing has become the part and parcel of construction and renovation business ! Almost every person who is planning to renovate /construct his/her house is hiring an interior designer to create a dream house for oneself  with interiors that will make your heads turn!
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6 col-xs-12 col-md-6">
-							<img class="img-responsive img-alternate1" alt="" src="http://placehold.it/360x228/e67e22/fff">
-							<p class="txtTop1">Stunning sofa accompanied by Majestic Table.</p>
-						</div>
-						<div class="col-sm-6 col-xs-12 col-md-6">
-							<p class="pgrph">
-								It helps  to create warm, comfortable, and interesting home environments for other people who seek the help of an interior designer. Interior design concerns itself with more than just the visual or ambient enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors , a profession that will help you add a wow factor to your interiors.
-							</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-4 col-xs-12 col-md-4">
-					<div class="row">
-						<h3 class="blogTitle">Also read our latest blogs.</h3>
-						<div class="row">  
-							<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
-								<img class="img-responsive" alt="" src="http://placehold.it/100x100/e67e22/fff">
-							</div>
-							<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8">
-								<p class="txt">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors </p>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
-								<img class="img-responsive" alt="" src="http://placehold.it/100x100/e67e22/fff">
-							</div>
-							<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8 txt">
-								<p class="txt1">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors</p>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
-								<img class="img-responsive " alt="" src="http://placehold.it/100x100/e67e22/fff">
-							</div>
-							<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8 txt">
-								<p class="txt2">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors .</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4 img-alternate2">
-								<img class="img-responsive " alt="" src="http://placehold.it/100x100/e67e22/fff">
-							</div>
-							<div class="col-sm-8 col-xs-12 col-md-8 col-lg-8 txt">
-								<p class="txt2">enhancement of an interior space. It is a  profession that helps people fulfill their dream of having  a modern home with sublime interiors .</p>
-							</div>
-						</div>
-					</div>
-					
-					<a href="{% url 'renovation_consultation' %}"><button class="btn btn-lg btnCounsultation">
-						Book a counsultation
-					</button></a>
-				</div>
-		  </div>
-
-
-			<h4>Index of content.</h4>
-			<ol>
-				<li><a class="link_content" href="#one">Wardrobes- Part and parcel of interior design ! </a></br></li>
-				<li><a class="link_content" href="#two">Wardrobes for small Indian bedrooms</a></br></li>
-				<li><a class="link_content" href="#three">Sliding door  wardrobe designs-SLIDE RIDE</a></br></li>
-				<li><a class="link_content" href="#four">Small wardrobe for women – WONDER WOMAN  WARDROBE !</a></br></li>
-				<li><a class="link_content" href="#five">3 door wardrobe designs – TRI DOOR !</a></br></li>
-				<li><a class="link_content" href="#six">Corner wardrobe  designs-COZY CORNER </a></br></li>
-				<li><a class="link_content" href="#seven">Walk in wardrobe – A DREAM COME TRUE</a></br></li>
-				<li><a class="link_content" href="#eight">Tv wardrobe design</a></br></li>
-				<li><a class="link_content" href="#nine">Built in wardrobe design</a></br></li>
-				<li><a class="link_content" href="#ten">Master bedroom design</a></br></li>
-				<li><a class="link_content" href="#eleven">About us</a></br></li>
+		
+		<div class="row">
+			<h4>Index of content. &nbsp;&nbsp;<i class="fa fa-minus-square-o" onclick="hide()" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-plus-square-o" onclick="show()" aria-hidden="true"></i></h4>
+			<ol id="index">
+				<li><a class="link_content" href="#one">Why is renovation important ?</a></br></li>
+				<li><a class="link_content" href="#two">Renovation ideas for old homes –Give a new fresh look to your old home !</a></br></li>
+				<li><a class="link_content" href="#three">Renovation ideas for small homes –Make it look more spacious !</a></br></li>
+				<li><a class="link_content" href="#four">Renovation ideas for kitchen. </a></br></li>
+				<li><a class="link_content" href="#five">Interior designers in Delhi</a></br></li>
+				<li><a class="link_content" href="#six">Interior designers in Gurugram</a></br></li>
+				<li><a class="link_content" href="#six">About Irenovate !</a></br></li>
 			</ol>
 		</div>
 
-		<a name="one"></a>
+		<div class="row">
+			<div class="col-sm-8 col-xs-12 col-md-8">
+					<h1 class="title_top">Style defines you, So does your wardrobe!</h1>
+					<center>
+						<p class="bloggerName">By: <span style="color: red;">Sanya Kumra</span> &nbsp;<span ><b>|</b></span>&nbsp;&nbsp;30th June 2016</p>
+					</center>
+					<center>
+						<p><b>Share This Article</b></p>
+						<div class="row row_connect">
 
-		<center>
-			<h2 class="title">
-				WARDROBE- Part and parcel of interior design 
-			</h2>
-		</center>
-			<div class="row rowOne">
-				<div class="col-sm-8 col-md-8 col-xs-12">
-					<p class="pgraphOne">
-						Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting  the material you should use for the flooring ,an  interior designer  will help you throughout, till you get the desired look for your home.
-						An interior designer's job is  not just about picking out colors and fabrics to make a space more beautiful, it concerns itself with adding life to your humdrum looking home . Interior designers must  make sure all of the work is completed on time. The designer has to coordinate with the painters, wallpaper designers, electricians, furniture manufacturers, fabric wholesalers and work as a team . Stainless steel, kitchenware/appliances, modern furniture, and florescent lighting, they know it all! They make  the dullest spaces more inspiring.
-						An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
-					</p>
-				</div>
-				<div class="col-sm-4 col-md-4 col-xs-12">
-					<p>
-						<img class="img-responsive" alt="" src="http://placehold.it/395x250/e67e22/fff">
-						<p class="txtTop1">Stunning sofa accompanied by Majestic Table.</p>
-					</p>
-				</div>
-			</div>
+							<div style="margin-right: 9%; padding-left: 11%; " class="col-sm-2 col-sm-offset-40 col-md-1 col-md-offset-2 col-xs-2 ">
+								<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+							</div>
 
-			<div class="row rowOne">
+							<div style="margin-right: 5%;" class="col-sm-1  col-md-1 col-xs-2 ">
+								<!-- Place this tag where you want the share button to render. -->
+								<div class="g-plus" data-action="share" data-height="24"></div>
+							</div>
 
+							<div class="col-sm-1  col-md-1 col-xs-2 ">
+								<a data-pin-do="buttonPin" data-pin-lang="en" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"></a>
+							</div>
+
+							<div style="margin-left: 3%;" class="col-sm-1 col-md-1 col-xs-2 ">
+								<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+								<script type="IN/Share"></script>
+							</div>
+						</div>
+					</center>
 				<center>
-					<h2 class="titleOne">
-						WARDROBE- Part and parcel of interior design 
-					</h2>
+					<img class="img-responsive img_top" alt="" src="{% static 'img/SEO/Suris_seo/1.jpg' %}">
+					<p class="top_image_bottom_text">
+						Area encapsulates a lovely dining table made of Italian Marble top with hand painted mural wall
+
+					</p>
 				</center>
 
-				<div class="col-sm-4 col-md-4 col-xs-12">
-					<p>
-						<img class="img-responsive imgOne" alt="" src="http://placehold.it/395x250/e67e22/fff">
-						<p class="txtTop2">Stunning sofa accompanied by Majestic Table.</p>
-					</p>
+				<p class="title_description custom">
+					TInterior designing! An upcoming trend ! Interior designing has become the part and parcel of construction and renovation business ! Almost every person who is planning to renovate /construct his/her house is hiring an interior designer to create a dream house for oneself with interiors that will make your heads turn!
+				</p>
+				<p class="custom1">
+					It helps  to create warm, comfortable, and interesting home environments for other people who seek the help of an interior designer. Interior design concerns itself with more than just the visual or ambient enhancement of an interior space. It is a profession that helps people fulfill their dream of having  a modern home with sublime interiors , a profession that will help you add a wow factor to your interiors.
+				</p>
+			</div>
+
+			<div class="col-sm-4 col-xs-12 col-md-4 desktop_view_only ">
+				<h2 class="blog_title custom">
+					Recent Post!
+				</h2>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'kitchen_accessories' %}"><img alt="" src="{% static 'img/SEO/side_blogs/blog1.jpg' %}"> </a><!-- kitchen accesory -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text custom">
+							Even if you don't have the luxury of remodeling your kitchen...
+						</p>
+					</div>
+				</div>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'renovation_ideas' %}"><img alt="" src="{% static 'img/SEO/side_blogs/blog2.jpg' %}"> </a><!-- renovation ideas -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text custom">
+							Definitely renovation is important! Home renovation is not just...
+						</p>
+					</div>
+				</div>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'seo_interior' %}"> <img alt="" src="{% static 'img/SEO/side_blogs/blog3.jpg' %}"> </a><!-- seo interior -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text custom">
+							Interior designing! An upcoming trend ! Interior designing has become... 
+						</p>
+					</div>
+				</div>
+				<div class="row row_blog">
+					<div class="col-sm-3 col-xs-3 col-md-3">
+						<a href="{% url 'seo_wardrobe' %}"><img alt="" src="{% static 'img/SEO/side_blogs/blog4.jpg' %}"> </a><!-- seo wardrobe -->
+					</div>
+					<div class="col-sm-9 col-xs-9 col-md-9">
+						<p class="blog_text custom">
+							Almost every person who is planning to renovate /construct...
+						</p>
+					</div>
 				</div>
 
-				<div class="col-sm-8 col-md-8 col-xs-12">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-xs-12">
+						<center>
+							<button class="btn btn-lg button_first">
+								Book a Consultation
+							</button>
+						</center>
+					</div>
+				</div>
+
+				<div class="row blog_social_media_tags">
+					<div class="row">
+						<p class="share_paragraph"><b>Subscribe and Follow.</b></p>
+					</div>
+					<div class="col-sm-2 first_element col-xs-3">
+						<center>
+							<a href="https://www.facebook.com/irenovate.in/"><img src="{% static 'img/SEO/icons/fb.png' %}"></a>
+						</center>
+					</div>
+
+					<div class="col-sm-2 col-xs-3">
+						<center>
+							<a href="https://br.pinterest.com/kapoorshivang/"><img src="{% static 'img/SEO/icons/insta.png' %}"></a>
+						</center>
+					</div>
+
+					<div class="col-sm-2 col-xs-3">
+						<center>
+							<a href="https://www.instagram.com/irenovate01/"><img src="{% static 'img/SEO/icons/pin.png' %}"></a>
+						</center>
+					</div>
+
+					<div class="col-sm-2 col-xs-3">
+						<center>
+							<a href="#"><img src="{% static 'img/SEO/icons/gp.png' %}"></a>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- blog section terminates here -->
+	  <div class="row">
+	  	<div class="col-sm-10 col-md-9 col-xs-12">
+	  		<img class="top_image_one img-responsive" src="{% static 'img/SEO/Suris_seo/2.jpg' %}">
+	  		<center>
+	  			<p class="top_image_bottom_text_two">
+						The interior designers beautifully condensed the entire house under one theme to make all areas look one
+					</p>
+	  		</center>
+		  </div>
+	  </div>  
+		<div class="row">
+			<div class="col-sm-10 col-md-9 col-xs-12">
+				<h2 class="title_second custom1">
+					WARDROBE- Part and parcel of interior design
+				</h2>
+				<p class="title_second_description_paragraph custom1">
+					Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting the material you should use for the flooring ,an interior designer will help you throughout, till you get the desired look for your home. An interior designer's job is  not just about picking out colors and fabrics to make a space more beautiful, it concerns itself with adding life to your humdrum looking home . Interior designers must  make sure all of the work is completed on time. The designer has to coordinate with the painters, wallpaper designers, electricians, furniture manufacturers, fabric wholesalers and work as a team . Stainless steel, kitchenware/appliances, modern furniture, and florescent lighting, they know it all! They make  the dullest spaces more inspiring. An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
+				</p>
+
+				<div class="row row_alternate11">
+					<img class="top_image_two img-responsive" src="{% static 'img/SEO/Suris_seo/3.jpg' %}">
+					<center>
+						<p class="top_image_bottom_text_two">
+							The entrance opened into a beautiful living room which is a comfortable zone created for the family
+						</p>
+					</center>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row"> 
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3 class="title_third">
+					WARDROBE- Part and parcel of interior design
+				</h3>
+				<div class="title_third_description custom">
 					<p class="pgraphOne">
 						Wardrobes, customized for small Indian homes are the ones which occupy minimal space , but provide adequate and sufficient space to keep your things . A small space doesn’t mean you have to sacrifice with your essential items . You can organize all your things in a well-designed small wardrobe. Small Indian homes basically need wardrobes that are compact but are side by side sufficient to fulfill their storage needs .
 					</p>
@@ -408,77 +691,49 @@
 					</ul>
 					<p>You can use these tips to judiciously use your room space by redesigning your wardrobe.	</p>
 				</div>
-			</div>
-			<div class="container">
-				<img class="img-responsive imgTwo" alt = "" src="http://placehold.it/1120x280/e67e22/fff">
-			</div>
+				<div class="row row_alternate11">
+					<div>
+						<img class="top_image_three img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/7.jpg' %}">	
+						<p class="top_image_bottom_text_two">
+							A soft back bed with matching sofa and textured wall enhances every room
+						</p>
 
-			<div class="row rowOne">
-				<div class="col-sm-8 col-md-8 col-xs-12">
-					<p class="pgraphOne">
-						Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting  the material you should use for the flooring ,an  interior designer  will help you throughout, till you get the desired look for your home.
-						An interior designer's job is  not just about picking out colors and fabrics to make a space more beautiful, it concerns itself with adding life to your humdrum looking home . Interior designers must  make sure all of the work is completed on time. The designer has to coordinate with the painters, wallpaper designers, electricians, furniture manufacturers, fabric wholesalers and work as a team . Stainless steel, kitchenware/appliances, modern furniture, and florescent lighting, they know it all! They make  the dullest spaces more inspiring.
-						An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
-					</p>
-				</div>
-				<div class="col-sm-4 col-md-4 col-xs-12">
-						<img class="img-responsive imgThree" alt="" src="http://placehold.it/395x250/e67e22/fff">
-						<p class="txtTop1">Stunning sofa accompanied by Majestic Table.</p>
-				</div>
-			</div>
-
-			<a name="two"></a>
-
-			<center>
-				<h2 class="titletwo">
-					Wardrobes for small Indian homes – Be minimalistic
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
+						<p class="special_para"> 
+							Be it changing the whole look of your room with false ceiling and awesome lighting system or making your room look more spacious or suggesting the material you should use for the flooring ,an interior designer will help you throughout, till you get the desired look for your home. An interior designer's job is  not just about picking out colors and fabrics to make a space more beautiful, it concerns itself with adding life to your humdrum looking home . Interior designers must  make sure all of the work is completed on time. The designer has to coordinate with the painters, wallpaper designers, electricians, furniture manufacturers, fabric wholesalers and work as a team . Stainless steel, kitchenware/appliances, modern furniture, and florescent lighting, they know it all! They make  the dullest spaces more inspiring. An interior designer should consider the overall space of a home and its individual rooms, what are the dimensions of the space and how was it constructed. The pros and cons of a space , pros and cons of  materials to be used for renovating the house should be considered .Some of the practical considerations that should be considered are the lighting, the sound, seating arrangements.
+						</p>			
 					</div>
-				</center>
+				</div>
 			</div>
+		</div>
 
-			<p class="paraCommon">Wardrobes, customized for small Indian homes are the ones which occupy minimal space , but provide adequate and sufficient space to keep your things . A small space doesn’t mean you have to sacrifice with your essential items . You can organize all your things in a well-designed small wardrobe. Small Indian homes basically need wardrobes that are compact but are side by side sufficient to fulfill their storage needs .</p>
-
-			<div>
-				<p>You can use certain tips to make your small room appear spacious </p>
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3>
+					Wardrobes for small Indian homes – Be minimalistic
+				</h3>
+				<p class="custom11">
+					Wardrobes, customized for small Indian homes are the ones which occupy minimal space , but provide adequate and sufficient space to keep your things . A small space doesn’t mean you have to sacrifice with your essential items . You can organize all your things in a well-designed small wardrobe. Small Indian homes basically need wardrobes that are compact but are side by side sufficient to fulfill their storage needs .
+				</p>
+				<p>You can use certain tips to make your small room appear spacious - </p>
 				<ul>
-					<li>You can make your bedroom appear twice as large with wardrobes that come with mirrored surfaces.</li>
+					<li>You can make your bedroom appear twice as large with wardrobes that come with mirrored surfaces.If your bedroom is small but tall, you can make use of the height by opting for a wardrobe with lofts.This makes the room look more spacious plus providing you with extended cabinets that go up to the ceiling of your room.</li>
 					<li>If your bedroom is small but tall, you can make use of the height by opting for a wardrobe with lofts.This makes the room look more spacious plus providing you with extended cabinets that go up to the ceiling of your room.</li>
-					<li>Sliding doors also save the space as you don’t have to save the space for wardrobe doors to open </li>
-					<li>Translucent doors are an intelligent wardrobe design solution perfect for small Indian bedrooms as they add depth and free up space.</li>
+					<li>Sliding doors also save the space as you don’t have to save the space for wardrobe doors to open .</li>
+					<li>Translucent doors are an intelligent wardrobe design solution perfect for small Indian bedrooms as they add depth and free up space</li>
 					<li>Buy a little raised wardrobe , whose legs are visible , this also makes the room appear bigger . Moreover , it is easy to clean under the wardrobe when it has raised legs , otherwise the dirt gets collected over years .</li>
 				</ul>
 				<p>You can use these tips to judiciously use your room space by redesigning your wardrobe.	</p>
-			</div>
 
-			<a name="three"></a>
-
-			<center>
-				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-					<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-					<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-				</div>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
+				<div class="row row_alternate11">
+					<div>
+						<img class="top_image_four img-responsive" alt="" src="{% static 'img/SEO/Suris_seo/8.jpg' %}">
+						<p class="top_image_bottom_text_two">
+							This hand painted family tree is culmination of art with family history.
+						</p>
 					</div>
-				</center>
-			</div>
+				</div>
+				<p class="paraCommon">The storage requirement of an average home has been spiraling up, but the floor space of new homes has reduced significantly. Wardrobes with sliding doors are one such invention that has revolutionized the way we store items. There are small sliding wardrobes which can be customized to suit tiny spaces and large ones too, for rooms with big storage requirements. A conventional wardrobe takes up space  when its doors open in the front.  A sliding wardrobe comes to the rescue here ,by taking up only the space of a wardrobe , whereas you don’t need to leave much space for the radius of the door panel .Sliding wardrobe doors can be made from a wide variety of materials like frosted glass, mirrors, wood, metal and veneer .</p>
 
-			<p class="paraCommon">The storage requirement of an average home has been spiraling up, but the floor space of new homes has reduced significantly. Wardrobes with sliding doors are one such invention that has revolutionized the way we store items. There are small sliding wardrobes which can be customized to suit tiny spaces and large ones too, for rooms with big storage requirements. A conventional wardrobe takes up space  when its doors open in the front.  A sliding wardrobe comes to the rescue here ,by taking up only the space of a wardrobe , whereas you don’t need to leave much space for the radius of the door panel .Sliding wardrobe doors can be made from a wide variety of materials like frosted glass, mirrors, wood, metal and veneer .</p>
-				
-			<div>
 				<p>Here are certain tips that you can use to make your sliding wardrobe last longer. </p>
 				<ul>
 					<li>Always choose doors that run on wheels installed on top of the shutter rather than at the bottom of the shutter.</li>
@@ -490,182 +745,208 @@
 				</ul>
 				<p>You can use these tips to judiciously use your room space by redesigning your wardrobe.	</p>
 			</div>
-
-			<a name="four"></a>
-
-			<center>
-				<h2 class="titletwo">
+		</div>
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
 					WONDER WOMAN WARDROBE –Wardrobe designs for women
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
+				</h3>
+				<p class="custom13">
+					A woman’s wardrobe should be designed in a little different way . It should be designed in a way to suit a woman’s needs . There should be long hanging , ideal for formal dresses and short hanging for short party dresses, blouses, cardigans and shirts .There should be drawers for underwear, nightwear and hosiery. There should be wire baskets and shelves for jumpers, tops, jeans and trousers. Racks which are an ideal way of storing belts, jewellery and scarves. No women’s wardrobe is complete without an area for handbag and shoe storage. Drawers should be made for different accessories and make up . There is much more that can be incorporated in a woman’s wardrobe according to each woman’s needs .</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
+		</div>
 
-			<p class="paraCommon">A woman’s wardrobe should be designed in a little different way . It should be designed in a way to suit a woman’s needs . There should be  long hanging , ideal for formal dresses and  short hanging for short party dresses, blouses, cardigans and shirts .There should be drawers for underwear, nightwear and hosiery. There should be  wire baskets and shelves for jumpers, tops, jeans and trousers. Racks which are an ideal way of storing belts, jewellery and scarves. No women’s wardrobe is complete without an area for handbag and shoe storage. Drawers should be made for different accessories and make up . There is much more that can be incorporated in a woman’s wardrobe according to each woman’s needs . </p>
-
-			<a name="five"></a>
-
-			<center>
-				<h2 class="titletwo">
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
 					TRI DOOR – 3 door wardrobe design
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
+				</h3>
+				<p class="custom13">
+					A three door spacious piece offers plenty of style with a lot of storage space to store all your essentials. These are the most common ones , being used these days , as these offer good space for storage . Considering its usage, one should always ensure that they are easy to operate, have enough storage space and go well with the decor of the house. These types are more recommended for a spacious big bedroom .</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
+		</div>
 
-			<p class="paraCommon">A three door spacious  piece offers plenty of style with a lot of storage space to store all your essentials. These are the most common ones , being used these days , as these offer good space for storage . Considering its usage, one should always ensure that they are easy to operate, have enough storage space and go well with the decor of the house. These types are more recommended for a spacious big bedroom .  </p>
-
-			<a name="six"></a>
-
-			<center>
-				<h2 class="titletwo">
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
 					CORNER WARDROBE –COZY CORNER
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
+				</h3>
+				<p class="custom13">
+					Corner wardrobe are specially designed to save space . Corner wardrobes are perfect to get extra space without taking too much room. So even if you have limited space it’s possible to make the most of it. It fits in the corner , providing enough room and looks classy.These type of wardrobes are great space savers and moreover , your corners get well utilized</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
+		</div>
 
-			<p class="paraCommon">Corner wardrobe are specially designed to save space . Corner wardrobes are perfect to get extra space without taking too much room. So even if you have limited space it’s possible to make the most of it. It fits in the corner , providing enough room and looks classy.These type of wardrobes are great space savers and moreover , your corners get well utilized.</p>
-
-			<a name="seven"></a>
-
-			<center>
-				<h2 class="titletwo">
-					WALK IN WARDROBE – A DREAM COME TRUE !
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
+					WALK IN WARDROBE – A DREAM COME TRUE!
+				</h3>
+				<p class="custom13">
+					A walk in wardrobe is a dream for many. All those celebrities out there have these kind of cabinets, with a separate drawer for their clothes, footwear , accessories , make up etc . Now you can also feel like a celebrity, with these type of wardrobes. You can display everything at one place in an organised manner. Walk-in wardrobes add a touch of luxury. Any unused room can easily be converted in a walk-in wardrobe by adding shelves . Walk-in wardrobes are more expensive than the other ones. Their main benefit is easy access and easy-to-organise storage. But accommodating a walk-in wardrobe in small and medium sized homes is next to impossible.There’s a misconception that you need lots of room for a walk-in wardrobe. The type of storage you need simply comes down to what you own. These type of closets are an epitome of luxury. A dedicated place for your clothes and shoes is really all you need to make the walk-in closet a dream come true.</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
+		</div>
 
-			<p class="paraCommon">A walk in wardrobe is a dream for many. All those celebrities out there have these kind of cabinets, with a separate drawer for their clothes, footwear , accessories , make up etc . Now you can also feel like a celebrity, 	with these type of wardrobes. You can display everything at one place in an organised manner. Walk-in wardrobes add a touch of luxury. Any unused room can easily be converted in a walk-in wardrobe by  adding shelves . Walk-in wardrobes are more expensive than the other ones. Their main benefit is easy access and easy-to-organise storage. But accommodating a walk-in wardrobe in small and medium sized homes is next to impossible.There’s a misconception that you need lots of room for a walk-in wardrobe. The type of storage you need simply comes down to what you own. These type of closets are an epitome of luxury. A dedicated place for your clothes and shoes is really all you need to make the walk-in closet a dream come true. </p>
-
-			<a name="eight"></a>
-
-			<center>
-				<h2 class="titletwo">
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
 					TV WARDROBE DESIGNS!
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
+				</h3>
+				<p class="custom13">
+					You can set the TV either in between the open shelving or build a door to conceal the TV when it’s not in use. It’s the best way to incorporate your t.v. in a closet. The advantage is that you don’t need a separate wall for a Tv and a closet. You can have all of it at one place. Moreover, it looks more organized as the wires are not visible, when its inside a closet</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
+		</div>
 
-			<p class="paraCommon">You can set the TV either in between the open shelving or build a door to conceal the TV when it’s not in use. It’s the best way to incorporate your t.v. in a closet. The advantage is that you don’t need a separate wall for a Tv and a closet. You can have all of it at one place. Moreover, it looks more organized as the wires are not visible, when its inside a closet.</p>
-
-			<a name="nine"></a>
-
-			<center>
-				<h2 class="titletwo">
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
 					BUILT IN WARDROBE DESIGN
-				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
+				</h3>
+				<p class="custom13">
+					A built-in wardrobe is the perfect way to de-clutter your room, and with a wide range of beautiful designs available, you can get the perfect fitted wardrobe for your space, budget and personality.</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
+		</div>
 
-			<p class="paraCommon">A built-in wardrobe is the perfect way to de-clutter your room, and with a wide range of beautiful designs available, you can get the perfect fitted wardrobe for your space, budget and personality.</p>
-
-			<a name="ten"></a>
-
-			<center>
-				<h2 class="titletwo">
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h3 class="custom13">
 					MASTER BEDROOM WARDROBE DESIGNS
+				</h3>
+				<p class="custom13">
+					Master bedroom is a bedroom where the master/owner of the house lives. Master bedroom is generally the most spacious room in the house. Hence, options for a wardrobe are many . If there is enough space in the master bedroom, then you can get a bigger wardrobe for your room . You can even utilize the corners or if the room is too big , you can definitely dedicate a space in your room to your walk in wardrobe . There are a myriad of options available. Here are a few designs</br></br>
+				</p>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-9 col-md-9 col-xs-12 custom12">
+				<h2 class="title_7">
+					About iRenovate
 				</h2>
-			</center>
-
-			<div class="row">
-				<center>
-					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-						<img class="img-responsive imgFour" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop3">Stunning sofa accompanied by Majestic Table.</p>
-					</div>
-				</center>
-			</div>
-
-			<p class="paraCommon">Master bedroom is a bedroom where the master/owner of the house lives. Master bedroom is generally the most spacious room in the house. Hence, options for a wardrobe are many . If there is enough space in the master bedroom, then you can get a bigger wardrobe for your room . You can even utilize the corners or if the room is too big , you can definitely dedicate a space in your room to your walk in wardrobe . There are a myriad of options available. Here are a few designs </p>
-
-			<div class="row rowTwo">
-				<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-					<center>
-						<img class="img-responsive" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop1">Stunning sofa accompanied by Majestic Table.</p>
-					</center>
-				</div>
-				<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6">
-					<center>
-						<img class="img-responsive" src="http://placehold.it/800x350/e67e22/fff">
-						<p class="txtTop1">Stunning sofa accompanied by Majestic Table.</p>
-					</center>
-				</div>
-			</div>
-
-			<a name="eleven"></a>
-
-			<center>
-			<h2 class="title_7">
-				About iRenovate
-			</h2>
-		</center>	
-		<div class="container">
-			<div>
-				<ul>
+				<ul class="unrelated_list">
 					<li class="list_1">We put our brain and brawn into your home projects to help you create your own dream house with top sublime interiors. This is why we have been called as one of the finest turnkey interior designers in Delhi/NCR.</li>
-
 					<li class="list_1">At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</li>
-
 					<li class="list_1">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</li>
-
 					<li class="list_1">We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.</li>
-
 					<li class="list_1">We provide concept drawings and 3D digital designs for you to comprehend better. We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.</li>
 					<li class="list_1"> Poor management can make you feel renovation as a never ending project. At iRenovate, we design a perfectly well structured plan to complete your renovation project on time and within your budget.</li>
 					<li class="list_1">We at iRenovate help you deliver you the X-factor you need for your dream home. Our in-house team of designers is committed to provide you with the exact design you need.</li>
 					<li class="list_1">Our new section of the blog - DO IT THE RIGHT WAY series provides some very useful construction and renovation tips.</li>
 					<li class="list_1">iRenovate team is dedicated to provide excellence in maintenance with a 6 months’ F.O.C after service contract. Should you experience a problem or need assistance our team is ready to assist, no matter how small the issue is!</br></br>
-					For further queries , you can contact us and visit our website for more info - <a href="https://irenovate.in/renovation-consultation">Click here.</a></li>
+					For further queries , you can contact us and visit our website for more info - <a href="{% url 'renovation_consultation' %}">Click here.</a></li>
 				</ul>
+				<img  class="img-responsive" src="{% static 'img/SEO/Suris_seo/5.jpg' %}">
+				<p class="top_image_bottom_text_four">
+					The bar at the corner of the living room is a masterpiece in itself
+				</p>
 			</div>
 		</div>
+
+		<div class="col-sm-4 col-xs-12 col-md-4 mobile_blog_only">
+			<h2 class="blog_title">
+				Related Posts
+			</h2>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'kitchen_accessories' %}"><img alt="" class="img-responsive" src="{% static 'img/SEO/side_blogs/blog1.jpg' %}"> </a><!-- kitchen accesory -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Even if you don't have the luxury of...
+					</p>
+				</div>
+			</div>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'renovation_ideas' %}"><img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog2.jpg' %}"> </a><!-- renovation ideas -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Definitely renovation is important!...
+					</p>
+				</div>
+			</div>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'seo_interior' %}"> <img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog3.jpg' %}"> </a><!-- seo interior -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Interior designing! An upcoming trend ! Interior ... 
+					</p>
+				</div>
+			</div>
+			<div class="row row_blog">
+				<div class="col-sm-3 col-xs-3 col-md-3">
+					<a href="{% url 'seo_wardrobe' %}"><img class="img-responsive" alt="" src="{% static 'img/SEO/side_blogs/blog4.jpg' %}"> </a><!-- seo wardrobe -->
+				</div>
+				<div class="col-sm-9 col-xs-9 col-md-9">
+					<p class="blog_text1 custom">
+						Almost every person who is planning to ...
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-9 col-xs-12">
+				<center>
+					<a href="{% url 'renovation_consultation' %}"><img style="padding-left: 1%; margin-top: 1.5%;" class="img-responsive" src="{% static 'img/SEO/Suris_seo/Book_a_consultation.jpg' %}"></a>
+				</center>
+			</div>
+		</div>
+
+		<div class="row bottom_blog">
+				<div class="col-sm-9 col-md-9 col-xs-12">
+				<h3 class="bottom_blog_title">
+					Related Posts
+				</h3>
+				<div class="col-sm-2 col-xs-6 col-md-2 col-sm-offset-1 col-md-offset-1">
+					<div class="row">
+						<center>
+							<a href="https://blog.irenovate.in/different-types-of-bedroom-designs/"><img alt="Types of bedroom designs" src="http://placehold.it/200x200"></a>
+						</center>
+					</div>
+					<div class="row">
+						<p class="bottom_blog_parag">
+							<a href="https://blog.irenovate.in/different-types-of-bedroom-designs/">Taking up the renovation task is...</a>
+					</div>
+				</div>
+		</div>
+		
 	</div>
 
 	{% include 'Footer/copyright.html' %}  
@@ -673,5 +954,8 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
 </body>
 </html>
