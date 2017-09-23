@@ -22,6 +22,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <style>
     body {
         position: static;
@@ -342,14 +343,20 @@
     }
 
     .related_posts{
-      margin-left: -15%;
+    	margin-left: -15%;
       font-size: 1.4em;
       font-family: 'Lato', sans-serif;
     }
 
     .ul_late{
-      text-align: justify;
-      width: 94%;
+    	text-align: justify;
+    	width: 94%;
+    }
+
+    .row_connect{
+      margin-bottom: 1%;
+      margin-top: 1.5%;
+      color: #434547;
     }
   @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section4, #section5,#section6  {
@@ -357,8 +364,8 @@
     }
 
     .ul_late{
-      text-align: justify;
-      width: 94%;
+    	text-align: justify;
+    	width: 94%;
     }
 
     .related_posts{
@@ -372,9 +379,18 @@
 {% include "navbar.html" %}
 
 <body class="Body_main" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+  <!-- Facebook share button JDK-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- fb share button JDK end -->
 
   <div class="container">
-    
     <div class="row">
       <nav class="col-sm-3 navigationLeft" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked navigation_left">
@@ -424,38 +440,64 @@
           </div>
         </div>
 
+        <center>
+          <p><b>Share This Article</b></p>
+          <div class="row row_connect">
+
+            <div style="margin-right: 9%; padding-left: 11%; " class="col-sm-2 col-sm-offset-40 col-md-1 col-md-offset-2 col-xs-2 ">
+              <!-- Facebook share button -->
+              <div class="fb-share-button" data-href="https://irenovate.in/renovation-consultation/renovation-ideas" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+              </div>
+              <!-- fb share button end -->
+            </div>
+
+            <div style="margin-right: 5%;" class="col-sm-1  col-md-1 col-xs-2 ">
+              <!-- Place this tag where you want the share button to render. -->
+              <div class="g-plus" data-action="share" data-height="24"></div>
+            </div>
+
+            <div class="col-sm-1  col-md-1 col-xs-2 ">
+              <a data-pin-do="buttonPin" data-pin-lang="en" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"></a>
+            </div>
+
+            <div style="margin-left: 3%;" class="col-sm-1 col-md-1 col-xs-2 ">
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+              <script type="IN/Share"></script>
+            </div>
+          </div>
+        </center>
 
         <div class="row">
         <img class="img-responsive top_image" src="{% static 'img/SEO/interior_top.jpg' %}">
         <p class="special_text1">
           Definitely renovation is important! Home renovation is not just about upgrading your home with new colors or fresh furniture or repairs but it is also about upgrading your lifestyle. Most people want their homes to be beautiful and reflective of who they are, so you can make your home the best place to live in with the help of interior designs .
 
-          Every worldly thing tends to depreciate in value, be it a vehicle, a utility item or home. A home is built to last for a lifetime, provided that it is being properly taken care of and renovated on a timely basis. The wrath of environmental factors, such as rain, snow, storms, earthquakes, floods, etc spares none. If your house has been a victim to any of the natural calamities, it is soon going to fall weak at some point in time. Therefore, renovation is mandatory in that case.
+					Every worldly thing tends to depreciate in value, be it a vehicle, a utility item or home. A home is built to last for a lifetime, provided that it is being properly taken care of and renovated on a timely basis. The wrath of environmental factors, such as rain, snow, storms, earthquakes, floods, etc spares none. If your house has been a victim to any of the natural calamities, it is soon going to fall weak at some point in time. Therefore, renovation is mandatory in that case.
 
-          Renovation gives some good appeal to your home . Its literally the best thing to invest in. The idea of renovating your home from time to time is the best thing since sliced bread . They offer a family a new way to experience their home and make changes to it that suit their needs without having to spend the money moving into building a new home. Home renovation is not only important for the look of your home but it is also important because it keeps the family safe. Any part of your home may get worn out from too much use. This can pose danger especially the electrical aspect of the house because it may cause fire or any unwanted accident.
-          <br>
-          There is a dire need of renovation if
+					Renovation gives some good appeal to your home . Its literally the best thing to invest in. The idea of renovating your home from time to time is the best thing since sliced bread . They offer a family a new way to experience their home and make changes to it that suit their needs without having to spend the money moving into building a new home. Home renovation is not only important for the look of your home but it is also important because it keeps the family safe. Any part of your home may get worn out from too much use. This can pose danger especially the electrical aspect of the house because it may cause fire or any unwanted accident.
+					<br>
+					There is a dire need of renovation if
         </p>
 
         <ol>
-          <li>The house has got quite older than normal age. 
-          </li>
-          <li>Leaky roof and rifted walls.
-          </li>
-          <li>
-            No storage space .
-          </li> 
-          <li>
-            The kitchen seems no more attractive. The design has got older and its walls nowadays get moist quite often.
-          </li>
-          <li>
-            You can also consider removing some walls during your renovation to be able to have a much fresher and bigger space inside your house.
-          </li>
-        </ol>
+					<li>The house has got quite older than normal age. 
+					</li>
+					<li>Leaky roof and rifted walls.
+					</li>
+					<li>
+						No storage space .
+					</li>	
+					<li>
+						The kitchen seems no more attractive. The design has got older and its walls nowadays get moist quite often.
+					</li>
+					<li>
+						You can also consider removing some walls during your renovation to be able to have a much fresher and bigger space inside your house.
+					</li>
+				</ol>
 
-        <p>
-          Home renovation is important, not only because it can add to the aesthetic value of your home but it is also a way that can keep your homes in good condition, which in return can benefit you in such a way that it will provide more comfort in your homes.
-        </p>
+				<p>
+					Home renovation is important, not only because it can add to the aesthetic value of your home but it is also a way that can keep your homes in good condition, which in return can benefit you in such a way that it will provide more comfort in your homes.
+				</p>
       </div>
 
       <center>
@@ -492,42 +534,42 @@
         
         <div class="row">
           <ul>
-            <li>
-              Renovation is an  exciting opportunity to bring an old house back to life. Not only does special care needs to be taken when dealing with old structures and building materials, but old houses are full of surprises, and costs can add up quickly.
-            </li>
+						<li>
+							Renovation is an  exciting opportunity to bring an old house back to life. Not only does special care needs to be taken when dealing with old structures and building materials, but old houses are full of surprises, and costs can add up quickly.
+						</li>
 
-            <li>
-              Keep an eye out—especially around the ceilings, floors, and windows—for signs of water damage. That could be a warning of serious structural issues. Water damage has long-term effects . Also, bugs love wet environments.
-            </li>
+						<li>
+							Keep an eye out—especially around the ceilings, floors, and windows—for signs of water damage. That could be a warning of serious structural issues. Water damage has long-term effects . Also, bugs love wet environments.
+						</li>
 
-            <li>
-              Fireplaces and chimneys are a good place to check if mortar needs to be repaired, a process called repointing. 
-            </li>
+						<li>
+							Fireplaces and chimneys are a good place to check if mortar needs to be repaired, a process called repointing. 
+						</li>
 
-            <li>
-              Decide an interior theme for your house depending upon your personality and style. You could choose a same interior theme for the entire house or you could choose different themes.
-            </li>
+						<li>
+							Decide an interior theme for your house depending upon your personality and style. You could choose a same interior theme for the entire house or you could choose different themes.
+						</li>
 
-            <li>
-              Add home enhancing decorations plants that can add to the bounty of your house as they signify life. You can put plants both indoors and outdoors to enhance certain portions of your house.
-            </li>
+						<li>
+							Add home enhancing decorations plants that can add to the bounty of your house as they signify life. You can put plants both indoors and outdoors to enhance certain portions of your house.
+						</li>
 
-            <li>
-              Curtains can be used to bare windows to give these areas a certain look. Make a smart choice while choosing for curtains. Go for elegant materials such as natural silk, linen and cotton. 
-            </li>
+						<li>
+							Curtains can be used to bare windows to give these areas a certain look. Make a smart choice while choosing for curtains. Go for elegant materials such as natural silk, linen and cotton. 
+						</li>
 
-            <li>
-              Chandeliers could add to the beauty of your drawing room.
-            </li>
+						<li>
+							Chandeliers could add to the beauty of your drawing room.
+						</li>
 
-            <li>
-              Accessories at home makes a mediocre house look extravagant. It is one of the simplest and easiest ways of giving an old house a modern look. 
-            </li>
+						<li>
+							Accessories at home makes a mediocre house look extravagant. It is one of the simplest and easiest ways of giving an old house a modern look. 
+						</li>
 
-            <li>
-              Making moderations in bathrooms- In modern times , the  way people judge a house is based more on the way bathrooms are been built in houses. Make sure your bathroom is not dingy and has good modular fittings
-            </li>
-          </ul>
+						<li>
+							Making moderations in bathrooms- In modern times , the  way people judge a house is based more on the way bathrooms are been built in houses. Make sure your bathroom is not dingy and has good modular fittings
+						</li>
+					</ul>
         </div>
 
         <center>
@@ -549,50 +591,50 @@
         
         
         <ul>
-        <li>
-          When adding drapes to a room, make sure they’re the same color as your walls. Sticking to the same color will make your space look bigger. 
-        </li>
+				<li>
+					When adding drapes to a room, make sure they’re the same color as your walls. Sticking to the same color will make your space look bigger. 
+				</li>
 
-        <li>
-          Opt for sofas and armchairs that are raised on legs, which creates a sense of light and space.
-        </li>
+				<li>
+					Opt for sofas and armchairs that are raised on legs, which creates a sense of light and space.
+				</li>
 
-        <li>
-          light and neutral color palettes make a space feel bigger and more open.
-        </li>
+				<li>
+					light and neutral color palettes make a space feel bigger and more open.
+				</li>
 
-        <li>
-          Include mirrors in your space! The reflection will make a room look bigger.
-        </li>
+				<li>
+					Include mirrors in your space! The reflection will make a room look bigger.
+				</li>
 
-        <li>
-          Make a small room look bigger with expansive counter tops in the kitchen.
-        </li>
+				<li>
+					Make a small room look bigger with expansive counter tops in the kitchen.
+				</li>
 
-        <li>
-          Buy some of your furniture in the same color as your walls, that way it simply blends in and will widen your space.
-        </li>
+				<li>
+					Buy some of your furniture in the same color as your walls, that way it simply blends in and will widen your space.
+				</li>
 
-        <li>
-          Don’t automatically place your furniture against walls. Sometimes placing a piece at an angle or surrounded by open space, will make a room look  bigger 
-        </li>
+				<li>
+					Don’t automatically place your furniture against walls. Sometimes placing a piece at an angle or surrounded by open space, will make a room look  bigger 
+				</li>
 
-        <li>
-          If possible, avoid heavy materials and fabrics that absorb light and weigh your room down. 
-        </li>
+				<li>
+					If possible, avoid heavy materials and fabrics that absorb light and weigh your room down. 
+				</li>
 
-        <li>
-          Avoid too many knickknacks or at least group them so they read as an installation.
-        </li>
+				<li>
+					Avoid too many knickknacks or at least group them so they read as an installation.
+				</li>
 
-        <li>
-          Using a bright color for your ceiling will drive they eye upward, creating the illusion of a higher ceiling.
-        </li>
+				<li>
+					Using a bright color for your ceiling will drive they eye upward, creating the illusion of a higher ceiling.
+				</li>
 
-        <li>
-          Here are some before /after pictures of projects done by us – (add pics here )
-        </li>
-      </ul>
+				<li>
+					Here are some before /after pictures of projects done by us – (add pics here )
+				</li>
+			</ul>
       </div>
 
       <div id="section7"></div>
@@ -619,7 +661,7 @@
         <div id="section8">         
           
             <h2 class="title_5">
-              Material choices - House Renovation Ideas Interiors
+            	Material choices - House Renovation Ideas Interiors
             </h2>
           
           <div class="row row_alternate">
@@ -635,49 +677,49 @@
               <p class="imgTop1">Dining Table</p>
             </div>
             <div class="row">
-              <ul class="ul_late">
-                <li>
-                  When you prepare your meals , you mainly use 3 things-
-                  <ul>
-                    <li>
-                      USE SINK
-                    </li>
-                    <li>
-                      USECOOKING RANGE 
-                    </li>
-                    <li>
-                      USE FRIDGE 
-                    </li>
-                  </ul>
-                  Hence , every kitchen has 3 main corners and when you use your kitchen , you are moving between these corners .For efficient kitchen , make sure triangle is neither  too big  too small nor too small and there are no obstructing objects in the middle of this triangle .
-                </li>
-                
-                <li>
-                  Keep an over-the-sink cutting board handy to temporarily expand your counter space.
-                </li>
+            	<ul class="ul_late">
+								<li>
+							 		When you prepare your meals , you mainly use 3 things-
+								 	<ul>
+								 		<li>
+								 			USE SINK
+								 		</li>
+								 		<li>
+								 			USECOOKING RANGE 
+								 		</li>
+								 		<li>
+								 			USE FRIDGE 
+								 		</li>
+								 	</ul>
+								 	Hence , every kitchen has 3 main corners and when you use your kitchen , you are moving between these corners .For efficient kitchen , make sure triangle is neither  too big  too small nor too small and there are no obstructing objects in the middle of this triangle .
+								</li>
+								
+								<li>
+									Keep an over-the-sink cutting board handy to temporarily expand your counter space.
+								</li>
 
-                <li>
-                  Adding some  plants to your kitchen creates the illusion of a luxurious, well-kept space. Try placing a long-leafed houseplant in an open corner. Adding some green, leafy life will perk up your kitchen.
-                </li>
+								<li>
+									Adding some  plants to your kitchen creates the illusion of a luxurious, well-kept space. Try placing a long-leafed houseplant in an open corner. Adding some green, leafy life will perk up your kitchen.
+								</li>
 
-                <li>
-                  Get the right rug for your kitchen decor .
-                </li>
+								<li>
+									Get the right rug for your kitchen decor .
+								</li>
 
-                <li>
-                  Paint just one or two of your kitchen walls to create a new focal point, and use a color that complements your cabinetry in this way you will be able to create so called your “dream kitchen” and make your kitchen decor attractive.
-                </li>
+								<li>
+									Paint just one or two of your kitchen walls to create a new focal point, and use a color that complements your cabinetry in this way you will be able to create so called your “dream kitchen” and make your kitchen decor attractive.
+								</li>
 
-                <li>
-                  Hanging racks are inexpensive and easy to install and they can be painted to match the rest of your decor if desired. 
-                </li>
-              </ul>
+								<li>
+									Hanging racks are inexpensive and easy to install and they can be painted to match the rest of your decor if desired. 
+								</li>
+							</ul>
             </div>
           </div>
         </div>
         <div>         
 
-          <div id="section9"></div>
+        	<div id="section9"></div>
 
           <center>
             <h2 class="title_6">
@@ -685,36 +727,36 @@
             </h2>
           </center> 
           <p>
-        Delhites , who are quite boastful about anything and everything are definitely hiring interior designers at a spiraling rate , so that they get one more reason to show off ! 
-        Here is a list of best interior designers in Delhi !
-      </p>
+				Delhites , who are quite boastful about anything and everything are definitely hiring interior designers at a spiraling rate , so that they get one more reason to show off ! 
+				Here is a list of best interior designers in Delhi !
+			</p>
 
-      <ul>
-        <li>
-          Irenovate -Your one stop shop for all your renovation needs !
-        </li>
+			<ul>
+				<li>
+					Irenovate -Your one stop shop for all your renovation needs !
+				</li>
 
-        <li>
-          Renovating your home is a challenging job. With iRenovate, you leave all the hard-work and management to us. From the scratch to  the end, we handle all the major and minor work that comes along with the renovation process. We assure you best quality renovation completed on time and within your budget.
-        </li>
+				<li>
+					Renovating your home is a challenging job. With iRenovate, you leave all the hard-work and management to us. From the scratch to  the end, we handle all the major and minor work that comes along with the renovation process. We assure you best quality renovation completed on time and within your budget.
+				</li>
 
-        <li>
-          <b>Shivang kapoor @ Irenovate</b> - Shivang Kapoor , CEO of Irenovate and an interior designer is truly a perfectionist ! Be it the designs , be it the website , be it the blogs , he manages everything with utmost perfection and is the guiding force . All is grist that comes to his mill ! Through his creative ideas and hardwork , he has really managed to carve a niche for himself , in the renovation business.
-        </li>
+				<li>
+					<b>Shivang kapoor @ Irenovate</b> - Shivang Kapoor , CEO of Irenovate and an interior designer is truly a perfectionist ! Be it the designs , be it the website , be it the blogs , he manages everything with utmost perfection and is the guiding force . All is grist that comes to his mill ! Through his creative ideas and hardwork , he has really managed to carve a niche for himself , in the renovation business.
+				</li>
 
-        <li>
-          <b>Kaushika Sharma @ Irenovate </b> –She is the architect and interior designer expert at Irenovate ! She is the backbone of Irenovate . She helps people build beautiful homes for themselves .
-        </li>
+				<li>
+					<b>Kaushika Sharma @ Irenovate </b> –She is the architect and interior designer expert at Irenovate ! She is the backbone of Irenovate . She helps people build beautiful homes for themselves .
+				</li>
 
-        <li>
-          <b>Ascenzo Concept Design</b>
-          It is a leading organization in industry known to provide reliable solutions for interior designing and consulting. Based in New Delhi (India),having branches at Assam, West Bengal and Odissa, our company is operating its entire business activities since its foundation.
-        </li>
+				<li>
+					<b>Ascenzo Concept Design</b>
+					It is a leading organization in industry known to provide reliable solutions for interior designing and consulting. Based in New Delhi (India),having branches at Assam, West Bengal and Odissa, our company is operating its entire business activities since its foundation.
+				</li>
 
-        <li>
-          <b>Deco-Arte</b> Deco-Arte is a multi disciplinary design and Interior architecture studio founded in by Amardeep Gulri purely for his imminence passion for design & interiors. Ever since its inception the company has worked on over a hundred projects in the Residential, Hospitality, Commercial & Retail Space delivering what was promised.
-        </li>
-      </ul>
+				<li>
+					<b>Deco-Arte</b> Deco-Arte is a multi disciplinary design and Interior architecture studio founded in by Amardeep Gulri purely for his imminence passion for design & interiors. Ever since its inception the company has worked on over a hundred projects in the Residential, Hospitality, Commercial & Retail Space delivering what was promised.
+				</li>
+			</ul>
         </div>
         <div>         
 
@@ -760,29 +802,29 @@
             <div>
               <h3>Here is a list of interior designers in Gurgaon.</h3>
               <ul>
-        <li>
-          <b>Irenovate</b> -Irenovate also  provides its services in Gurgaon ! Here's the address - Third Floor, School Building, Parsvanath, Green Ville, Sohna Road, Gurgaon.
-        </li>
+				<li>
+					<b>Irenovate</b> -Irenovate also  provides its services in Gurgaon ! Here's the address - Third Floor, School Building, Parsvanath, Green Ville, Sohna Road, Gurgaon.
+				</li>
 
-        <li>
-          <b>CRUX DESIGN</b> - Prabhat , working at Crux design  is a  prepossessing and plush Interior Designer with all the craze and love for creating trendy stuff. He is a persistent, flexible and independent with a tremendous spirit of adventure.
-        </li>
+				<li>
+					<b>CRUX DESIGN</b> - Prabhat , working at Crux design  is a  prepossessing and plush Interior Designer with all the craze and love for creating trendy stuff. He is a persistent, flexible and independent with a tremendous spirit of adventure.
+				</li>
 
-        <li>
-          <b>AUGUST NINE STUDIO</b> 
-          Kulwinder Singh Grover at August Nine Studio is a multidisciplinary Design Company, with experience in Architecture, Interiors and Furniture. While our focus is on fulfilling the clients needs and aspirations, we are clear about the path we tread for the same. Our advise or works are not only suitable for the clients but also for the built environment, ecology and social and economic fabrics.
-        </li>
+				<li>
+					<b>AUGUST NINE STUDIO</b> 
+					Kulwinder Singh Grover at August Nine Studio is a multidisciplinary Design Company, with experience in Architecture, Interiors and Furniture. While our focus is on fulfilling the clients needs and aspirations, we are clear about the path we tread for the same. Our advise or works are not only suitable for the clients but also for the built environment, ecology and social and economic fabrics.
+				</li>
 
-        <li>
-          <b>NAYANTARA BOSE</b> -
-          She is also an architect  and interior designer, specializes in residential interiors & show homes. She tastefully decorates homes that evoke subtle luxury and bring together a magical meld of warmth & style.
-        </li>
+				<li>
+					<b>NAYANTARA BOSE</b> -
+					She is also an architect  and interior designer, specializes in residential interiors & show homes. She tastefully decorates homes that evoke subtle luxury and bring together a magical meld of warmth & style.
+				</li>
 
-        <li>
-          <b>INTERLOGUE STUDIO</b> 
-          Karan working at Interlogue Studio , an architect and interior designer ensures quality, ergonomics and design his interior designs ,  wherein all aspects get equal emphasis in the spaces curated by him.
-        </li>
-      </ul>
+				<li>
+					<b>INTERLOGUE STUDIO</b> 
+					Karan working at Interlogue Studio , an architect and interior designer ensures quality, ergonomics and design his interior designs ,  wherein all aspects get equal emphasis in the spaces curated by him.
+				</li>
+			</ul>
             </div>
           </div>
         </div> 
@@ -795,19 +837,19 @@
           </center> 
           <div>
             <ul>
-        <li>
-          The currently prevaHome renovation on budget – cost estimatesiling perception is that renovation  is expensive. However, if you consider what you are getting, its cost might just be justified. The renovation costs  will depend upon factors like area, design, and materials used. As there are so many factors that critically affect the renovation costs in India, talking about the final cost won’t be possible until and unless you consult an interior designer and let them know what you want and what you do not want in your house. Here are some cost estimates –
-        </li>
+				<li>
+					The currently prevaHome renovation on budget – cost estimatesiling perception is that renovation  is expensive. However, if you consider what you are getting, its cost might just be justified. The renovation costs  will depend upon factors like area, design, and materials used. As there are so many factors that critically affect the renovation costs in India, talking about the final cost won’t be possible until and unless you consult an interior designer and let them know what you want and what you do not want in your house. Here are some cost estimates –
+				</li>
 
-        <li>
-          Cost estimates in interiors&nbsp; - &nbsp;  Home Remodeling Cost Estimate</br>
-          1bhk/studio apartment: Rs 6.5lkh</br>
-          2bhk : 9.9lkh</br>
-          3bhk : 14lkh</br>
-          4bhk : 18lkh</br>
-          **Approx/starting prices</br>
-        </li>
-      </ul>
+				<li>
+					Cost estimates in interiors&nbsp; - &nbsp;  Home Remodeling Cost Estimate</br>
+					1bhk/studio apartment: Rs 6.5lkh</br>
+					2bhk : 9.9lkh</br>
+					3bhk : 14lkh</br>
+					4bhk : 18lkh</br>
+					**Approx/starting prices</br>
+				</li>
+			</ul>
           </div>
         </div> 
 
@@ -870,6 +912,8 @@
       </div>
     </div>
   </div>
+
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
   {% include 'Footer/copyright.html' %}
   {% include 'javascript.html' %}

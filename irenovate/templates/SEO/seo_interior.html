@@ -22,6 +22,8 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   <style>
     body {
         position: static;
@@ -351,7 +353,12 @@
       padding-left: 3%;
       font-size: 1.4em;
       font-family: 'Lato', sans-serif;
+    }
 
+    .row_connect{
+      margin-bottom: 5%;
+      margin-top: 1.5%;
+      color: #434547;
     }
   @media screen and (max-width: 810px) {
     #section2, #section3, #section4,#section6  {
@@ -418,9 +425,18 @@
 {% include "navbar.html" %}
 
 <body class="Body_main" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+  <!-- Facebook share button JDK-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- fb share button JDK end -->
 
   <div class="container">
-    
     <div class="row">
       <nav class="col-sm-3 navigationLeft" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked navigation_left">
@@ -469,6 +485,33 @@
             </div>
           </div>
         </div>
+
+        <center>
+          <p><b>Share This Article</b></p>
+          <div class="row row_connect">
+
+            <div style="margin-right: 9%; padding-left: 11%; " class="col-sm-2 col-sm-offset-40 col-md-1 col-md-offset-2 col-xs-2 ">
+              <!-- Facebook share button -->
+              <div class="fb-share-button" data-href="https://irenovate.in/renovation-consultation/interior-designers" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+              </div>
+              <!-- fb share button end -->
+            </div>
+
+            <div style="margin-right: 5%;" class="col-sm-1  col-md-1 col-xs-2 ">
+              <!-- Place this tag where you want the share button to render. -->
+              <div class="g-plus" data-action="share" data-height="24"></div>
+            </div>
+
+            <div class="col-sm-1  col-md-1 col-xs-2 ">
+              <a data-pin-do="buttonPin" data-pin-lang="en" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"></a>
+            </div>
+
+            <div style="margin-left: 3%;" class="col-sm-1 col-md-1 col-xs-2 ">
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+              <script type="IN/Share"></script>
+            </div>
+          </div>
+        </center>
 
 
         <div class="row">
@@ -830,6 +873,8 @@
       </div>
     </div>
   </div>
+
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
   {% include 'Footer/copyright.html' %}
   {% include 'javascript.html' %}

@@ -24,6 +24,8 @@
 
 	<script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 	<style type="text/css">
 		li {
 			font-family: 'Lato', sans-serif;
@@ -71,26 +73,41 @@
 		}
 
 		#index{
-				display: none;
-			}
+			display: none;
+		}
+
+		.row_connect{
+      margin-bottom: 1%;
+      margin-top: 1.5%;
+      color: #434547;
+    }
+
+    .share_article_top{
+    	padding-left: 45%;
+    }
+
+    @media only screen and (max-width: 500px) {
+		  .share_article_top{
+	    	padding-left: 35%;
+	    }
+		}
 	</style>
-	<script type="text/javascript">
-		function hide() {
-			var x = document.getElementById('index');
-			x.style.display="none";
-		};
-
-		function show() {
-			var x = document.getElementById('index');
-			x.style.display="inline";
-		};
-	</script>
-
 </head>
 
 {% include "navbar.html" %}
 
 <body>
+	<!-- Facebook share button JDK-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+  		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- fb share button JDK end -->
+
 	<div class="container">
 		<div class="row">
 			<h4>Index of content. &nbsp;&nbsp;<i class="fa fa-minus-square-o" onclick="hide()" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-plus-square-o" onclick="show()" aria-hidden="true"></i></h4>
@@ -109,6 +126,33 @@
 		<center>
 			<h1 class="heading"> Kitchen accessories – All you need, to enliven  your hum drum looking kitchen</h1>
 		</center>
+
+		<center>
+      <p class="share_article_top"><b>Share This Article</b></p>
+      <div class="row row_connect">
+
+        <div style="margin-right: 9%; padding-left: 11%; " class="col-sm-2 col-sm-offset-40 col-md-1 col-md-offset-2 col-xs-2 ">
+          <!-- Facebook share button -->
+          <div class="fb-share-button" data-href="https://irenovate.in/modular-kitchen/kitchen-accessories" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+          </div>
+          <!-- fb share button end -->
+        </div>
+
+        <div style="margin-right: 5%;" class="col-sm-1  col-md-1 col-xs-2 ">
+          <!-- Place this tag where you want the share button to render. -->
+          <div class="g-plus" data-action="share" data-height="24"></div>
+        </div>
+
+        <div class="col-sm-1  col-md-1 col-xs-2 ">
+          <a data-pin-do="buttonPin" data-pin-lang="en" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"></a>
+        </div>
+
+        <div style="margin-left: 3%;" class="col-sm-1 col-md-1 col-xs-2 ">
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+          <script type="IN/Share"></script>
+        </div>
+      </div>
+    </center>
 
 		<center>
 			<img class="image_beneath_heading" alt="" src="http://placehold.it/760x428/e67e22/fff">
@@ -243,6 +287,8 @@
 			</ul>
 		</div>
 	</div>
+
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 	{% include 'Footer/copyright.html' %}  
   {% include 'javascript.html' %}
