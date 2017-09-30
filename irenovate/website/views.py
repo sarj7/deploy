@@ -19,7 +19,7 @@ def renovation_consultation(request):
 		instance = form.save(commit=False)
 		instance.save()
 	 	return redirect("/acknowledgement")
-	return render (request, "renovation-consultation.html", context)
+	return render (request, "renovation-consultation/renovation-consultation.html", context)
 
 def seo_interior(request):
 	form = ContactForm(request.POST or None)
