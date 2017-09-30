@@ -24,13 +24,12 @@ from accounts.views import (login_view, register_view, logout_view)
 from website.views import (
         home, 
         renovation_consultation,
-        seo_interior,
         seo_wardrobe,
         seo_kitchen,
         renovation_ideas,
         kitchen_accessories,
         suri_home,
-		ourwork,
+	ourwork,
         david,
         malibu,
         suris,
@@ -53,8 +52,7 @@ from website.views import (
 
 urlpatterns = [
     url(r'^$', home, name='home'),
-    url(r'^renovation-consultation$', renovation_consultation, name='renovation_consultation'),
-    url(r'^renovation-consultation/interior-designers$', seo_interior, name='seo_interior'),
+    url(r'^renovation-consultation/interior-designers$', renovation_consultation, name='renovation_consultation'),
     url(r'^renovation-consultation/interior-wardrobes$', seo_wardrobe, name='seo_wardrobe'),
     url(r'^renovation-consultation/renovation-ideas$', renovation_ideas, name='renovation_ideas'),
 

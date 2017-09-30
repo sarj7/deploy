@@ -21,18 +21,6 @@ def renovation_consultation(request):
 	 	return redirect("/acknowledgement")
 	return render (request, "renovation-consultation/renovation-consultation.html", context)
 
-def seo_interior(request):
-	form = ContactForm(request.POST or None)
-	context = {
-		"form": form,
-	}
-	
-	if form.is_valid():
-		instance = form.save(commit=False)
-		instance.save()
-	 	return redirect("/acknowledgement")
-	return render(request, "SEO/seo_interior.html", context)
-
 def seo_wardrobe(request):
 	return render(request, "SEO/seo_wardrobe.html", {})
 
