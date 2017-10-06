@@ -25,7 +25,6 @@ from website.views import (
         home, 
         renovation_consultation,
         seo_wardrobe,
-        seo_kitchen,
         renovation_ideas,
         kitchen_accessories,
         suri_home,
