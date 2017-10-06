@@ -69,8 +69,7 @@ urlpatterns = [
 
     url(r'^wardrobes$', wardrobe, name='wardrobe'),
 
-    url(r'^modular-kitchen$', modular_kitchen, name='modular_kitchen'),
-    url(r'^modular-kitchen/interior-kitchen$', seo_kitchen, name='seo_kitchen'),
+    url(r'^modular-kitchen/interior-kitchen$', modular_kitchen, name='modular_kitchen'),
     url(r'^modular-kitchen/kitchen-accessories$', kitchen_accessories, name='kitchen_accessories'),
     
     url(r'^contact-us$', contact, name='contact'),

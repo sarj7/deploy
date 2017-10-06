@@ -24,9 +24,6 @@ def renovation_consultation(request):
 def seo_wardrobe(request):
 	return render(request, "SEO/seo_wardrobe.html", {})
 
-def seo_kitchen(request):
-	return render(request, "SEO/seo_kitchen.html", {})
-
 def renovation_ideas(request):
 	return render(request, "SEO/renovation_ideas.html", {})
 
@@ -73,7 +70,7 @@ def modular_kitchen(request):
 		instance = form.save(commit=False)
 		instance.save()
 	 	return redirect("/acknowledgement")
-	return render(request, "Themes/Kitchen.html", context)
+	return render(request, "Themes/modular-kitchen.html", context)
 
 def contact(request):
 	form = ContactForm(request.POST or None)
