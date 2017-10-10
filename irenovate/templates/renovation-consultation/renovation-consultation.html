@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
 
-<!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -21,9 +21,19 @@
 
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   
-<!-- Crisp Chatbot -->
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ac767974-7897-4a8a-b172-e2f883768514";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5982d658d1385b2b2e28559a/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
+  <!--End of Tawk.to Script-->
   
   <style type="text/css">
     @viewport {
@@ -260,6 +270,8 @@
   <div class="container">
     <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 5%">
   </div>
+
+  {% include 'faq/faq.html' %}
 
   {% include 'renovation-consultation/seo_interior.html' %}
 

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link rel="shortcut icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Paprika">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+  <style type="text/css">
+    /* typography */
+    .frequently-asked { 
+      font-family: 'Roberto', Tahoma, Arial, sans-serif; 
+      font-size: 2.65em; 
+      line-height: 1.55em; 
+      margin-bottom: 10px; 
+      font-weight: normal; 
+      color: #f74861; 
+    }
+
+    .faq-ans { 
+      display: block; 
+      font-size: 1em; 
+      line-height: 1.4em; 
+      color: black; 
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .ans-link { 
+      color: #f74861 !important; 
+      text-decoration: none !important; 
+    }
+
+    /* wrapper div */
+    #w { 
+      margin: -4% auto; 
+      padding: 18px 25px;
+      min-width: 400px; 
+      max-width: 900px;
+    }
+
+    /* question containers */
+    .q { 
+      display: block; 
+      max-width: 550px; 
+      margin-bottom: 16px; 
+    }
+
+    .qhead { 
+      margin-bottom: 3px;
+      font-size: 1.45em;
+    }
+    
+    .qhead a:hover { 
+      text-decoration: none;  
+    }
+
+    .answer { 
+      display: none; 
+    }
+  </style>
+</head>
+
+<body>
+  <div id="w">
+    <h1 class="frequently-asked">FAQ's</h1>
+    <p class="faq-ans">We get lots of mail and always want to answer your inquiries. That's why our staff has created this mini FAQ page for the most commonly asked questions. Just click on any question to display the answer inline on the page.</p>
+
+    <div class="q">
+      <h3 class="qhead"><a class="ans-link" href="#q01">What all services you provide?</a></h3>
+      <div class="answer" id="q01"><p class="faq-ans">We cater in all home renovation and interior services. At iRenovate, we offer a wide variety of professional services to help you renovate your home or office space. We are renovation specialists and our role is to deliver your dream renovation, within your budget.</p></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a class="ans-link" href="#q02">What are your payment terms?</a></h3>
+      <div class="answer" id="q02">
+        <ul class="faq-ans">
+          <li>10% Booking amount</li>
+          <li>40% Production order at sign-off of final quote and design (after adjustment for prior amounts)</li>
+          <li>45% before material dispatch (after adjustment for prior amounts)</li>
+          <li>5% at the time of handover (after adjustment for prior amounts)</li>
+          <li>Cheque (Delivery schedules are subject to change based on realisation of cheque)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a class="ans-link" href="#q03">How are you different from contractors?</a></h3>
+      <div class="answer" id="q03"><p class="faq-ans">We produce a well-constructed plan and design for our clients. We provide professional experts, hard-work repair and Building material experts to understand your needs. Our team consists of Architects, builders, designers, maintenance work specialists and Highly Skilled Labor. We also render a free maintenance contract for a limited time after the renovation.</p></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a class="ans-link" href="#q04">Can we see your work?</a></h3>
+      <div class="answer" id="q04"><p class="faq-ans">Yes we can make you visit our completed projects. You can also visit our manufacturing unit of kitchen and wardrobe if you are looking for modular furniture.</p>
+      </div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a class="ans-link" href="#q05">What projects you specialize in?</a></h3>
+      <div class="answer" id="q05"><p class="faq-ans">We specialize in residential and commercial interiors. Based on the design and site requirement, the exact cost for iRenovate professional services will be included in your final Bill of Quantities.</p>
+      </div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a class="ans-link" href="#q06">Labour?</a></h3>
+      <div class="answer" id="q06"><p class="faq-ans">All workers on site are managed by iRenovate under a dedicated Supervisor, who takes into account planning, procuring, labor law and safety compliances, discipline and grievance handling, etc. We save you from all the chaos so that, in the end, you get a beautiful home without losing your peace of mind!</p>
+      </div>
+    </div>
+  </div><!-- end #w -->
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".qhead a").on("click", function(e){
+        e.preventDefault();
+        var href = $(this).attr("href");
+
+        $(href).fadeToggle(450);
+      });
+    });
+  </script>
+</body>
+</html>
