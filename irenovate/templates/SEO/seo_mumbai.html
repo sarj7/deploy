@@ -1,0 +1,774 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> What Are The Residential Interior Designers In Mumbai Known For?/title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta name="description" content="Interior Designing is an art done by professionals, iRenovate is one of the best interior designing firm in India. We have been able to deliver turnkey projects in less time."/>
+  <meta name="robots" content="noodp, index, follow">
+  
+  <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/e5ed662be5.js"></script>
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <style>
+    body {
+        position: static;
+        color: #434547;
+    }
+    
+    ul.nav-pills {
+        top: 20px;
+        position: fixed;
+        color: #434547;
+    }
+    
+    .col-sm-9 {
+    	padding-left: 0px !important;
+    }
+
+    .side-items{
+      margin-top: -1% !important;
+      color: #434547 !important;
+    }
+
+    .indexAlternate{
+      display: none;
+    }
+
+    .navigationLeft{
+      background-color: ;
+    }
+
+    .Body_main{
+      margin-top: 5% !important;
+      color: #434547;
+    }  
+
+    .pgrph{
+      font-family: 'Lato', sans-serif;
+      text-align: justify;
+      color: #434547;
+    }
+
+    .title_bottom {
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+        color: #434547;
+      }
+
+    .article_top {
+      margin-bottom: 3%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph {
+      text-align: justify;
+      padding-top: 10%;
+      padding-left: 5%;
+      width: 95%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym1 {
+      text-align: justify;
+      padding-top: 3%;
+      width: 93%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title {
+      padding-top: 4%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title11 {
+      padding-top: 6%;
+      font-family: 'Lato', sans-serif;
+      margin-top: 0px;
+      padding-bottom: 3%;
+      color: #434547;
+      text-align: left;
+    }
+
+    .img_1 {
+      padding-top: 3%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_2 {
+      padding-top: 4%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym2 {
+      padding-top: 3%;
+      text-align:justify;
+      width: 93%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_1 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_11 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_111 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_3 {
+      padding-top: 3%;
+      padding-bottom: 2%;
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym3 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_4 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      padding-top: 3%;
+      padding-bottom: 2%;
+      color: #434547;
+    }
+
+    .pgrph_2 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+      padding-top: 12%
+    }
+
+    .pgrph_21 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+      padding-top: 5%
+    }
+
+    .title_5 {
+      padding-top: 3%;
+      padding-bottom: 2%;
+      width: 90%;
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .pgrph_3 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_6 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      padding-bottom: 2%;
+      padding-top: 3%;
+      color: #434547;
+    }
+
+    }
+
+    .title_7 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym4 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .link_content {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .title_8 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .list_11 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .container_synonym5 {
+      padding-left: 10%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .list_title {
+      font-size: 1.3em;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .first_nav_menu_item {
+      margin-left: -8%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .imgTop1{
+      background-color: #f2f3f4;
+      padding: 1% 0% 1% 3%;
+    }
+
+    .imgTop11{
+      width: 97%;
+      background-color: #f2f3f4;
+      padding: 1% 0% 1% 3%;
+    }
+
+    .bloggerName{
+      margin-bottom: 4%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .introduction_section{
+      margin-bottom: 5%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .navigation_left{
+      margin-top: 3%;
+      background-color: #f9f9f9;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .modal-content{
+      margin-left: 20%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .modal_button{
+      margin-bottom: 3%;
+      margin-top: 2%;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .top_image{
+      padding-bottom: 3%;
+      color: #434547;
+    }
+
+    .special_text{
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .special_text1 {
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+      margin-top: -2%;
+      padding-top: 0px;
+
+    }
+
+    .btn_custom{
+      background-color: #f74861;
+      color: white !important;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+    }
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+       color: white !important;
+       background-color: #f74861 !important;
+    }
+
+    .nav-pills>li>a{
+      color: #434547;
+    }
+
+    .image_bottom{
+      margin-top: 3%;
+    }
+
+    .row_bottom{
+      margin-top: 4%;
+    }
+
+    .bottom_blog {
+      font-size: 0.8em;
+      padding-top: .5%;
+      color: #434547;
+      text-align: left;
+      width:75% !important;
+      padding-left: 3.3%;
+    }
+
+    .related_posts{
+      padding-left: 3%;
+      font-size: 1.4em;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .row_connect{
+      margin-bottom: 5%;
+      margin-top: 1.5%;
+      color: #434547;
+    }
+
+    .mumbai_interior_designers{
+    	padding-top: 1%;
+    	padding-bottom: 1%;
+    }
+  @media screen and (max-width: 810px) {
+    #section2, #section3, #section4,#section6  {
+        margin-left: 150px;
+    }
+
+    #section1{
+      margin-left: 25px; 
+    }
+
+    #section5 {
+      margin-left: 0px;
+    }
+
+    .navigationLeft{
+      background-color: ;
+      display: none;
+    }
+
+    .imgTop1{
+      background-color: #f2f3f4;
+      padding: 1% 0% 1% 3%;
+      width: 100%!important;
+    }
+
+    .list_11 {
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+      padding-left: 0px;
+      margin-left: -19px;
+    }
+
+    .special_text{
+      text-align: justify;
+      font-family: 'Lato', sans-serif;
+      color: #434547;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .list_1{
+      margin-left: 0px;
+    }
+
+    .related_posts{
+      font-size: 1.4em;
+      font-family: 'Lato', sans-serif;
+      margin-left: 4%;
+    }
+
+    .bottom_blog {
+      font-size: 0.8em;
+      padding-top: .5%;
+      color: #434547;
+      text-align: left;
+      width:60% !important;
+      padding-left: 4%;
+    }
+  }
+  </style>
+</head>
+
+{% include "navbar.html" %}
+
+<body class="Body_main" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+  <!-- Facebook share button JDK-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- fb share button JDK end -->
+
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3 navigationLeft" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked navigation_left">
+          <li class="side-items"><a href="#section2">city of elite lifestyles</a></li>
+
+          <li class="side-items"><a href="#section3">How to consider Function? </a></li>
+          
+          <li class="side-items"><a href="#section4">The Furniture Arrangement</a></li>
+
+          <li class="side-items"><a href="#section5">How to set the mood?</a></li>
+
+          <li class="side-items"><a href="#section6">The Color Cues</a></li>
+
+          <li class="side-items"><a href="#section7"> Whimsical and Unexpected Elements</a></li>
+          <li class="side-items"><a href="#section8"> Top 10 Interior Designers In Mumbai</a></li>
+
+          <li class="side-items" style="background-color:white;border:3px solid  #f74861;"><a style="color: #f74861; font-size: 1.05em;font-family: 'Lato', sans-serif; text-align: center;" href="{% url 'renovation_consultation' %}"><b>Contact Me</b></a></li>
+        </ul>
+      </nav>
+      
+      <div class="col-sm-9">
+        <!-- invisible index -->
+        <div class="container indexAlternate">
+          <h4 class="indexAlternate">Index of content.</h4>
+          <ol class="indexAlternate">
+            <li><a class="link_content" href="#one">Know more about interior designers!</a></br></li>
+            <li><a class="link_content" href="#two">Interior decoration and Interior designing – know the difference!</a></br></li>
+            <li><a class="link_content" href="#three">Home decoration  Ideas</a></br></li>
+            <li><a class="link_content" href="#four">Interior designing – All you need to do</a></br></li>
+            <li><a class="link_content" href="#five">Famous Interior Designers and Architects in Delhi</a></br></li>
+            <li><a class="link_content" href="#six">Famous Interior Designers and Architects in Gurgaon</a></br></li>
+            <li><a class="link_content" href="#seven">Famous Interior Designers and Architects in Jaipur</a></br></li>
+            <li><a class="link_content" href="#eight">About iRenovate</a></br></li>
+          </ol>
+        </div>
+
+        <div id="section2"></div>
+
+
+        <div class="row">
+          <div id="section1">    
+            <div class="row row_alternate">
+              <h1 class="title_bottom">What Are The Residential Interior Designers In Mumbai Known For?</h1>
+            </div>
+          </div>
+        </div>
+
+        <center>
+          <p><b>Share This Article</b></p>
+          <div class="row row_connect">
+
+            <div style="margin-right: 9%; padding-left: 11%; " class="col-sm-2 col-sm-offset-40 col-md-1 col-md-offset-2 col-xs-2 ">
+              <!-- Facebook share button -->
+              <div class="fb-share-button" data-href="https://irenovate.in/renovation-consultation/interior-designers" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+              </div>
+              <!-- fb share button end -->
+            </div>
+
+            <div style="margin-right: 5%;" class="col-sm-1  col-md-1 col-xs-2 ">
+              <!-- Place this tag where you want the share button to render. -->
+              <div class="g-plus" data-action="share" data-height="24"></div>
+            </div>
+
+            <div class="col-sm-1  col-md-1 col-xs-2 ">
+              <a data-pin-do="buttonPin" data-pin-lang="en" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"></a>
+            </div>
+
+            <div style="margin-left: 3%;" class="col-sm-1 col-md-1 col-xs-2 ">
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+              <script type="IN/Share"></script>
+            </div>
+          </div>
+        </center>
+
+
+        <div class="row">
+	        <img class="img-responsive top_image" src="{% static 'img/SEO/interior_design/interior_top.jpg' %}">
+	        <center>
+	          <p class="special_text1"><i>
+	            iRenovate is recording excellence in Interior Design project deliverance and setting new standards 
+	          </i></p>
+	        </center>
+	      </div>
+
+	      <center>
+	        <button type="button" class="btn btn_custom btn-lg" data-toggle="modal" data-target="#myModal">Book a Consultation</button>
+	      </center>
+
+	      <div id="myModal" class="modal fade" role="dialog">
+	          <div class="modal-dialog">
+
+	            <!-- Modal content-->
+	            <div class="modal-content col-sm-8 col-xs-12 col-md-8">
+	              <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                <h4 class="modal-title">Book a Consultation</h4>
+	              </div>
+	              <div class="modal-body">
+	                <form method='POST' action="">{% csrf_token %}
+	                  {{ form|crispy }}
+	                  <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+	                </form>
+	              </div>
+	            </div>
+	          </div>
+	      </div>
+	 
+				<center>
+				  <h2 class="title11">
+				    Mumbai is the city of elite lifestyles and celebrity homes!   
+				  </h2>
+				</center>
+
+				<div id="section2"></div>
+
+				<div class="row">
+				  <p class="special_text">
+						When it comes to posh villas and lavishly designed living spaces, Mumbai tops the charts with its tasteful creations. And an architect and interior designer in Mumbai has a lot to do with that. Interior designer are the people who know the core of creating comfortable and functional spaces for people who live in them.</br> 
+						It is their job to make interior spaces practical, safe, and at the same time beautiful by determining space requirements and selecting enhancing items, such as colors, lighting, and other enhancing materials. They must know how to read blueprints and must be aware of building codes and inspection regulations. All this and more is the best interior designer in Mumbai.
+						</br> </br>
+						<b>Residential Interior Designers In Mumbai Ensure Decorating Success</b>
+				  </p>
+
+				  <p>
+						Interior designing is an intricate art and residential interior designers are the artists who know how to paint canvases that are worth living every moment in them. A tastefully decorated interior not only functions well but it is also a catalyst in creating the mood and ambience as per the personality of the owner. Hence, the interior designer will put focus on 3 points to reach the ultimate decorating success, and those are:
+					</p>
+
+					<ul>
+						<li>
+							Food 
+						</li>
+						<li>
+							Mood
+						</li>
+						<li>
+							Personality
+						</li>
+					</ul> 
+
+					<p>
+						A good foundation in interior design basics and principles can have a huge effect on the look and feel of a space, and an adept interior designer would work around that concept only. From color palettes to negative spaces, an interior designer focuses on every minute detail and produces results that are spellbinding.
+					</p>
+					<p><b>How to consider Function?</b></p>
+					</br>
+
+					<div id="section3"></div>
+
+					<p>
+						Interior designing is much more than just eye appeal. It works around making a space really livable and absolutely comfortable for the people who are going to be in that space. The functions that are prescribed for that particular space, must be carried out smoothly, while keeping the style intact. This is what makes a designers job successful and tasteful at the same time. 
+					</p>
+					<p>
+						Here is how any famous interior designer in Mumbai would create that functional space.
+					</p>
+					</br>
+					<p><b>The Focal Point</b></p>
+					<p>
+						Some rooms have natural focal points, but some won't. This is where an interior designer would get to work and create one. A foal point is a corner, an object or a piece where the eyes travel as soon as someone enters the room, like a fireplace, a bay window with a view, a coffee table with utility and craft items or maybe even a built-in bookcase. If the room doesn't have a natural focal point, an ace designer would create one with a dynamic piece of art or a colorful area rug.
+					</p>
+					<p>
+						<b>
+							The Furniture
+						</b>
+					</p>
+					<p>
+						An good space designer would always consider whether the furniture satisfies the functions the family have planned for the room. If a furniture piece is not fitting into the requirement or placing of the room, if it is too large or too small for the size of the space, then it must be replaced with an appropriate piece which complements the area and functions well too.  
+					</p>
+					<p><b>
+						The Furniture Arrangement
+					</b></p>
+
+					<div id="seciton4"></div>
+
+					<p>
+						When it comes to arranging and placing the furniture, a well read and well experienced designer must have an elaborate plan. He would draw a room graph on paper, measure and mark electrical outlets and switches, vents, windows and doors. He would also measure furniture for sizes before placing it in the floor plan. The idea would remain to arrange main furniture pieces towards the focal point, keeping the walking place open and wide. The filling up of space would be done with pieces which are kept for a purpose and fulfill a function. There is one more aspect which needs to be looked into by interior designer, which is the balancing part. It is important to balance high and low furniture and design with respect to heavy and light ones around the room.
+					</p>
+					</br>
+					<p><b>
+						The Lighting
+					</b></p>
+					<p>
+						When an expert designer is at work, he would select the lighting inside the space which is just right for the functions, and goes with the visual appeal of the room. Every task which needs to be accomplished in the room would require either direct lighting from a lamp or indirect lights that can simply brighten the room for conversations or TV times. There are many different lighting techniques that a designer may use from: accent lighting, floor spots, track lighting and recessed spotlights etc., which enhance the texture, color and other detailing of the room.
+					</p>
+					</br>
+					<p>
+						All these aspects help to determine and create the functionality of a living space.
+					</p>
+					<p>
+						<b>
+							How to set the mood?
+						</b>
+					</p>
+					<div id="section5"></div>
+					<p>
+						Interior designers are artists too. They know how to paint a canvas as per the ambience and setting of the space. For example an office interior designer in Mumbai would create a setting which is professional and crisp and sets the mood right for some great working. In all actuality, a mood or feeling of a room is created by colors, the style of furnishing, the textures used and patterns which are chosen for accessories. There are so many aspects to consider when it comes to setting the mood for a particular space. Usually, establishing a theme through the selection of an inspiration piece makes the whole designing and decorating project much more fun and interesting. 
+					</p>
+					</br>
+					<p>
+						Here are the factors that interior designer work around while setting the mood:
+					</p></br>
+					<p>
+						<b>
+							The Inspiration Piece
+						</b>
+					</p>
+					<p>
+						A good designer always looks for a source of inspiration. It makes the basis of the designing theme. The colors, patterns and textures can always we woven around that piece of inspiration. After analyzing the inspiration piece thoroughly, a theme can be derived and named. For instance a vintage coffee table may inspire a vintage style decor with rosewood pieces and ornate ambience. It can be called "Vintage Revisited". Big floral patterns, thick fabrics, and dark woods, all would fit this theme seamlessly, as per the mood.
+					</p>
+					<p>
+						<b>
+							The Color Cues
+						</b>
+					</p>
+
+					<div id="section6"></div>
+
+					<p>
+						Coming to colors, this would always be an endeavor of a great designer to match the colors with the theme. The hues must support the theme. Many times, the colors that are most appropriate are found in the patterns and design of the inspiration piece. As per an interior designer, it's best to choose three colors in a room: a dominant color, used for walls, carpeting and fabric backgrounds; a secondary color, found throughout the room in fabrics and accessories; and an accent color, used sparingly to give energy and excitement to the room.
+					</p>
+					<p>
+						<b>
+							The Pattern Palette
+						</b>
+					</p>
+					<p>
+						Stripes, checks, florals and plaids are just a few of the patterns that designers choose from to create a particular mood of the situate. Each chosen pattern is in support of the theme and also, a mix of patterns creates an interesting blend which elevates the ambience and renders a unique feel to the entire space. Mixing the patterns is again an intricate art which is done while taking care of few aspects such as keeping the background color the same, making sure that the patterns share the same colors, the scale and sizes of the patterns vary but create a seamless picture to follow a mood.
+					</p>
+					<p>
+						<b>
+							The Texture Play
+						</b>
+					</p>
+					<p>
+						A variety of textures keep the room interesting and subtle at the same time, and an adept interior designer would always know that. Using a pattern as a texture is the mark of an ace designer. For instance, there are many prints that look dimensional and render depth to decoration theme. Such prints can easily mingle with layers and textures and set the mood appropriately. 
+					</p>
+					<p>
+						<b>
+							The Furniture Placement
+						</b>
+					</p>
+					<p>
+						Apart from being functional, the furniture plays an important role in enhancing a particular design theme and craft a mood too. Some furniture pieces may function well but their style or color palette might just spoil the entire canvas. This is taken in consideration by the interior designer while creating an ambience. 
+						</br>
+						All these factors come along to play a particular mood and determine the success of a good interior designer.
+					</p>
+					<p>
+						<b>
+							How is the personality of owner brought about?
+						</b>
+					</p>
+					<p>
+						Every space created must speak volumes about the personality of the owner. When interior designers start working on a set-up, they speak with the owner in details to bring out their choices, their likes and dislikes and also, their prominent points. A good designer would always try to put a personal stamp of the owner on the ambience. Accessories like pictures, vases, cushions and area rugs are an integral part of how a space showcases the personality of the people living in it, and they are important to a great designing plan. Generally, they are chosen by the designer only if they are supporting the theme. For example a brilliant designer would choose an antique picture frame for a contemporary room only if the owner has a little earthy personality. 
+					</p>
+					<p>
+						<b>
+							Whimsical and Unexpected Elements 
+						</b>
+					</p>
+
+					<div id="section7"></div>
+
+					<p>
+						A whimsy item comes in handy to define the personality when any sterile quality may have been created by strictly following the designing guidelines. This is when whimsical helps. A beautiful country sitting room may get bring the shades of the owner by placing a playful quilt over one of the couches. On the contrary, an item of interest which pleases the owner and speaks about their persona, can simply be placed in a contrast, even if it is something unexpected in a room, like a brightly-painted ceiling in an otherwise somber room. 
+						</br>
+						Hence, the personality can be defined in a number of ways, while playing with textures, patterns and accessories.
+					</p>
+				</div>
+
+				<div class="row">
+					<h2 class="mumbai_interior_designers">
+						Top 10 Interior Designers In Mumbai
+					</h2>
+
+					<div id="section8"></div>
+
+					<p>
+						When we talk about famous interior designers in Mumbai, there are a few names that top the charts and iRenoavte is one of them. Their work speaks for itself and they have laid down unprecedented designing triumph for themselves in a very short span of time. With their modern eye-catching concepts and beautifully scaled spaces, iRenovate is making a mark like none other with their projects in Mumbai, Delhi and other metropolitan cities.  They create dream house for you with interiors that make heads turn! Warm, comfortable, and interesting home environments are their USPs. They concern themselves with more than just the visual or ambient enhancement of an interior space. They also help people to fulfill their dream of having a modern home with sublime interiors.
+						</br>
+						Now let us come back to beautiful cities and artistically crafted homes. If we are discussing designed homes in Mumbai, a vast sub-urban vista of the city cannot be ignored. Navi Mumabi is a planned satellite city of Mumbai, on the west coast of Maharashtra. It started developing in 1972 as a new urban township of Mumbai, and is currently the largest planned city in the world. The planning and designing of the city would have been done by some of the ace architects. Also an interior designer in Navi Mumbai would prove to be instrumental when it comes to crafting places for such a well planned city. He would add dimensions to the panoramic view of the situate.
+						</br>
+						Well actually, zeroing in to the best Interior designer in Mumbai would be a crazy task which involves a lot of factors. Especially in a city like Mumbai, where residential projects hold a variety that needs minute detailing and attention. Diverse styles and layouts offered by so many different architectural and designing firms makes it difficult to choose the best for home interiors. To make it a little easy, we have crafted a list of top 10 interior designer firms in Mumbai. 
+					</p>
+					<p><b>
+						The few names that count as best interior designer in Mumbai are:
+					</b></p>
+					<ol>
+						<li>
+							iRenovate
+						</li>
+						<li>
+							Shabnam Gupta
+						</li>
+						<li>
+							ZZ Architects And Interior Designers
+						</li>
+						<li>
+							Space Interiors
+						</li>
+						<li>
+							Design Plus India
+						</li>
+						<li>
+							Home Makers Interior
+						</li>
+						<li>
+							Somaya and Kalappa Consultants
+						</li>
+						<li>
+							Anish Motwani Associates
+						</li>
+						<li>
+							Milind Pai Associates
+						</li>
+						<li>
+							Aum Architects
+						</li>
+					</ol>
+				</div>
+    	</div>
+    </div>
+  </div>
+
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+  {% include 'Footer/copyright.html' %}
+  {% include 'javascript.html' %}
+
+</body>
+</html>
