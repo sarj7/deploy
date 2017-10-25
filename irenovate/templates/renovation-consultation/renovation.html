@@ -85,7 +85,7 @@
     }
 
     .formOuterDiv {
-      background-image: url("{% static 'img/backgroung1.jpg' %}");
+      background-image: url("{% static 'img/renovation-consultation-bg.jpg' %}");
       background-size: 100% 90%;
       background-repeat: no-repeat;
       height: 110%;
@@ -131,7 +131,7 @@
 {% include "navbar.html" %}
 
 <body>
-  <div class="container-fluid formOuterDiv">
+  <div class="container formOuterDiv">
     <div class="col-sm-4  col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
       <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
       <form method='POST' action="">{% csrf_token %}
