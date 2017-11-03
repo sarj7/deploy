@@ -66,7 +66,7 @@
 
     #heading {
       padding-top: 5%;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roberto', Tahoma, Arial, sans-serif; 
       margin-bottom: 0px;
       font-size: 2.2em;
       margin-top: 1%;
@@ -85,7 +85,7 @@
     }
 
     .formOuterDiv {
-      background-image: url("{% static 'img/renovation-consultation-bg.jpg' %}");
+      background-image: url("{% static 'img/consultation.jpg' %}");
       background-size: 100% 90%;
       background-repeat: no-repeat;
       height: 110%;
@@ -95,18 +95,19 @@
       background-color: white;
       border: 2px solid black;
       border-radius: 4px;
+      margin-left: 74%;
       padding-top: 15px;
-      padding-bottom: 25px;
+      padding-bottom: 25px; 
       margin-top: 20px;
       color: black;
-      opacity: .75 ;
+      opacity: 0.80;
     }
 
     .hassleOuterTitle {
         margin-top: -2%;
         text-align: center;
         font-size: 2.2em;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roberto', Tahoma, Arial, sans-serif; 
         padding-bottom: 1%;       
     }
 
@@ -115,8 +116,26 @@
       margin-bottom: 0%;
       text-align: center;
       font-size: 1.5em;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roberto', Tahoma, Arial, sans-serif; 
       padding-bottom: 1%;       
+    }
+
+    .containerBottom {
+      padding-top: 2.1%;
+      padding-bottom: 5%;
+    }
+
+    .themesHeader {
+      font-family: 'Roberto', Tahoma, Arial, sans-serif;
+      text-align: center;
+      font-size: 2.2em;
+      }
+
+    .themesTitle{
+      font-family: 'Roberto', Tahoma, Arial, sans-serif;
+      text-align: center;
+      font-size: 1.5em;
+      padding-bottom: 2%;
     }
 
     @media only screen and (max-width: 400px) {
@@ -129,18 +148,30 @@
     .form-control {
       border-radius: 0px !important;
     }
+    
+    #contactusnow {
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 4px;
+      padding-top: 15px;
+      padding-bottom: 25px; 
+      margin-top: 20px;
+      color: black;
+      opacity: 0.80 ;
+    }
+
   </style>
 </head>
 
 {% include "navbar.html" %}
 
 <body>
-  <div class="container formOuterDiv">
-    <div class="col-sm-4  col-xs-12  col-md-3 col-md-offset-9" id="contactusnow">
+  <div class="formOuterDiv">
+    <div class="col-sm-4  col-xs-12  col-md-3 col-md-offset-8" id="contactusnow">
       <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
       <form method='POST' action="">{% csrf_token %}
         {{ form|crispy }}
-        <input class='btn btn-block btn-danger' type='submit' value='Submit' />
+        <input class='btn btn-block' type='submit' value='Submit' style="background-color:#f74861;" />
       </form>
     </div>
   </div>
@@ -184,92 +215,41 @@
   </div>
 
   <div class="container">
-    <hr style="color: black;width: 100%;border: .3px solid #eaecef; margin-bottom: -5%">
+    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 5%">
   </div>
 
-  <div class = "container">
-    <h2 id = "heading" style="text-align:center;">Six Reasons To Choose iRenovate </h2>
-      <div class ="row rowAlternate">
-        <div class = "col-sm-1 icon">
-          <img class="img-responsive" alt="SINGLE PERSON CONTACT" src="{% static 'img/USP/6_reasons/single_person_contact.png' %}">
-        </div>
-        <div class = "col-sm-3">
-          <h3 class = "head">
-            SINGLE PERSON CONTACT
-          </h3>
-          <p class = "para">
-            Renovating your home is a challenging job. With iRenovate, you leave all the hard-work and management to us. From scratch to end, we handle all the major and minor work that comes along with the renovation process. We assure you best quality renovation completed on time and within your budget.
-          </p>
-        </div>
-    
-        <div class = "col-sm-1 icon">
-          <img class="img-responsive" alt="TRANSPARENT PRICE" src="{% static 'img/USP/6_reasons/Transparent_price.png' %}">
-        </div>
-        <div class = "col-sm-3">
-          <h3 class = "head">
-            TRANSPARENT PRICE
-          </h3>
-          <p class = "para">
-            We give our clients high-quality finished products in lowest cost. Our contacts in the field enable us to get skilled workmanship for less price than any home owner would get for a single project which minimizes the cost of renovation at every step.
-          </p>
-        </div>
+  {% include "Home/statictesti.html" %}
 
-        <div class = "col-sm-1 icon">
-          <img class="img-responsive" alt="3D VISUALIZATION" src="{% static 'img/USP/6_reasons/3D_visualisation.png' %}">
-        </div>
-        <div class = "col-sm-3">
-          <h3 class = "head">
-            3D VISUALIZATION
-          </h3>
-          <p class = "para">
-            We provide concept drawings and 3D digital designs for you to comprehend better.  We use augmented reality to give you a preview of what your house will look like. Our 3D drawings will help you visualize the end look of the renovation before you even start.
-          </p>
-        </div>
-      </div>
-  
-      <div class ="row rowAlternate" style="padding-bottom:35px;">
-      
-      <div class = "col-sm-1 icon">
-        <img class="img-responsive" alt="ON TIME DELIVERY" src="{% static 'img/USP/6_reasons/on_time_delivery.png' %}">
-      </div>
-      <div class = "col-sm-3">
-        <h3 class = "head">
-          ON TIME DELIVERY
-        </h3>
-        <p class = "para">
-          Poor management can make you feel renovation as a never ending project. At iRenovate, we design a perfectly well structured plan to complete your renovation project on time and within your budget.
-        </p>
+  <div class="container">
+    <hr style="color: black;width: 100%;border: .3px solid #eaecef; margin-top: 2%;">
+  </div>
+
+  <!-- themes start here -->
+  <p class="themesHeader">Lè Themes</p>
+  <p class="themesTitle">Exquisite Pre-Designed Looks For Your Home</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="{% url 'seo_wardrobe' %}"><img class="img-responsive" src="{% static 'img/renovation-themes/wardrobe.jpg' %}"></a>    
       </div>
       
-      <div class = "col-sm-1 icon">
-        <img class="img-responsive" alt="UBER COOL DESIGN" src="{% static 'img/USP/6_reasons/uber_cool_design.png' %}">
-      </div>
-      <div class = "col-sm-3">
-        <h3 class = "head">
-          UBER COOL DESIGN
-        </h3>
-        <p class = "para">
-          We at iRenovate help you deliver you the X-factor you need for your dream home. Our in-house team of designers is committed to provide you with the exact design you need. No Outsourcing, No Hassle.
-        </p> 
-      </div>
-      
-      <div class = "col-sm-1 icon">
-        <img class="img-responsive" alt="MAINTAINANCE CONTRACT" src="{% static 'img/USP/6_reasons/maintainance_contract.png' %}">
-      </div>
-      <div class = "col-sm-3">
-        <h3 class = "head">
-          MAINTAINANCE CONTRACT
-        </h3>
-        <p class = "para">
-          iRenovate team is dedicated to provide excellence in maintenance with a 6 months’ F.O.C after service contract. Should you experience a problem or need assistance our team is ready to assist, no matter how small the issue is!
-        </p>
+      <div class="col-sm-8">
+        <a href="{% url 'themes' %}"><img class="img-responsive" src="{% static 'img/renovation-themes/bedroom.jpg' %}"></a>      
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 5%">
+  <div class="container containerBottom">
+    <div class="row">
+      <div class="col-sm-7">
+        <a href="{% url 'themes' %}"><img class="img-responsive" src="{% static 'img/renovation-themes/living_room.jpg' %}"></a>   
+      </div>
+     
+      <div class="col-sm-5">
+        <a href="{% url 'modular_kitchen' %}"><img class="img-responsive" src="{% static 'img/renovation-themes/kitchen.jpg' %}"></a>
+      </div>
+    </div>
   </div>
+  <!-- themes ends here -->
 
   {% include 'faq/faq.html' %}
 
