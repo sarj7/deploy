@@ -73,7 +73,16 @@ def themes(request):
 	return render(request, "Themes/Themes.html", {})
 
 def wardrobe(request):
-	return render(request, "Themes/Wardrobe.html", {})
+	form = KitchenForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	
+	if form.is_valid():
+		instance = form.save(commit=False)
+		instance.save()
+	 	return redirect("/acknowledgement")
+	return render(request, "Themes/Wardrobe.html", context)
 
 def modular_kitchen(request):
 	form = KitchenForm(request.POST or None)
