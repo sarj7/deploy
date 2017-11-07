@@ -28,22 +28,31 @@
 	  integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8="
 	  crossorigin="anonymous">
 	</script>
-	
-	<!--Start of Tawk.to Script-->
-  	<script type="text/javascript">
-    		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    		(function(){
-      			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      			s1.async=true;
-      			s1.src='https://embed.tawk.to/5982d658d1385b2b2e28559a/default';
-      			s1.charset='UTF-8';
-      			s1.setAttribute('crossorigin','*');
-      			s0.parentNode.insertBefore(s1,s0);
-    		})();
-  	</script>
-  	<!--End of Tawk.to Script-->
 
 	<style type="text/css">
+		.formOuterDiv {
+			background-image: url("{% static 'img/Themes/Wardrobe/background/wardrobe-background.jpg' %}");
+			width: 100%;
+			background-repeat: no-repeat;
+			min-height: 415px;
+			background: linear-gradient (
+				rgba(61, 46, 29, 0), 
+				rgba(0, 0, 0, 0)
+			);
+			padding-top: 10px;
+			margin-bottom: 4%;
+			color: white;
+		}
+
+		#contactusnow1 {
+			background-color: white;
+			padding-bottom: 5px;
+			margin-top: -2px;
+			color: black;
+			margin-right: 100px;
+			width: 24%;
+		}
+
 		.paragraph {
 			font-family: 'Raleway', sans-serif;
 			font-size: 2.2em;
@@ -80,6 +89,16 @@
 {% include "navbar.html" %}
 
 <body>
+	<!-- Banner -->    
+    <div class="formOuterDiv">
+      <div class="col-sm-4  col-xs-12  col-md-3 col-md-offset-9" id="contactusnow1">
+        <p style="font-size: 1.8em;font-family:'Averia Sans Libre', cursive;" class='lead text-align-center'>Talk to our expert!</p>
+        <form method='POST' action="">{% csrf_token %}
+          {{ form|crispy }}
+          <input class='btn btn-block' type='submit' value='Start Designing' style="background-color:#f74861; color:white; font-size: 1em"/>
+        </form>
+      </div>
+    </div>
 
 	{% include "Themes/4usp.html" %}
 	

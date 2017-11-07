@@ -77,8 +77,8 @@
 
     #contactusnow2 {
       background-color: white;
-      padding-bottom: 5px;
-      margin-top: -2px;
+      padding-bottom: -2%;
+      margin-top: 15px ;
       color: black;
       padding-bottom: 0px;
 
@@ -410,6 +410,7 @@
       padding-left: 0px !important;
       padding-right: 0px !important;
     }
+
     @media screen and (max-width: 810px) {
       #section1, #section2, #section3, #section4, #section5,#section6  {
           margin-left: 150px;
@@ -482,6 +483,11 @@
     .brand-subtag {
       padding-bottom: 3%;
       font-size: 2.4em;
+    }
+
+    .kitchen_brand{
+      margin-bottom: 3%;
+      padding-bottom: 3%;
     }
     
     @media(max-width:767px) {
@@ -642,7 +648,7 @@
             <div class="col-sm-6">
               <img src="{% static 'img/kitchen/Kitchen/6.jpg' %}" class="img-responsive" alt="L-Shape">
               <p class="imnm">
-                Size 10x10ft <span style="padding-left:23%">L-Shape</span><span style="padding-left:23%">From &#x20B9;145,000</span>
+                Size 10x10ft <span style="padding-left:24%">L-Shape</span><span style="padding-left:24%">From &#x20B9;145,000</span>
               </p>
               <div>
                   <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 0px;">
@@ -762,7 +768,7 @@
             <div class="col-sm-6" style="padding-top: 2%">
               <img src="{% static 'img/kitchen/Kitchen/18.jpg' %}" class="img-responsive" alt="L-Shape">
               <p class="imnm">
-                Size 12x8ft <span style="padding-left:25%">L-Shape</span><span style="padding-left:25%">From &#x20B9;140,000</span>
+                Size 12x8ft <span style="padding-left:20%">Parallel Kitchen</span><span style="padding-left:21%">From &#x20B9;210,000</span>
               </p>
               <div>
                   <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 0px; margin-bottom:4%;">
@@ -776,7 +782,7 @@
             <div class="col-sm-6">
               <img src="{% static 'img/kitchen/Kitchen/19.jpg' %}" class="img-responsive" alt="L-Shape">
               <p class="imnm">
-                Size 9x10ft <span style="padding-left:25%">L-Shape</span><span style="padding-left:25%">From &#x20B9;144,000</span>
+                Size 10x12ft <span style="padding-left:21%">Island Kitchen</span><span style="padding-left:21%">From &#x20B9;190,000</span>
               </p>
               <div>
                   <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 0px;">
@@ -786,7 +792,7 @@
             <div class="col-sm-6">
               <img src="{% static 'img/kitchen/Kitchen/20.jpg' %}" class="img-responsive" alt="U-Shape">
               <p class="imnm">
-                Size 12x8ft <span style="padding-left:25%">U-Shape</span><span style="padding-left:25%">From &#x20B9;140,000</span>
+                Size 14x11ft <span style="padding-left:21%">Island Kitchen</span><span style="padding-left:21%">From &#x20B9;310,000</span>
               </p>
               <div>
                   <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 0px;">
@@ -800,12 +806,12 @@
               <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
               <form method='POST' action="">{% csrf_token %}
                 {{ form|crispy }}
-                <input class='btn btn-block btn-danger' type='submit' value='Submit'/>
+                <input class='btn btn-block btn-danger' type='submit' value='Start Designing' style="background-color:#f74861; color:white; font-size: 1em"/>
               </form>
             </div>
         </div>
 
-        <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 0px; margin-bottom:0%; margin-top:0x%;">
+        <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 0px; margin-bottom:2%;">
 
         <!-- Brands -->
         <div class="container">
@@ -814,7 +820,7 @@
               <h3 class="brand-tag">Our Brands</h3>
               <h2 class="brand-subtag">At iRenovate, quality is our first preference</h2>
             </center>
-            <div class="kitchen_brand">
+            <div class="kitchen_brand" style="padding-bottom: 3%;">
               <ul class="brand-list">
                 <li class="list-brand"><img class="brand-image" alt="BOSCH" src="{% static 'img/kitchen/our_brands/bosch.jpg' %}" /></li>
                 <li class="list-brand"><img class="brand-image" alt="FABER" src="{% static 'img/kitchen/our_brands/faber.jpg' %}" /></li>
@@ -829,12 +835,12 @@
     </div>
   
   <div>
-    <hr style="width: 100%; border: 1px solid #d1d1d1; margin-bottom: 0px;">
+    <hr style="width: 100%; border: 1px solid #d1d1d1; margin-top: 8%; margin-bottom: 1%; ">
   </div>
 
   <!-- kitchen seo page -->
-  <div class="row">
-    <div id="section1">    
+  <div class="row" >
+    <div id="section1" style="padding-top: 2%;">    
       <div class="row row_alternate">
         <center>
           <h1 class="title_bottom"></br>If house is your canvas, Then Kitchen is your paint</h1>
