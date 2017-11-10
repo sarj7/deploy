@@ -147,3 +147,9 @@ def refer(request):
 		instance.save()
 		return redirect("/acknowledgement")
 	return render(request, "Footer/refer.html", context)
+
+def robots(request):
+	return render(request, "robots.html", {})
+
+def sitemap(request):
+	return render(request, "sitemap.html", {})
