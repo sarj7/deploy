@@ -74,14 +74,12 @@
       width: 24%;
     }
 
-
     #contactusnow2 {
       background-color: white;
       padding-bottom: -2%;
-      margin-top: 15px ;
+      margin-top: 5%;
       color: black;
       padding-bottom: 0px;
-
     }
 
     .form-control {
@@ -89,8 +87,7 @@
     }
 
     .bottom-form {
-      margin-left: 0%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
     }
 
     .side-items{
@@ -839,7 +836,8 @@
 
         <div>
           <div class="bottom-form col-sm-6 col-xs-12 col-md-12 col-lg-6 col-sm-offset-3 " id="contactusnow2">
-              <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
+              <center style="font-size: 2.1em; font-family:'Roberto', Tahoma, Arial, sans-serif;" class='lead text-align-center'>Book Free Consultation</center>
+              <center style="font-size: 1.1em; padding-bottom: 3%; margin-top:-3%">Contact Us</center>
               <form method='POST' action="">{% csrf_token %}
                 {{ form|crispy }}
                 <input class='btn btn-block btn-danger' type='submit' value='Start Designing' style="background-color:#f74861; color:white; font-size: 1em"/>

@@ -159,6 +159,18 @@
       color: black;
       opacity: 0.80 ;
     }
+
+    #contactusnow2 {
+      background-color: white;
+      padding-bottom: -2%;
+      margin-top: 15px ;
+      color: black;
+      padding-bottom: 0px;
+    }
+
+    .bottom-form {
+      margin-bottom: 5%;
+    }
   </style>
 </head>
 
@@ -225,7 +237,13 @@
   </div>
 
   <div class="container">
-    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 2.5%">
+    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 2.5%; margin-top: 0px;">
+  </div>
+
+  {% include "Home/statictesti.html" %}
+
+  <div class="container">
+    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 2.5%; margin-top: 4%;">
   </div>
 
   <!-- themes start here -->
@@ -234,7 +252,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <a href="{% url 'modular_kitchen' %}"><img class="img-responsive" src="{% static 'img/renovation-themes/kitchen1.jpg' %}"></a>    
+        <a href="{% url 'modular_kitchen' %}"><img class="img-responsive" src="{% static 'img/renovation-themes/kitchen.jpg' %}"></a>    
       </div>
       
       <div class="col-sm-8">
@@ -256,14 +274,20 @@
   <!-- themes ends here -->
 
   <div class="container">
-    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-bottom: 2.5%; margin-top: 0px;">
+    <hr style="color: black;width: 100%;border: 1px solid #eaecef; margin-top: 2%;margin-bottom: 6.2%;">
   </div>
 
-  {% include "Home/statictesti.html" %}
-
-  <div class="container">
-    <hr style="color: black;width: 100%;border: .3px solid #eaecef; margin-top: 2%;margin-bottom: 6.2%;">
+  <div>
+    <div class="bottom-form col-sm-6 col-xs-12 col-md-12 col-lg-6 col-sm-offset-3 " id="contactusnow2">
+      <p style="font-size: 2.1em;font-family:'Averia Sans Libre', cursive; " class='lead text-align-center'>Talk to our expert!</p>
+      <form method='POST' action="">{% csrf_token %}
+        {{ form|crispy }}
+        <input class='btn btn-block btn-danger' type='submit' value='Start Designing' style="background-color:#f74861; color:white; font-size: 1em"/>
+      </form>
+    </div>
   </div>
+
+  <hr style="width: 99%; border: 1px solid #d1d1d1; margin-bottom: 5%;">
 
   {% include 'faq/faq.html' %}
 

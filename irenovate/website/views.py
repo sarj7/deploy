@@ -149,7 +149,7 @@ def refer(request):
 	return render(request, "Footer/refer.html", context)
 
 def robots(request):
-	return render(request, "robots.html", {})
+	return render(request, "robots.txt", {})
 
 def sitemap(request):
-	return render(request, "sitemap.html", {})
+	return render(request, "sitemap.xml", {})
