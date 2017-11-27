@@ -1,6 +1,7 @@
-# robots.txt 
-User-agent: *
-
-Disallow: 
+# robots.txt 
+
+Disallow: 
 
 Disallow: /cgi-bin/
+
+Sitemap: https://irenovate.in/sitemap.xml
