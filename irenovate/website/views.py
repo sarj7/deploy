@@ -46,7 +46,7 @@ def seo_mumbai(request):
 		instance = form.save(commit=False)
 		instance.save()
 	 	return redirect("/acknowledgement")
-	return render(request, "SEO/seo_mumbai.html", {})
+	return render(request, "SEO/seo_mumbai.html", context)
 
 def renovation_ideas(request):
 	return render(request, "SEO/renovation_ideas.html", {})
