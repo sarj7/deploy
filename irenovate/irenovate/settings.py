@@ -28,6 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['irenovate.in', '139.59.45.246', 'localhost', '127.0.0.1']
 
+PREPEND_WWW = True
+
 
 
 # Application definition
