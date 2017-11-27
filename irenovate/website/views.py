@@ -37,6 +37,15 @@ def seo_wardrobe(request):
 	return render(request, "SEO/seo_wardrobe.html", {})
 
 def seo_mumbai(request):
+	form = ContactForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	
+	if form.is_valid():
+		instance = form.save(commit=False)
+		instance.save()
+	 	return redirect("/acknowledgement")
 	return render(request, "SEO/seo_mumbai.html", {})
 
 def renovation_ideas(request):
